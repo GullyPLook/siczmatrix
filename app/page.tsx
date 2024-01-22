@@ -9,20 +9,20 @@ import records from './records.json'
 
 export default function Home() {
   
-    const [artistA, setArtistA] = useState('null');
-    const [artistB, setArtistB] = useState('null');
-    const [artistC, setArtistC] = useState('null');
-    const [artistD, setArtistD] = useState('null');
-    const [artistE, setArtistE] = useState('null');
-    const [artistF, setArtistF] = useState('null');
-    const [artistG, setArtistG] = useState('null');
-    const [artistH, setArtistH] = useState('null');
-    const [artistI, setArtistI] = useState('null');
-    const [artistJ, setArtistJ] = useState('null');
-    const [artistK, setArtistK] = useState('null');
-    const [artistL, setArtistL] = useState('null');
-    const [artistM, setArtistM] = useState('null');
-    const [artistN, setArtistN] = useState('null');
+    const [artistA, setArtistA] = useState<any>('null');
+    const [artistB, setArtistB] = useState<any>('null');
+    const [artistC, setArtistC] = useState<any>('null');
+    const [artistD, setArtistD] = useState<any>('null');
+    const [artistE, setArtistE] = useState<any>('null');
+    const [artistF, setArtistF] = useState<any>('null');
+    const [artistG, setArtistG] = useState<any>('null');
+    const [artistH, setArtistH] = useState<any>('null');
+    const [artistI, setArtistI] = useState<any>('null');
+    const [artistJ, setArtistJ] = useState<any>('null');
+    const [artistK, setArtistK] = useState<any>('null');
+    const [artistL, setArtistL] = useState<any>('null');
+    const [artistM, setArtistM] = useState<any>('null');
+    const [artistN, setArtistN] = useState<any>('null');
     
     const [seeSelectB, setSeeSelectB] = useState(false);
     const [seeSelectC, setSeeSelectC] = useState(false);
@@ -229,8 +229,9 @@ export default function Home() {
     
   
     // handle change event of #selectorA dropdown
-    const handleArtistAChange = (artistA) => setArtistA(artistA);
+    const handleArtistAChange = (artistA: any) => setArtistA(artistA);
     const artistAId = artistA[0].id;
+    console.log(artistAId)
     // match targets
     const sourceMatches = edges.filter(i => i.source === artistAId);
     const targetList = sourceMatches.map(i => i.target);
@@ -246,7 +247,7 @@ export default function Home() {
     
     
     // handle change event of #selectorB dropdown
-    const handleArtistBChange = (artistB) => setArtistB(artistB);
+    const handleArtistBChange = (artistB: any) => setArtistB(artistB);
     const artistBId = artistB[0].id;
    
     const sourceBMatches = edges.filter(i => i.source === artistBId);
@@ -271,7 +272,7 @@ export default function Home() {
     // entries count
     const recordACount = filterA.length;
 
-    function entryCount(e) {
+    function entryCount(e: any) {
       let result;
       if (e > 1) {
         result = (' ...+'+(e-1)+' more');
@@ -284,7 +285,7 @@ export default function Home() {
  
     
     // handle change event of #selectorC dropdown
-    const handleArtistCChange = (artistC) => setArtistC(artistC);
+    const handleArtistCChange = (artistC: any) => setArtistC(artistC);
     const artistCId = artistC[0].id;
    
     const sourceCMatches = edges.filter(i => i.source === artistCId);
@@ -310,12 +311,12 @@ export default function Home() {
     // entries count
     const recordBCount = filterB.length;
 
-    console.log(recordA)
+   
 
 
 
     // handle change event of #selectorD dropdown
-    const handleArtistDChange = (artistD) => setArtistD(artistD);
+    const handleArtistDChange = (artistD: any) => setArtistD(artistD);
     const artistDId = artistD[0].id;
    
     const sourceDMatches = edges.filter(i => i.source === artistDId);
@@ -344,7 +345,7 @@ export default function Home() {
 
 
     // handle change event of #selectorE dropdown
-    const handleArtistEChange = (artistE) => setArtistE(artistE);
+    const handleArtistEChange = (artistE: any) => setArtistE(artistE);
     const artistEId = artistE[0].id;
    
     const sourceEMatches = edges.filter(i => i.source === artistEId);
@@ -373,7 +374,7 @@ export default function Home() {
     
 
     // handle change event of #selectorF dropdown
-    const handleArtistFChange = (artistF) => setArtistF(artistF);
+    const handleArtistFChange = (artistF: any) => setArtistF(artistF);
     const artistFId = artistF[0].id;
    
     const sourceFMatches = edges.filter(i => i.source === artistFId);
@@ -402,7 +403,7 @@ export default function Home() {
 
 
     // handle change event of #selectorG dropdown
-    const handleArtistGChange = (artistG) => setArtistG(artistG);
+    const handleArtistGChange = (artistG: any) => setArtistG(artistG);
     const artistGId = artistG[0].id;
    
     const sourceGMatches = edges.filter(i => i.source === artistGId);
@@ -431,7 +432,7 @@ export default function Home() {
 
 
     // handle change event of #selectorH dropdown
-    const handleArtistHChange = (artistH) => setArtistH(artistH);
+    const handleArtistHChange = (artistH: any) => setArtistH(artistH);
     const artistHId = artistH[0].id;
    
     const sourceHMatches = edges.filter(i => i.source === artistHId);
@@ -460,7 +461,7 @@ export default function Home() {
 
 
     // handle change event of #selectorI dropdown
-    const handleArtistIChange = (artistI) => setArtistI(artistI);
+    const handleArtistIChange = (artistI: any) => setArtistI(artistI);
     const artistIId = artistI[0].id;
    
     const sourceIMatches = edges.filter(i => i.source === artistIId);
@@ -488,7 +489,7 @@ export default function Home() {
 
 
     // handle change event of #selectorJ dropdown
-    const handleArtistJChange = (artistJ) => setArtistJ(artistJ);
+    const handleArtistJChange = (artistJ: any) => setArtistJ(artistJ);
     const artistJId = artistJ[0].id;
    
     const sourceJMatches = edges.filter(i => i.source === artistJId);
@@ -516,7 +517,7 @@ export default function Home() {
 
 
     // handle change event of #selectorK dropdown
-    const handleArtistKChange = (artistK) => setArtistK(artistK);
+    const handleArtistKChange = (artistK: any) => setArtistK(artistK);
     const artistKId = artistK[0].id;
    
     const sourceKMatches = edges.filter(i => i.source === artistKId);
@@ -544,7 +545,7 @@ export default function Home() {
 
 
      // handle change event of #selectorL dropdown
-     const handleArtistLChange = (artistL) => setArtistL(artistL);
+     const handleArtistLChange = (artistL: any) => setArtistL(artistL);
      const artistLId = artistL[0].id;
     
      const sourceLMatches = edges.filter(i => i.source === artistLId);
@@ -573,7 +574,7 @@ export default function Home() {
 
 
       // handle change event of #selectorM dropdown
-      const handleArtistMChange = (artistM) => setArtistM(artistM);
+      const handleArtistMChange = (artistM: any) => setArtistM(artistM);
       const artistMId = artistM[0].id;
      
       const sourceMMatches = edges.filter(i => i.source === artistMId);
@@ -601,7 +602,7 @@ export default function Home() {
 
 
         // handle change event of #selectorN dropdown
-        const handleArtistNChange = (artistN) => setArtistN(artistN);
+        const handleArtistNChange = (artistN: any) => setArtistN(artistN);
         const artistNId = artistN[0].id;
        
         const sourceNMatches = edges.filter(i => i.source === artistNId);
@@ -767,95 +768,95 @@ export default function Home() {
       return <span key={i.id} className="year">({i.year})</span>
   }) }<span className="entryCount">{entryCount(recordBCount)}</span>
   </li>
-  {/* <li>{ recordC.map((i) => {
-    return <span>{i.artist_a+' & '+i.artist_b+' - '}</span>})}
+  <li>{ recordC.map((i) => {
+    return <span key={i.id}>{i.artist_a+' & '+i.artist_b+' - '}</span>})}
     { recordC.map((i) => {
-      return <span className="playlistSongs">{i.title+' '}</span>})}
+      return <span key={i.id} className="playlistSongs">{i.title+' '}</span>})}
     { recordC.map((i) => {
-      return <span className="year">({i.year})</span>
+      return <span key={i.id} className="year">({i.year})</span>
   }) }<span className="entryCount">{entryCount(recordCCount)}</span>
   </li>
   <li>{ recordD.map((i) => {
-    return <span>{i.artist_a+' & '+i.artist_b+' - '}</span>})}
+    return <span key={i.id} >{i.artist_a+' & '+i.artist_b+' - '}</span>})}
     { recordD.map((i) => {
-      return <span className="playlistSongs">{i.title+' '}</span>})}
+      return <span key={i.id} className="playlistSongs">{i.title+' '}</span>})}
     { recordD.map((i) => {
-      return <span className="year">({i.year})</span>
+      return <span key={i.id} className="year">({i.year})</span>
   }) }<span className="entryCount">{entryCount(recordDCount)}</span>
   </li>
   <li>{ recordE.map((i) => {
-    return <span>{i.artist_a+' & '+i.artist_b+' - '}</span>})}
+    return <span key={i.id}>{i.artist_a+' & '+i.artist_b+' - '}</span>})}
     { recordE.map((i) => {
-      return <span className="playlistSongs">{i.title+' '}</span>})}
+      return <span key={i.id} className="playlistSongs">{i.title+' '}</span>})}
     { recordE.map((i) => {
-      return <span className="year">({i.year})</span>
+      return <span key={i.id} className="year">({i.year})</span>
   }) }<span className="entryCount">{entryCount(recordECount)}</span>
   </li>
   <li>{ recordF.map((i) => {
-    return <span>{i.artist_a+' & '+i.artist_b+' - '}</span>})}
+    return <span key={i.id}>{i.artist_a+' & '+i.artist_b+' - '}</span>})}
     { recordF.map((i) => {
-      return <span className="playlistSongs">{i.title+' '}</span>})}
+      return <span key={i.id} className="playlistSongs">{i.title+' '}</span>})}
     { recordF.map((i) => {
-      return <span className="year">({i.year})</span>
+      return <span key={i.id} className="year">({i.year})</span>
   }) }<span className="entryCount">{entryCount(recordFCount)}</span>
   </li>
   <li className="playlist-plusSix">{ recordG.map((i) => {
-    return <span>{i.artist_a+' & '+i.artist_b+' - '}</span>})}
+    return <span key={i.id}>{i.artist_a+' & '+i.artist_b+' - '}</span>})}
     { recordG.map((i) => {
-      return <span className="playlistSongs">{i.title+' '}</span>})}
+      return <span key={i.id} className="playlistSongs">{i.title+' '}</span>})}
     { recordG.map((i) => {
-      return <span className="year">({i.year})</span>
+      return <span key={i.id} className="year">({i.year})</span>
   }) }<span className="entryCount">{entryCount(recordGCount)}</span>
   </li>
   <li className="playlist-plusSix">
     { recordH.map((i) => {
-    return <span>{i.artist_a +' & '+i.artist_b+' - '}</span>})}
+    return <span key={i.id}>{i.artist_a +' & '+i.artist_b+' - '}</span>})}
     { recordH.map((i) => {
-      return <span className="playlistSongs">{i.title+' '}</span>})}
+      return <span key={i.id} className="playlistSongs">{i.title+' '}</span>})}
     { recordH.map((i) => {
-      return <span className="year">({i.year})</span>
+      return <span key={i.id} className="year">({i.year})</span>
   }) }<span className="entryCount">{entryCount(recordHCount)}</span>
   </li>
   <li className="playlist-plusSix">{ recordI.map((i) => {
-    return <span>{i.artist_a+' & '+i.artist_b+' - '}</span>})}
+    return <span key={i.id}>{i.artist_a+' & '+i.artist_b+' - '}</span>})}
     { recordI.map((i) => {
-      return <span className="playlistSongs">{i.title+' '}</span>})}
+      return <span key={i.id} className="playlistSongs">{i.title+' '}</span>})}
     { recordI.map((i) => {
-      return <span className="year">({i.year})</span>
+      return <span key={i.id} className="year">({i.year})</span>
   }) }<span className="entryCount">{entryCount(recordICount)}</span>
   </li>
   <li className="playlist-plusSix">{ recordJ.map((i) => {
-    return <span>{i.artist_a+' & '+i.artist_b+' - '}</span>})}
+    return <span key={i.id}>{i.artist_a+' & '+i.artist_b+' - '}</span>})}
     { recordJ.map((i) => {
-      return <span className="playlistSongs">{i.title+' '}</span>})}
+      return <span key={i.id} className="playlistSongs">{i.title+' '}</span>})}
     { recordJ.map((i) => {
-      return <span className="year">({i.year})</span>
+      return <span key={i.id} className="year">({i.year})</span>
   }) }<span className="entryCount">{entryCount(recordJCount)}</span>
   </li>
   <li className="playlist-plusSix">{ recordK.map((i) => {
-    return <span>{i.artist_a+' & '+i.artist_b+' - '}</span>})}
+    return <span key={i.id}>{i.artist_a+' & '+i.artist_b+' - '}</span>})}
     { recordK.map((i) => {
-      return <span className="playlistSongs">{i.title+' '}</span>})}
+      return <span key={i.id} className="playlistSongs">{i.title+' '}</span>})}
     { recordK.map((i) => {
-      return <span className="year">({i.year})</span>
+      return <span key={i.id} className="year">({i.year})</span>
   }) }<span className="entryCount">{entryCount(recordKCount)}</span>
   </li>
   <li className="playlist-plusSix">{ recordL.map((i) => {
-    return <span>{i.artist_a+' & '+i.artist_b+' - '}</span>})}
+    return <span key={i.id}>{i.artist_a+' & '+i.artist_b+' - '}</span>})}
     { recordL.map((i) => {
-      return <span className="playlistSongs">{i.title+' '}</span>})}
+      return <span key={i.id} className="playlistSongs">{i.title+' '}</span>})}
     { recordL.map((i) => {
-      return <span className="year">({i.year})</span>
+      return <span key={i.id} className="year">({i.year})</span>
   }) }<span className="entryCount">{entryCount(recordLCount)}</span>
   </li>
   <li className="playlist-plusSix">{ recordM.map((i) => {
-    return <span>{i.artist_a+' & '+i.artist_b+' - '}</span>})}
+    return <span key={i.id}>{i.artist_a+' & '+i.artist_b+' - '}</span>})}
     { recordM.map((i) => {
-      return <span className="playlistSongs">{i.title+' '}</span>})}
+      return <span key={i.id} className="playlistSongs">{i.title+' '}</span>})}
     { recordM.map((i) => {
-      return <span className="year">({i.year})</span>
+      return <span key={i.id} className="year">({i.year})</span>
   }) }<span className="entryCount">{entryCount(recordMCount)}</span>
-  </li> */}
+  </li>
       </ul>
       </div>
     </div>

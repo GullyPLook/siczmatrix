@@ -310,6 +310,8 @@ export default function Home() {
     // entries count
     const recordBCount = filterB.length;
 
+    console.log(recordA)
+
 
 
     // handle change event of #selectorD dropdown
@@ -750,11 +752,11 @@ export default function Home() {
           {/* <li>{JSON.stringify(singleRecordA.artist_a)}</li> */}
         <li>
     { recordA.map((i) => {
-    return <span key={i.artist_a}>{i.artist_a +' & '+i.artist_b+' - '}</span>})}
+    return <span key={i.title}>{i.artist_a +' & '+i.artist_b+' - '}</span>})}
     { recordA.map((i) => {
       return <span key={i.title} className="playlistSongs">{i.title+' '}</span>})}
     { recordA.map((i) => {
-      return <span key={i.year}className="year">({i.year})</span>
+      return <span key={i.title} className="year">({i.year})</span>
   }) }<span className="entryCount">{entryCount(recordACount)}</span>
   </li>
   <li>{ recordB.map((i) => {

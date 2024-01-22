@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  background-image: url(cropped.png);
+  background-repeat: cover;
+  
+  
+
+  /* background-color: rgb(105, 107, 109); */
+}
+
+
+.Drop-titles {
+  font-weight: bold;
+  color: rgb(39, 179, 58);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20em;
+  /* padding-bottom: 0%; */
+}
+
+.Drop-titles-second-row {
+  font-weight: bold;
+  color: rgb(245, 23, 60);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0em;
+}
+
+.playlist {
+  font-weight: bold;
+  color: rgb(39, 179, 58);
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: left;
+  height: 25em;
+  padding-left: 5em;
+}
+
+.playlist-plusSix {
+  color: rgb(245, 23, 60);
+}
+.playlistSongs {
+  color: rgb(199, 201, 199);;
+}
+
+.year {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.entryCount {
+  font-weight: normal;
+  font-style: italic;
+  font-size: small;
+  color: rgb(197, 196, 196);
+}

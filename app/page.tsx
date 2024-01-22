@@ -752,22 +752,22 @@ export default function Home() {
           {/* <li>{JSON.stringify(singleRecordA.artist_a)}</li> */}
         <li>
     { recordA.map((i) => {
-    return <span key={i.title}>{i.artist_a +' & '+i.artist_b+' - '}</span>})}
+    return <span key={i.id}>{i.artist_a +' & '+i.artist_b+' - '}</span>})}
     { recordA.map((i) => {
-      return <span key={i.title} className="playlistSongs">{i.title+' '}</span>})}
+      return <span key={i.id} className="playlistSongs">{i.title+' '}</span>})}
     { recordA.map((i) => {
-      return <span key={i.title} className="year">({i.year})</span>
+      return <span key={i.id} className="year">({i.year})</span>
   }) }<span className="entryCount">{entryCount(recordACount)}</span>
   </li>
   <li>{ recordB.map((i) => {
-    return <span>{i.artist_a+' & '+i.artist_b+' - '}</span>})}
+    return <span key={i.id}>{i.artist_a+' & '+i.artist_b+' - '}</span>})}
     { recordB.map((i) => {
-      return <span className="playlistSongs">{i.title+' '}</span>})}
+      return <span key={i.id} className="playlistSongs">{i.title+' '}</span>})}
     { recordB.map((i) => {
-      return <span className="year">({i.year})</span>
+      return <span key={i.id} className="year">({i.year})</span>
   }) }<span className="entryCount">{entryCount(recordBCount)}</span>
   </li>
-  <li>{ recordC.map((i) => {
+  {/* <li>{ recordC.map((i) => {
     return <span>{i.artist_a+' & '+i.artist_b+' - '}</span>})}
     { recordC.map((i) => {
       return <span className="playlistSongs">{i.title+' '}</span>})}
@@ -855,7 +855,7 @@ export default function Home() {
     { recordM.map((i) => {
       return <span className="year">({i.year})</span>
   }) }<span className="entryCount">{entryCount(recordMCount)}</span>
-  </li>
+  </li> */}
       </ul>
       </div>
     </div>

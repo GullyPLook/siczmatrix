@@ -296,7 +296,7 @@ export default function Home() {
     };
 
     useEffect(() => {
-      artistD !== 'null' && artistE === 'null' 
+      artistD !== 'null' && artistE === 'null' && seeCongrats !== 1
       ? setSeeSelectE(true) : null
       });
       
@@ -360,7 +360,7 @@ export default function Home() {
     };
     
     useEffect(() => {
-      artistE !== 'null' && artistF === 'null' 
+      artistE !== 'null' && artistF === 'null' && seeCongrats !== 2
       ? setSeeSelectF(true) : null
       });
 
@@ -422,7 +422,7 @@ export default function Home() {
     };
     
     useEffect(() => {
-      artistF !== 'null' && artistG === 'null' 
+      artistF !== 'null' && artistG === 'null' && seeCongrats !== 3
       ? setSeeSelectG(true) : null
       });
 
@@ -484,7 +484,7 @@ export default function Home() {
     };
 
     useEffect(() => {
-      artistG !== 'null' && artistH === 'null' 
+      artistG !== 'null' && artistH === 'null' && seeCongrats !== 4
       ? setSeeSelectH(true) : null
       });
 
@@ -545,7 +545,7 @@ export default function Home() {
     };
 
     useEffect(() => {
-      artistH !== 'null' && artistI === 'null' 
+      artistH !== 'null' && artistI === 'null' && seeNiceTry !== 1
       ? setSeeSelectI(true) : null
       });
 
@@ -604,7 +604,7 @@ export default function Home() {
     };
 
     useEffect(() => {
-      artistI !== 'null' && artistJ === 'null' 
+      artistI !== 'null' && artistJ === 'null' && seeNiceTry !== 2
       ? setSeeSelectJ(true) : null
       });
 
@@ -662,7 +662,7 @@ export default function Home() {
     };
 
     useEffect(() => {
-      artistJ !== 'null' && artistK === 'null' 
+      artistJ !== 'null' && artistK === 'null' && seeNiceTry !== 3
       ? setSeeSelectK(true) : null
       });
 
@@ -719,7 +719,7 @@ export default function Home() {
     };
 
     useEffect(() => {
-      artistK !== 'null' && artistL === 'null' 
+      artistK !== 'null' && artistL === 'null' && seeNiceTry !== 4
       ? setSeeSelectL(true) : null
       });
 
@@ -775,7 +775,7 @@ export default function Home() {
     };
 
     useEffect(() => {
-      artistL !== 'null' && artistM === 'null' 
+      artistL !== 'null' && artistM === 'null' && seeNiceTry !== 5
       ? setSeeSelectM(true) : null
       });
 
@@ -830,7 +830,7 @@ export default function Home() {
       };
 
       useEffect(() => {
-        artistM !== 'null' && artistN === 'null' 
+        artistM !== 'null' && artistN === 'null' && seeNiceTry !== 6
         ? setSeeSelectN(true) : null
         });
 

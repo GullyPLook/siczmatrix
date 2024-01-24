@@ -32,13 +32,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 20em;
+  height: 18em;
   /* padding-bottom: 0%; */
 }
 
 .Drop-titles-second-row {
   font-weight: bold;
-  color: rgb(245, 23, 60);
+  color: rgb(209, 32, 106);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,7 +56,7 @@ body {
 }
 
 .playlist-plusSix {
-  color: rgb(245, 23, 60);
+  color: rgb(209, 32, 106);
 }
 .playlistSongs {
   color: rgb(199, 201, 199);;
@@ -72,4 +72,40 @@ body {
   font-style: italic;
   font-size: small;
   color: rgb(197, 196, 196);
+}
+
+.congrats {
+  font-weight: bold;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.congratMessage {
+  font-weight: bold;
+  color: rgb(39, 179, 58);
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.niceTry {
+  font-weight: bold;
+  font-size: 50px;
+  color: rgb(252, 250, 251);
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1em;
+}
+
+.niceTryMessage {
+  font-weight: bold;
+  color: rgb(209, 32, 106);
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+  
 }

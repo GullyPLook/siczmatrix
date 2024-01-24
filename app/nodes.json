@@ -36,6 +36,10 @@
         "label": "Al Green"
     },
     {
+        "id": 460,
+        "label": "Al Jarreau"
+    },
+    {
         "id": 10,
         "label": "Alain Delon"
     },
@@ -52,8 +56,16 @@
         "label": "Albin de la Simone"
     },
     {
+        "id": 590,
+        "label": "Alex Kapranos"
+    },
+    {
         "id": 14,
         "label": "Alexander O'Neal"
+    },
+    {
+        "id": 555,
+        "label": "Alice Cooper"
     },
     {
         "id": 15,
@@ -64,20 +76,44 @@
         "label": "Alltrinna Grayson"
     },
     {
+        "id": 477,
+        "label": "Alton McClain"
+    },
+    {
         "id": 17,
         "label": "Alvin Stardust"
+    },
+    {
+        "id": 475,
+        "label": "Amii Stewart"
     },
     {
         "id": 18,
         "label": "Amy Grant"
     },
     {
+        "id": 562,
+        "label": "Amy Holland"
+    },
+    {
         "id": 19,
+        "label": "Anastacia"
+    },
+    {
+        "id": 512,
         "label": "Anastacia"
     },
     {
         "id": 20,
         "label": "Andrea Bocelli"
+    },
+    {
+        "id": 576,
+        "label": "Andrew Todd Rosenthal"
+    },
+    {
+        "id": 581,
+        "label": "Andy Garcia"
     },
     {
         "id": 21,
@@ -104,6 +140,10 @@
         "label": "Ann-Louise Hanson"
     },
     {
+        "id": 540,
+        "label": "Anne Murray"
+    },
+    {
         "id": 28,
         "label": "Anni-Frid Lyngstad"
     },
@@ -116,8 +156,16 @@
         "label": "Aretha Franklin"
     },
     {
+        "id": 532,
+        "label": "Ariana Grande"
+    },
+    {
         "id": 31,
         "label": "Arlo Guthrie"
+    },
+    {
+        "id": 463,
+        "label": "Arnold McCuller"
     },
     {
         "id": 32,
@@ -136,6 +184,10 @@
         "label": "Audrey Wheeler"
     },
     {
+        "id": 458,
+        "label": "Axl Rose"
+    },
+    {
         "id": 36,
         "label": "B.A. Robertson"
     },
@@ -146,6 +198,10 @@
     {
         "id": 38,
         "label": "B.J. Thomas"
+    },
+    {
+        "id": 504,
+        "label": "Babyface"
     },
     {
         "id": 39,
@@ -192,6 +248,14 @@
         "label": "Beverly Knight"
     },
     {
+        "id": 505,
+        "label": "Beyoncé"
+    },
+    {
+        "id": 611,
+        "label": "Bianca Lindgreen"
+    },
+    {
         "id": 50,
         "label": "Bill Champlin"
     },
@@ -232,20 +296,48 @@
         "label": "Bob Seger"
     },
     {
+        "id": 469,
+        "label": "Bobby Brown"
+    },
+    {
         "id": 60,
         "label": "Bobby Caldwell"
+    },
+    {
+        "id": 588,
+        "label": "Bobby Gillespie"
+    },
+    {
+        "id": 585,
+        "label": "Bobby Hatfield"
     },
     {
         "id": 61,
         "label": "Bobby Womack"
     },
     {
+        "id": 583,
+        "label": "Bonnie Bramlett"
+    },
+    {
         "id": 62,
         "label": "Bonnie Raitt"
     },
     {
+        "id": 514,
+        "label": "Bono"
+    },
+    {
         "id": 63,
         "label": "Booker T Jones"
+    },
+    {
+        "id": 595,
+        "label": "Boudleaux Bryant"
+    },
+    {
+        "id": 470,
+        "label": "Boy George"
     },
     {
         "id": 64,
@@ -280,6 +372,10 @@
         "label": "Bruce Roberts"
     },
     {
+        "id": 507,
+        "label": "Bruce Springsteen"
+    },
+    {
         "id": 72,
         "label": "Bruce Willis"
     },
@@ -296,6 +392,10 @@
         "label": "Cameron Diaz"
     },
     {
+        "id": 574,
+        "label": "Cameron Dye"
+    },
+    {
         "id": 76,
         "label": "Candice Night"
     },
@@ -306,6 +406,10 @@
     {
         "id": 78,
         "label": "Carl Wilson"
+    },
+    {
+        "id": 561,
+        "label": "Carla Olson"
     },
     {
         "id": 79,
@@ -328,12 +432,24 @@
         "label": "Catherine Hickland"
     },
     {
+        "id": 575,
+        "label": "Catherine Mary Stewart"
+    },
+    {
+        "id": 549,
+        "label": "Catherine Ringer"
+    },
+    {
         "id": 84,
         "label": "Celine Dion"
     },
     {
         "id": 85,
         "label": "Chaka Khan"
+    },
+    {
+        "id": 568,
+        "label": "Chara"
     },
     {
         "id": 86,
@@ -348,6 +464,10 @@
         "label": "Charlotte Gainsbourg"
     },
     {
+        "id": 501,
+        "label": "Cheb Mami"
+    },
+    {
         "id": 89,
         "label": "Cher"
     },
@@ -356,8 +476,24 @@
         "label": "Cherelle"
     },
     {
+        "id": 522,
+        "label": "Cheryl Ladd"
+    },
+    {
         "id": 91,
         "label": "Cheryl Lynn"
+    },
+    {
+        "id": 592,
+        "label": "Chris de Burgh"
+    },
+    {
+        "id": 563,
+        "label": "Chris Farran"
+    },
+    {
+        "id": 531,
+        "label": "Chris Martin"
     },
     {
         "id": 92,
@@ -374,6 +510,18 @@
     {
         "id": 95,
         "label": "Christopher Cross"
+    },
+    {
+        "id": 537,
+        "label": "Cindy Wilson"
+    },
+    {
+        "id": 459,
+        "label": "Cissy Houston"
+    },
+    {
+        "id": 591,
+        "label": "Clara Luciani"
     },
     {
         "id": 96,
@@ -396,6 +544,10 @@
         "label": "Clint Black"
     },
     {
+        "id": 578,
+        "label": "Clodagh Rodgers"
+    },
+    {
         "id": 101,
         "label": "Conway Twitty"
     },
@@ -416,8 +568,20 @@
         "label": "Cy Curnin"
     },
     {
+        "id": 564,
+        "label": "Cyndi Lauper"
+    },
+    {
+        "id": 548,
+        "label": "Damon Albarn"
+    },
+    {
         "id": 106,
         "label": "Dan Hartman"
+    },
+    {
+        "id": 600,
+        "label": "Dan Seals"
     },
     {
         "id": 107,
@@ -436,6 +600,10 @@
         "label": "David Bowie"
     },
     {
+        "id": 584,
+        "label": "David Crosby"
+    },
+    {
         "id": 111,
         "label": "David Foster"
     },
@@ -452,6 +620,10 @@
         "label": "Dean Martin"
     },
     {
+        "id": 536,
+        "label": "Deborah Harry"
+    },
+    {
         "id": 115,
         "label": "Debra Byrd"
     },
@@ -464,8 +636,16 @@
         "label": "Degarmo & Key"
     },
     {
+        "id": 586,
+        "label": "Delaney Bramlett"
+    },
+    {
         "id": 118,
         "label": "Deniece Williams"
+    },
+    {
+        "id": 603,
+        "label": "Denise Draper"
     },
     {
         "id": 119,
@@ -484,6 +664,10 @@
         "label": "Diana Ross"
     },
     {
+        "id": 454,
+        "label": "Dick Haymes"
+    },
+    {
         "id": 123,
         "label": "Dinah Shore"
     },
@@ -500,6 +684,10 @@
         "label": "Dolly Parton"
     },
     {
+        "id": 502,
+        "label": "Dolores O'Riordan"
+    },
+    {
         "id": 127,
         "label": "Don Henley"
     },
@@ -512,8 +700,16 @@
         "label": "Donny Hathaway"
     },
     {
+        "id": 605,
+        "label": "Donovan"
+    },
+    {
         "id": 130,
         "label": "Dottie West"
+    },
+    {
+        "id": 488,
+        "label": "Dr John"
     },
     {
         "id": 131,
@@ -564,6 +760,10 @@
         "label": "Elton John"
     },
     {
+        "id": 521,
+        "label": "Elvis Costello"
+    },
+    {
         "id": 143,
         "label": "Elvis Presley"
     },
@@ -592,6 +792,10 @@
         "label": "Eros Ramazzotti"
     },
     {
+        "id": 487,
+        "label": "Etta James"
+    },
+    {
         "id": 150,
         "label": "Eugene Wilde"
     },
@@ -602,6 +806,14 @@
     {
         "id": 152,
         "label": "Falco"
+    },
+    {
+        "id": 596,
+        "label": "Felice Bryant"
+    },
+    {
+        "id": 500,
+        "label": "Fher Olvera"
     },
     {
         "id": 153,
@@ -620,12 +832,24 @@
         "label": "Francis Rossi"
     },
     {
+        "id": 546,
+        "label": "Françoise Hardy"
+    },
+    {
+        "id": 518,
+        "label": "Frank Black"
+    },
+    {
         "id": 157,
         "label": "Frank Sinatra"
     },
     {
         "id": 158,
         "label": "Frankie Miller"
+    },
+    {
+        "id": 541,
+        "label": "Fred Schneider"
     },
     {
         "id": 159,
@@ -638,6 +862,14 @@
     {
         "id": 161,
         "label": "Gary Barlow"
+    },
+    {
+        "id": 524,
+        "label": "Gary Moore"
+    },
+    {
+        "id": 560,
+        "label": "Gene Clark"
     },
     {
         "id": 162,
@@ -656,6 +888,10 @@
         "label": "George Michael"
     },
     {
+        "id": 519,
+        "label": "Georgette Jones"
+    },
+    {
         "id": 166,
         "label": "Georgie Fame"
     },
@@ -672,12 +908,28 @@
         "label": "Glen Campbell"
     },
     {
+        "id": 526,
+        "label": "Glen Jones"
+    },
+    {
+        "id": 452,
+        "label": "Glenn Hoddle"
+    },
+    {
         "id": 170,
         "label": "Gloria Loring"
     },
     {
+        "id": 550,
+        "label": "Grace Jones"
+    },
+    {
         "id": 171,
         "label": "Gregg Allman"
+    },
+    {
+        "id": 464,
+        "label": "Grover Kemble"
     },
     {
         "id": 172,
@@ -696,6 +948,10 @@
         "label": "Heather Headley"
     },
     {
+        "id": 453,
+        "label": "Helen Forrest"
+    },
+    {
         "id": 176,
         "label": "Helen Terry"
     },
@@ -712,8 +968,20 @@
         "label": "Holly Knight"
     },
     {
+        "id": 597,
+        "label": "Hoyt Axton"
+    },
+    {
         "id": 180,
         "label": "Huey Lewis"
+    },
+    {
+        "id": 534,
+        "label": "Iggy Pop"
+    },
+    {
+        "id": 559,
+        "label": "Imelda May"
     },
     {
         "id": 181,
@@ -740,6 +1008,10 @@
         "label": "James Brown"
     },
     {
+        "id": 482,
+        "label": "James Dean Bradfield"
+    },
+    {
         "id": 187,
         "label": "James Ingram"
     },
@@ -756,12 +1028,28 @@
         "label": "Jane Olivor"
     },
     {
+        "id": 552,
+        "label": "Jane Wiedlin"
+    },
+    {
         "id": 191,
         "label": "Janet Jackson"
     },
     {
+        "id": 615,
+        "label": "Jarvis Cocker"
+    },
+    {
+        "id": 492,
+        "label": "Jason Donovan"
+    },
+    {
         "id": 192,
         "label": "Jay Z"
+    },
+    {
+        "id": 608,
+        "label": "Jeanette Biedermann"
     },
     {
         "id": 193,
@@ -788,6 +1076,14 @@
         "label": "Jermaine Jackson"
     },
     {
+        "id": 572,
+        "label": "Jerry Lee Lewis"
+    },
+    {
+        "id": 462,
+        "label": "Jerry Nelson"
+    },
+    {
         "id": 199,
         "label": "Jesse Johnson"
     },
@@ -802,6 +1098,14 @@
     {
         "id": 202,
         "label": "Jimmy Barnes"
+    },
+    {
+        "id": 553,
+        "label": "Jimmy Sommerville"
+    },
+    {
+        "id": 509,
+        "label": "Jimmy Webb"
     },
     {
         "id": 203,
@@ -824,6 +1128,10 @@
         "label": "Joe Cocker"
     },
     {
+        "id": 508,
+        "label": "Joe Diffie"
+    },
+    {
         "id": 208,
         "label": "Joe Esposito"
     },
@@ -834,6 +1142,10 @@
     {
         "id": 210,
         "label": "Joe Lynn Turner"
+    },
+    {
+        "id": 547,
+        "label": "Joey Ramone"
     },
     {
         "id": 211,
@@ -864,6 +1176,10 @@
         "label": "John Travolta"
     },
     {
+        "id": 473,
+        "label": "Johnny Bristol"
+    },
+    {
         "id": 218,
         "label": "Johnny Cash"
     },
@@ -878,6 +1194,14 @@
     {
         "id": 221,
         "label": "Johnny Mathis"
+    },
+    {
+        "id": 465,
+        "label": "Johnny Schaefer"
+    },
+    {
+        "id": 506,
+        "label": "Jon Bon Jovi"
     },
     {
         "id": 222,
@@ -904,6 +1228,18 @@
         "label": "Judy Clay"
     },
     {
+        "id": 511,
+        "label": "Judy Garland"
+    },
+    {
+        "id": 455,
+        "label": "Juice Newton"
+    },
+    {
+        "id": 486,
+        "label": "Julia Cumming"
+    },
+    {
         "id": 228,
         "label": "Julie Christensen"
     },
@@ -914,6 +1250,10 @@
     {
         "id": 230,
         "label": "June Carter"
+    },
+    {
+        "id": 557,
+        "label": "June MIles-Kingston"
     },
     {
         "id": 231,
@@ -936,6 +1276,10 @@
         "label": "Karel Gott"
     },
     {
+        "id": 602,
+        "label": "Karla Devito"
+    },
+    {
         "id": 236,
         "label": "Karyn White"
     },
@@ -944,12 +1288,40 @@
         "label": "Kate Bush"
     },
     {
+        "id": 589,
+        "label": "Kate Moss"
+    },
+    {
+        "id": 535,
+        "label": "Kate Pierson"
+    },
+    {
+        "id": 580,
+        "label": "Kathi McDonald"
+    },
+    {
+        "id": 571,
+        "label": "Keith Richards"
+    },
+    {
         "id": 238,
         "label": "Keith Washington"
     },
     {
+        "id": 609,
+        "label": "Keke Wyatt"
+    },
+    {
+        "id": 558,
+        "label": "Kelli Ali"
+    },
+    {
         "id": 239,
         "label": "Kelly Osbourne"
+    },
+    {
+        "id": 582,
+        "label": "Ken Takakura"
     },
     {
         "id": 240,
@@ -962,6 +1334,10 @@
     {
         "id": 242,
         "label": "Kenny Rogers"
+    },
+    {
+        "id": 577,
+        "label": "Kenny Young"
     },
     {
         "id": 243,
@@ -978,6 +1354,10 @@
     {
         "id": 246,
         "label": "Kim Weston"
+    },
+    {
+        "id": 480,
+        "label": "Kim Wilde"
     },
     {
         "id": 247,
@@ -1024,12 +1404,20 @@
         "label": "Lee Hazlewood"
     },
     {
+        "id": 613,
+        "label": "Lene Siel"
+    },
+    {
         "id": 258,
         "label": "Lenny Kravitz"
     },
     {
         "id": 259,
         "label": "Lily Tomlin"
+    },
+    {
+        "id": 474,
+        "label": "Linda Evans"
     },
     {
         "id": 260,
@@ -1060,6 +1448,10 @@
         "label": "Lisa Silver"
     },
     {
+        "id": 527,
+        "label": "Lisa Stansfield"
+    },
+    {
         "id": 267,
         "label": "Lita Ford"
     },
@@ -1082,6 +1474,14 @@
     {
         "id": 272,
         "label": "Lola Jean Dillon"
+    },
+    {
+        "id": 481,
+        "label": "Lola Lennox"
+    },
+    {
+        "id": 579,
+        "label": "Long John Baldry"
     },
     {
         "id": 273,
@@ -1124,12 +1524,32 @@
         "label": "Lyle Lovett"
     },
     {
+        "id": 497,
+        "label": "Macy Gray"
+    },
+    {
         "id": 283,
         "label": "Madonna"
     },
     {
+        "id": 513,
+        "label": "Máire Brennan"
+    },
+    {
+        "id": 556,
+        "label": "Marc Almond"
+    },
+    {
+        "id": 478,
+        "label": "Mareva Galanter"
+    },
+    {
         "id": 284,
         "label": "Mariah Carey"
+    },
+    {
+        "id": 495,
+        "label": "Marianne Faithful"
     },
     {
         "id": 285,
@@ -1164,8 +1584,20 @@
         "label": "Martina McBride"
     },
     {
+        "id": 604,
+        "label": "Marty Robbins"
+    },
+    {
         "id": 293,
         "label": "Marvin Gaye"
+    },
+    {
+        "id": 467,
+        "label": "Mary J. Blige"
+    },
+    {
+        "id": 466,
+        "label": "Mary Wells"
     },
     {
         "id": 294,
@@ -1208,6 +1640,10 @@
         "label": "Melba Moore"
     },
     {
+        "id": 461,
+        "label": "Melissa Manchester"
+    },
+    {
         "id": 305,
         "label": "Merle Haggard"
     },
@@ -1230,6 +1666,10 @@
     {
         "id": 310,
         "label": "Michael Franks"
+    },
+    {
+        "id": 516,
+        "label": "Michael Hutchence"
     },
     {
         "id": 311,
@@ -1256,6 +1696,10 @@
         "label": "Michael W. Smith"
     },
     {
+        "id": 489,
+        "label": "Mick Hucknall"
+    },
+    {
         "id": 317,
         "label": "Mick Jagger"
     },
@@ -1272,6 +1716,10 @@
         "label": "Miguel"
     },
     {
+        "id": 554,
+        "label": "Mike Patton"
+    },
+    {
         "id": 321,
         "label": "MIke Reno"
     },
@@ -1280,16 +1728,36 @@
         "label": "Mike Sherwood"
     },
     {
+        "id": 614,
+        "label": "Miki Berenyi"
+    },
+    {
         "id": 323,
         "label": "Millie Jackson"
+    },
+    {
+        "id": 607,
+        "label": "Mimi Fariña"
     },
     {
         "id": 324,
         "label": "Mireille Mathieu"
     },
     {
+        "id": 566,
+        "label": "Miss Guy"
+    },
+    {
         "id": 325,
         "label": "Monica"
+    },
+    {
+        "id": 523,
+        "label": "Montell Jordan"
+    },
+    {
+        "id": 456,
+        "label": "Montserrat Caballé"
     },
     {
         "id": 326,
@@ -1336,6 +1804,10 @@
         "label": "Nickie Ryder"
     },
     {
+        "id": 570,
+        "label": "Niclas Frisk"
+    },
+    {
         "id": 337,
         "label": "Nicole Kidman"
     },
@@ -1348,12 +1820,24 @@
         "label": "Nicolette Larson"
     },
     {
+        "id": 483,
+        "label": "Nina Persson"
+    },
+    {
         "id": 340,
         "label": "Nona Gaye"
     },
     {
+        "id": 573,
+        "label": "Norah Jones"
+    },
+    {
         "id": 341,
         "label": "Ola Hakansson"
+    },
+    {
+        "id": 471,
+        "label": "Oleta Adams"
     },
     {
         "id": 342,
@@ -1380,6 +1864,10 @@
         "label": "Ozzy Osbourne"
     },
     {
+        "id": 510,
+        "label": "Paddy McAloon"
+    },
+    {
         "id": 348,
         "label": "Patricia Lewis"
     },
@@ -1404,6 +1892,10 @@
         "label": "Pattie Brooks"
     },
     {
+        "id": 601,
+        "label": "Paul Anka"
+    },
+    {
         "id": 354,
         "label": "Paul Carrack"
     },
@@ -1420,6 +1912,14 @@
         "label": "Paul McCartney"
     },
     {
+        "id": 490,
+        "label": "Paul Simon"
+    },
+    {
+        "id": 479,
+        "label": "Paul Weller"
+    },
+    {
         "id": 358,
         "label": "Paul Young"
     },
@@ -1432,12 +1932,20 @@
         "label": "Peabo Bryson"
     },
     {
+        "id": 544,
+        "label": "Peaches"
+    },
+    {
         "id": 362,
         "label": "Peggy Lee"
     },
     {
         "id": 363,
         "label": "Peggy Scott"
+    },
+    {
+        "id": 542,
+        "label": "Perry Farrell"
     },
     {
         "id": 364,
@@ -1452,6 +1960,10 @@
         "label": "Peter Gabriel"
     },
     {
+        "id": 538,
+        "label": "Peter Jöback"
+    },
+    {
         "id": 367,
         "label": "Pheobe Cates"
     },
@@ -1462,6 +1974,10 @@
     {
         "id": 369,
         "label": "Phil Everly"
+    },
+    {
+        "id": 529,
+        "label": "Phil Keaggy"
     },
     {
         "id": 370,
@@ -1484,6 +2000,14 @@
         "label": "Prince"
     },
     {
+        "id": 491,
+        "label": "Prince Be"
+    },
+    {
+        "id": 528,
+        "label": "Randy Stonehill"
+    },
+    {
         "id": 375,
         "label": "Randy Travis"
     },
@@ -1496,12 +2020,20 @@
         "label": "Ray Parker Jr."
     },
     {
+        "id": 517,
+        "label": "Red Foley"
+    },
+    {
         "id": 378,
         "label": "Regina Belle"
     },
     {
         "id": 379,
         "label": "Regine Velasquez"
+    },
+    {
+        "id": 606,
+        "label": "Richard Fariña"
     },
     {
         "id": 380,
@@ -1520,12 +2052,20 @@
         "label": "Ricky Martin"
     },
     {
+        "id": 599,
+        "label": "Ringo"
+    },
+    {
         "id": 384,
         "label": "Rita Coolidge"
     },
     {
         "id": 385,
         "label": "Robbie Williams"
+    },
+    {
+        "id": 494,
+        "label": "Robert Smith"
     },
     {
         "id": 386,
@@ -1540,6 +2080,14 @@
         "label": "Robyn"
     },
     {
+        "id": 612,
+        "label": "Rocio Banquells"
+    },
+    {
+        "id": 457,
+        "label": "Rod Stewart"
+    },
+    {
         "id": 389,
         "label": "Roger Daltrey"
     },
@@ -1548,8 +2096,24 @@
         "label": "Roger St. Kenerly"
     },
     {
+        "id": 472,
+        "label": "Roland Orzabal"
+    },
+    {
+        "id": 503,
+        "label": "Ronan Keating"
+    },
+    {
+        "id": 525,
+        "label": "Ronnie McNeir"
+    },
+    {
         "id": 391,
         "label": "Ronnie Milsap"
+    },
+    {
+        "id": 567,
+        "label": "Ronnie Spector"
     },
     {
         "id": 392,
@@ -1558,6 +2122,10 @@
     {
         "id": 393,
         "label": "Roy Harper"
+    },
+    {
+        "id": 610,
+        "label": "Ruben Studdard"
     },
     {
         "id": 394,
@@ -1570,6 +2138,10 @@
     {
         "id": 396,
         "label": "Rupert Holmes"
+    },
+    {
+        "id": 551,
+        "label": "Russell Mael"
     },
     {
         "id": 397,
@@ -1600,6 +2172,10 @@
         "label": "Shaggy"
     },
     {
+        "id": 515,
+        "label": "Shane MacGowan"
+    },
+    {
         "id": 404,
         "label": "Shania Twain"
     },
@@ -1608,12 +2184,28 @@
         "label": "Shanice"
     },
     {
+        "id": 476,
+        "label": "Shanna J. Bristol"
+    },
+    {
         "id": 406,
         "label": "Sheena Easton"
     },
     {
+        "id": 598,
+        "label": "Sheila"
+    },
+    {
         "id": 407,
         "label": "Sheila Walsh"
+    },
+    {
+        "id": 593,
+        "label": "Shelley Nelson"
+    },
+    {
+        "id": 499,
+        "label": "Sheryl Crow"
     },
     {
         "id": 408,
@@ -1628,6 +2220,10 @@
         "label": "Sinead O'Connor"
     },
     {
+        "id": 543,
+        "label": "Sissel Kyrkjebø"
+    },
+    {
         "id": 411,
         "label": "Sly Stone"
     },
@@ -1638,6 +2234,10 @@
     {
         "id": 413,
         "label": "Snoop Dogg"
+    },
+    {
+        "id": 498,
+        "label": "Solomon Burke"
     },
     {
         "id": 414,
@@ -1668,12 +2268,24 @@
         "label": "Stevie Wonder"
     },
     {
+        "id": 496,
+        "label": "Sting"
+    },
+    {
         "id": 421,
         "label": "Stormie Omartian"
     },
     {
         "id": 422,
         "label": "Susanna Hoffs"
+    },
+    {
+        "id": 530,
+        "label": "Suzanne Vega"
+    },
+    {
+        "id": 587,
+        "label": "Suzi Jane Hokum"
     },
     {
         "id": 423,
@@ -1716,8 +2328,16 @@
         "label": "Thelma Houston"
     },
     {
+        "id": 520,
+        "label": "Tina Byrd"
+    },
+    {
         "id": 434,
         "label": "Tina Turner"
+    },
+    {
+        "id": 485,
+        "label": "Tom Jones"
     },
     {
         "id": 435,
@@ -1732,6 +2352,30 @@
         "label": "Tomas Ledin"
     },
     {
+        "id": 545,
+        "label": "Tone Lōc"
+    },
+    {
+        "id": 468,
+        "label": "Toni Braxton"
+    },
+    {
+        "id": 493,
+        "label": "Tony Bennett"
+    },
+    {
+        "id": 533,
+        "label": "Tori Kelly"
+    },
+    {
+        "id": 539,
+        "label": "Towe Jaarnek"
+    },
+    {
+        "id": 484,
+        "label": "Traci Lords"
+    },
+    {
         "id": 438,
         "label": "Trisha Yearwood"
     },
@@ -1744,8 +2388,16 @@
         "label": "Vanessa Paradis"
     },
     {
+        "id": 565,
+        "label": "Vicentico"
+    },
+    {
         "id": 441,
         "label": "Vicki Brown"
+    },
+    {
+        "id": 594,
+        "label": "Vicky Leandros"
     },
     {
         "id": 442,
@@ -1784,631 +2436,11 @@
         "label": "Youssou N'Dour"
     },
     {
+        "id": 569,
+        "label": "Yuki"
+    },
+    {
         "id": 451,
         "label": "Zucchero"
-    },
-    {
-        "id": 452,
-        "label": "Glenn Hoddle"
-    },
-    {
-        "id": 453,
-        "label": "Helen Forrest"
-    },
-    {
-        "id": 454,
-        "label": "Dick Haymes"
-    },
-    {
-        "id": 455,
-        "label": "Juice Newton"
-    },
-    {
-        "id": 456,
-        "label": "Montserrat Caballé"
-    },
-    {
-        "id": 457,
-        "label": "Rod Stewart"
-    },
-    {
-        "id": 458,
-        "label": "Axl Rose"
-    },
-    {
-        "id": 459,
-        "label": "Cissy Houston"
-    },
-    {
-        "id": 460,
-        "label": "Al Jarreau"
-    },
-    {
-        "id": 461,
-        "label": "Melissa Manchester"
-    },
-    {
-        "id": 462,
-        "label": "Jerry Nelson"
-    },
-    {
-        "id": 463,
-        "label": "Arnold McCuller"
-    },
-    {
-        "id": 464,
-        "label": "Grover Kemble"
-    },
-    {
-        "id": 465,
-        "label": "Johnny Schaefer"
-    },
-    {
-        "id": 466,
-        "label": "Mary Wells"
-    },
-    {
-        "id": 467,
-        "label": "Mary J. Blige"
-    },
-    {
-        "id": 468,
-        "label": "Toni Braxton"
-    },
-    {
-        "id": 469,
-        "label": "Bobby Brown"
-    },
-    {
-        "id": 470,
-        "label": "Boy George"
-    },
-    {
-        "id": 471,
-        "label": "Oleta Adams"
-    },
-    {
-        "id": 472,
-        "label": "Roland Orzabal"
-    },
-    {
-        "id": 473,
-        "label": "Johnny Bristol"
-    },
-    {
-        "id": 474,
-        "label": "Linda Evans"
-    },
-    {
-        "id": 475,
-        "label": "Amii Stewart"
-    },
-    {
-        "id": 476,
-        "label": "Shanna J. Bristol"
-    },
-    {
-        "id": 477,
-        "label": "Alton McClain"
-    },
-    {
-        "id": 478,
-        "label": "Mareva Galanter"
-    },
-    {
-        "id": 479,
-        "label": "Paul Weller"
-    },
-    {
-        "id": 480,
-        "label": "Kim Wilde"
-    },
-    {
-        "id": 481,
-        "label": "Lola Lennox"
-    },
-    {
-        "id": 482,
-        "label": "James Dean Bradfield"
-    },
-    {
-        "id": 483,
-        "label": "Nina Persson"
-    },
-    {
-        "id": 484,
-        "label": "Traci Lords"
-    },
-    {
-        "id": 485,
-        "label": "Tom Jones"
-    },
-    {
-        "id": 486,
-        "label": "Julia Cumming"
-    },
-    {
-        "id": 487,
-        "label": "Etta James"
-    },
-    {
-        "id": 488,
-        "label": "Dr John"
-    },
-    {
-        "id": 489,
-        "label": "Mick Hucknall"
-    },
-    {
-        "id": 490,
-        "label": "Paul Simon"
-    },
-    {
-        "id": 491,
-        "label": "Prince Be"
-    },
-    {
-        "id": 492,
-        "label": "Jason Donovan"
-    },
-    {
-        "id": 493,
-        "label": "Tony Bennett"
-    },
-    {
-        "id": 494,
-        "label": "Robert Smith"
-    },
-    {
-        "id": 495,
-        "label": "Marianne Faithful"
-    },
-    {
-        "id": 496,
-        "label": "Sting"
-    },
-    {
-        "id": 497,
-        "label": "Macy Gray"
-    },
-    {
-        "id": 498,
-        "label": "Solomon Burke"
-    },
-    {
-        "id": 499,
-        "label": "Sheryl Crow"
-    },
-    {
-        "id": 500,
-        "label": "Fher Olvera"
-    },
-    {
-        "id": 501,
-        "label": "Cheb Mami"
-    },
-    {
-        "id": 502,
-        "label": "Dolores O'Riordan"
-    },
-    {
-        "id": 503,
-        "label": "Ronan Keating"
-    },
-    {
-        "id": 504,
-        "label": "Babyface"
-    },
-    {
-        "id": 505,
-        "label": "Beyoncé"
-    },
-    {
-        "id": 506,
-        "label": "Jon Bon Jovi"
-    },
-    {
-        "id": 507,
-        "label": "Bruce Springsteen"
-    },
-    {
-        "id": 508,
-        "label": "Joe Diffie"
-    },
-    {
-        "id": 509,
-        "label": "Jimmy Webb"
-    },
-    {
-        "id": 510,
-        "label": "Paddy McAloon"
-    },
-    {
-        "id": 511,
-        "label": "Judy Garland"
-    },
-    {
-        "id": 512,
-        "label": "Anastacia"
-    },
-    {
-        "id": 513,
-        "label": "Máire Brennan"
-    },
-    {
-        "id": 514,
-        "label": "Bono"
-    },
-    {
-        "id": 515,
-        "label": "Shane MacGowan"
-    },
-    {
-        "id": 516,
-        "label": "Michael Hutchence"
-    },
-    {
-        "id": 517,
-        "label": "Red Foley"
-    },
-    {
-        "id": 518,
-        "label": "Frank Black"
-    },
-    {
-        "id": 519,
-        "label": "Georgette Jones"
-    },
-    {
-        "id": 520,
-        "label": "Tina Byrd"
-    },
-    {
-        "id": 521,
-        "label": "Elvis Costello"
-    },
-    {
-        "id": 522,
-        "label": "Cheryl Ladd"
-    },
-    {
-        "id": 523,
-        "label": "Montell Jordan"
-    },
-    {
-        "id": 524,
-        "label": "Gary Moore"
-    },
-    {
-        "id": 525,
-        "label": "Ronnie McNeir"
-    },
-    {
-        "id": 526,
-        "label": "Glen Jones"
-    },
-    {
-        "id": 527,
-        "label": "Lisa Stansfield"
-    },
-    {
-        "id": 528,
-        "label": "Randy Stonehill"
-    },
-    {
-        "id": 529,
-        "label": "Phil Keaggy"
-    },
-    {
-        "id": 530,
-        "label": "Suzanne Vega"
-    },
-    {
-        "id": 531,
-        "label": "Chris Martin"
-    },
-    {
-        "id": 532,
-        "label": "Ariana Grande"
-    },
-    {
-        "id": 533,
-        "label": "Tori Kelly"
-    },
-    {
-        "id": 534,
-        "label": "Iggy Pop"
-    },
-    {
-        "id": 535,
-        "label": "Kate Pierson"
-    },
-    {
-        "id": 536,
-        "label": "Deborah Harry"
-    },
-    {
-        "id": 537,
-        "label": "Cindy Wilson"
-    },
-    {
-        "id": 538,
-        "label": "Peter Jöback"
-    },
-    {
-        "id": 539,
-        "label": "Towe Jaarnek"
-    },
-    {
-        "id": 540,
-        "label": "Anne Murray"
-    },
-    {
-        "id": 541,
-        "label": "Fred Schneider"
-    },
-    {
-        "id": 542,
-        "label": "Perry Farrell"
-    },
-    {
-        "id": 543,
-        "label": "Sissel Kyrkjebø"
-    },
-    {
-        "id": 544,
-        "label": "Peaches"
-    },
-    {
-        "id": 545,
-        "label": "Tone Lōc"
-    },
-    {
-        "id": 546,
-        "label": "Françoise Hardy"
-    },
-    {
-        "id": 547,
-        "label": "Joey Ramone"
-    },
-    {
-        "id": 548,
-        "label": "Damon Albarn"
-    },
-    {
-        "id": 549,
-        "label": "Catherine Ringer"
-    },
-    {
-        "id": 550,
-        "label": "Grace Jones"
-    },
-    {
-        "id": 551,
-        "label": "Russell Mael"
-    },
-    {
-        "id": 552,
-        "label": "Jane Wiedlin"
-    },
-    {
-        "id": 553,
-        "label": "Jimmy Sommerville"
-    },
-    {
-        "id": 554,
-        "label": "Mike Patton"
-    },
-    {
-        "id": 555,
-        "label": "Alice Cooper"
-    },
-    {
-        "id": 556,
-        "label": "Marc Almond"
-    },
-    {
-        "id": 557,
-        "label": "June MIles-Kingston"
-    },
-    {
-        "id": 558,
-        "label": "Kelli Ali"
-    },
-    {
-        "id": 559,
-        "label": "Imelda May"
-    },
-    {
-        "id": 560,
-        "label": "Gene Clark"
-    },
-    {
-        "id": 561,
-        "label": "Carla Olson"
-    },
-    {
-        "id": 562,
-        "label": "Amy Holland"
-    },
-    {
-        "id": 563,
-        "label": "Chris Farran"
-    },
-    {
-        "id": 564,
-        "label": "Cyndi Lauper"
-    },
-    {
-        "id": 565,
-        "label": "Vicentico"
-    },
-    {
-        "id": 566,
-        "label": "Miss Guy"
-    },
-    {
-        "id": 567,
-        "label": "Ronnie Spector"
-    },
-    {
-        "id": 568,
-        "label": "Chara"
-    },
-    {
-        "id": 569,
-        "label": "Isoya Yuki "
-    },
-    {
-        "id": 570,
-        "label": "Niclas Frisk"
-    },
-    {
-        "id": 571,
-        "label": "Keith Richards"
-    },
-    {
-        "id": 572,
-        "label": "Jerry Lee Lewis"
-    },
-    {
-        "id": 573,
-        "label": "Norah Jones"
-    },
-    {
-        "id": 574,
-        "label": "Cameron Dye"
-    },
-    {
-        "id": 575,
-        "label": "Catherine Mary Stewart"
-    },
-    {
-        "id": 576,
-        "label": "Andrew Todd Rosenthal"
-    },
-    {
-        "id": 577,
-        "label": "Kenny Young"
-    },
-    {
-        "id": 578,
-        "label": "Clodagh Rodgers"
-    },
-    {
-        "id": 579,
-        "label": "Long John Baldry"
-    },
-    {
-        "id": 580,
-        "label": "Kathi McDonald"
-    },
-    {
-        "id": 581,
-        "label": "Andy Garcia"
-    },
-    {
-        "id": 582,
-        "label": "Ken Takakura"
-    },
-    {
-        "id": 583,
-        "label": "Bonnie Bramlett"
-    },
-    {
-        "id": 584,
-        "label": "David Crosby"
-    },
-    {
-        "id": 585,
-        "label": "Bobby Hatfield"
-    },
-    {
-        "id": 586,
-        "label": "Delaney Bramlett"
-    },
-    {
-        "id": 587,
-        "label": "Suzi Jane Hokum"
-    },
-    {
-        "id": 588,
-        "label": "Bobby Gillespie"
-    },
-    {
-        "id": 589,
-        "label": "Kate Moss"
-    },
-    {
-        "id": 590,
-        "label": "Alex Kapranos"
-    },
-    {
-        "id": 591,
-        "label": "Clara Luciani"
-    },
-    {
-        "id": 592,
-        "label": "Chris de Burgh"
-    },
-    {
-        "id": 593,
-        "label": "Shelley Nelson"
-    },
-    {
-        "id": 594,
-        "label": "Vicky Leandros"
-    },
-    {
-        "id": 595,
-        "label": "Boudleaux Bryant"
-    },
-    {
-        "id": 596,
-        "label": "Felice Bryant"
-    },
-    {
-        "id": 597,
-        "label": "Hoyt Axton"
-    },
-    {
-        "id": 598,
-        "label": "Sheila"
-    },
-    {
-        "id": 599,
-        "label": "Ringo"
-    },
-    {
-        "id": 600,
-        "label": "Dan Seals"
-    },
-    {
-        "id": 601,
-        "label": "Paul Anka"
-    },
-    {
-        "id": 602,
-        "label": "Karla Devito"
-    },
-    {
-        "id": 603,
-        "label": "Denise Draper"
-    },
-    {
-        "id": 604,
-        "label": "Marty Robbins"
-    },
-    {
-        "id": 605,
-        "label": "Donovan"
-    },
-    {
-        "id": 606,
-        "label": "Richard Fariña"
-    },
-    {
-        "id": 607,
-        "label": "Mimi Fariña"
     }
 ]

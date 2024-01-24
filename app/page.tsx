@@ -37,8 +37,12 @@ export default function Home() {
     const [seeSelectL, setSeeSelectL] = useState(false);
     const [seeSelectM, setSeeSelectM] = useState(false);
     const [seeSelectN, setSeeSelectN] = useState(false);
+    const [seeInstructions, setSeeInstructions] = useState(true);
+    const [seeCongrats, setSeeCongrats] = useState<number>(0);
+    const [seeNiceTry, setSeeNiceTry] = useState<number>(0);
 
     const [playlist, setPlaylist] = useState(false);
+    const [loopCheck, setLoopCheck] = useState(false);
 
     const handleDropCloseA = () => {
       setArtistB('null') 
@@ -55,6 +59,8 @@ export default function Home() {
       setArtistM('null')
       setArtistN('null')
       setSeeSelectB(false)
+      setSeeCongrats(0)
+      setSeeNiceTry(0)
     };
     const handleDropCloseB = () => {
       setArtistC('null')
@@ -69,7 +75,10 @@ export default function Home() {
       setArtistL('null')
       setArtistM('null')
       setArtistN('null')
+      setSeeInstructions(false)
       setSeeSelectC(false)
+      setSeeCongrats(0)
+      setSeeNiceTry(0)
     };
     const handleDropCloseC = () => {
       setArtistD('null')
@@ -84,6 +93,8 @@ export default function Home() {
       setArtistM('null')
       setArtistN('null')
       setSeeSelectD(false)
+      setSeeCongrats(0)
+      setSeeNiceTry(0)
     };
     const handleDropCloseD = () => {
       setArtistE('null')
@@ -97,6 +108,9 @@ export default function Home() {
         setArtistM('null')
         setArtistN('null')
       setSeeSelectE(false)
+      setSeeNiceTry(0)
+      
+      
     };
     const handleDropCloseE = () => {
       setArtistF('null')
@@ -109,6 +123,8 @@ export default function Home() {
       setArtistM('null')
       setArtistN('null')
       setSeeSelectF(false)
+      setSeeNiceTry(0)
+      
     };
     const handleDropCloseF = () => {
       setArtistG('null')
@@ -120,6 +136,7 @@ export default function Home() {
       setArtistM('null')
       setArtistN('null')
       setSeeSelectG(false)
+      setSeeNiceTry(0)
     };
     const handleDropCloseG = () => {
       setArtistH('null')
@@ -130,6 +147,7 @@ export default function Home() {
       setArtistM('null')
       setArtistN('null')
       setSeeSelectH(false)
+      setSeeNiceTry(0)
     };
     const handleDropCloseH = () => {
       setArtistI('null')
@@ -139,6 +157,7 @@ export default function Home() {
       setArtistM('null')
       setArtistN('null')
       setSeeSelectI(false)
+      
     };
     const handleDropCloseI = () => {
       setArtistJ('null')
@@ -224,14 +243,37 @@ export default function Home() {
       seeSelectF, seeSelectG, seeSelectH, 
       seeSelectI, seeSelectJ, seeSelectK, 
       seeSelectL, seeSelectM, seeSelectN]);
+
+    useEffect(() => {
+      seeCongrats === 1 
+      ? setSeeSelectE(false) : null;
+      seeCongrats === 2 
+      ? setSeeSelectF(false) : null;
+      seeCongrats === 3 
+      ? setSeeSelectG(false) : null;
+      seeCongrats === 4 
+      ? setSeeSelectH(false) : null;
+    });
     
-    
-    
+    useEffect(() => {
+      seeNiceTry === 1 
+      ? setSeeSelectI(false) : null;
+      seeNiceTry === 2 
+      ? setSeeSelectJ(false) : null;
+      seeNiceTry === 3 
+      ? setSeeSelectK(false) : null;
+      seeNiceTry === 4 
+      ? setSeeSelectL(false) : null;
+      seeNiceTry === 5 
+      ? setSeeSelectM(false) : null;
+      seeNiceTry === 6 
+      ? setSeeSelectN(false) : null;
+    });
   
     // handle change event of #selectorA dropdown
     const handleArtistAChange = (artistA: any) => setArtistA(artistA);
     const artistAId = artistA[0].id;
-    console.log(artistAId)
+    
     // match targets
     const sourceMatches = edges.filter(i => i.source === artistAId);
     const targetList = sourceMatches.map(i => i.target);
@@ -272,7 +314,7 @@ export default function Home() {
     // entries count
     const recordACount = filterA.length;
 
-    function entryCount(e: any) {
+    function entryCount(e: number) {
       let result;
       if (e > 1) {
         result = (' ...+'+(e-1)+' more');
@@ -287,6 +329,7 @@ export default function Home() {
     // handle change event of #selectorC dropdown
     const handleArtistCChange = (artistC: any) => setArtistC(artistC);
     const artistCId = artistC[0].id;
+
    
     const sourceCMatches = edges.filter(i => i.source === artistCId);
     const targetCList = sourceCMatches.map(i => i.target);
@@ -316,8 +359,20 @@ export default function Home() {
 
 
     // handle change event of #selectorD dropdown
-    const handleArtistDChange = (artistD: any) => setArtistD(artistD);
+    const handleArtistDChange = (artistD: any) => {
+      setArtistD(artistD);
+      if (artistD[0].label === artistA[0].label) {
+        return (setSeeCongrats(1));
+      } else {
+        return setSeeCongrats(0);
+      };
+    };
+
+
+      
     const artistDId = artistD[0].id;
+    
+    
    
     const sourceDMatches = edges.filter(i => i.source === artistDId);
     const targetDList = sourceDMatches.map(i => i.target);
@@ -345,7 +400,15 @@ export default function Home() {
 
 
     // handle change event of #selectorE dropdown
-    const handleArtistEChange = (artistE: any) => setArtistE(artistE);
+    const handleArtistEChange = (artistE: any) => {
+      setArtistE(artistE);
+      if (artistE[0].label === artistA[0].label || artistE[0].label === artistB[0].label) {
+        return (setSeeCongrats(2));
+      } else {
+        return setSeeCongrats(0);
+      };
+    };
+    
     const artistEId = artistE[0].id;
    
     const sourceEMatches = edges.filter(i => i.source === artistEId);
@@ -374,7 +437,19 @@ export default function Home() {
     
 
     // handle change event of #selectorF dropdown
-    const handleArtistFChange = (artistF: any) => setArtistF(artistF);
+    const handleArtistFChange = (artistF: any) => {
+      setArtistF(artistF);
+      if (artistF[0].label === artistA[0].label 
+        || artistF[0].label === artistB[0].label 
+        || artistF[0].label === artistC[0].label) {
+        return (setSeeCongrats(3));
+      } else {
+        return setSeeCongrats(0);
+      };
+    };
+    
+    
+    
     const artistFId = artistF[0].id;
    
     const sourceFMatches = edges.filter(i => i.source === artistFId);
@@ -403,7 +478,18 @@ export default function Home() {
 
 
     // handle change event of #selectorG dropdown
-    const handleArtistGChange = (artistG: any) => setArtistG(artistG);
+    const handleArtistGChange = (artistG: any) => {
+      setArtistG(artistG);
+      if (artistG[0].label === artistA[0].label 
+        || artistG[0].label === artistB[0].label 
+        || artistG[0].label === artistC[0].label
+        || artistG[0].label === artistD[0].label) {
+        return (setSeeCongrats(4));
+      } else {
+        return setSeeCongrats(0);
+      };
+    };
+
     const artistGId = artistG[0].id;
    
     const sourceGMatches = edges.filter(i => i.source === artistGId);
@@ -432,7 +518,18 @@ export default function Home() {
 
 
     // handle change event of #selectorH dropdown
-    const handleArtistHChange = (artistH: any) => setArtistH(artistH);
+    const handleArtistHChange = (artistH: any) => {
+      setArtistH(artistH);
+      if (artistH[0].label === artistA[0].label 
+        || artistH[0].label === artistB[0].label 
+        || artistH[0].label === artistC[0].label
+        || artistH[0].label === artistD[0].label
+        || artistH[0].label === artistE[0].label) {
+        return (setSeeNiceTry(1));
+      } else {
+        return setSeeNiceTry(0);
+      };
+    };
     const artistHId = artistH[0].id;
    
     const sourceHMatches = edges.filter(i => i.source === artistHId);
@@ -461,7 +558,20 @@ export default function Home() {
 
 
     // handle change event of #selectorI dropdown
-    const handleArtistIChange = (artistI: any) => setArtistI(artistI);
+    const handleArtistIChange = (artistI: any) => {
+      setArtistI(artistI);
+      if (artistI[0].label === artistA[0].label 
+        || artistI[0].label === artistB[0].label 
+        || artistI[0].label === artistC[0].label
+        || artistI[0].label === artistD[0].label
+        || artistI[0].label === artistE[0].label
+        || artistI[0].label === artistF[0].label) {
+        return (setSeeNiceTry(2));
+      } else {
+        return setSeeNiceTry(0);
+      };
+    };
+
     const artistIId = artistI[0].id;
    
     const sourceIMatches = edges.filter(i => i.source === artistIId);
@@ -489,7 +599,20 @@ export default function Home() {
 
 
     // handle change event of #selectorJ dropdown
-    const handleArtistJChange = (artistJ: any) => setArtistJ(artistJ);
+    const handleArtistJChange = (artistJ: any) => {
+      setArtistJ(artistJ);
+      if (artistJ[0].label === artistA[0].label 
+        || artistJ[0].label === artistB[0].label 
+        || artistJ[0].label === artistC[0].label
+        || artistJ[0].label === artistD[0].label
+        || artistJ[0].label === artistE[0].label
+        || artistJ[0].label === artistF[0].label
+        || artistJ[0].label === artistG[0].label) {
+        return (setSeeNiceTry(3));
+      } else {
+        return setSeeNiceTry(0);
+      };
+    };
     const artistJId = artistJ[0].id;
    
     const sourceJMatches = edges.filter(i => i.source === artistJId);
@@ -517,7 +640,22 @@ export default function Home() {
 
 
     // handle change event of #selectorK dropdown
-    const handleArtistKChange = (artistK: any) => setArtistK(artistK);
+    const handleArtistKChange = (artistK: any) => {
+      setArtistK(artistK);
+      if (artistK[0].label === artistA[0].label 
+        || artistK[0].label === artistB[0].label 
+        || artistK[0].label === artistC[0].label
+        || artistK[0].label === artistD[0].label
+        || artistK[0].label === artistE[0].label
+        || artistK[0].label === artistF[0].label
+        || artistK[0].label === artistG[0].label
+        || artistK[0].label === artistH[0].label) {
+        return (setSeeNiceTry(4));
+      } else {
+        return setSeeNiceTry(0);
+      };
+    };
+
     const artistKId = artistK[0].id;
    
     const sourceKMatches = edges.filter(i => i.source === artistKId);
@@ -545,7 +683,23 @@ export default function Home() {
 
 
      // handle change event of #selectorL dropdown
-     const handleArtistLChange = (artistL: any) => setArtistL(artistL);
+     const handleArtistLChange = (artistL: any) => {
+      setArtistL(artistL);
+      if (artistL[0].label === artistA[0].label 
+        || artistL[0].label === artistB[0].label 
+        || artistL[0].label === artistC[0].label
+        || artistL[0].label === artistD[0].label
+        || artistL[0].label === artistE[0].label
+        || artistL[0].label === artistF[0].label
+        || artistL[0].label === artistG[0].label
+        || artistL[0].label === artistH[0].label
+        || artistL[0].label === artistI[0].label) {
+        return (setSeeNiceTry(5));
+      } else {
+        return setSeeNiceTry(0);
+      };
+    };
+
      const artistLId = artistL[0].id;
     
      const sourceLMatches = edges.filter(i => i.source === artistLId);
@@ -574,7 +728,23 @@ export default function Home() {
 
 
       // handle change event of #selectorM dropdown
-      const handleArtistMChange = (artistM: any) => setArtistM(artistM);
+      const handleArtistMChange = (artistM: any) => {
+        setArtistM(artistM);
+        if (artistM[0].label === artistA[0].label 
+          || artistM[0].label === artistB[0].label 
+          || artistM[0].label === artistC[0].label
+          || artistM[0].label === artistD[0].label
+          || artistM[0].label === artistE[0].label
+          || artistM[0].label === artistF[0].label
+          || artistM[0].label === artistG[0].label
+          || artistM[0].label === artistH[0].label
+          || artistM[0].label === artistI[0].label
+          || artistM[0].label === artistJ[0].label) {
+          return (setSeeNiceTry(6));
+        } else {
+          return setSeeNiceTry(0);
+        };
+      };
       const artistMId = artistM[0].id;
      
       const sourceMMatches = edges.filter(i => i.source === artistMId);
@@ -641,7 +811,7 @@ export default function Home() {
       onChange={handleArtistAChange} 
       values={[]}      />
       {seeSelectB && <Select className="transition ease-in-out hover:shadow-xl duration-400 ..." style={{ border: "none", width: 200, marginRight: 10, marginBottom: 20 }}
-      placeholder="Choose partner"
+      placeholder="Choose duet partner"
       options={selectBOptions}
       labelField="label" valueField="id"
       searchable={false}
@@ -649,7 +819,7 @@ export default function Home() {
       onChange={handleArtistBChange} 
       values={[]}      />}
       {seeSelectC && <Select className="transition ease-in-out hover:shadow-xl duration-400 ..." style={{ border: "none", width: 200, marginRight: 10, marginBottom: 20 }}
-      placeholder="Choose partner"
+      placeholder="Choose duet partner"
       options={selectCOptions}
       labelField="label" valueField="id"
       searchable={false}
@@ -657,7 +827,7 @@ export default function Home() {
       onChange={handleArtistCChange} 
       values={[]}      />}
       {seeSelectD && <Select className="transition ease-in-out hover:shadow-xl duration-400 ..." style={{ border: "none", width: 200, marginRight: 10, marginBottom: 20 }}
-      placeholder="Choose partner"
+      placeholder="Choose duet partner"
       options={selectDOptions}
       labelField="label" valueField="id"
       searchable={false}
@@ -665,7 +835,7 @@ export default function Home() {
       onChange={handleArtistDChange} 
       values={[]}      />}
       {seeSelectE && <Select className="transition ease-in-out hover:shadow-xl duration-400 ..." style={{ border: "none", width: 200, marginRight: 10, marginBottom: 20 }}
-      placeholder="Choose partner"
+      placeholder="Choose duet partner"
       options={selectEOptions}
       labelField="label" valueField="id"
       searchable={false}
@@ -673,7 +843,7 @@ export default function Home() {
       onChange={handleArtistEChange} 
       values={[]}      />}
       {seeSelectF && <Select className="transition ease-in-out hover:shadow-xl duration-400 ..." style={{ border: "none", width: 200, marginRight: 10, marginBottom: 20 }}
-      placeholder="Choose partner"
+      placeholder="Choose duet partner"
       options={selectFOptions}
       labelField="label" valueField="id"
       searchable={false}
@@ -681,7 +851,7 @@ export default function Home() {
       onChange={handleArtistFChange} 
       values={[]}      />}
       {seeSelectG && <Select className="transition ease-in-out hover:shadow-xl duration-400 ..." style={{ border: "none", width: 200, marginRight: 10, marginBottom: 20 }}
-      placeholder="Choose partner"
+      placeholder="Choose duet partner"
       options={selectGOptions}
       labelField="label" valueField="id"
       searchable={false}
@@ -691,7 +861,7 @@ export default function Home() {
       </div>
       <div className="Drop-titles-second-row">
       {seeSelectH && <Select className="transition ease-in-out hover:shadow-xl duration-400 ..." style={{ border: "none", width: 200, marginRight: 10, marginBottom: 20 }}
-      placeholder="Choose partner"
+      placeholder="Choose duet partner"
       options={selectHOptions}
       labelField="label" valueField="id"
       searchable={false}
@@ -699,7 +869,7 @@ export default function Home() {
       onChange={handleArtistHChange} 
       values={[]}      />}
       {seeSelectI && <Select className="transition ease-in-out hover:shadow-xl duration-400 ..." style={{ border: "none", width: 200, marginRight: 10, marginBottom: 20 }}
-      placeholder="Choose partner"
+      placeholder="Choose duet partner"
       options={selectIOptions}
       labelField="label" valueField="id"
       searchable={false}
@@ -707,7 +877,7 @@ export default function Home() {
       onChange={handleArtistIChange} 
       values={[]}      />}
       {seeSelectJ && <Select className="transition ease-in-out hover:shadow-xl duration-400 ..." style={{ border: "none", width: 200, marginRight: 10, marginBottom: 20 }}
-      placeholder="Choose partner"
+      placeholder="Choose duet partner"
       options={selectJOptions}
       labelField="label" valueField="id"
       searchable={false}
@@ -715,7 +885,7 @@ export default function Home() {
       onChange={handleArtistJChange} 
       values={[]}      />}
       {seeSelectK && <Select className="transition ease-in-out hover:shadow-xl duration-400 ..." style={{ border: "none", width: 200, marginRight: 10, marginBottom: 20 }}
-      placeholder="Choose partner"
+      placeholder="Choose duet partner"
       options={selectKOptions}
       labelField="label" valueField="id"
       searchable={false}
@@ -723,7 +893,7 @@ export default function Home() {
       onChange={handleArtistKChange} 
       values={[]}      />}
       {seeSelectL && <Select className="transition ease-in-out hover:shadow-xl duration-400 ..." style={{ border: "none", width: 200, marginRight: 10, marginBottom: 20 }}
-      placeholder="Choose partner"
+      placeholder="Choose duet partner"
       options={selectLOptions}
       labelField="label" valueField="id"
       searchable={false}
@@ -731,7 +901,7 @@ export default function Home() {
       onChange={handleArtistLChange} 
       values={[]}      />}
       {seeSelectM && <Select className="transition ease-in-out hover:shadow-xl duration-400 ..." style={{ border: "none", width: 200, marginRight: 10, marginBottom: 20 }}
-      placeholder="Choose partner"
+      placeholder="Choose duet partner"
       options={selectMOptions}
       labelField="label" valueField="id"
       searchable={false}
@@ -739,7 +909,7 @@ export default function Home() {
       onChange={handleArtistMChange} 
       values={[]}      />}
       {seeSelectN && <Select className="transition ease-in-out hover:shadow-xl duration-400 ..." style={{ border: "none", width: 200, marginRight: 10, marginBottom: 20 }}
-      placeholder="Choose partner"
+      placeholder="Choose duet partner"
       options={selectNOptions}
       labelField="label" valueField="id"
       searchable={false}
@@ -747,6 +917,20 @@ export default function Home() {
       onChange={handleArtistNChange} 
       values={[]}      />}
       </div>
+      {seeInstructions && <div className="playlist">
+        <ul>
+        <li className="playlistSongs">{'Welcome to the Duet Matrix.'}</li>
+        <li>{'See if you can create a circular playlist within 6 duets...'}</li>
+        </ul>
+      </div>}
+      {seeCongrats !== 0 && <ul>
+        <li className="congrats">{'Congratulations!'}</li>
+      <li className="congratMessage">{'You made a circular playlist within 6 degrees of seperation.'}</li>
+        </ul>}
+        {seeNiceTry !== 0 && <ul>
+        <li className="niceTry">{'Nice try!'}</li>
+      <li><span className="congratMessage">{'You made a circular playlist!'}</span><span className="niceTryMessage">{'Now try to do it within 6 degrees of seperation.'}</span></li>
+        </ul>}
       <div className="playlist">
         {/* {playlist &&  */}
         <ul>

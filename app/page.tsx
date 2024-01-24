@@ -23,7 +23,8 @@ export default function Home() {
     const [artistL, setArtistL] = useState<any>('null');
     const [artistM, setArtistM] = useState<any>('null');
     const [artistN, setArtistN] = useState<any>('null');
-    
+
+
     const [seeSelectB, setSeeSelectB] = useState(false);
     const [seeSelectC, setSeeSelectC] = useState(false);
     const [seeSelectD, setSeeSelectD] = useState(false);
@@ -41,209 +42,7 @@ export default function Home() {
     const [seeCongrats, setSeeCongrats] = useState<number>(0);
     const [seeNiceTry, setSeeNiceTry] = useState<number>(0);
 
-    const [playlist, setPlaylist] = useState(false);
-    const [loopCheck, setLoopCheck] = useState(false);
-
-    const handleDropCloseA = () => {
-      setArtistB('null') 
-      setArtistC('null') 
-      setArtistD('null')
-      setArtistE('null') 
-      setArtistF('null')
-      setArtistG('null')
-      setArtistH('null')
-      setArtistI('null')
-      setArtistJ('null')
-      setArtistK('null')
-      setArtistL('null')
-      setArtistM('null')
-      setArtistN('null')
-      setSeeSelectB(false)
-      setSeeCongrats(0)
-      setSeeNiceTry(0)
-    };
-    const handleDropCloseB = () => {
-      setArtistC('null')
-      setArtistD('null')
-      setArtistE('null') 
-      setArtistF('null')
-      setArtistG('null')
-      setArtistH('null')
-      setArtistI('null')
-      setArtistJ('null')
-      setArtistK('null')
-      setArtistL('null')
-      setArtistM('null')
-      setArtistN('null')
-      setSeeInstructions(false)
-      setSeeSelectC(false)
-      setSeeCongrats(0)
-      setSeeNiceTry(0)
-    };
-    const handleDropCloseC = () => {
-      setArtistD('null')
-      setArtistE('null') 
-      setArtistF('null')
-      setArtistG('null')
-      setArtistH('null')
-      setArtistI('null')
-      setArtistJ('null')
-      setArtistK('null')
-      setArtistL('null')
-      setArtistM('null')
-      setArtistN('null')
-      setSeeSelectD(false)
-      setSeeCongrats(0)
-      setSeeNiceTry(0)
-    };
-    const handleDropCloseD = () => {
-      setArtistE('null')
-      setArtistF('null')
-      setArtistG('null')
-      setArtistH('null')
-      setArtistI('null')
-        setArtistJ('null')
-        setArtistK('null')
-        setArtistL('null')
-        setArtistM('null')
-        setArtistN('null')
-      setSeeSelectE(false)
-      setSeeNiceTry(0)
-      
-      
-    };
-    const handleDropCloseE = () => {
-      setArtistF('null')
-      setArtistG('null')
-      setArtistH('null')
-      setArtistI('null')
-      setArtistJ('null')
-      setArtistK('null')
-      setArtistL('null')
-      setArtistM('null')
-      setArtistN('null')
-      setSeeSelectF(false)
-      setSeeNiceTry(0)
-      
-    };
-    const handleDropCloseF = () => {
-      setArtistG('null')
-      setArtistH('null')
-      setArtistI('null')
-      setArtistJ('null')
-      setArtistK('null')
-      setArtistL('null')
-      setArtistM('null')
-      setArtistN('null')
-      setSeeSelectG(false)
-      setSeeNiceTry(0)
-    };
-    const handleDropCloseG = () => {
-      setArtistH('null')
-      setArtistI('null')
-      setArtistJ('null')
-      setArtistK('null')
-      setArtistL('null')
-      setArtistM('null')
-      setArtistN('null')
-      setSeeSelectH(false)
-      setSeeNiceTry(0)
-    };
-    const handleDropCloseH = () => {
-      setArtistI('null')
-      setArtistJ('null')
-      setArtistK('null')
-      setArtistL('null')
-      setArtistM('null')
-      setArtistN('null')
-      setSeeSelectI(false)
-      
-    };
-    const handleDropCloseI = () => {
-      setArtistJ('null')
-      setArtistK('null')
-      setArtistL('null')
-      setArtistM('null')
-      setArtistN('null')
-      setSeeSelectJ(false)
-    };
-    const handleDropCloseJ = () => {
-      setArtistK('null')
-      setArtistL('null')
-      setArtistM('null')
-      setArtistN('null')
-      setSeeSelectK(false)
-    };
-    const handleDropCloseK = () => {
-      setArtistL('null')
-      setArtistM('null')
-      setArtistN('null')
-      setSeeSelectL(false)
-    };
-    const handleDropCloseL = () => {
-      setArtistM('null')
-      setArtistN('null')
-      setSeeSelectM(false)
-    };
-    const handleDropCloseM = () => {
-      setArtistN('null')
-      setSeeSelectN(false)
-    };
     
-
-    
-    
-    
-    useEffect(() => {
-      artistA !== 'null'
-      ? setSeeSelectB(true)
-      : setSeeSelectB(false);
-      artistB !== 'null'
-      ? setSeeSelectC(true)
-      : setSeeSelectC(false);
-      artistC !== 'null'
-      ? setSeeSelectD(true)
-      : setSeeSelectD(false);
-      artistD !== 'null'
-      ? setSeeSelectE(true)
-      : setSeeSelectE(false);
-      artistE !== 'null'
-      ? setSeeSelectF(true)
-      : setSeeSelectF(false);
-      artistF !== 'null'
-      ? setSeeSelectG(true)
-      : setSeeSelectG(false);
-      artistG !== 'null'
-      ? setSeeSelectH(true)
-      : setSeeSelectH(false);
-      artistH !== 'null'
-      ? setSeeSelectI(true)
-      : setSeeSelectI(false);
-      artistI !== 'null'
-      ? setSeeSelectJ(true)
-      : setSeeSelectJ(false);
-      artistJ !== 'null'
-      ? setSeeSelectK(true)
-      : setSeeSelectK(false);
-      artistK !== 'null'
-      ? setSeeSelectL(true)
-      : setSeeSelectL(false);
-      artistL !== 'null'
-      ? setSeeSelectM(true)
-      : setSeeSelectM(false);
-      artistM !== 'null'
-      ? setSeeSelectN(true)
-      : setSeeSelectN(false);
-    }, [artistA, artistB, artistC, 
-      artistD, artistE, artistF, 
-      artistG, artistH, artistI, 
-      artistJ, artistK, artistL, 
-      artistM, artistN, seeSelectB, 
-      seeSelectC, seeSelectD, seeSelectE, 
-      seeSelectF, seeSelectG, seeSelectH, 
-      seeSelectI, seeSelectJ, seeSelectK, 
-      seeSelectL, seeSelectM, seeSelectN]);
-
     useEffect(() => {
       seeCongrats === 1 
       ? setSeeSelectE(false) : null;
@@ -270,8 +69,46 @@ export default function Home() {
       ? setSeeSelectN(false) : null;
     });
   
+    
+
     // handle change event of #selectorA dropdown
-    const handleArtistAChange = (artistA: any) => setArtistA(artistA);
+    const handleArtistAChange = (artistA: any) => {
+      setArtistA(artistA)
+      setArtistB('null')
+      setArtistC('null')
+      setArtistD('null')
+      setArtistE('null')
+      setArtistF('null')
+      setArtistG('null')
+      setArtistH('null')
+      setArtistI('null')
+      setArtistJ('null')
+      setArtistK('null')
+      setArtistL('null')
+      setArtistM('null')
+      setArtistN('null')
+      setSeeSelectB(false)
+      setSeeSelectC(false)
+      setSeeSelectD(false)
+      setSeeSelectE(false)
+      setSeeSelectF(false)
+      setSeeSelectG(false)
+      setSeeSelectH(false)
+      setSeeSelectI(false)
+      setSeeSelectJ(false)
+      setSeeSelectK(false)
+      setSeeSelectL(false)
+      setSeeSelectM(false)
+      setSeeSelectN(false)
+      setSeeCongrats(0)
+      setSeeNiceTry(0)
+      };
+
+      useEffect(() => {
+      artistA !== 'null' && artistB === 'null' 
+      ? setSeeSelectB(true) : null
+      });
+    
     const artistAId = artistA[0].id;
     
     // match targets
@@ -289,7 +126,42 @@ export default function Home() {
     
     
     // handle change event of #selectorB dropdown
-    const handleArtistBChange = (artistB: any) => setArtistB(artistB);
+    const handleArtistBChange = (artistB: any) => {
+      setArtistB(artistB)
+      setArtistC('null')
+      setArtistD('null')
+      setArtistE('null')
+      setArtistF('null')
+      setArtistG('null')
+      setArtistH('null')
+      setArtistI('null')
+      setArtistJ('null')
+      setArtistK('null')
+      setArtistL('null')
+      setArtistM('null')
+      setArtistN('null')
+      setSeeSelectC(false)
+      setSeeSelectD(false)
+      setSeeSelectE(false)
+      setSeeSelectF(false)
+      setSeeSelectG(false)
+      setSeeSelectH(false)
+      setSeeSelectI(false)
+      setSeeSelectJ(false)
+      setSeeSelectK(false)
+      setSeeSelectL(false)
+      setSeeSelectM(false)
+      setSeeSelectN(false)
+      setSeeInstructions(false)
+      setSeeCongrats(0)
+      setSeeNiceTry(0)
+    };
+    
+    useEffect(() => {
+      artistB !== 'null' && artistC === 'null' 
+      ? setSeeSelectC(true) : null
+      });
+
     const artistBId = artistB[0].id;
    
     const sourceBMatches = edges.filter(i => i.source === artistBId);
@@ -327,7 +199,40 @@ export default function Home() {
  
     
     // handle change event of #selectorC dropdown
-    const handleArtistCChange = (artistC: any) => setArtistC(artistC);
+    const handleArtistCChange = (artistC: any) => {
+      setArtistC(artistC)
+      setArtistD('null')
+      setArtistE('null')
+      setArtistF('null')
+      setArtistG('null')
+      setArtistH('null')
+      setArtistI('null')
+      setArtistJ('null')
+      setArtistK('null')
+      setArtistL('null')
+      setArtistM('null')
+      setArtistN('null')
+      setSeeSelectD(false)
+      setSeeSelectE(false)
+      setSeeSelectF(false)
+      setSeeSelectG(false)
+      setSeeSelectH(false)
+      setSeeSelectI(false)
+      setSeeSelectJ(false)
+      setSeeSelectK(false)
+      setSeeSelectL(false)
+      setSeeSelectM(false)
+      setSeeSelectN(false)
+      setSeeInstructions(false)
+      setSeeCongrats(0)
+      setSeeNiceTry(0)
+    };
+
+    useEffect(() => {
+      artistC !== 'null' && artistD === 'null' 
+      ? setSeeSelectD(true) : null
+      });
+
     const artistCId = artistC[0].id;
 
    
@@ -360,7 +265,29 @@ export default function Home() {
 
     // handle change event of #selectorD dropdown
     const handleArtistDChange = (artistD: any) => {
-      setArtistD(artistD);
+      setArtistD(artistD)
+      setArtistE('null')
+      setArtistF('null')
+      setArtistG('null')
+      setArtistH('null')
+      setArtistI('null')
+      setArtistJ('null')
+      setArtistK('null')
+      setArtistL('null')
+      setArtistM('null')
+      setArtistN('null')
+      setSeeSelectE(false)
+      setSeeSelectF(false)
+      setSeeSelectG(false)
+      setSeeSelectH(false)
+      setSeeSelectI(false)
+      setSeeSelectJ(false)
+      setSeeSelectK(false)
+      setSeeSelectL(false)
+      setSeeSelectM(false)
+      setSeeSelectN(false)
+      setSeeInstructions(false)
+      setSeeNiceTry(0)
       if (artistD[0].label === artistA[0].label) {
         return (setSeeCongrats(1));
       } else {
@@ -368,7 +295,10 @@ export default function Home() {
       };
     };
 
-
+    useEffect(() => {
+      artistD !== 'null' && artistE === 'null' 
+      ? setSeeSelectE(true) : null
+      });
       
     const artistDId = artistD[0].id;
     
@@ -401,7 +331,27 @@ export default function Home() {
 
     // handle change event of #selectorE dropdown
     const handleArtistEChange = (artistE: any) => {
-      setArtistE(artistE);
+      setArtistE(artistE)
+      setArtistF('null')
+      setArtistG('null')
+      setArtistH('null')
+      setArtistI('null')
+      setArtistJ('null')
+      setArtistK('null')
+      setArtistL('null')
+      setArtistM('null')
+      setArtistN('null')
+      setSeeSelectF(false)
+      setSeeSelectG(false)
+      setSeeSelectH(false)
+      setSeeSelectI(false)
+      setSeeSelectJ(false)
+      setSeeSelectK(false)
+      setSeeSelectL(false)
+      setSeeSelectM(false)
+      setSeeSelectN(false)
+      setSeeInstructions(false)
+      setSeeNiceTry(0)
       if (artistE[0].label === artistA[0].label || artistE[0].label === artistB[0].label) {
         return (setSeeCongrats(2));
       } else {
@@ -409,6 +359,11 @@ export default function Home() {
       };
     };
     
+    useEffect(() => {
+      artistE !== 'null' && artistF === 'null' 
+      ? setSeeSelectF(true) : null
+      });
+
     const artistEId = artistE[0].id;
    
     const sourceEMatches = edges.filter(i => i.source === artistEId);
@@ -438,7 +393,25 @@ export default function Home() {
 
     // handle change event of #selectorF dropdown
     const handleArtistFChange = (artistF: any) => {
-      setArtistF(artistF);
+      setArtistF(artistF)
+      setArtistG('null')
+      setArtistH('null')
+      setArtistI('null')
+      setArtistJ('null')
+      setArtistK('null')
+      setArtistL('null')
+      setArtistM('null')
+      setArtistN('null')
+      setSeeSelectG(false)
+      setSeeSelectH(false)
+      setSeeSelectI(false)
+      setSeeSelectJ(false)
+      setSeeSelectK(false)
+      setSeeSelectL(false)
+      setSeeSelectM(false)
+      setSeeSelectN(false)
+      setSeeInstructions(false)
+      setSeeNiceTry(0)
       if (artistF[0].label === artistA[0].label 
         || artistF[0].label === artistB[0].label 
         || artistF[0].label === artistC[0].label) {
@@ -448,7 +421,11 @@ export default function Home() {
       };
     };
     
-    
+    useEffect(() => {
+      artistF !== 'null' && artistG === 'null' 
+      ? setSeeSelectG(true) : null
+      });
+
     
     const artistFId = artistF[0].id;
    
@@ -457,7 +434,7 @@ export default function Home() {
     // match sources
     const targetFMatches = edges.filter(i => i.target === artistFId);
     const sourceFList = targetFMatches.map(i => i.source);
-    // compile into one list minus artist D
+    // compile into one list minus artist E
     const allFMatches = targetFList.concat(sourceFList).filter(function (number) {
       return number !== artistEId;
     });
@@ -479,7 +456,23 @@ export default function Home() {
 
     // handle change event of #selectorG dropdown
     const handleArtistGChange = (artistG: any) => {
-      setArtistG(artistG);
+      setArtistG(artistG)
+      setArtistH('null')
+      setArtistI('null')
+      setArtistJ('null')
+      setArtistK('null')
+      setArtistL('null')
+      setArtistM('null')
+      setArtistN('null')
+      setSeeSelectH(false)
+      setSeeSelectI(false)
+      setSeeSelectJ(false)
+      setSeeSelectK(false)
+      setSeeSelectL(false)
+      setSeeSelectM(false)
+      setSeeSelectN(false)
+      setSeeInstructions(false)
+      setSeeNiceTry(0)
       if (artistG[0].label === artistA[0].label 
         || artistG[0].label === artistB[0].label 
         || artistG[0].label === artistC[0].label
@@ -490,6 +483,12 @@ export default function Home() {
       };
     };
 
+    useEffect(() => {
+      artistG !== 'null' && artistH === 'null' 
+      ? setSeeSelectH(true) : null
+      });
+
+
     const artistGId = artistG[0].id;
    
     const sourceGMatches = edges.filter(i => i.source === artistGId);
@@ -497,7 +496,7 @@ export default function Home() {
     // match sources
     const targetGMatches = edges.filter(i => i.target === artistGId);
     const sourceGList = targetGMatches.map(i => i.source);
-    // compile into one list minus artist D
+    // compile into one list minus artist F
     const allGMatches = targetGList.concat(sourceGList).filter(function (number) {
       return number !== artistFId;
     });
@@ -519,7 +518,21 @@ export default function Home() {
 
     // handle change event of #selectorH dropdown
     const handleArtistHChange = (artistH: any) => {
-      setArtistH(artistH);
+      setArtistH(artistH)
+      setArtistI('null')
+      setArtistJ('null')
+      setArtistK('null')
+      setArtistL('null')
+      setArtistM('null')
+      setArtistN('null')
+      setSeeSelectI(false)
+      setSeeSelectJ(false)
+      setSeeSelectK(false)
+      setSeeSelectL(false)
+      setSeeSelectM(false)
+      setSeeSelectN(false)
+      setSeeInstructions(false)
+      setSeeCongrats(0)
       if (artistH[0].label === artistA[0].label 
         || artistH[0].label === artistB[0].label 
         || artistH[0].label === artistC[0].label
@@ -530,6 +543,12 @@ export default function Home() {
         return setSeeNiceTry(0);
       };
     };
+
+    useEffect(() => {
+      artistH !== 'null' && artistI === 'null' 
+      ? setSeeSelectI(true) : null
+      });
+
     const artistHId = artistH[0].id;
    
     const sourceHMatches = edges.filter(i => i.source === artistHId);
@@ -537,7 +556,7 @@ export default function Home() {
     // match sources
     const targetHMatches = edges.filter(i => i.target === artistHId);
     const sourceHList = targetHMatches.map(i => i.source);
-    // compile into one list minus artist D
+    // compile into one list minus artist G
     const allHMatches = targetHList.concat(sourceHList).filter(function (number) {
       return number !== artistGId;
     });
@@ -559,7 +578,19 @@ export default function Home() {
 
     // handle change event of #selectorI dropdown
     const handleArtistIChange = (artistI: any) => {
-      setArtistI(artistI);
+      setArtistI(artistI)
+      setArtistJ('null')
+      setArtistK('null')
+      setArtistL('null')
+      setArtistM('null')
+      setArtistN('null')
+      setSeeSelectJ(false)
+      setSeeSelectK(false)
+      setSeeSelectL(false)
+      setSeeSelectM(false)
+      setSeeSelectN(false)
+      setSeeInstructions(false)
+      setSeeCongrats(0)
       if (artistI[0].label === artistA[0].label 
         || artistI[0].label === artistB[0].label 
         || artistI[0].label === artistC[0].label
@@ -572,6 +603,12 @@ export default function Home() {
       };
     };
 
+    useEffect(() => {
+      artistI !== 'null' && artistJ === 'null' 
+      ? setSeeSelectJ(true) : null
+      });
+
+
     const artistIId = artistI[0].id;
    
     const sourceIMatches = edges.filter(i => i.source === artistIId);
@@ -579,7 +616,7 @@ export default function Home() {
     // match sources
     const targetIMatches = edges.filter(i => i.target === artistIId);
     const sourceIList = targetIMatches.map(i => i.source);
-    // compile into one list minus artist D
+    // compile into one list minus artist H
     const allIMatches = targetIList.concat(sourceIList).filter(function (number) {
       return number !== artistHId;
     });
@@ -600,7 +637,17 @@ export default function Home() {
 
     // handle change event of #selectorJ dropdown
     const handleArtistJChange = (artistJ: any) => {
-      setArtistJ(artistJ);
+      setArtistJ(artistJ)
+      setArtistK('null')
+      setArtistL('null')
+      setArtistM('null')
+      setArtistN('null')
+      setSeeSelectK(false)
+      setSeeSelectL(false)
+      setSeeSelectM(false)
+      setSeeSelectN(false)
+      setSeeInstructions(false)
+      setSeeCongrats(0)
       if (artistJ[0].label === artistA[0].label 
         || artistJ[0].label === artistB[0].label 
         || artistJ[0].label === artistC[0].label
@@ -613,6 +660,13 @@ export default function Home() {
         return setSeeNiceTry(0);
       };
     };
+
+    useEffect(() => {
+      artistJ !== 'null' && artistK === 'null' 
+      ? setSeeSelectK(true) : null
+      });
+
+
     const artistJId = artistJ[0].id;
    
     const sourceJMatches = edges.filter(i => i.source === artistJId);
@@ -620,7 +674,7 @@ export default function Home() {
     // match sources
     const targetJMatches = edges.filter(i => i.target === artistJId);
     const sourceJList = targetJMatches.map(i => i.source);
-    // compile into one list minus artist D
+    // compile into one list minus artist I
     const allJMatches = targetJList.concat(sourceJList).filter(function (number) {
       return number !== artistIId;
     });
@@ -641,7 +695,15 @@ export default function Home() {
 
     // handle change event of #selectorK dropdown
     const handleArtistKChange = (artistK: any) => {
-      setArtistK(artistK);
+      setArtistK(artistK)
+      setArtistL('null')
+      setArtistM('null')
+      setArtistN('null')
+      setSeeSelectL(false)
+      setSeeSelectM(false)
+      setSeeSelectN(false)
+      setSeeInstructions(false)
+      setSeeCongrats(0)
       if (artistK[0].label === artistA[0].label 
         || artistK[0].label === artistB[0].label 
         || artistK[0].label === artistC[0].label
@@ -656,6 +718,12 @@ export default function Home() {
       };
     };
 
+    useEffect(() => {
+      artistK !== 'null' && artistL === 'null' 
+      ? setSeeSelectL(true) : null
+      });
+
+
     const artistKId = artistK[0].id;
    
     const sourceKMatches = edges.filter(i => i.source === artistKId);
@@ -663,7 +731,7 @@ export default function Home() {
     // match sources
     const targetKMatches = edges.filter(i => i.target === artistKId);
     const sourceKList = targetKMatches.map(i => i.source);
-    // compile into one list minus artist D
+    // compile into one list minus artist J
     const allKMatches = targetKList.concat(sourceKList).filter(function (number) {
       return number !== artistJId;
     });
@@ -684,7 +752,13 @@ export default function Home() {
 
      // handle change event of #selectorL dropdown
      const handleArtistLChange = (artistL: any) => {
-      setArtistL(artistL);
+      setArtistL(artistL)
+      setArtistM('null')
+      setArtistN('null')
+      setSeeSelectM(false)
+      setSeeSelectN(false)
+      setSeeInstructions(false)
+      setSeeCongrats(0)
       if (artistL[0].label === artistA[0].label 
         || artistL[0].label === artistB[0].label 
         || artistL[0].label === artistC[0].label
@@ -700,6 +774,11 @@ export default function Home() {
       };
     };
 
+    useEffect(() => {
+      artistL !== 'null' && artistM === 'null' 
+      ? setSeeSelectM(true) : null
+      });
+
      const artistLId = artistL[0].id;
     
      const sourceLMatches = edges.filter(i => i.source === artistLId);
@@ -707,7 +786,7 @@ export default function Home() {
      // match sources
      const targetLMatches = edges.filter(i => i.target === artistLId);
      const sourceLList = targetLMatches.map(i => i.source);
-     // compile into one list minus artist D
+     // compile into one list minus artist K
      const allLMatches = targetLList.concat(sourceLList).filter(function (number) {
        return number !== artistKId;
      });
@@ -729,7 +808,11 @@ export default function Home() {
 
       // handle change event of #selectorM dropdown
       const handleArtistMChange = (artistM: any) => {
-        setArtistM(artistM);
+        setArtistM(artistM)
+        setArtistN('null')
+        setSeeSelectN(false)
+        setSeeInstructions(false)
+        setSeeCongrats(0)
         if (artistM[0].label === artistA[0].label 
           || artistM[0].label === artistB[0].label 
           || artistM[0].label === artistC[0].label
@@ -745,6 +828,12 @@ export default function Home() {
           return setSeeNiceTry(0);
         };
       };
+
+      useEffect(() => {
+        artistM !== 'null' && artistN === 'null' 
+        ? setSeeSelectN(true) : null
+        });
+
       const artistMId = artistM[0].id;
      
       const sourceMMatches = edges.filter(i => i.source === artistMId);
@@ -752,7 +841,7 @@ export default function Home() {
       // match sources
       const targetMMatches = edges.filter(i => i.target === artistMId);
       const sourceMList = targetMMatches.map(i => i.source);
-      // compile into one list minus artist D
+      // compile into one list minus artist L
       const allMMatches = targetMList.concat(sourceMList).filter(function (number) {
         return number !== artistLId;
       });
@@ -772,7 +861,26 @@ export default function Home() {
 
 
         // handle change event of #selectorN dropdown
-        const handleArtistNChange = (artistN: any) => setArtistN(artistN);
+        const handleArtistNChange = (artistN: any) => {
+          setArtistN(artistN)
+          setSeeInstructions(false)
+          setSeeCongrats(0)
+          if (artistN[0].label === artistA[0].label 
+            || artistN[0].label === artistB[0].label 
+            || artistN[0].label === artistC[0].label
+            || artistN[0].label === artistD[0].label
+            || artistN[0].label === artistE[0].label
+            || artistN[0].label === artistF[0].label
+            || artistN[0].label === artistG[0].label
+            || artistN[0].label === artistH[0].label
+            || artistN[0].label === artistI[0].label
+            || artistN[0].label === artistJ[0].label
+            || artistN[0].label === artistK[0].label) {
+            return (setSeeNiceTry(7));
+          } else {
+            return setSeeNiceTry(0);
+          };
+        };
         const artistNId = artistN[0].id;
        
         const sourceNMatches = edges.filter(i => i.source === artistNId);
@@ -780,7 +888,7 @@ export default function Home() {
         // match sources
         const targetNMatches = edges.filter(i => i.target === artistNId);
         const sourceNList = targetNMatches.map(i => i.source);
-        // compile into one list minus artist D
+        // compile into one list minus artist M
         const allNMatches = targetNList.concat(sourceNList).filter(function (number) {
           return number !== artistMId;
         });
@@ -807,7 +915,6 @@ export default function Home() {
       options={data}
       labelField="label" valueField="id"
       searchable={true}
-      onDropdownClose={handleDropCloseA}
       onChange={handleArtistAChange} 
       values={[]}      />
       {seeSelectB && <Select className="transition ease-in-out hover:shadow-xl duration-400 ..." style={{ border: "none", width: 200, marginRight: 10, marginBottom: 20 }}
@@ -815,15 +922,13 @@ export default function Home() {
       options={selectBOptions}
       labelField="label" valueField="id"
       searchable={false}
-      onDropdownClose={handleDropCloseB}
       onChange={handleArtistBChange} 
-      values={[]}      />}
+      values={artistB.value}      />}
       {seeSelectC && <Select className="transition ease-in-out hover:shadow-xl duration-400 ..." style={{ border: "none", width: 200, marginRight: 10, marginBottom: 20 }}
       placeholder="Choose duet partner"
       options={selectCOptions}
       labelField="label" valueField="id"
       searchable={false}
-      onDropdownClose={handleDropCloseC}
       onChange={handleArtistCChange} 
       values={[]}      />}
       {seeSelectD && <Select className="transition ease-in-out hover:shadow-xl duration-400 ..." style={{ border: "none", width: 200, marginRight: 10, marginBottom: 20 }}
@@ -831,7 +936,6 @@ export default function Home() {
       options={selectDOptions}
       labelField="label" valueField="id"
       searchable={false}
-      onDropdownClose={handleDropCloseD}
       onChange={handleArtistDChange} 
       values={[]}      />}
       {seeSelectE && <Select className="transition ease-in-out hover:shadow-xl duration-400 ..." style={{ border: "none", width: 200, marginRight: 10, marginBottom: 20 }}
@@ -839,7 +943,6 @@ export default function Home() {
       options={selectEOptions}
       labelField="label" valueField="id"
       searchable={false}
-      onDropdownClose={handleDropCloseE}
       onChange={handleArtistEChange} 
       values={[]}      />}
       {seeSelectF && <Select className="transition ease-in-out hover:shadow-xl duration-400 ..." style={{ border: "none", width: 200, marginRight: 10, marginBottom: 20 }}
@@ -847,7 +950,6 @@ export default function Home() {
       options={selectFOptions}
       labelField="label" valueField="id"
       searchable={false}
-      onDropdownClose={handleDropCloseF}
       onChange={handleArtistFChange} 
       values={[]}      />}
       {seeSelectG && <Select className="transition ease-in-out hover:shadow-xl duration-400 ..." style={{ border: "none", width: 200, marginRight: 10, marginBottom: 20 }}
@@ -855,7 +957,6 @@ export default function Home() {
       options={selectGOptions}
       labelField="label" valueField="id"
       searchable={false}
-      onDropdownClose={handleDropCloseG}
       onChange={handleArtistGChange} 
       values={[]}      />}
       </div>
@@ -865,7 +966,6 @@ export default function Home() {
       options={selectHOptions}
       labelField="label" valueField="id"
       searchable={false}
-      onDropdownClose={handleDropCloseH}
       onChange={handleArtistHChange} 
       values={[]}      />}
       {seeSelectI && <Select className="transition ease-in-out hover:shadow-xl duration-400 ..." style={{ border: "none", width: 200, marginRight: 10, marginBottom: 20 }}
@@ -873,7 +973,6 @@ export default function Home() {
       options={selectIOptions}
       labelField="label" valueField="id"
       searchable={false}
-      onDropdownClose={handleDropCloseI}
       onChange={handleArtistIChange} 
       values={[]}      />}
       {seeSelectJ && <Select className="transition ease-in-out hover:shadow-xl duration-400 ..." style={{ border: "none", width: 200, marginRight: 10, marginBottom: 20 }}
@@ -881,7 +980,6 @@ export default function Home() {
       options={selectJOptions}
       labelField="label" valueField="id"
       searchable={false}
-      onDropdownClose={handleDropCloseJ}
       onChange={handleArtistJChange} 
       values={[]}      />}
       {seeSelectK && <Select className="transition ease-in-out hover:shadow-xl duration-400 ..." style={{ border: "none", width: 200, marginRight: 10, marginBottom: 20 }}
@@ -889,7 +987,6 @@ export default function Home() {
       options={selectKOptions}
       labelField="label" valueField="id"
       searchable={false}
-      onDropdownClose={handleDropCloseK}
       onChange={handleArtistKChange} 
       values={[]}      />}
       {seeSelectL && <Select className="transition ease-in-out hover:shadow-xl duration-400 ..." style={{ border: "none", width: 200, marginRight: 10, marginBottom: 20 }}
@@ -897,7 +994,6 @@ export default function Home() {
       options={selectLOptions}
       labelField="label" valueField="id"
       searchable={false}
-      onDropdownClose={handleDropCloseL}
       onChange={handleArtistLChange} 
       values={[]}      />}
       {seeSelectM && <Select className="transition ease-in-out hover:shadow-xl duration-400 ..." style={{ border: "none", width: 200, marginRight: 10, marginBottom: 20 }}
@@ -905,7 +1001,6 @@ export default function Home() {
       options={selectMOptions}
       labelField="label" valueField="id"
       searchable={false}
-      onDropdownClose={handleDropCloseM}
       onChange={handleArtistMChange} 
       values={[]}      />}
       {seeSelectN && <Select className="transition ease-in-out hover:shadow-xl duration-400 ..." style={{ border: "none", width: 200, marginRight: 10, marginBottom: 20 }}
@@ -913,7 +1008,6 @@ export default function Home() {
       options={selectNOptions}
       labelField="label" valueField="id"
       searchable={false}
-      //onDropdownClose={handleDropCloseN}
       onChange={handleArtistNChange} 
       values={[]}      />}
       </div>
@@ -925,16 +1019,14 @@ export default function Home() {
       </div>}
       {seeCongrats !== 0 && <ul>
         <li className="congrats">{'Congratulations!'}</li>
-      <li className="congratMessage">{'You made a circular playlist within 6 degrees of seperation.'}</li>
+      <li className="congratMessage">{'You made a circular playlist within 6 degrees of separation.'}</li>
         </ul>}
         {seeNiceTry !== 0 && <ul>
         <li className="niceTry">{'Nice try!'}</li>
-      <li><span className="congratMessage">{'You made a circular playlist!'}</span><span className="niceTryMessage">{'Now try to do it within 6 degrees of seperation.'}</span></li>
+      <li><span className="congratMessage">{'You made a circular playlist!'}</span><span className="niceTryMessage">{'Now try to do it within 6 degrees of separation.'}</span></li>
         </ul>}
       <div className="playlist">
-        {/* {playlist &&  */}
         <ul>
-          {/* <li>{JSON.stringify(singleRecordA.artist_a)}</li> */}
         <li>
     { recordA.map((i) => {
     return <span key={i.id}>{i.artist_a +' & '+i.artist_b+' - '}</span>})}

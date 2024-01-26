@@ -401,27 +401,27 @@ export default function Home() {
       , setSeePlayD(false)
       , setSeePlayE(false)) : null;
     
-      seeNiceTry === 17 
+      seeNiceTry === 22 
       ? setSeePlayA(false) : null;
-      seeNiceTry === 18 
+      seeNiceTry === 23 
       ? (setSeePlayA(false)
       , setSeePlayB(false)) : null;
-      seeNiceTry === 19 
+      seeNiceTry === 24 
       ? (setSeePlayA(false)
       , setSeePlayB(false)
       , setSeePlayC(false)) : null;
-      seeNiceTry === 20 
+      seeNiceTry === 25 
       ? (setSeePlayA(false)
       , setSeePlayB(false)
       , setSeePlayC(false)
       , setSeePlayD(false)) : null;
-      seeNiceTry === 21 
+      seeNiceTry === 26 
       ? (setSeePlayA(false)
       , setSeePlayB(false)
       , setSeePlayC(false)
       , setSeePlayD(false)
       , setSeePlayE(false)) : null;
-      seeNiceTry === 22 
+      seeNiceTry === 27 
       ? (setSeePlayA(false)
       , setSeePlayB(false)
       , setSeePlayC(false)

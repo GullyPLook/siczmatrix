@@ -27,6 +27,20 @@
    } 
  }
 
+ @media only screen and (max-width: 1700px) {
+  .playlist {
+    padding-left: 5em;
+     
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .playlist {
+     padding-left: 0;
+     padding-right: 0;
+  }
+}
+
 body {
   max-width: 1700px;
   background-image: url(cropped.png);
@@ -51,12 +65,11 @@ body {
 .playlist {
   font-weight: bold;
   color: rgb(39, 179, 58);
-  display: -webkit-flex;
-  align-items: center;
   justify-content: left;
   height: auto;
   padding-top: 5em;
   padding-left: 5em;
+  clear: both;
 }
 
 .playlistSongs {

@@ -18,7 +18,7 @@
 
 @media (max-width: 768px) {
   .container { flex-direction: column; 
-    padding-left: auto;
+    padding-left: 0;
    } 
  } 
 @media (min-width: 768px) { 

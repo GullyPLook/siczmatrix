@@ -96,10 +96,6 @@
         "label": "Amy Holland"
     },
     {
-        "id": 19,
-        "label": "Anastacia"
-    },
-    {
         "id": 512,
         "label": "Anastacia"
     },
@@ -1022,6 +1018,10 @@
     {
         "id": 189,
         "label": "Jane Birkin"
+    },
+    {
+        "id": 616,
+        "label": "Jane Horrocks"
     },
     {
         "id": 190,

@@ -1603,11 +1603,13 @@ export default function Home() {
       </div>
       {seeInstructions && <div className="playlist">
         <ul>
-        <li className="playlistSongs">{'Welcome to the Duet Matrix.'}</li>
-        <li>{'See if you can create a circular playlist within 6 duets...'}</li>
+        <li className="playlistSongs">{"Welcome to the SICZ Duet Matrix."}</li>
+        <li>{"The So I Called Zucchero podcast creates circular playlists of vocal duets."}</li> 
+        <li>{"Using individual artists as links we plot a course through the matrix taking as few steps as possible to create a loop."}</li>
+        <li>{"See if you can make a SICZ playlist within 6 duets..."}</li>
         </ul>
       </div>}
-      {seeCongrats !== 0 && <ul>
+      {seeCongrats !== 0 && <ul className="playlist">
         <li className="congrats">{'Congratulations!'}</li>
       <li className="congratMessage">{'You made a circular playlist within 6 degrees of separation.'}</li>
         </ul>}
@@ -1615,7 +1617,7 @@ export default function Home() {
         <li className="congrats">{'Nice try!'}</li>
       <li><span className="congratMessage">{'You made a circular playlist! Now try to do it within 6 degrees of separation.'}</span></li>
         </ul>}
-      <div className="playlist">
+      <div className="list">
         <ul>
         <li className="transition ease-in-out hover:shadow-xl duration-400 ..." style={ seePlayA ? {}: {opacity: 0.5, color: "#D1206A"}}>
     { recordA.map((i) => {

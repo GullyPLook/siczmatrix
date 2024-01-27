@@ -32,7 +32,14 @@
     gap: 15px !important;
     padding-bottom: 3em;
   }
-  .playlist {
+
+  .congrats {
+    font-size: 40px !important;
+  }
+  .list {
+    padding-top: 3em !important;
+    font-size: small !important;
+    line-height: 2em;
   }
  } 
 
@@ -75,6 +82,12 @@ body {
   justify-content: start;
   padding-top: 4em;
 }
+
+.list {
+
+  padding-top: 5em;
+}
+
 
 .playlistSongs {
   color: rgb(199, 201, 199);;

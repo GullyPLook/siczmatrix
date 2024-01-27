@@ -4,6 +4,7 @@ import Select from "react-dropdown-select";
 import data from './nodes.json'
 import edges from './edges.json'
 import records from './records.json'
+import { text } from "stream/consumers";
 
 
 
@@ -1603,13 +1604,14 @@ export default function Home() {
       </div>
       {seeInstructions && <div className="playlist">
         <ul>
-        <li className="playlistSongs">{"Welcome to the SICZ Duet Matrix."}</li>
-        <li>{"The So I Called Zucchero podcast creates circular playlists of vocal duets."}</li> 
-        <li>{"Using individual artists as links we plot a course through the matrix taking as few steps as possible to create a loop."}</li>
-        <li>{"See if you can make a SICZ playlist within 6 duets..."}</li>
+        <li className="welcome">{"Welcome to the SICZ Duet Matrix."}</li>
+        <br />
+        <li className="playlistSongs">{"The So I Called Zucchero podcast creates circular playlists of vocal duets."}</li> 
+        <li className="playlistSongs">{"Using individual artists as links we plot a course through the matrix taking as few steps as possible to create a loop."}</li>
+        <br /><li>{"See if you can make a SICZ playlist within 6 duets..."}</li>
         </ul>
       </div>}
-      {seeCongrats !== 0 && <ul className="playlist">
+      {seeCongrats !== 0 && <ul>
         <li className="congrats">{'Congratulations!'}</li>
       <li className="congratMessage">{'You made a circular playlist within 6 degrees of separation.'}</li>
         </ul>}

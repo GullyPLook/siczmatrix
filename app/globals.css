@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -14,51 +14,66 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
-@media (max-width: 768px) {
-  .container { flex-direction: column; 
-    padding-left: 0;
-   } 
+@media only screen and (max-width: 52em) {
+  
+  body { 
+    background-position: 20% 10%;
+  } 
+  .app {
+    font-size: smaller; 
+  } 
+  .drop-titles {
+    padding-top: 0 !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around !important;
+    gap: 15px !important;
+    padding-bottom: 3em;
+  }
+  .playlist {
+  }
  } 
-@media (min-width: 768px) { 
- .container {
-  flex-direction: row; 
-   } 
- }
 
 
 body {
-  max-width: 1700px;
   background-image: url(cropped.png);
   background-repeat: cover;
 }
 
-
-.drop-titles {
+.app {
+  margin: 2%;
   font-weight: bold;
   color: rgb(39, 179, 58);
+}
+
+.drop-titles {
+  padding-top: 2em;
   display: flex;
-  flex-direction: row;
+  flex: 200px;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  gap: 20px;
-  margin: 0 auto;
-  height: 18em;
-  float: none;
- 
+  gap: 50px;
+  padding-bottom: 3em;
+}
+
+.congrats {
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+}
+
+.congratMessage {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .playlist {
-  font-weight: bold;
-  color: rgb(39, 179, 58);
-  justify-content: left;
-  height: auto;
-  padding-top: 5em;
-  padding-left: 5em;
-  margin-bottom: 5em;
-  clear: both;
+  justify-content: start;
+  padding-top: 4em;
 }
 
 .playlistSongs {
@@ -77,30 +92,4 @@ body {
   color: rgb(197, 196, 196);
 }
 
-.congrats {
-  font-weight: bold;
-  font-size: 50px;
-  color: rgb(255, 255, 255);
-  display: -webkit-flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 1em;
-}
 
-.congratMessage {
-  font-weight: bold;
-  color: rgb(39, 179, 58);
-  display: -webkit-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.niceTry {
-  font-weight: bold;
-  font-size: 50px;
-  color: rgb(252, 250, 251);
-  display: -webkit-flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 1em;
-}

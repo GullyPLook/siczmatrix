@@ -1499,7 +1499,7 @@ export default function Home() {
 
         
   return (
-    <div>
+    <div className="app">
       <div className="drop-titles" >
       {seeSelectA && <Select className="transition ease-in-out hover:shadow-xl duration-400 ..." style={ seePlayA ? { border: "none",  width: 200} : {opacity: 0.5, color: "#D1206A", border: "none",  width: 200}}
       placeholder="Search artists"
@@ -1612,7 +1612,7 @@ export default function Home() {
       <li className="congratMessage">{'You made a circular playlist within 6 degrees of separation.'}</li>
         </ul>}
         {seeNiceTry !== 0 && <ul>
-        <li className="niceTry">{'Nice try!'}</li>
+        <li className="congrats">{'Nice try!'}</li>
       <li><span className="congratMessage">{'You made a circular playlist! Now try to do it within 6 degrees of separation.'}</span></li>
         </ul>}
       <div className="playlist">

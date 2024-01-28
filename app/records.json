@@ -139,16 +139,16 @@
         "artist_b": "Buddy Clark",
         "gender": "MF",
         "relationship": "",
-        "genre": "Pop, Musical",
+        "genre": "Pop",
         "sub_genre": "",
         "sentimental_ballad": "",
-        "song_form": "",
-        "tag_1": "",
-        "subject": "Romance",
-        "dynamic": "",
-        "originally_a_duet": "",
+        "song_form": "Call And Response",
+        "tag_1": "Humour",
+        "subject": "Attraction",
+        "dynamic": "Counter",
+        "originally_a_duet": "Originally A Duet",
         "cover_version": "",
-        "writer_a": "",
+        "writer_a": "Frank Loesser",
         "writer_b": "",
         "writer_c": "",
         "writer_d": "",
@@ -172,8 +172,8 @@
         "christmas": "",
         "virtual": "",
         "episode": "",
-        "yt_link": "Partypiece, over 450 versions, Bit Cosby. Tom Jones",
-        "notes": null
+        "yt_link": "",
+        "notes": "Partypiece, over 450 versions, Bit Cosby."
     },
     {
         "id": 5,
@@ -221,6 +221,50 @@
     },
     {
         "id": 6,
+        "title": "Silver Bells",
+        "year": 1950,
+        "artist_a": "Bing Crosby",
+        "artist_b": "Carol Richards",
+        "gender": "MF",
+        "relationship": "",
+        "genre": "Pop",
+        "sub_genre": "",
+        "sentimental_ballad": "",
+        "song_form": "",
+        "tag_1": "",
+        "subject": "Christmas",
+        "dynamic": "Union",
+        "originally_a_duet": "Originally A Duet",
+        "cover_version": "",
+        "writer_a": "Jay Livingston",
+        "writer_b": "Ray Evans",
+        "writer_c": "",
+        "writer_d": "",
+        "writer_e": "",
+        "writer_f": "",
+        "release": "Single",
+        "duo_lp": "",
+        "various_partners_lp": "",
+        "legacy": "",
+        "soundtrack": "",
+        "various_artists_lp": "",
+        "promotional_video": "",
+        "behind_the_scenes": "",
+        "presentation": "",
+        "format": "",
+        "programme_title": "",
+        "concert_footage": "",
+        "special": "",
+        "charity_or_cause": "",
+        "tribute": "",
+        "christmas": "Christmas",
+        "virtual": "",
+        "episode": "",
+        "yt_link": "https://www.youtube.com/watch?v=MyHG37j6H90",
+        "notes": null
+    },
+    {
+        "id": 7,
         "title": "Relax-A-Voo",
         "year": 1955,
         "artist_a": "Dean Martin",
@@ -264,7 +308,7 @@
         "notes": null
     },
     {
-        "id": 7,
+        "id": 8,
         "title": "Too Old To Cut The Mustard",
         "year": 1956,
         "artist_a": "Red Foley",
@@ -308,7 +352,7 @@
         "notes": null
     },
     {
-        "id": 8,
+        "id": 9,
         "title": "You Made Me Love You",
         "year": 1956,
         "artist_a": "Dean Martin",
@@ -352,7 +396,7 @@
         "notes": null
     },
     {
-        "id": 9,
+        "id": 10,
         "title": "The Birth Of The Blues",
         "year": 1957,
         "artist_a": "Frank Sinatra",
@@ -396,7 +440,7 @@
         "notes": null
     },
     {
-        "id": 10,
+        "id": 11,
         "title": "Summertime",
         "year": 1958,
         "artist_a": "Ella Fitzgerald",
@@ -440,7 +484,7 @@
         "notes": "Porgy and Bess"
     },
     {
-        "id": 11,
+        "id": 12,
         "title": "Cause I Love You",
         "year": 1960,
         "artist_a": "Carla Thomas",
@@ -484,7 +528,7 @@
         "notes": null
     },
     {
-        "id": 12,
+        "id": 13,
         "title": "Baby, You´ve Got What It Takes",
         "year": 1960,
         "artist_a": "Dinah Washington",
@@ -528,7 +572,7 @@
         "notes": null
     },
     {
-        "id": 13,
+        "id": 14,
         "title": "The One I Love Belongs To Somebody Else",
         "year": 1962,
         "artist_a": "Frank Sinatra",
@@ -572,7 +616,7 @@
         "notes": null
     },
     {
-        "id": 14,
+        "id": 15,
         "title": "Everytime We Say Goodbye",
         "year": 1962,
         "artist_a": "Ray Charles",
@@ -616,7 +660,7 @@
         "notes": null
     },
     {
-        "id": 15,
+        "id": 16,
         "title": "Together Wherever We Go",
         "year": 1963,
         "artist_a": "Judy Garland",
@@ -660,7 +704,7 @@
         "notes": null
     },
     {
-        "id": 16,
+        "id": 17,
         "title": "We Must Have Been Out Of Our Minds",
         "year": 1963,
         "artist_a": "George Jones",
@@ -704,7 +748,7 @@
         "notes": null
     },
     {
-        "id": 17,
+        "id": 18,
         "title": "Happy Days Are Here Again",
         "year": 1963,
         "artist_a": "Judy Garland",
@@ -748,7 +792,7 @@
         "notes": null
     },
     {
-        "id": 18,
+        "id": 19,
         "title": "I Like Men (medley)",
         "year": 1963,
         "artist_a": "Judy Garland",
@@ -792,7 +836,7 @@
         "notes": null
     },
     {
-        "id": 19,
+        "id": 20,
         "title": "You´ve Lost That Lovin Feeling",
         "year": 1964,
         "artist_a": "Bill Medley",
@@ -836,7 +880,7 @@
         "notes": "Delaney & Bonnie 67 Flack & Hathaway 1971. Long John Baldry& Kathi McDonald 79"
     },
     {
-        "id": 20,
+        "id": 21,
         "title": "The Lady Loves Me",
         "year": 1964,
         "artist_a": "Elvis Presley",
@@ -880,7 +924,7 @@
         "notes": null
     },
     {
-        "id": 21,
+        "id": 22,
         "title": "What's The Matter With You Baby",
         "year": 1964,
         "artist_a": "Marvin Gaye",
@@ -924,7 +968,7 @@
         "notes": null
     },
     {
-        "id": 22,
+        "id": 23,
         "title": "I Got You Babe",
         "year": 1965,
         "artist_a": "Sonny Bono",
@@ -968,7 +1012,7 @@
         "notes": "Debut release. Spector student. Cher eulogy. UB40/Hynde 85, Beavis & B 93"
     },
     {
-        "id": 23,
+        "id": 24,
         "title": "Bold Marauder",
         "year": 1965,
         "artist_a": "Richard Fariña",
@@ -1012,7 +1056,7 @@
         "notes": null
     },
     {
-        "id": 24,
+        "id": 25,
         "title": "It Takes Two",
         "year": 1966,
         "artist_a": "Marvin Gaye",
@@ -1056,7 +1100,7 @@
         "notes": "Spotlight dance AB. Only Footage of Marv is in 76 without Kim. Tina Turner & Rod Stewart 1990."
     },
     {
-        "id": 25,
+        "id": 26,
         "title": "Summer Wine",
         "year": 1966,
         "artist_a": "Lee Hazlewood",
@@ -1100,7 +1144,7 @@
         "notes": "Alex Kapranos & Clara Luciani 2020"
     },
     {
-        "id": 26,
+        "id": 27,
         "title": "Somethin' Stupid",
         "year": 1967,
         "artist_a": "Nancy Sinatra",
@@ -1144,7 +1188,7 @@
         "notes": "The incest song' Lampooned by Nancy herself with Frank Jr. Ali Campbell and Kibibi 95. Robbie Williams & Nicole Kidman Christmas No.1. Other duets between the Sinatras followed."
     },
     {
-        "id": 27,
+        "id": 28,
         "title": "Jackson",
         "year": 1967,
         "artist_a": "Johnny Cash",
@@ -1188,7 +1232,7 @@
         "notes": "Nancy and Lee later in the same year. Movin' with Nancy."
     },
     {
-        "id": 28,
+        "id": 29,
         "title": "Tramp",
         "year": 1967,
         "artist_a": "Otis Redding",
@@ -1232,7 +1276,7 @@
         "notes": null
     },
     {
-        "id": 29,
+        "id": 30,
         "title": "Ain't No Mountain High Enough",
         "year": 1967,
         "artist_a": "Marvin Gaye",
@@ -1276,7 +1320,7 @@
         "notes": null
     },
     {
-        "id": 30,
+        "id": 31,
         "title": "Storybook Children",
         "year": 1968,
         "artist_a": "Billy Vera",
@@ -1320,7 +1364,7 @@
         "notes": null
     },
     {
-        "id": 31,
+        "id": 32,
         "title": "Things",
         "year": 1968,
         "artist_a": "Nancy Sinatra",
@@ -1364,7 +1408,7 @@
         "notes": null
     },
     {
-        "id": 32,
+        "id": 33,
         "title": "Pickin' Wild Mountain Berries",
         "year": 1968,
         "artist_a": "Peggy Scott",
@@ -1408,7 +1452,7 @@
         "notes": null
     },
     {
-        "id": 33,
+        "id": 34,
         "title": "Private Number",
         "year": 1968,
         "artist_a": "William Bell",
@@ -1452,7 +1496,7 @@
         "notes": null
     },
     {
-        "id": 34,
+        "id": 35,
         "title": "Some Velvet Morning",
         "year": 1968,
         "artist_a": "Lee Hazlewood",
@@ -1496,7 +1540,7 @@
         "notes": "Bobby Gillespie & Kate Moss 2002"
     },
     {
-        "id": 35,
+        "id": 36,
         "title": "Je T'aime Moi non Plus",
         "year": 1969,
         "artist_a": "Serge Gainsbourg",
@@ -1540,7 +1584,7 @@
         "notes": null
     },
     {
-        "id": 36,
+        "id": 37,
         "title": "I Never Will Marry",
         "year": 1969,
         "artist_a": "Johnny Cash",
@@ -1584,7 +1628,7 @@
         "notes": null
     },
     {
-        "id": 37,
+        "id": 38,
         "title": "I Need You Woman",
         "year": 1969,
         "artist_a": "William Bell",
@@ -1628,7 +1672,7 @@
         "notes": null
     },
     {
-        "id": 38,
+        "id": 39,
         "title": "I'm Gonna Make You Love Me",
         "year": 1969,
         "artist_a": "Diana Ross",
@@ -1672,7 +1716,7 @@
         "notes": null
     },
     {
-        "id": 39,
+        "id": 40,
         "title": "Sweet Thing",
         "year": 1969,
         "artist_a": "Lee Hazlewood",
@@ -1716,7 +1760,7 @@
         "notes": "Ernest Tubb & Loretta Lynn 67"
     },
     {
-        "id": 40,
+        "id": 41,
         "title": "Today I Started Loving You Again",
         "year": 1969,
         "artist_a": "Merle Haggard",
@@ -1760,7 +1804,7 @@
         "notes": "Merle Haggard & Tammy Wynette 1988"
     },
     {
-        "id": 41,
+        "id": 42,
         "title": "Suspicious Minds",
         "year": 1970,
         "artist_a": "Waylon Jennings",
@@ -1804,7 +1848,7 @@
         "notes": "Footage of B side I Ain´t The One. Waylon TV Special 81, Leather and Lace Duets LP"
     },
     {
-        "id": 42,
+        "id": 43,
         "title": "Something To Brag About",
         "year": 1970,
         "artist_a": "Charlie Louvin",
@@ -1848,7 +1892,7 @@
         "notes": "George Jones & Tammy Wynette 71, David Houston & Barbara Mandrell 72, Willie Nelson & Mary Kay Place 77"
     },
     {
-        "id": 43,
+        "id": 44,
         "title": "Just A Little More Line",
         "year": 1970,
         "artist_a": "Clodagh Rodgers",
@@ -1892,7 +1936,7 @@
         "notes": null
     },
     {
-        "id": 44,
+        "id": 45,
         "title": "Don't Move Away",
         "year": 1971,
         "artist_a": "Cliff Richard",
@@ -1936,7 +1980,7 @@
         "notes": null
     },
     {
-        "id": 45,
+        "id": 46,
         "title": "Rosetta",
         "year": 1971,
         "artist_a": "Georgie Fame",
@@ -1980,7 +2024,7 @@
         "notes": null
     },
     {
-        "id": 46,
+        "id": 47,
         "title": "En Kväll Om Sommarn",
         "year": 1971,
         "artist_a": "Lars Berghagen",
@@ -2024,7 +2068,7 @@
         "notes": "2 duets that appeared in Hippie tv special from sweden"
     },
     {
-        "id": 47,
+        "id": 48,
         "title": "After the Fire Is Gone",
         "year": 1971,
         "artist_a": "Conway Twitty",
@@ -2068,7 +2112,7 @@
         "notes": null
     },
     {
-        "id": 48,
+        "id": 49,
         "title": "Honeyman",
         "year": 1971,
         "artist_a": "Cat Stevens",
@@ -2112,7 +2156,7 @@
         "notes": null
     },
     {
-        "id": 49,
+        "id": 50,
         "title": "The Ceremony",
         "year": 1972,
         "artist_a": "George Jones",
@@ -2156,7 +2200,7 @@
         "notes": null
     },
     {
-        "id": 50,
+        "id": 51,
         "title": "Telling The World",
         "year": 1972,
         "artist_a": "Grover Kemble",
@@ -2200,7 +2244,7 @@
         "notes": null
     },
     {
-        "id": 51,
+        "id": 52,
         "title": "You're A Special Part Of Me",
         "year": 1973,
         "artist_a": "Diana Ross",
@@ -2244,7 +2288,7 @@
         "notes": null
     },
     {
-        "id": 52,
+        "id": 53,
         "title": "J'ai Un Problème",
         "year": 1973,
         "artist_a": "Sylvie Vartan",
@@ -2288,7 +2332,7 @@
         "notes": null
     },
     {
-        "id": 53,
+        "id": 54,
         "title": "Louisiana Woman, Mississippi Man",
         "year": 1973,
         "artist_a": "Loretta Lynn",
@@ -2332,7 +2376,7 @@
         "notes": "Brad Paisley & Carrie Underwood 2020, Dierks Bentley & Sheryl Crow 2022"
     },
     {
-        "id": 54,
+        "id": 55,
         "title": "I Got You Babe",
         "year": 1973,
         "artist_a": "David Bowie",
@@ -2376,7 +2420,7 @@
         "notes": null
     },
     {
-        "id": 55,
+        "id": 56,
         "title": "A Song I'd Like To Sing",
         "year": 1973,
         "artist_a": "Kris Kristofferson",
@@ -2420,7 +2464,7 @@
         "notes": null
     },
     {
-        "id": 56,
+        "id": 57,
         "title": "Les Gondoles à Venise",
         "year": 1973,
         "artist_a": "Sheila",
@@ -2464,7 +2508,7 @@
         "notes": null
     },
     {
-        "id": 57,
+        "id": 58,
         "title": "It´s All Over Now",
         "year": 1974,
         "artist_a": "Bobby Womack",
@@ -2508,7 +2552,7 @@
         "notes": null
     },
     {
-        "id": 58,
+        "id": 59,
         "title": "As Soon As I Hang Up The Phone",
         "year": 1974,
         "artist_a": "Loretta Lynn",
@@ -2552,7 +2596,7 @@
         "notes": null
     },
     {
-        "id": 59,
+        "id": 60,
         "title": "Still In Love With You",
         "year": 1974,
         "artist_a": "Phil Lynott",
@@ -2596,7 +2640,7 @@
         "notes": null
     },
     {
-        "id": 60,
+        "id": 61,
         "title": "Mockingbird",
         "year": 1974,
         "artist_a": "Carly Simon",
@@ -2640,7 +2684,7 @@
         "notes": null
     },
     {
-        "id": 61,
+        "id": 62,
         "title": "Play Me",
         "year": 1974,
         "artist_a": "Neil Diamond",
@@ -2684,7 +2728,7 @@
         "notes": null
     },
     {
-        "id": 62,
+        "id": 63,
         "title": "No Charge",
         "year": 1974,
         "artist_a": "Tammy Wynette",
@@ -2728,7 +2772,7 @@
         "notes": null
     },
     {
-        "id": 63,
+        "id": 64,
         "title": "The Telephone Call",
         "year": 1974,
         "artist_a": "George Jones",
@@ -2772,7 +2816,7 @@
         "notes": null
     },
     {
-        "id": 64,
+        "id": 65,
         "title": "Feel Like Makin' Love",
         "year": 1975,
         "artist_a": "Johnny Mathis",
@@ -2816,7 +2860,7 @@
         "notes": null
     },
     {
-        "id": 65,
+        "id": 66,
         "title": "We Do It",
         "year": 1975,
         "artist_a": "Russell Stone",
@@ -2860,7 +2904,7 @@
         "notes": null
     },
     {
-        "id": 66,
+        "id": 67,
         "title": "Lion In The Winter",
         "year": 1975,
         "artist_a": "Hoyt Axton",
@@ -2904,7 +2948,7 @@
         "notes": null
     },
     {
-        "id": 67,
+        "id": 68,
         "title": "You Don´t Have To Be A Star (To Be In My Show)",
         "year": 1976,
         "artist_a": "Marilyn McCoo",
@@ -2948,7 +2992,7 @@
         "notes": "Flutey. Grammy. Soul train, Midnight Special. Own TV Show. Charity Album for BLM and Local churches in 21 singing Beatles covers."
     },
     {
-        "id": 68,
+        "id": 69,
         "title": "Homeward Bound",
         "year": 1976,
         "artist_a": "Paul Simon",
@@ -2992,7 +3036,7 @@
         "notes": null
     },
     {
-        "id": 69,
+        "id": 70,
         "title": "Don't Cry Joni",
         "year": 1976,
         "artist_a": "Conway Twitty",
@@ -3036,7 +3080,7 @@
         "notes": null
     },
     {
-        "id": 70,
+        "id": 71,
         "title": "Don´t Go Breaking My Heart",
         "year": 1976,
         "artist_a": "Elton John",
@@ -3080,7 +3124,7 @@
         "notes": null
     },
     {
-        "id": 71,
+        "id": 72,
         "title": "Good Hearted Woman",
         "year": 1976,
         "artist_a": "Waylon Jennings",
@@ -3124,7 +3168,7 @@
         "notes": null
     },
     {
-        "id": 72,
+        "id": 73,
         "title": "Move Me",
         "year": 1977,
         "artist_a": "Gregg Allman",
@@ -3168,7 +3212,7 @@
         "notes": "ALLMAN AND WOMAN. Old Grey Whistle."
     },
     {
-        "id": 73,
+        "id": 74,
         "title": "I Got Plenty O' Nuttin'",
         "year": 1977,
         "artist_a": "Ray Charles",
@@ -3212,7 +3256,7 @@
         "notes": null
     },
     {
-        "id": 74,
+        "id": 75,
         "title": "Shut Out",
         "year": 1977,
         "artist_a": "Paul Jabara",
@@ -3256,7 +3300,7 @@
         "notes": null
     },
     {
-        "id": 75,
+        "id": 76,
         "title": "You're The Reason Our Kids Are Ugly",
         "year": 1977,
         "artist_a": "L.E White",
@@ -3300,7 +3344,7 @@
         "notes": null
     },
     {
-        "id": 76,
+        "id": 77,
         "title": "Too Much, Too Little, Too Late",
         "year": 1978,
         "artist_a": "Johnny Mathis",
@@ -3344,7 +3388,7 @@
         "notes": "Age Gap. Simple promo of singing through the telephone. Led to Duets LP"
     },
     {
-        "id": 77,
+        "id": 78,
         "title": "You Don´t Bring Me Flowers",
         "year": 1978,
         "artist_a": "Barbra Streisand",
@@ -3388,7 +3432,7 @@
         "notes": null
     },
     {
-        "id": 78,
+        "id": 79,
         "title": "The Closer I Get To You",
         "year": 1978,
         "artist_a": "Roberta Flack",
@@ -3432,7 +3476,7 @@
         "notes": null
     },
     {
-        "id": 79,
+        "id": 80,
         "title": "Everytime Two Fools Collide",
         "year": 1978,
         "artist_a": "Kenny Rogers",
@@ -3476,7 +3520,7 @@
         "notes": null
     },
     {
-        "id": 80,
+        "id": 81,
         "title": "We Got The Love",
         "year": 1978,
         "artist_a": "Chaka Khan",
@@ -3520,7 +3564,7 @@
         "notes": null
     },
     {
-        "id": 81,
+        "id": 82,
         "title": "Heaven Knows",
         "year": 1978,
         "artist_a": "Donna Summer",
@@ -3564,7 +3608,7 @@
         "notes": null
     },
     {
-        "id": 82,
+        "id": 83,
         "title": "Devoted To You",
         "year": 1978,
         "artist_a": "Carly Simon",
@@ -3608,7 +3652,7 @@
         "notes": "The Everly Brothers 58"
     },
     {
-        "id": 83,
+        "id": 84,
         "title": "You´re The One That I Want",
         "year": 1978,
         "artist_a": "John Travolta",
@@ -3652,7 +3696,7 @@
         "notes": null
     },
     {
-        "id": 84,
+        "id": 85,
         "title": "Take Good Care Of My Baby/What's A Girl To Do",
         "year": 1978,
         "artist_a": "Paul Jabara",
@@ -3696,7 +3740,7 @@
         "notes": null
     },
     {
-        "id": 85,
+        "id": 86,
         "title": "Whenever I Call You Friend",
         "year": 1978,
         "artist_a": "Kenny Loggins",
@@ -3740,7 +3784,95 @@
         "notes": null
     },
     {
-        "id": 86,
+        "id": 87,
+        "title": "Whenever I Call You Friend",
+        "year": 1979,
+        "artist_a": "Melissa Manchester",
+        "artist_b": "Arnold McCuller",
+        "gender": "MF",
+        "relationship": "",
+        "genre": "Pop",
+        "sub_genre": "",
+        "sentimental_ballad": "",
+        "song_form": "",
+        "tag_1": "",
+        "subject": "Romance",
+        "dynamic": "",
+        "originally_a_duet": "",
+        "cover_version": "",
+        "writer_a": "",
+        "writer_b": "",
+        "writer_c": "",
+        "writer_d": "",
+        "writer_e": "",
+        "writer_f": "",
+        "release": "",
+        "duo_lp": "",
+        "various_partners_lp": "",
+        "legacy": "",
+        "soundtrack": "",
+        "various_artists_lp": "",
+        "promotional_video": "",
+        "behind_the_scenes": "",
+        "presentation": "",
+        "format": "",
+        "programme_title": "",
+        "concert_footage": "",
+        "special": "",
+        "charity_or_cause": "",
+        "tribute": "",
+        "christmas": "",
+        "virtual": "",
+        "episode": "",
+        "yt_link": "",
+        "notes": null
+    },
+    {
+        "id": 88,
+        "title": "Whenever I Call You Friend",
+        "year": 1979,
+        "artist_a": "Marie Osmond",
+        "artist_b": "Dirk Benedict",
+        "gender": "MF",
+        "relationship": "",
+        "genre": "Pop",
+        "sub_genre": "",
+        "sentimental_ballad": "",
+        "song_form": "",
+        "tag_1": "",
+        "subject": "",
+        "dynamic": "",
+        "originally_a_duet": "",
+        "cover_version": "",
+        "writer_a": "",
+        "writer_b": "",
+        "writer_c": "",
+        "writer_d": "",
+        "writer_e": "",
+        "writer_f": "",
+        "release": "",
+        "duo_lp": "",
+        "various_partners_lp": "",
+        "legacy": "",
+        "soundtrack": "",
+        "various_artists_lp": "",
+        "promotional_video": "",
+        "behind_the_scenes": "",
+        "presentation": "",
+        "format": "",
+        "programme_title": "",
+        "concert_footage": "",
+        "special": "",
+        "charity_or_cause": "",
+        "tribute": "",
+        "christmas": "",
+        "virtual": "",
+        "episode": "",
+        "yt_link": "https://www.youtube.com/watch?v=dsuMVSEbApc",
+        "notes": null
+    },
+    {
+        "id": 89,
         "title": "Hang on In There Baby",
         "year": 1979,
         "artist_a": "Johnny Bristol",
@@ -3784,7 +3916,7 @@
         "notes": null
     },
     {
-        "id": 87,
+        "id": 90,
         "title": "No More Tears (Enough Is Enough)",
         "year": 1979,
         "artist_a": "Donna Summer",
@@ -3828,7 +3960,7 @@
         "notes": null
     },
     {
-        "id": 88,
+        "id": 91,
         "title": "Let Me Go, Love",
         "year": 1979,
         "artist_a": "Nicolette Larson",
@@ -3872,7 +4004,7 @@
         "notes": null
     },
     {
-        "id": 89,
+        "id": 92,
         "title": "Mamas Don´t Let Your Babies Grow Up To Be Cowboys",
         "year": 1979,
         "artist_a": "Waylon Jennings",
@@ -3916,7 +4048,7 @@
         "notes": null
     },
     {
-        "id": 90,
+        "id": 93,
         "title": "The Last Time I Felt Like This",
         "year": 1979,
         "artist_a": "Johnny Mathis",
@@ -3960,7 +4092,7 @@
         "notes": "Also on Oprah"
     },
     {
-        "id": 91,
+        "id": 94,
         "title": "With You I´m Born Again",
         "year": 1979,
         "artist_a": "Billy Preston",
@@ -4004,7 +4136,7 @@
         "notes": "Revisit in 91 with Ian Levine. Vanessa Williams & George Benson"
     },
     {
-        "id": 92,
+        "id": 95,
         "title": "Rest Your Love On Me",
         "year": 1979,
         "artist_a": "Andy Gibb",
@@ -4048,7 +4180,7 @@
         "notes": null
     },
     {
-        "id": 93,
+        "id": 96,
         "title": "What You Won´t Do For Love",
         "year": 1979,
         "artist_a": "Natalie Cole",
@@ -4092,7 +4224,7 @@
         "notes": null
     },
     {
-        "id": 94,
+        "id": 97,
         "title": "It's Been So Long, Darling",
         "year": 1979,
         "artist_a": "Ernest Tubb",
@@ -4136,7 +4268,7 @@
         "notes": null
     },
     {
-        "id": 95,
+        "id": 98,
         "title": "Never lose your sense of Humour",
         "year": 1979,
         "artist_a": "Paul Jabara",
@@ -4180,7 +4312,7 @@
         "notes": null
     },
     {
-        "id": 96,
+        "id": 99,
         "title": "Stranger In The House",
         "year": 1979,
         "artist_a": "George Jones",
@@ -4224,7 +4356,7 @@
         "notes": null
     },
     {
-        "id": 97,
+        "id": 100,
         "title": "Feels Like The First Time",
         "year": 1979,
         "artist_a": "Millie Jackson",
@@ -4268,7 +4400,7 @@
         "notes": null
     },
     {
-        "id": 98,
+        "id": 101,
         "title": "Standing On The Edge Of A Love Affair",
         "year": 1979,
         "artist_a": "Roger St. Kenerly",
@@ -4312,7 +4444,7 @@
         "notes": null
     },
     {
-        "id": 99,
+        "id": 102,
         "title": "Private Idaho",
         "year": 1980,
         "artist_a": "Fred Schneider",
@@ -4356,7 +4488,7 @@
         "notes": null
     },
     {
-        "id": 100,
+        "id": 103,
         "title": "Les Aveux",
         "year": 1980,
         "artist_a": "Elton John",
@@ -4400,7 +4532,7 @@
         "notes": "2 songs, 2 promos, 2 tracksuits"
     },
     {
-        "id": 101,
+        "id": 104,
         "title": "Should've Never Let You Go",
         "year": 1980,
         "artist_a": "Neil Sedaka",
@@ -4444,7 +4576,7 @@
         "notes": "Break up song between Father Daughter. More to follow"
     },
     {
-        "id": 102,
+        "id": 105,
         "title": "Lovers After All",
         "year": 1980,
         "artist_a": "Melissa Manchester",
@@ -4488,7 +4620,7 @@
         "notes": null
     },
     {
-        "id": 103,
+        "id": 106,
         "title": "Suddenly",
         "year": 1980,
         "artist_a": "Olivia Newton John",
@@ -4532,7 +4664,7 @@
         "notes": null
     },
     {
-        "id": 104,
+        "id": 107,
         "title": "Guilty",
         "year": 1980,
         "artist_a": "Barbra Streisand",
@@ -4576,7 +4708,7 @@
         "notes": null
     },
     {
-        "id": 105,
+        "id": 108,
         "title": "You",
         "year": 1980,
         "artist_a": "Roy Harper",
@@ -4620,7 +4752,7 @@
         "notes": null
     },
     {
-        "id": 106,
+        "id": 109,
         "title": "My Guy, My Girl",
         "year": 1980,
         "artist_a": "Amii Stewart",
@@ -4664,7 +4796,7 @@
         "notes": null
     },
     {
-        "id": 107,
+        "id": 110,
         "title": "Something About You Baby I LIke",
         "year": 1980,
         "artist_a": "Glen Campbell",
@@ -4708,7 +4840,7 @@
         "notes": null
     },
     {
-        "id": 108,
+        "id": 111,
         "title": "Nobody Loves Me Like You",
         "year": 1980,
         "artist_a": "Degarmo & Key",
@@ -4752,7 +4884,7 @@
         "notes": null
     },
     {
-        "id": 109,
+        "id": 112,
         "title": "Wine, Women And Song",
         "year": 1980,
         "artist_a": "Smokey Robinson",
@@ -4796,7 +4928,7 @@
         "notes": null
     },
     {
-        "id": 110,
+        "id": 113,
         "title": "I've Got My MInd Made Up / I Don't Need You anymore",
         "year": 1980,
         "artist_a": "Michael McDonald",
@@ -4840,7 +4972,7 @@
         "notes": null
     },
     {
-        "id": 111,
+        "id": 114,
         "title": "The Last Duet",
         "year": 1980,
         "artist_a": "Barry Manilow",
@@ -4884,7 +5016,7 @@
         "notes": null
     },
     {
-        "id": 112,
+        "id": 115,
         "title": "Don't Knock My Love",
         "year": 1980,
         "artist_a": "Pia Zadora",
@@ -4928,7 +5060,7 @@
         "notes": null
     },
     {
-        "id": 113,
+        "id": 116,
         "title": "We Could Stay Together",
         "year": 1980,
         "artist_a": "Booker T Jones",
@@ -4972,7 +5104,7 @@
         "notes": null
     },
     {
-        "id": 114,
+        "id": 117,
         "title": "Rocky Top",
         "year": 1980,
         "artist_a": "Boudleaux Bryant",
@@ -5016,7 +5148,7 @@
         "notes": null
     },
     {
-        "id": 115,
+        "id": 118,
         "title": "Prehaps Love",
         "year": 1981,
         "artist_a": "Placido Domingo",
@@ -5060,7 +5192,7 @@
         "notes": "John Denver & Lene Siel 1996"
     },
     {
-        "id": 116,
+        "id": 119,
         "title": "All I Have To Do Is Dream",
         "year": 1981,
         "artist_a": "Andy Gibb",
@@ -5104,7 +5236,7 @@
         "notes": "The Everly Brothers. Cliff Richard and Phil Everly 1994 https://www.youtube.com/watch?v=zTHh7R4bv4A"
     },
     {
-        "id": 117,
+        "id": 120,
         "title": "Dead Ringer For Love",
         "year": 1981,
         "artist_a": "Meat Loaf",
@@ -5148,7 +5280,7 @@
         "notes": null
     },
     {
-        "id": 118,
+        "id": 121,
         "title": "Under Pressure",
         "year": 1981,
         "artist_a": "Freddie Mercury",
@@ -5192,7 +5324,7 @@
         "notes": null
     },
     {
-        "id": 119,
+        "id": 122,
         "title": "Leather And Lace",
         "year": 1981,
         "artist_a": "Stevie Nicks",
@@ -5236,7 +5368,7 @@
         "notes": null
     },
     {
-        "id": 120,
+        "id": 123,
         "title": "Stop Draggin My Heart Around",
         "year": 1981,
         "artist_a": "Stevie Nicks",
@@ -5280,7 +5412,7 @@
         "notes": null
     },
     {
-        "id": 121,
+        "id": 124,
         "title": "Baby, Come To Me",
         "year": 1981,
         "artist_a": "Patti Austin",
@@ -5324,7 +5456,7 @@
         "notes": "Q & Temperton. McDonald BVs."
     },
     {
-        "id": 122,
+        "id": 125,
         "title": "Better Now We're Friends",
         "year": 1981,
         "artist_a": "Henry Gross",
@@ -5368,7 +5500,7 @@
         "notes": null
     },
     {
-        "id": 123,
+        "id": 126,
         "title": "Love All The Hurt Away",
         "year": 1981,
         "artist_a": "Aretha Franklin",
@@ -5412,7 +5544,7 @@
         "notes": null
     },
     {
-        "id": 124,
+        "id": 127,
         "title": "Daddy Come Home",
         "year": 1981,
         "artist_a": "George Jones",
@@ -5456,7 +5588,7 @@
         "notes": null
     },
     {
-        "id": 125,
+        "id": 128,
         "title": "You're The Best Thing That Ever Happened To Me",
         "year": 1981,
         "artist_a": "Andy Gibb",
@@ -5500,7 +5632,7 @@
         "notes": null
     },
     {
-        "id": 126,
+        "id": 129,
         "title": "Rainbow Connection",
         "year": 1981,
         "artist_a": "Deborah Harry",
@@ -5544,7 +5676,7 @@
         "notes": null
     },
     {
-        "id": 127,
+        "id": 130,
         "title": "You Are Everything",
         "year": 1981,
         "artist_a": "Diana Ross",
@@ -5588,7 +5720,7 @@
         "notes": null
     },
     {
-        "id": 128,
+        "id": 131,
         "title": "Sweet And Deep",
         "year": 1981,
         "artist_a": "Johnny Bristol",
@@ -5632,7 +5764,7 @@
         "notes": null
     },
     {
-        "id": 129,
+        "id": 132,
         "title": "Endless Love",
         "year": 1981,
         "artist_a": "Diana Ross",
@@ -5676,7 +5808,7 @@
         "notes": "Another more upbeat duet appears on soundtrack. many versions with other female partners"
     },
     {
-        "id": 130,
+        "id": 133,
         "title": "Stay The Night",
         "year": 1981,
         "artist_a": "Jim Messina",
@@ -5720,7 +5852,7 @@
         "notes": null
     },
     {
-        "id": 131,
+        "id": 134,
         "title": "Jamaica Farewell",
         "year": 1981,
         "artist_a": "Arlo Guthrie",
@@ -5764,7 +5896,7 @@
         "notes": null
     },
     {
-        "id": 132,
+        "id": 135,
         "title": "Fire And Desire",
         "year": 1981,
         "artist_a": "Rick James",
@@ -5808,7 +5940,7 @@
         "notes": null
     },
     {
-        "id": 133,
+        "id": 136,
         "title": "The Hungry Years",
         "year": 1981,
         "artist_a": "Neil Sedaka",
@@ -5852,7 +5984,7 @@
         "notes": null
     },
     {
-        "id": 134,
+        "id": 137,
         "title": "Catch The Wind",
         "year": 1981,
         "artist_a": "Donovan",
@@ -5896,7 +6028,7 @@
         "notes": null
     },
     {
-        "id": 135,
+        "id": 138,
         "title": "The Girl Is Mine",
         "year": 1982,
         "artist_a": "Michael Jackson",
@@ -5940,7 +6072,7 @@
         "notes": "First Star Vehicle duet i was aware of? Lead single from Thriller. first thing recorded during the sessions, Quincy said it was a red herring for what was to come. MJ wrote..after a suggestion from Quincy to write a romantic rivalry between two guys. Not a failure. no2 in US no8 in UK. super breezy bass, muted guitar and finger snap rhythm over a bed of real strings and synth flutes. Mac bass vox 2:44 Cocky McCartney the elder, not really bothered, but knows he´ll win. the 'nurrgh..i've heard it all before' sigh before he lays down his tongue twisting truth that 'she told me that I'm her forever lover you know, don't you remember? tells us he is tired of this petty squabble, like an exasperated dad asked 'why?' one to many times. 'I DON'T BELIEVE YOU' . Dialogue outro. https://www.google.com/search?q=girl+is+mine+lyrics&oq=girl+is+mine+&aqs=chrome.1.69i57j0i512j46i20i263i512j0i512j46i512j69i60l3.11755j0j4&sourceid=chrome&ie=UTF-8 Paul had disbanded wings and was readying the release of Tug of War https://www.the-paulmccartney-project.com/album/tug-of-war/ and had just released Ebony and Ivory two weeks previous to the recording Girl is mine and it was climbing the charts. Michael no big single for 2 years since Girlfriend penned by Macca, another cuckolding song https://www.youtube.com/watch?v=pShTWUOsV64 https://www.youtube.com/watch?v=O8rc8FNCHcU Michael cold called Paul Christmas 80 just a few weeks after John was shot and proposed writing together (quincy has said he is a machevallian motherfucker) Say Say Say and The Man (santana-like guitar) recorded in May 81 but not released till Pipes of Peace in 83. https://www.the-paulmccartney-project.com/session/recording-say-say-say-the-man/ Quincy on MJ and PAUL https://www.vulture.com/2018/02/quincy-jones-in-conversation.html . Quincy and Spielberg ET storybook. Paul's Publishing advice https://www.billboard.com/music/rock/beatles-catalog-paul-mccartney-brief-history-ownership-7662519/ Dick James recommended by George Martin wowed Brian Epstein with his entertainment bizz contacts. https://en.wikipedia.org/wiki/Northern_Songs https://photos.google.com/photo/AF1QipP8OWPYkXUWaecUXm_Q_04aXL9ncAzkBLoSCG7i https://www.youtube.com/watch?v=3jdB7Apk-R4&list=PLhrdp9uNV5z9LqoQ-wMIzZGyvKo49uX_T&index=8&t=12s , GG Reworking In 98 by Brandy and Monica. will i am remix 08 Sexual Healing intro, fat bass synth farts during the verse,cutting Mac and inserting his own banalaties 'she mine, she mine' 'like the way i rock' https://www.youtube.com/watch?v=0lJlNmAclPk came with MJ solo demo, more strings and longing reduced middle8 https://www.youtube.com/watch?v=eFWmSULkvXU 2 copyright infringement suits 84 https://www.leagle.com/decision/19841305594fsupp71111186 and 92. both failed MJ Deposistion https://www.youtube.com/watch?v=c1uyuSB6Lm4&t=2320s and Copyright infringement summary https://blogs.law.gwu.edu/mcir/case/smith-v-michael-jackson/ The LP art MJ sketches/caricatures https://www.the-paulmccartney-project.com/song/the-girl-is-mine/"
     },
     {
-        "id": 136,
+        "id": 139,
         "title": "Ebony And Ivory",
         "year": 1982,
         "artist_a": "Paul McCartney",
@@ -5984,7 +6116,7 @@
         "notes": "Released as a solo video aswell. . SNL Spoof. What´s That You´re Doing? also appears on Tug Of War"
     },
     {
-        "id": 137,
+        "id": 140,
         "title": "Never Again",
         "year": 1982,
         "artist_a": "Tomas Ledin",
@@ -6028,7 +6160,7 @@
         "notes": "An attempt to break Tomas Ledin by Stig Anderson"
     },
     {
-        "id": 138,
+        "id": 141,
         "title": "Here We´ll Stay",
         "year": 1982,
         "artist_a": "Anni-Frid Lyngstad",
@@ -6072,7 +6204,7 @@
         "notes": null
     },
     {
-        "id": 139,
+        "id": 142,
         "title": "No Show Jones",
         "year": 1982,
         "artist_a": "Merle Haggard",
@@ -6116,7 +6248,7 @@
         "notes": null
     },
     {
-        "id": 140,
+        "id": 143,
         "title": "Slow Dancin'",
         "year": 1982,
         "artist_a": "Chaka Khan",
@@ -6160,7 +6292,7 @@
         "notes": null
     },
     {
-        "id": 141,
+        "id": 144,
         "title": "Don´t Fight It",
         "year": 1982,
         "artist_a": "Kenny Loggins",
@@ -6204,7 +6336,7 @@
         "notes": null
     },
     {
-        "id": 142,
+        "id": 145,
         "title": "Mainstream",
         "year": 1982,
         "artist_a": "Michael Omartian",
@@ -6248,7 +6380,7 @@
         "notes": null
     },
     {
-        "id": 143,
+        "id": 146,
         "title": "Peace On Earth/Little Drummer Boy",
         "year": 1982,
         "artist_a": "David Bowie",
@@ -6292,7 +6424,7 @@
         "notes": "Label fallout."
     },
     {
-        "id": 144,
+        "id": 147,
         "title": "If This World Were Mine",
         "year": 1982,
         "artist_a": "Luther Vandross",
@@ -6336,7 +6468,7 @@
         "notes": "Later used on a soundtrack"
     },
     {
-        "id": 145,
+        "id": 148,
         "title": "Up Where We Belong",
         "year": 1982,
         "artist_a": "Joe Cocker",
@@ -6380,7 +6512,7 @@
         "notes": "Pieced together from the film score. Live with Joan Baez"
     },
     {
-        "id": 146,
+        "id": 149,
         "title": "How Do You Keep The Music Playing",
         "year": 1982,
         "artist_a": "James Ingram",
@@ -6424,7 +6556,7 @@
         "notes": null
     },
     {
-        "id": 147,
+        "id": 150,
         "title": "Friends In Love",
         "year": 1982,
         "artist_a": "Dionne Warwick",
@@ -6468,7 +6600,7 @@
         "notes": "LP features another upbeat duet with Johnny"
     },
     {
-        "id": 148,
+        "id": 151,
         "title": "This One´s From The Heart",
         "year": 1982,
         "artist_a": "Tom Waits",
@@ -6512,7 +6644,7 @@
         "notes": null
     },
     {
-        "id": 149,
+        "id": 152,
         "title": "I'd Rather Go Blind",
         "year": 1982,
         "artist_a": "Etta James",
@@ -6556,7 +6688,7 @@
         "notes": null
     },
     {
-        "id": 150,
+        "id": 153,
         "title": "Used To Be",
         "year": 1982,
         "artist_a": "Charlene",
@@ -6600,7 +6732,7 @@
         "notes": null
     },
     {
-        "id": 151,
+        "id": 154,
         "title": "We Don't Talk Anymore",
         "year": 1982,
         "artist_a": "Cliff Richard",
@@ -6644,7 +6776,7 @@
         "notes": null
     },
     {
-        "id": 152,
+        "id": 155,
         "title": "Love Has A Mind Of It´s Own",
         "year": 1983,
         "artist_a": "Donna Summer",
@@ -6688,7 +6820,7 @@
         "notes": "Summer wrote with her Husband."
     },
     {
-        "id": 153,
+        "id": 156,
         "title": "Together We´re Strong",
         "year": 1983,
         "artist_a": "Mireille Mathieu",
@@ -6732,7 +6864,7 @@
         "notes": "Something's Going On B Side"
     },
     {
-        "id": 154,
+        "id": 157,
         "title": "Islands In The Stream",
         "year": 1983,
         "artist_a": "Kenny Rogers",
@@ -6776,7 +6908,7 @@
         "notes": "Gibb song and production. Led to a Christmas LP and TV show in 84 and Real Love in 85. Ghetto Superstar. Comic Relief."
     },
     {
-        "id": 155,
+        "id": 158,
         "title": "Thought I'd Ring You",
         "year": 1983,
         "artist_a": "Shirley Bassey",
@@ -6820,7 +6952,7 @@
         "notes": null
     },
     {
-        "id": 156,
+        "id": 159,
         "title": "My First Country Song",
         "year": 1983,
         "artist_a": "Dean Martin",
@@ -6864,7 +6996,7 @@
         "notes": null
     },
     {
-        "id": 157,
+        "id": 160,
         "title": "How Many Times Can We Say Goodbye",
         "year": 1983,
         "artist_a": "Dionne Warwick",
@@ -6908,7 +7040,7 @@
         "notes": null
     },
     {
-        "id": 158,
+        "id": 161,
         "title": "Just The Way You Are",
         "year": 1983,
         "artist_a": "Kermit The Frog",
@@ -6952,7 +7084,7 @@
         "notes": null
     },
     {
-        "id": 159,
+        "id": 162,
         "title": "Say Say Say",
         "year": 1983,
         "artist_a": "Paul McCartney",
@@ -6996,7 +7128,7 @@
         "notes": null
     },
     {
-        "id": 160,
+        "id": 163,
         "title": "Bara En Enda Gang",
         "year": 1983,
         "artist_a": "Ann-Louise Hanson",
@@ -7040,7 +7172,7 @@
         "notes": null
     },
     {
-        "id": 161,
+        "id": 164,
         "title": "Ebony Eyes",
         "year": 1983,
         "artist_a": "Rick James",
@@ -7084,7 +7216,7 @@
         "notes": null
     },
     {
-        "id": 162,
+        "id": 165,
         "title": "Pancho And Lefty",
         "year": 1983,
         "artist_a": "Merle Haggard",
@@ -7128,7 +7260,7 @@
         "notes": null
     },
     {
-        "id": 163,
+        "id": 166,
         "title": "She Means Nothing To Me",
         "year": 1983,
         "artist_a": "Phil Everly",
@@ -7172,7 +7304,7 @@
         "notes": "Zoo Dance on TOTP. When Will I Be Loved : Live with Cliff Cam 1994"
     },
     {
-        "id": 164,
+        "id": 167,
         "title": "Neither One Of Us (Wants To Be The First to Say Goodbye)",
         "year": 1983,
         "artist_a": "Johnny Mathis",
@@ -7216,7 +7348,7 @@
         "notes": null
     },
     {
-        "id": 165,
+        "id": 168,
         "title": "We've Got Tonight",
         "year": 1983,
         "artist_a": "Kenny Rogers",
@@ -7260,7 +7392,7 @@
         "notes": "Rita Coolidge & Jermaine Jackson 1983, Ronan Keating & Lulu 2002, Ronan Keating & Jeanette Biedermann 2002"
     },
     {
-        "id": 166,
+        "id": 169,
         "title": "Time",
         "year": 1983,
         "artist_a": "Anni-Frid Lyngstad",
@@ -7304,7 +7436,7 @@
         "notes": null
     },
     {
-        "id": 167,
+        "id": 170,
         "title": "Blame It On Love",
         "year": 1983,
         "artist_a": "Smokey Robinson",
@@ -7348,7 +7480,7 @@
         "notes": null
     },
     {
-        "id": 168,
+        "id": 171,
         "title": "Just One Touch",
         "year": 1983,
         "artist_a": "Pheobe Cates",
@@ -7392,7 +7524,7 @@
         "notes": null
     },
     {
-        "id": 169,
+        "id": 172,
         "title": "The Bonds Of Time",
         "year": 1983,
         "artist_a": "Rupert Holmes",
@@ -7436,7 +7568,7 @@
         "notes": null
     },
     {
-        "id": 170,
+        "id": 173,
         "title": "Drifting",
         "year": 1983,
         "artist_a": "Sheila Walsh",
@@ -7480,7 +7612,7 @@
         "notes": null
     },
     {
-        "id": 171,
+        "id": 174,
         "title": "It´s Our Time",
         "year": 1983,
         "artist_a": "Philip Bailey",
@@ -7524,7 +7656,7 @@
         "notes": null
     },
     {
-        "id": 172,
+        "id": 175,
         "title": "The Conversation",
         "year": 1983,
         "artist_a": "Waylon Jennings",
@@ -7568,7 +7700,7 @@
         "notes": null
     },
     {
-        "id": 173,
+        "id": 176,
         "title": "Obsession",
         "year": 1983,
         "artist_a": "Michael Des Barres",
@@ -7612,7 +7744,7 @@
         "notes": null
     },
     {
-        "id": 174,
+        "id": 177,
         "title": "Cool Places",
         "year": 1983,
         "artist_a": "Russell Mael",
@@ -7656,7 +7788,7 @@
         "notes": null
     },
     {
-        "id": 175,
+        "id": 178,
         "title": "Little Queenie",
         "year": 1983,
         "artist_a": "Jerry Lee Lewis",
@@ -7700,7 +7832,7 @@
         "notes": null
     },
     {
-        "id": 176,
+        "id": 179,
         "title": "Ooo Baby Baby/The Tracks of My Tears",
         "year": 1983,
         "artist_a": "Smokey Robinson",
@@ -7744,7 +7876,7 @@
         "notes": null
     },
     {
-        "id": 177,
+        "id": 180,
         "title": "I Heard It Through The Grapevine",
         "year": 1983,
         "artist_a": "Gladys Knight",
@@ -7788,7 +7920,7 @@
         "notes": null
     },
     {
-        "id": 178,
+        "id": 181,
         "title": "Yah Mo Be There",
         "year": 1983,
         "artist_a": "James Ingram",
@@ -7832,7 +7964,7 @@
         "notes": null
     },
     {
-        "id": 179,
+        "id": 182,
         "title": "Tonight I Celebrate My Love",
         "year": 1983,
         "artist_a": "Peabo Bryson",
@@ -7876,7 +8008,7 @@
         "notes": null
     },
     {
-        "id": 180,
+        "id": 183,
         "title": "Gimmie The Word",
         "year": 1983,
         "artist_a": "Paul Anka",
@@ -7920,7 +8052,7 @@
         "notes": "With Marilyn McCoo Solid Gold https://www.youtube.com/watch?v=0DDE6I6HVCU & Marion HitParade https://www.youtube.com/watch?v=N89zWTSGqfM"
     },
     {
-        "id": 181,
+        "id": 184,
         "title": "Last Night At Danceland/Roof Garden",
         "year": 1983,
         "artist_a": "Sheena Easton",
@@ -7964,7 +8096,7 @@
         "notes": null
     },
     {
-        "id": 182,
+        "id": 185,
         "title": "Remember",
         "year": 1984,
         "artist_a": "Shirley Bassey",
@@ -8008,7 +8140,7 @@
         "notes": "Thought I'd Ring You on B Side"
     },
     {
-        "id": 183,
+        "id": 186,
         "title": "Kann Es Liebe Sein?",
         "year": 1984,
         "artist_a": "Falco",
@@ -8052,7 +8184,7 @@
         "notes": "Désirée (presenter,actress) had one other single with a cover of Quo´s What you´re proposing 81"
     },
     {
-        "id": 184,
+        "id": 187,
         "title": "All Of You",
         "year": 1984,
         "artist_a": "Julio Iglesias",
@@ -8096,7 +8228,7 @@
         "notes": "Classy. Steamy."
     },
     {
-        "id": 185,
+        "id": 188,
         "title": "World Destruction",
         "year": 1984,
         "artist_a": "Afrika Bambaata",
@@ -8140,7 +8272,7 @@
         "notes": null
     },
     {
-        "id": 186,
+        "id": 189,
         "title": "Seven Spanish Angels",
         "year": 1984,
         "artist_a": "Ray Charles",
@@ -8184,7 +8316,7 @@
         "notes": null
     },
     {
-        "id": 187,
+        "id": 190,
         "title": "Two To The Power Of Love",
         "year": 1984,
         "artist_a": "Janet Jackson",
@@ -8228,7 +8360,7 @@
         "notes": "Only Released in Europe and UK Sept 84 as 2nd single from Janets 2nd LP. Terrible cheap cover thrown together, https://en.wikipedia.org/wiki/Two_to_the_Power_of_Love#/media/File:Two_The_Power_of_Love.jpeg Janet 17 studio promo shot juxtaposed with Cliff 44 shot in front of a hedge looking away to the right off the cover away from Janet, seems like a staged papparazzi shot. Produced by peak soundtrack Moroder (Flashdance, Scarface, Electric Dreams, Neverending Story) https://www.youtube.com/watch?v=XVvZ4-dTd64 Joe espositos scarface sing-a-long. The comedown after Moroder and Esposito's (with help from Donna Summer) disco triumph Heaven Knows https://www.youtube.com/watch?v=BcHciz6eeeI Written by Pete Beckett and Steve Kipner. Why Cliff? Janet was trying to break free from Joe as he was guiding her career making artistic and commercial decisions (CLIFF?) she didn´t want to be in Fame TV show. she eloped with James DeBarge of Debarge another family Musical group with a history of physical abuse, in September 84 but the marriage only lasted a year before annulment due to his pain killer addiction. Two of his brothers got done for drug trafficking in the late 80s. Cliff is hitting his silver jubilee and bases a release around it and does lots of TV with 'Please don´t fall in love' and 'Baby, you´re dynamite' https://www.youtube.com/watch?v=dG-uQswyZBA , a couple of duets just prior to this one rocker with Phil Everly 'She Means nothing to me' and one synth ballad with fellow gawd sqwuader Sheila Walsh 'Drifting' https://www.youtube.com/watch?v=96Iqz-SGgL0 but maybe it is Cliff's success with ONJ in 80 with Suddenly from Xanadu, written by John Farrar of 'You´re the one that i want' 78. Farrar uses Steve Kipner on ONJ Physical album 81, Beckett & Kipner joint songwriting credit ONJ Twist of Fate 83 bandmates from Tin Tin and then Skyband https://peterbeckett-player.com/credits Tin Tin were produced by Maurice Gibb. a studio session with Maurice Gibb doing a John Lennon impression was released as 'Have you Heard the Word' by The Fut in 70 as a fake beatles bootleg. https://www.youtube.com/watch?v=hXBZp_PvQjA https://peterbeckett-player.com/think-out-loud Beckett best known for his late 70s smooth rock band Player and hit song Baby Come Back https://www.youtube.com/watch?v=Hn-enjcgV1o Tried his hand at a duet a year previous with Beckett & Nelson https://www.youtube.com/watch?v=Cu1CGyrFmjo Featured on Fame (without Cliff) around time of release https://www.youtube.com/watch?v=Fmju6js6qyE After this she gets rid of Joe and starts working with producers Jimmy Jam & Terry Lewis of the Time band, who performed Prince Material."
     },
     {
-        "id": 188,
+        "id": 191,
         "title": "Love Again",
         "year": 1984,
         "artist_a": "Sylvie Vartan",
@@ -8272,7 +8404,7 @@
         "notes": null
     },
     {
-        "id": 189,
+        "id": 192,
         "title": "Me Gustas Tal Como Eres",
         "year": 1984,
         "artist_a": "Luis Miguel",
@@ -8316,7 +8448,7 @@
         "notes": "14yrs old, Saddam a fan."
     },
     {
-        "id": 190,
+        "id": 193,
         "title": "Perfect Combination",
         "year": 1984,
         "artist_a": "Stacy Lattisaw",
@@ -8360,7 +8492,7 @@
         "notes": "Whole LP of Duets. Elementary school friends. Narada."
     },
     {
-        "id": 191,
+        "id": 194,
         "title": "Take Good Care Of My Heart",
         "year": 1984,
         "artist_a": "Jermaine Jackson",
@@ -8404,7 +8536,7 @@
         "notes": null
     },
     {
-        "id": 192,
+        "id": 195,
         "title": "I Know Him So Well",
         "year": 1984,
         "artist_a": "Elaine Paige",
@@ -8448,7 +8580,7 @@
         "notes": null
     },
     {
-        "id": 193,
+        "id": 196,
         "title": "Easy Lover",
         "year": 1984,
         "artist_a": "Philip Bailey",
@@ -8492,7 +8624,7 @@
         "notes": null
     },
     {
-        "id": 194,
+        "id": 197,
         "title": "Take A Chance",
         "year": 1984,
         "artist_a": "Olivia Newton John",
@@ -8536,7 +8668,7 @@
         "notes": null
     },
     {
-        "id": 195,
+        "id": 198,
         "title": "Excellent Birds",
         "year": 1984,
         "artist_a": "Laurie Anderson",
@@ -8580,7 +8712,7 @@
         "notes": null
     },
     {
-        "id": 196,
+        "id": 199,
         "title": "Make No Mistake He´s Mine",
         "year": 1984,
         "artist_a": "Barbra Streisand",
@@ -8624,7 +8756,7 @@
         "notes": null
     },
     {
-        "id": 197,
+        "id": 200,
         "title": "State Of Shock",
         "year": 1984,
         "artist_a": "Michael Jackson",
@@ -8668,7 +8800,7 @@
         "notes": null
     },
     {
-        "id": 198,
+        "id": 201,
         "title": "Happy Ending",
         "year": 1984,
         "artist_a": "Joe Jackson",
@@ -8712,7 +8844,7 @@
         "notes": null
     },
     {
-        "id": 199,
+        "id": 202,
         "title": "Dingi-ling, ding-dong",
         "year": 1984,
         "artist_a": "Helena Vondráčková",
@@ -8756,7 +8888,7 @@
         "notes": "Sci-fi Christmas?"
     },
     {
-        "id": 200,
+        "id": 203,
         "title": "Love Has Finally Come At Last",
         "year": 1984,
         "artist_a": "Bobby Womack",
@@ -8800,7 +8932,7 @@
         "notes": "Three more duets"
     },
     {
-        "id": 201,
+        "id": 204,
         "title": "It´s You",
         "year": 1984,
         "artist_a": "Stevie Wonder",
@@ -8844,7 +8976,7 @@
         "notes": "Weakness from same LP on same show"
     },
     {
-        "id": 202,
+        "id": 205,
         "title": "Learn To Love Again",
         "year": 1984,
         "artist_a": "Chris Farran",
@@ -8888,7 +9020,7 @@
         "notes": null
     },
     {
-        "id": 203,
+        "id": 206,
         "title": "Almost Paradise",
         "year": 1984,
         "artist_a": "MIke Reno",
@@ -8932,7 +9064,7 @@
         "notes": null
     },
     {
-        "id": 204,
+        "id": 207,
         "title": "We didn't See A Thing",
         "year": 1984,
         "artist_a": "Ray Charles",
@@ -8976,7 +9108,7 @@
         "notes": null
     },
     {
-        "id": 205,
+        "id": 208,
         "title": "The Last Time I Made Love",
         "year": 1984,
         "artist_a": "Joyce Kennedy",
@@ -9020,7 +9152,7 @@
         "notes": null
     },
     {
-        "id": 206,
+        "id": 209,
         "title": "Just Imagine (Way Beyond Fear)",
         "year": 1984,
         "artist_a": "Beth Anderson",
@@ -9064,7 +9196,7 @@
         "notes": null
     },
     {
-        "id": 207,
+        "id": 210,
         "title": "NIght By Night",
         "year": 1984,
         "artist_a": "Ronnie Milsap",
@@ -9108,7 +9240,7 @@
         "notes": null
     },
     {
-        "id": 208,
+        "id": 211,
         "title": "We Sure Make Good Love",
         "year": 1984,
         "artist_a": "George Jones",
@@ -9152,7 +9284,7 @@
         "notes": null
     },
     {
-        "id": 209,
+        "id": 212,
         "title": "Love Will Keep Us Together",
         "year": 1984,
         "artist_a": "Neil Sedaka",
@@ -9196,7 +9328,7 @@
         "notes": null
     },
     {
-        "id": 210,
+        "id": 213,
         "title": "Tell Me I´m Not Dreamin' (Too Good To Be True)",
         "year": 1984,
         "artist_a": "Jermaine Jackson",
@@ -9240,7 +9372,7 @@
         "notes": null
     },
     {
-        "id": 211,
+        "id": 214,
         "title": "Are There Anymore Real Cowboys",
         "year": 1984,
         "artist_a": "Willie Nelson",
@@ -9284,7 +9416,7 @@
         "notes": null
     },
     {
-        "id": 212,
+        "id": 215,
         "title": "Face To Face",
         "year": 1984,
         "artist_a": "Barry Gibb",
@@ -9328,7 +9460,7 @@
         "notes": null
     },
     {
-        "id": 213,
+        "id": 216,
         "title": "Blame It On Rio",
         "year": 1984,
         "artist_a": "Lisa Roberts",
@@ -9372,7 +9504,7 @@
         "notes": null
     },
     {
-        "id": 214,
+        "id": 217,
         "title": "It's Time To Kiss",
         "year": 1984,
         "artist_a": "Fred Schneider",
@@ -9416,7 +9548,7 @@
         "notes": null
     },
     {
-        "id": 215,
+        "id": 218,
         "title": "Who Will Save The Children",
         "year": 1984,
         "artist_a": "Randy Stonehill",
@@ -9460,7 +9592,7 @@
         "notes": null
     },
     {
-        "id": 216,
+        "id": 219,
         "title": "When The Rain Begins To Fall",
         "year": 1984,
         "artist_a": "Jermaine Jackson",
@@ -9504,7 +9636,7 @@
         "notes": null
     },
     {
-        "id": 217,
+        "id": 220,
         "title": "We've Got To Stop Meeting Like This",
         "year": 1984,
         "artist_a": "Teena Marie",
@@ -9548,7 +9680,7 @@
         "notes": null
     },
     {
-        "id": 218,
+        "id": 221,
         "title": "Don´t Look Any Further",
         "year": 1984,
         "artist_a": "Dennis Edwards",
@@ -9592,7 +9724,7 @@
         "notes": null
     },
     {
-        "id": 219,
+        "id": 222,
         "title": "The Wonders Of His Love",
         "year": 1984,
         "artist_a": "Philip Bailey",
@@ -9636,7 +9768,7 @@
         "notes": null
     },
     {
-        "id": 220,
+        "id": 223,
         "title": "Lift Every Voice And Sing",
         "year": 1985,
         "artist_a": "Al Green",
@@ -9680,7 +9812,7 @@
         "notes": null
     },
     {
-        "id": 221,
+        "id": 224,
         "title": "Part-Time Lover",
         "year": 1985,
         "artist_a": "Stevie Wonder",
@@ -9724,7 +9856,7 @@
         "notes": null
     },
     {
-        "id": 222,
+        "id": 225,
         "title": "How Could It Be",
         "year": 1985,
         "artist_a": "Eddie Murphy",
@@ -9768,7 +9900,7 @@
         "notes": "Crystal uncredited on single"
     },
     {
-        "id": 223,
+        "id": 226,
         "title": "Act Of War",
         "year": 1985,
         "artist_a": "Elton John",
@@ -9812,7 +9944,7 @@
         "notes": "Tina Turner-ed it down"
     },
     {
-        "id": 224,
+        "id": 227,
         "title": "Our First Night Together",
         "year": 1985,
         "artist_a": "David Hasselhoff",
@@ -9856,7 +9988,7 @@
         "notes": "From 84 ep ´Let it Be Me´ along with the Everly Bros cover. Catherine also did a speaking part in Hasselhoffs first release I Get The Message"
     },
     {
-        "id": 225,
+        "id": 228,
         "title": "Lemon Incest",
         "year": 1985,
         "artist_a": "Serge Gainsbourg",
@@ -9900,7 +10032,7 @@
         "notes": null
     },
     {
-        "id": 226,
+        "id": 229,
         "title": "Could It Be I´m Falling In Love",
         "year": 1985,
         "artist_a": "David Grant",
@@ -9944,7 +10076,7 @@
         "notes": "Followed Up with Rundgren penned Mated"
     },
     {
-        "id": 227,
+        "id": 230,
         "title": "Friends",
         "year": 1985,
         "artist_a": "Michael W. Smith",
@@ -9988,7 +10120,7 @@
         "notes": null
     },
     {
-        "id": 228,
+        "id": 231,
         "title": "Run To Me",
         "year": 1985,
         "artist_a": "Dionne Warwick",
@@ -10032,7 +10164,7 @@
         "notes": null
     },
     {
-        "id": 229,
+        "id": 232,
         "title": "You We're Great, How Was I?",
         "year": 1985,
         "artist_a": "Olivia Newton John",
@@ -10076,7 +10208,7 @@
         "notes": null
     },
     {
-        "id": 230,
+        "id": 233,
         "title": "Tonight",
         "year": 1985,
         "artist_a": "Tina Turner",
@@ -10120,7 +10252,7 @@
         "notes": null
     },
     {
-        "id": 231,
+        "id": 234,
         "title": "You´re A Friend of Mine",
         "year": 1985,
         "artist_a": "Clarence Clemons",
@@ -10164,7 +10296,7 @@
         "notes": null
     },
     {
-        "id": 232,
+        "id": 235,
         "title": "It´s Only Love",
         "year": 1985,
         "artist_a": "Bryan Adams",
@@ -10208,7 +10340,7 @@
         "notes": null
     },
     {
-        "id": 233,
+        "id": 236,
         "title": "Finders Of Lost Loves",
         "year": 1985,
         "artist_a": "Dionne Warwick",
@@ -10252,7 +10384,7 @@
         "notes": null
     },
     {
-        "id": 234,
+        "id": 237,
         "title": "Jakobynic",
         "year": 1985,
         "artist_a": "Helena Vondráčková",
@@ -10296,7 +10428,7 @@
         "notes": "More duets. Great google translation..."
     },
     {
-        "id": 235,
+        "id": 238,
         "title": "Saturday Love",
         "year": 1985,
         "artist_a": "Cherelle",
@@ -10340,7 +10472,7 @@
         "notes": "Breakout for both artists. 2 more followed. Alexander O'Neal & Bianca Lindgreen 2007, Keke Wyatt & Ruben Studdard 2011"
     },
     {
-        "id": 236,
+        "id": 239,
         "title": "(No Matter How High I Get) I'll Still Be Lookin' Up To You",
         "year": 1985,
         "artist_a": "Bobby Womack",
@@ -10384,7 +10516,7 @@
         "notes": null
     },
     {
-        "id": 237,
+        "id": 240,
         "title": "Save The Children",
         "year": 1985,
         "artist_a": "Sheila Walsh",
@@ -10428,7 +10560,7 @@
         "notes": null
     },
     {
-        "id": 238,
+        "id": 241,
         "title": "I Could Never Say Goodbye",
         "year": 1985,
         "artist_a": "Randy Stonehill",
@@ -10472,7 +10604,7 @@
         "notes": null
     },
     {
-        "id": 239,
+        "id": 242,
         "title": "What Becomes Of The Broken Hearted",
         "year": 1985,
         "artist_a": "Luther Vandross",
@@ -10516,7 +10648,7 @@
         "notes": null
     },
     {
-        "id": 240,
+        "id": 243,
         "title": "When I Give My Love To You",
         "year": 1985,
         "artist_a": "Michael Franks",
@@ -10560,7 +10692,7 @@
         "notes": null
     },
     {
-        "id": 241,
+        "id": 244,
         "title": "With One Look",
         "year": 1985,
         "artist_a": "Rupert Hine",
@@ -10604,7 +10736,7 @@
         "notes": null
     },
     {
-        "id": 242,
+        "id": 245,
         "title": "Say A Little Prayer",
         "year": 1985,
         "artist_a": "Boy George",
@@ -10648,7 +10780,7 @@
         "notes": null
     },
     {
-        "id": 243,
+        "id": 246,
         "title": "Double Or Nothing",
         "year": 1985,
         "artist_a": "Kenny Loggins",
@@ -10692,7 +10824,7 @@
         "notes": null
     },
     {
-        "id": 244,
+        "id": 247,
         "title": "First Love Never Dies",
         "year": 1985,
         "artist_a": "Eugene Wilde",
@@ -10736,7 +10868,7 @@
         "notes": null
     },
     {
-        "id": 245,
+        "id": 248,
         "title": "Todo el amor del mundo",
         "year": 1985,
         "artist_a": "Luis Miguel",
@@ -10780,7 +10912,7 @@
         "notes": null
     },
     {
-        "id": 246,
+        "id": 249,
         "title": "If Only For One Night",
         "year": 1985,
         "artist_a": "Patti LaBelle",
@@ -10824,7 +10956,7 @@
         "notes": null
     },
     {
-        "id": 247,
+        "id": 250,
         "title": "I Feel Love",
         "year": 1985,
         "artist_a": "Jimmy Sommerville",
@@ -10868,7 +11000,7 @@
         "notes": null
     },
     {
-        "id": 248,
+        "id": 251,
         "title": "Seperate Lives",
         "year": 1985,
         "artist_a": "Phil Collins",
@@ -10912,7 +11044,7 @@
         "notes": null
     },
     {
-        "id": 249,
+        "id": 252,
         "title": "Dancing In The Street",
         "year": 1985,
         "artist_a": "David Bowie",
@@ -10956,7 +11088,7 @@
         "notes": null
     },
     {
-        "id": 250,
+        "id": 253,
         "title": "Gimme Gimme Gimme",
         "year": 1985,
         "artist_a": "Narada Michael Walden",
@@ -11000,7 +11132,7 @@
         "notes": null
     },
     {
-        "id": 251,
+        "id": 254,
         "title": "You Are So Beautiful",
         "year": 1985,
         "artist_a": "Joe Cocker",
@@ -11044,7 +11176,7 @@
         "notes": null
     },
     {
-        "id": 252,
+        "id": 255,
         "title": "Time After Time",
         "year": 1985,
         "artist_a": "Cyndi Lauper",
@@ -11088,7 +11220,7 @@
         "notes": null
     },
     {
-        "id": 253,
+        "id": 256,
         "title": "Out In The Fields",
         "year": 1985,
         "artist_a": "Gary Moore",
@@ -11132,7 +11264,7 @@
         "notes": null
     },
     {
-        "id": 254,
+        "id": 257,
         "title": "You Are The Love Of My Life",
         "year": 1985,
         "artist_a": "George Benson",
@@ -11176,7 +11308,7 @@
         "notes": null
     },
     {
-        "id": 255,
+        "id": 258,
         "title": "Careless Whisper",
         "year": 1985,
         "artist_a": "George Michael",
@@ -11220,7 +11352,7 @@
         "notes": null
     },
     {
-        "id": 256,
+        "id": 259,
         "title": "Do You Really Want To Hurt Me",
         "year": 1985,
         "artist_a": "Boy George",
@@ -11264,7 +11396,7 @@
         "notes": null
     },
     {
-        "id": 257,
+        "id": 260,
         "title": "Missing You",
         "year": 1985,
         "artist_a": "Diana Ross",
@@ -11308,7 +11440,7 @@
         "notes": null
     },
     {
-        "id": 258,
+        "id": 261,
         "title": "Heart To Hot To Hold",
         "year": 1985,
         "artist_a": "Jesse Johnson",
@@ -11352,7 +11484,7 @@
         "notes": null
     },
     {
-        "id": 259,
+        "id": 262,
         "title": "Love Is Need Of Love Today",
         "year": 1985,
         "artist_a": "George Michael",
@@ -11396,7 +11528,7 @@
         "notes": null
     },
     {
-        "id": 260,
+        "id": 263,
         "title": "First Time On A Ferris Wheel",
         "year": 1985,
         "artist_a": "Smokey Robinson",
@@ -11440,7 +11572,7 @@
         "notes": null
     },
     {
-        "id": 261,
+        "id": 264,
         "title": "Why Do People Fall In Love",
         "year": 1985,
         "artist_a": "Dennis Edwards",
@@ -11484,7 +11616,7 @@
         "notes": null
     },
     {
-        "id": 262,
+        "id": 265,
         "title": "Meet Me In Montana",
         "year": 1985,
         "artist_a": "Dan Seals",
@@ -11528,7 +11660,7 @@
         "notes": null
     },
     {
-        "id": 263,
+        "id": 266,
         "title": "Bound For Glory",
         "year": 1985,
         "artist_a": "Neil Young",
@@ -11572,7 +11704,7 @@
         "notes": null
     },
     {
-        "id": 264,
+        "id": 267,
         "title": "Wayward Wind",
         "year": 1985,
         "artist_a": "Neil Young",
@@ -11616,7 +11748,7 @@
         "notes": null
     },
     {
-        "id": 265,
+        "id": 268,
         "title": "I Hope And I Pray",
         "year": 1986,
         "artist_a": "Sheila Walsh",
@@ -11660,7 +11792,7 @@
         "notes": null
     },
     {
-        "id": 266,
+        "id": 269,
         "title": "Next Time I Fall",
         "year": 1986,
         "artist_a": "Peter Cetera",
@@ -11704,7 +11836,7 @@
         "notes": "Age Gap 16. They never meet in the video."
     },
     {
-        "id": 267,
+        "id": 270,
         "title": "Too Many Times",
         "year": 1986,
         "artist_a": "Earl Thomas Conley",
@@ -11748,7 +11880,7 @@
         "notes": null
     },
     {
-        "id": 268,
+        "id": 271,
         "title": "So Good, So Fine",
         "year": 1986,
         "artist_a": "Ann-Louise Hanson",
@@ -11792,7 +11924,7 @@
         "notes": null
     },
     {
-        "id": 269,
+        "id": 272,
         "title": "The Way You Are",
         "year": 1986,
         "artist_a": "Agnetha Faltskog",
@@ -11836,7 +11968,7 @@
         "notes": null
     },
     {
-        "id": 270,
+        "id": 273,
         "title": "Soul Man",
         "year": 1986,
         "artist_a": "Sam Moore",
@@ -11880,7 +12012,7 @@
         "notes": null
     },
     {
-        "id": 271,
+        "id": 274,
         "title": "The Best Of Me",
         "year": 1986,
         "artist_a": "David Foster",
@@ -11924,7 +12056,7 @@
         "notes": null
     },
     {
-        "id": 272,
+        "id": 275,
         "title": "All I Ask Of You",
         "year": 1986,
         "artist_a": "Cliff Richard",
@@ -11968,7 +12100,7 @@
         "notes": null
     },
     {
-        "id": 273,
+        "id": 276,
         "title": "In a Lifetime",
         "year": 1986,
         "artist_a": "Máire Brennan",
@@ -12012,7 +12144,7 @@
         "notes": null
     },
     {
-        "id": 274,
+        "id": 277,
         "title": "Good Times",
         "year": 1986,
         "artist_a": "Michael Hutchence",
@@ -12056,7 +12188,7 @@
         "notes": null
     },
     {
-        "id": 275,
+        "id": 278,
         "title": "Rock 'n' Roll Mercenaries",
         "year": 1986,
         "artist_a": "Meat Loaf",
@@ -12100,7 +12232,7 @@
         "notes": null
     },
     {
-        "id": 276,
+        "id": 279,
         "title": "Don't Give Up",
         "year": 1986,
         "artist_a": "Peter Gabriel",
@@ -12144,7 +12276,7 @@
         "notes": null
     },
     {
-        "id": 277,
+        "id": 280,
         "title": "Tearing Us Apart",
         "year": 1986,
         "artist_a": "Eric Clapton",
@@ -12188,7 +12320,7 @@
         "notes": null
     },
     {
-        "id": 278,
+        "id": 281,
         "title": "Friends And Lovers",
         "year": 1986,
         "artist_a": "Gloria Loring",
@@ -12232,7 +12364,7 @@
         "notes": "First seen in Days of Our Lives. Country version released same year by Eddie Rabbit and Juice Newton. Eddie Rabbit & Crystal Gayle. and Rabbit and Wife https://www.youtube.com/watch?v=RV0sPNm7mDA"
     },
     {
-        "id": 279,
+        "id": 282,
         "title": "Carol Of The Birds",
         "year": 1986,
         "artist_a": "Art Garfunkel",
@@ -12276,7 +12408,7 @@
         "notes": "Jimmy Webb Brainchild based on the book The Animals' Christmas."
     },
     {
-        "id": 280,
+        "id": 283,
         "title": "Slow Rivers",
         "year": 1986,
         "artist_a": "Elton John",
@@ -12320,7 +12452,7 @@
         "notes": "Tough analogy to crack. Slow rivers run cold (dumb people are cold hearted?) shallow waters never sank so low (water would never degrade itself?). weather, water, dogs in fog. On a tv performance Cliff introduces it as Cold rivers to confirm the confusion, he doubles down during an interview \"Elton and I made a record, a pretty good record too. It wasn't a hit. Did you hear that one? Elton John? It was called Cold Rivers. [sic] Good song. Good record, actually. But it didn't catch the imagination of the public. You know, that's the problem. But nevertheless it's a good record.\"\nCliff Richard http://www.cliffrichardsongs.com/popup.php?data=SlowRivers198410_popupplus also calls Elton ELT in a familiar way.. mid 70´s Cliff released on Elton´s label Rocket Records, Cliff was called ''Sylvia'' because he used to ring up the office each week, asking if his record had gone silver yet. So he got the name ''Sylvia Disc.'' Before Rocket Records Elton was a staff writer for DICK JAMES https://en.wikipedia.org/wiki/Dick_James Cliff couldn´t be hotter after the No.1 charity smash Living Doll with The Young Ones and Hank https://www.youtube.com/watch?v=gGOU0o9K89g (cricket bats as guitars) and No.3 wallop 'All I Ask of You', a Duet with Sarah Brightman from brand new westend musical Phantom Of The Opera https://www.youtube.com/watch?v=I45UVhxmMjY svelte perfect white suited Cliff, mini teddy boy dagger sideburns, smart and dangerous, prehaps imposing?.certainly superimposing. over sunsets, up sky fast action fluffy clouds, hair sniffing and fingering giddy twirling dancing across a tropical beach, 6 ft waves crashing behind 360 snogging. Elton on the decline after 85s Nikita. Leather Jackets not well recieved. 'I was not a well budgie, I was married and it was just one bag of coke after another.' This may of led him to join Barnsley´s finest NWOBHM Act Saxon to play piano on Party Till you Puke from their 86 LP Rock the Nations https://en.wikipedia.org/wiki/Leather_Jackets_(album) https://en.wikipedia.org/wiki/Elton_John_singles_discography . The lads are filmed Separately in Sydney(Elton) and London (Cliff) and mashed together with 'expert trickery' for Christmas Morning with Noel, https://www.youtube.com/watch?v=1X9bwh2881Q&list=PLhrdp9uNV5z9LqoQ-wMIzZGyvKo49uX_T&index=2 a 2hr simulcast from a decked out Telecom Tower (the inspiration for the NY party on the cruise ship in Bitter Moon, the dance kiss to Slave to love?) 'The first time family entertainment has been seen this way' the cross hemisphere link up being compounded by Noel´s commonwealth BIG 2 knitted jumper. https://www.youtube.com/watch?v=u3vCk9dnUzI other guests included Maggie Thatcher, Rula Lenska and Dennis Waterman (also on DJM) (Dark glasses, shirtless under a big suit jacket christmas present ribbon tied round his neck drooping it´s curls to mingle with his red chest hair. Child´s head in one hand can of Fosters in the other, moaning about Auntie for not keeping a bar open for him. Fake snow fluffy along the embankment wall and sprayed up Cliff´s tree trunk, Also a small undecorated christmas tree nearly cropped out of shot. Elton was Touring Australia and recorded with the Melbourne Symphony Orchestra for his follow up LP Straight after this within a week or so Elton had throat surgery to remove non malignant lesions from his vocal chords. He couldn´t sing falsetto everymore. but he wasn´t finished."
     },
     {
-        "id": 281,
+        "id": 284,
         "title": "Youre Still New to Me",
         "year": 1986,
         "artist_a": "Marie Osmond",
@@ -12364,7 +12496,7 @@
         "notes": null
     },
     {
-        "id": 282,
+        "id": 285,
         "title": "The Last Unbroken Heart",
         "year": 1986,
         "artist_a": "Patti LaBelle",
@@ -12408,7 +12540,7 @@
         "notes": null
     },
     {
-        "id": 283,
+        "id": 286,
         "title": "Loving On Borrowed Tiime",
         "year": 1986,
         "artist_a": "Gladys Knight",
@@ -12452,7 +12584,7 @@
         "notes": null
     },
     {
-        "id": 284,
+        "id": 287,
         "title": "A Little Bit More",
         "year": 1986,
         "artist_a": "Melba Moore",
@@ -12496,7 +12628,7 @@
         "notes": null
     },
     {
-        "id": 285,
+        "id": 288,
         "title": "One Sunny Day/Duelling Bikes",
         "year": 1986,
         "artist_a": "Ray Parker Jr.",
@@ -12540,7 +12672,7 @@
         "notes": null
     },
     {
-        "id": 286,
+        "id": 289,
         "title": "Somewhere Out There",
         "year": 1986,
         "artist_a": "Linda Ronstadt",
@@ -12584,7 +12716,7 @@
         "notes": null
     },
     {
-        "id": 287,
+        "id": 290,
         "title": "Give And Take",
         "year": 1986,
         "artist_a": "Mike Sherwood",
@@ -12628,7 +12760,7 @@
         "notes": null
     },
     {
-        "id": 288,
+        "id": 291,
         "title": "Love Song From Quicksilver (Through The Night)",
         "year": 1986,
         "artist_a": "John Parr",
@@ -12672,7 +12804,7 @@
         "notes": null
     },
     {
-        "id": 289,
+        "id": 292,
         "title": "The Music Of Goodbye",
         "year": 1986,
         "artist_a": "Al Jarreau",
@@ -12716,7 +12848,7 @@
         "notes": null
     },
     {
-        "id": 290,
+        "id": 293,
         "title": "On my Own",
         "year": 1986,
         "artist_a": "Patti LaBelle",
@@ -12760,7 +12892,7 @@
         "notes": null
     },
     {
-        "id": 291,
+        "id": 294,
         "title": "The Pride Is Back",
         "year": 1986,
         "artist_a": "Kenny Rogers",
@@ -12804,7 +12936,7 @@
         "notes": null
     },
     {
-        "id": 292,
+        "id": 295,
         "title": "Crazay",
         "year": 1986,
         "artist_a": "Jesse Johnson",
@@ -12848,7 +12980,7 @@
         "notes": null
     },
     {
-        "id": 293,
+        "id": 296,
         "title": "Love And Affection",
         "year": 1986,
         "artist_a": "Martha Davis",
@@ -12892,7 +13024,7 @@
         "notes": null
     },
     {
-        "id": 294,
+        "id": 297,
         "title": "Shanghai Surprise",
         "year": 1986,
         "artist_a": "George Harrison",
@@ -12936,7 +13068,51 @@
         "notes": null
     },
     {
-        "id": 295,
+        "id": 298,
+        "title": "What Have I Done To Deserve This",
+        "year": 1987,
+        "artist_a": "Neil Tennant",
+        "artist_b": "Dusty Springfield",
+        "gender": "MF",
+        "relationship": "",
+        "genre": "Pop",
+        "sub_genre": "",
+        "sentimental_ballad": "",
+        "song_form": "",
+        "tag_1": "",
+        "subject": "Break Up",
+        "dynamic": "Counter",
+        "originally_a_duet": "Originally A Duet",
+        "cover_version": "",
+        "writer_a": "Chris Lowe",
+        "writer_b": "Neil Tennant",
+        "writer_c": "Allee Willis",
+        "writer_d": "",
+        "writer_e": "",
+        "writer_f": "",
+        "release": "Single",
+        "duo_lp": "",
+        "various_partners_lp": "",
+        "legacy": "",
+        "soundtrack": "",
+        "various_artists_lp": "",
+        "promotional_video": "",
+        "behind_the_scenes": "",
+        "presentation": "Televised Performance",
+        "format": "Awards Show",
+        "programme_title": "The Brit Awards",
+        "concert_footage": "Concert Footage",
+        "special": "Crossover Era",
+        "charity_or_cause": "",
+        "tribute": "",
+        "christmas": "",
+        "virtual": "",
+        "episode": "",
+        "yt_link": "https://www.youtube.com/watch?v=WRPhsLO1nl4",
+        "notes": null
+    },
+    {
+        "id": 299,
         "title": "Body Next To Body",
         "year": 1987,
         "artist_a": "Falco",
@@ -12980,24 +13156,24 @@
         "notes": null
     },
     {
-        "id": 296,
+        "id": 300,
         "title": "Barcelona",
         "year": 1987,
         "artist_a": "Freddie Mercury",
         "artist_b": "Montserrat Caballé",
         "gender": "MF",
         "relationship": "",
-        "genre": "Musical",
-        "sub_genre": "",
-        "sentimental_ballad": "",
+        "genre": "Rock",
+        "sub_genre": "Opera",
+        "sentimental_ballad": "Sentimental Ballad",
         "song_form": "",
-        "tag_1": "",
-        "subject": "Barcelona",
-        "dynamic": "",
-        "originally_a_duet": "",
+        "tag_1": "Dual Language",
+        "subject": "Attraction",
+        "dynamic": "Union",
+        "originally_a_duet": "Originally A Duet",
         "cover_version": "",
-        "writer_a": "",
-        "writer_b": "",
+        "writer_a": "Freddie Mercury",
+        "writer_b": "Mike Moran",
         "writer_c": "",
         "writer_d": "",
         "writer_e": "",
@@ -13014,7 +13190,7 @@
         "format": "",
         "programme_title": "",
         "concert_footage": "",
-        "special": "Crossover",
+        "special": "Crossover Genre",
         "charity_or_cause": "",
         "tribute": "",
         "christmas": "",
@@ -13024,7 +13200,7 @@
         "notes": null
     },
     {
-        "id": 297,
+        "id": 301,
         "title": "La Luce Buona Delle stelle",
         "year": 1987,
         "artist_a": "Eros Ramazzotti",
@@ -13068,7 +13244,7 @@
         "notes": null
     },
     {
-        "id": 298,
+        "id": 302,
         "title": "Diamond Lights",
         "year": 1987,
         "artist_a": "Glenn Hoddle",
@@ -13112,7 +13288,7 @@
         "notes": null
     },
     {
-        "id": 299,
+        "id": 303,
         "title": "Sin Hablar",
         "year": 1987,
         "artist_a": "Luis Miguel",
@@ -13156,7 +13332,7 @@
         "notes": "Bit grabby"
     },
     {
-        "id": 300,
+        "id": 304,
         "title": "Respect Yourself",
         "year": 1987,
         "artist_a": "Bruce Willis",
@@ -13200,7 +13376,7 @@
         "notes": null
     },
     {
-        "id": 301,
+        "id": 305,
         "title": "Back In Love",
         "year": 1987,
         "artist_a": "Karyn White",
@@ -13244,7 +13420,7 @@
         "notes": null
     },
     {
-        "id": 302,
+        "id": 306,
         "title": "The Folks Who Live on the Hill",
         "year": 1987,
         "artist_a": "Roberta Flack",
@@ -13288,7 +13464,7 @@
         "notes": null
     },
     {
-        "id": 303,
+        "id": 307,
         "title": "As Long As I Have You",
         "year": 1987,
         "artist_a": "Mauro Scocco",
@@ -13332,7 +13508,7 @@
         "notes": null
     },
     {
-        "id": 304,
+        "id": 308,
         "title": "Flames Of Paradise",
         "year": 1987,
         "artist_a": "Jennifer Rush",
@@ -13376,7 +13552,7 @@
         "notes": null
     },
     {
-        "id": 305,
+        "id": 309,
         "title": "Get It",
         "year": 1987,
         "artist_a": "Stevie Wonder",
@@ -13420,7 +13596,7 @@
         "notes": null
     },
     {
-        "id": 306,
+        "id": 310,
         "title": "I Wasn´t The One (Who Said Goodbye)",
         "year": 1987,
         "artist_a": "Agnetha Faltskog",
@@ -13464,7 +13640,7 @@
         "notes": null
     },
     {
-        "id": 307,
+        "id": 311,
         "title": "Make No Mistake She's Mine",
         "year": 1987,
         "artist_a": "Kenny Rogers",
@@ -13508,7 +13684,7 @@
         "notes": null
     },
     {
-        "id": 308,
+        "id": 312,
         "title": "Just Good Friends",
         "year": 1987,
         "artist_a": "Michael Jackson",
@@ -13552,7 +13728,7 @@
         "notes": null
     },
     {
-        "id": 309,
+        "id": 313,
         "title": "I Knew You Were Waiting (For Me)",
         "year": 1987,
         "artist_a": "Aretha Franklin",
@@ -13596,7 +13772,7 @@
         "notes": null
     },
     {
-        "id": 310,
+        "id": 314,
         "title": "Del Gato",
         "year": 1987,
         "artist_a": "Gene Clark",
@@ -13640,7 +13816,7 @@
         "notes": null
     },
     {
-        "id": 311,
+        "id": 315,
         "title": "What If We Fall In Love",
         "year": 1987,
         "artist_a": "Sheena Easton",
@@ -13684,7 +13860,7 @@
         "notes": null
     },
     {
-        "id": 312,
+        "id": 316,
         "title": "Love Power",
         "year": 1987,
         "artist_a": "Dionne Warwick",
@@ -13728,7 +13904,7 @@
         "notes": null
     },
     {
-        "id": 313,
+        "id": 317,
         "title": "My Heart Had A Mind Of It´s Own",
         "year": 1987,
         "artist_a": "Kim Carnes",
@@ -13772,7 +13948,7 @@
         "notes": null
     },
     {
-        "id": 314,
+        "id": 318,
         "title": "(I've Had) The Time Of My Life",
         "year": 1987,
         "artist_a": "Bill Medley",
@@ -13816,7 +13992,7 @@
         "notes": null
     },
     {
-        "id": 315,
+        "id": 319,
         "title": "Heartbreak Of Love",
         "year": 1987,
         "artist_a": "Dionne Warwick",
@@ -13860,7 +14036,7 @@
         "notes": null
     },
     {
-        "id": 316,
+        "id": 320,
         "title": "I Miss You, Love",
         "year": 1987,
         "artist_a": "Audrey Wheeler",
@@ -13904,7 +14080,7 @@
         "notes": null
     },
     {
-        "id": 317,
+        "id": 321,
         "title": "If You Need My Love Tonight",
         "year": 1987,
         "artist_a": "Aretha Franklin",
@@ -13948,7 +14124,7 @@
         "notes": null
     },
     {
-        "id": 318,
+        "id": 322,
         "title": "Only The Fool Survives",
         "year": 1987,
         "artist_a": "Donna Summer",
@@ -13992,7 +14168,7 @@
         "notes": null
     },
     {
-        "id": 319,
+        "id": 323,
         "title": "Over You",
         "year": 1987,
         "artist_a": "Ray Parker Jr.",
@@ -14036,7 +14212,7 @@
         "notes": null
     },
     {
-        "id": 320,
+        "id": 324,
         "title": "I Just Can´t Stop Loving You",
         "year": 1987,
         "artist_a": "Michael Jackson",
@@ -14080,7 +14256,7 @@
         "notes": null
     },
     {
-        "id": 321,
+        "id": 325,
         "title": "I Was Just Asking",
         "year": 1987,
         "artist_a": "Cameron Dye",
@@ -14124,7 +14300,7 @@
         "notes": null
     },
     {
-        "id": 322,
+        "id": 326,
         "title": "No Me Puedo Escaper De Tí",
         "year": 1987,
         "artist_a": "Luis Miguel",
@@ -14168,7 +14344,7 @@
         "notes": null
     },
     {
-        "id": 323,
+        "id": 327,
         "title": "My Love",
         "year": 1988,
         "artist_a": "Julio Iglesias",
@@ -14212,7 +14388,7 @@
         "notes": null
     },
     {
-        "id": 324,
+        "id": 328,
         "title": "Till I loved You",
         "year": 1988,
         "artist_a": "Placido Domingo",
@@ -14256,7 +14432,7 @@
         "notes": null
     },
     {
-        "id": 325,
+        "id": 329,
         "title": "Tear In My Beer",
         "year": 1988,
         "artist_a": "Hank Williams Jr",
@@ -14300,7 +14476,7 @@
         "notes": null
     },
     {
-        "id": 326,
+        "id": 330,
         "title": "Take Good Care Of You And Me",
         "year": 1988,
         "artist_a": "Dionne Warwick",
@@ -14344,7 +14520,7 @@
         "notes": null
     },
     {
-        "id": 327,
+        "id": 331,
         "title": "Snakes And Ladders",
         "year": 1988,
         "artist_a": "Joni Mitchell",
@@ -14388,7 +14564,7 @@
         "notes": null
     },
     {
-        "id": 328,
+        "id": 332,
         "title": "Sisters And Brothers",
         "year": 1988,
         "artist_a": "Midge Ure",
@@ -14432,7 +14608,7 @@
         "notes": null
     },
     {
-        "id": 329,
+        "id": 333,
         "title": "You're My Hero",
         "year": 1988,
         "artist_a": "Dionne Warwick",
@@ -14476,7 +14652,7 @@
         "notes": null
     },
     {
-        "id": 330,
+        "id": 334,
         "title": "Cool Water",
         "year": 1988,
         "artist_a": "Joni Mitchell",
@@ -14520,7 +14696,7 @@
         "notes": null
     },
     {
-        "id": 331,
+        "id": 335,
         "title": "I Know You by Heart",
         "year": 1988,
         "artist_a": "Dolly Parton",
@@ -14564,7 +14740,7 @@
         "notes": null
     },
     {
-        "id": 332,
+        "id": 336,
         "title": "I Just Can't Stop Loving You",
         "year": 1988,
         "artist_a": "Michael Jackson",
@@ -14608,7 +14784,7 @@
         "notes": null
     },
     {
-        "id": 333,
+        "id": 337,
         "title": "Especially For You",
         "year": 1988,
         "artist_a": "Kylie MInogue",
@@ -14652,7 +14828,7 @@
         "notes": null
     },
     {
-        "id": 334,
+        "id": 338,
         "title": "God Is Alive",
         "year": 1988,
         "artist_a": "Prince",
@@ -14696,7 +14872,7 @@
         "notes": null
     },
     {
-        "id": 335,
+        "id": 339,
         "title": "Every Breath You Take",
         "year": 1988,
         "artist_a": "Sting",
@@ -14740,7 +14916,7 @@
         "notes": null
     },
     {
-        "id": 336,
+        "id": 340,
         "title": "Put A Little Love In Yourt Heart",
         "year": 1988,
         "artist_a": "Annie Lennox",
@@ -14784,7 +14960,7 @@
         "notes": null
     },
     {
-        "id": 337,
+        "id": 341,
         "title": "Surrender To Me",
         "year": 1988,
         "artist_a": "Robin Zander",
@@ -14828,7 +15004,7 @@
         "notes": null
     },
     {
-        "id": 338,
+        "id": 342,
         "title": "One Love, One Heart (One Hand In Mine)",
         "year": 1988,
         "artist_a": "Gloria Loring",
@@ -14872,7 +15048,7 @@
         "notes": null
     },
     {
-        "id": 339,
+        "id": 343,
         "title": "And When She Danced",
         "year": 1988,
         "artist_a": "Marilyn Martin",
@@ -14916,7 +15092,7 @@
         "notes": null
     },
     {
-        "id": 340,
+        "id": 344,
         "title": "The Love You Take",
         "year": 1988,
         "artist_a": "Dan Hartman",
@@ -14960,7 +15136,7 @@
         "notes": null
     },
     {
-        "id": 341,
+        "id": 345,
         "title": "I Will (Take You Forever)",
         "year": 1988,
         "artist_a": "Christopher Cross",
@@ -15004,7 +15180,7 @@
         "notes": null
     },
     {
-        "id": 342,
+        "id": 346,
         "title": "Come Into My Life",
         "year": 1988,
         "artist_a": "Laura Branigan",
@@ -15048,7 +15224,7 @@
         "notes": null
     },
     {
-        "id": 343,
+        "id": 347,
         "title": "Twins",
         "year": 1988,
         "artist_a": "Philip Bailey",
@@ -15092,7 +15268,7 @@
         "notes": null
     },
     {
-        "id": 344,
+        "id": 348,
         "title": "Hip Kit",
         "year": 1988,
         "artist_a": "Catherine Ringer",
@@ -15136,7 +15312,7 @@
         "notes": null
     },
     {
-        "id": 345,
+        "id": 349,
         "title": "Ordinary Man",
         "year": 1988,
         "artist_a": "Junior Walker",
@@ -15180,7 +15356,7 @@
         "notes": null
     },
     {
-        "id": 346,
+        "id": 350,
         "title": "World Without Walls",
         "year": 1988,
         "artist_a": "Andrew Todd Rosenthal",
@@ -15224,7 +15400,7 @@
         "notes": null
     },
     {
-        "id": 347,
+        "id": 351,
         "title": "Don´t Know Much",
         "year": 1989,
         "artist_a": "Linda Ronstadt",
@@ -15268,7 +15444,7 @@
         "notes": null
     },
     {
-        "id": 348,
+        "id": 352,
         "title": "Shaking The Tree",
         "year": 1989,
         "artist_a": "Peter Gabriel",
@@ -15312,7 +15488,7 @@
         "notes": null
     },
     {
-        "id": 349,
+        "id": 353,
         "title": "Oh Daddy",
         "year": 1989,
         "artist_a": "Adrian Belew",
@@ -15356,7 +15532,7 @@
         "notes": null
     },
     {
-        "id": 350,
+        "id": 354,
         "title": "The Places You Find Love",
         "year": 1989,
         "artist_a": "Siedah Garrett",
@@ -15400,7 +15576,7 @@
         "notes": null
     },
     {
-        "id": 351,
+        "id": 355,
         "title": "I´ll Be Good To You",
         "year": 1989,
         "artist_a": "Ray Charles",
@@ -15444,7 +15620,7 @@
         "notes": null
     },
     {
-        "id": 352,
+        "id": 356,
         "title": "Through The Storm",
         "year": 1989,
         "artist_a": "Aretha Franklin",
@@ -15488,7 +15664,7 @@
         "notes": null
     },
     {
-        "id": 353,
+        "id": 357,
         "title": "Gimme Your Love",
         "year": 1989,
         "artist_a": "Aretha Franklin",
@@ -15532,7 +15708,7 @@
         "notes": null
     },
     {
-        "id": 354,
+        "id": 358,
         "title": "If I Knew Then (What I Know Now)",
         "year": 1989,
         "artist_a": "Gladys Knight",
@@ -15576,7 +15752,7 @@
         "notes": null
     },
     {
-        "id": 355,
+        "id": 359,
         "title": "Love Song",
         "year": 1989,
         "artist_a": "Madonna",
@@ -15620,7 +15796,7 @@
         "notes": null
     },
     {
-        "id": 356,
+        "id": 360,
         "title": "It Isn´t, It Wasn´t, It Ain´t Never Gonna Be",
         "year": 1989,
         "artist_a": "Aretha Franklin",
@@ -15664,7 +15840,7 @@
         "notes": null
     },
     {
-        "id": 357,
+        "id": 361,
         "title": "As Long As We've Got Eachother",
         "year": 1989,
         "artist_a": "B.J. Thomas",
@@ -15708,7 +15884,7 @@
         "notes": null
     },
     {
-        "id": 358,
+        "id": 362,
         "title": "Whenever God Shines His Light",
         "year": 1989,
         "artist_a": "Van Morrison",
@@ -15752,7 +15928,7 @@
         "notes": null
     },
     {
-        "id": 359,
+        "id": 363,
         "title": "If I Ever Fall In Love Again",
         "year": 1989,
         "artist_a": "Kenny Rogers",
@@ -15796,7 +15972,7 @@
         "notes": null
     },
     {
-        "id": 360,
+        "id": 364,
         "title": "Free Fallin'",
         "year": 1989,
         "artist_a": "Tom Petty",
@@ -15840,7 +16016,7 @@
         "notes": null
     },
     {
-        "id": 361,
+        "id": 365,
         "title": "Comment Te Dire Adieu",
         "year": 1989,
         "artist_a": "Jimmy Sommerville",
@@ -15884,7 +16060,7 @@
         "notes": null
     },
     {
-        "id": 362,
+        "id": 366,
         "title": "Woman in Chains",
         "year": 1989,
         "artist_a": "Roland Orzabal",
@@ -15928,7 +16104,7 @@
         "notes": null
     },
     {
-        "id": 363,
+        "id": 367,
         "title": "Close My Eyes Forever",
         "year": 1989,
         "artist_a": "Lita Ford",
@@ -15972,7 +16148,7 @@
         "notes": null
     },
     {
-        "id": 364,
+        "id": 368,
         "title": "After All",
         "year": 1989,
         "artist_a": "Cher",
@@ -16016,7 +16192,7 @@
         "notes": null
     },
     {
-        "id": 365,
+        "id": 369,
         "title": "The Arms Of Orion",
         "year": 1989,
         "artist_a": "Prince",
@@ -16060,7 +16236,7 @@
         "notes": null
     },
     {
-        "id": 366,
+        "id": 370,
         "title": "Romance (Love Theme From Sing)",
         "year": 1989,
         "artist_a": "Paul Carrack",
@@ -16104,7 +16280,7 @@
         "notes": null
     },
     {
-        "id": 367,
+        "id": 371,
         "title": "What'd I Say",
         "year": 1989,
         "artist_a": "Andy Garcia",
@@ -16148,7 +16324,7 @@
         "notes": null
     },
     {
-        "id": 368,
+        "id": 372,
         "title": "Walk On The Wild Side",
         "year": 1990,
         "artist_a": "Vanessa Paradis",
@@ -16192,7 +16368,7 @@
         "notes": null
     },
     {
-        "id": 369,
+        "id": 373,
         "title": "We Didn´t Know",
         "year": 1990,
         "artist_a": "Whitney Houston",
@@ -16236,7 +16412,7 @@
         "notes": "Also Superstition on Arsenio"
     },
     {
-        "id": 370,
+        "id": 374,
         "title": "Right Place Wrong Time",
         "year": 1990,
         "artist_a": "B.B. King",
@@ -16280,7 +16456,7 @@
         "notes": null
     },
     {
-        "id": 371,
+        "id": 375,
         "title": "Come See About Me",
         "year": 1990,
         "artist_a": "Randy Travis",
@@ -16324,7 +16500,7 @@
         "notes": null
     },
     {
-        "id": 372,
+        "id": 376,
         "title": "Pretty Pink Rose",
         "year": 1990,
         "artist_a": "Adrian Belew",
@@ -16368,7 +16544,7 @@
         "notes": null
     },
     {
-        "id": 373,
+        "id": 377,
         "title": "Well Did You Evah!",
         "year": 1990,
         "artist_a": "Iggy Pop",
@@ -16412,7 +16588,7 @@
         "notes": null
     },
     {
-        "id": 374,
+        "id": 378,
         "title": "Some Good Things Never Last",
         "year": 1990,
         "artist_a": "Barry Manilow",
@@ -16456,7 +16632,7 @@
         "notes": null
     },
     {
-        "id": 375,
+        "id": 379,
         "title": "Candy",
         "year": 1990,
         "artist_a": "Iggy Pop",
@@ -16500,7 +16676,7 @@
         "notes": null
     },
     {
-        "id": 376,
+        "id": 380,
         "title": "It Takes Two",
         "year": 1990,
         "artist_a": "Tina Turner",
@@ -16544,7 +16720,7 @@
         "notes": null
     },
     {
-        "id": 377,
+        "id": 381,
         "title": "Senza Una Donna (Without A Woman)",
         "year": 1991,
         "artist_a": "Zucchero",
@@ -16588,7 +16764,7 @@
         "notes": null
     },
     {
-        "id": 378,
+        "id": 382,
         "title": "If You Were With Me Now",
         "year": 1991,
         "artist_a": "Kylie Minogue",
@@ -16632,7 +16808,7 @@
         "notes": null
     },
     {
-        "id": 379,
+        "id": 383,
         "title": "Only You",
         "year": 1991,
         "artist_a": "Michael Crawford",
@@ -16676,7 +16852,7 @@
         "notes": null
     },
     {
-        "id": 380,
+        "id": 384,
         "title": "We´ve Got A Feeling",
         "year": 1991,
         "artist_a": "Basile Boli",
@@ -16720,7 +16896,7 @@
         "notes": null
     },
     {
-        "id": 381,
+        "id": 385,
         "title": "Don´t Let The Sun Go Down On Me",
         "year": 1991,
         "artist_a": "George Michael",
@@ -16764,7 +16940,7 @@
         "notes": null
     },
     {
-        "id": 382,
+        "id": 386,
         "title": "I Don't Do Duets",
         "year": 1991,
         "artist_a": "Patti LaBelle",
@@ -16808,7 +16984,7 @@
         "notes": null
     },
     {
-        "id": 383,
+        "id": 387,
         "title": "Dark And Lovely",
         "year": 1991,
         "artist_a": "Barry White",
@@ -16852,7 +17028,7 @@
         "notes": null
     },
     {
-        "id": 384,
+        "id": 388,
         "title": "We're Not Makin' Love Anymore",
         "year": 1991,
         "artist_a": "Patti LaBelle",
@@ -16896,7 +17072,7 @@
         "notes": null
     },
     {
-        "id": 385,
+        "id": 389,
         "title": "Show Me Your Devotion",
         "year": 1991,
         "artist_a": "Marilyn Scott",
@@ -16940,7 +17116,7 @@
         "notes": null
     },
     {
-        "id": 386,
+        "id": 390,
         "title": "Inside Of Love",
         "year": 1991,
         "artist_a": "Marilyn Scott",
@@ -16984,7 +17160,7 @@
         "notes": null
     },
     {
-        "id": 387,
+        "id": 391,
         "title": "Hooked On The Memory Of You",
         "year": 1991,
         "artist_a": "Neil Diamond",
@@ -17028,7 +17204,7 @@
         "notes": null
     },
     {
-        "id": 388,
+        "id": 392,
         "title": "I Believe",
         "year": 1991,
         "artist_a": "David Hasselhoff",
@@ -17072,7 +17248,7 @@
         "notes": null
     },
     {
-        "id": 389,
+        "id": 393,
         "title": "Doctor's Orders",
         "year": 1991,
         "artist_a": "Aretha Franklin",
@@ -17116,7 +17292,7 @@
         "notes": null
     },
     {
-        "id": 390,
+        "id": 394,
         "title": "Ever Changing Times",
         "year": 1991,
         "artist_a": "Aretha Franklin",
@@ -17160,7 +17336,7 @@
         "notes": null
     },
     {
-        "id": 391,
+        "id": 395,
         "title": "The Highwayman",
         "year": 1991,
         "artist_a": "Jimmy Webb",
@@ -17204,7 +17380,7 @@
         "notes": null
     },
     {
-        "id": 392,
+        "id": 396,
         "title": "Love Certified",
         "year": 1991,
         "artist_a": "Ronnie Milsap",
@@ -17248,7 +17424,7 @@
         "notes": null
     },
     {
-        "id": 393,
+        "id": 397,
         "title": "Both Sides Now",
         "year": 1991,
         "artist_a": "Máire Brennan",
@@ -17292,7 +17468,7 @@
         "notes": null
     },
     {
-        "id": 394,
+        "id": 398,
         "title": "Beauty And The Beast",
         "year": 1991,
         "artist_a": "Celine Dion",
@@ -17336,7 +17512,7 @@
         "notes": null
     },
     {
-        "id": 395,
+        "id": 399,
         "title": "Living For The City",
         "year": 1991,
         "artist_a": "Ray Charles",
@@ -17380,7 +17556,7 @@
         "notes": null
     },
     {
-        "id": 396,
+        "id": 400,
         "title": "Miserere",
         "year": 1992,
         "artist_a": "Zucchero",
@@ -17424,7 +17600,7 @@
         "notes": null
     },
     {
-        "id": 397,
+        "id": 401,
         "title": "Silver And Gold",
         "year": 1992,
         "artist_a": "Vanessa Paradis",
@@ -17468,7 +17644,7 @@
         "notes": null
     },
     {
-        "id": 398,
+        "id": 402,
         "title": "(Simply) The Best",
         "year": 1992,
         "artist_a": "Tina Turner",
@@ -17512,7 +17688,7 @@
         "notes": null
     },
     {
-        "id": 399,
+        "id": 403,
         "title": "More Than a Game",
         "year": 1992,
         "artist_a": "Peter Jöback",
@@ -17556,7 +17732,7 @@
         "notes": null
     },
     {
-        "id": 400,
+        "id": 404,
         "title": "Feels Like Heaven",
         "year": 1992,
         "artist_a": "Peter Cetera",
@@ -17600,7 +17776,7 @@
         "notes": null
     },
     {
-        "id": 401,
+        "id": 405,
         "title": "I'll Keep Your Dreams Alive",
         "year": 1992,
         "artist_a": "George Benson",
@@ -17644,7 +17820,7 @@
         "notes": "Stereotypical gender roles of Hero And Support for an animated frog prince movie."
     },
     {
-        "id": 402,
+        "id": 406,
         "title": "Time To Be Lovers",
         "year": 1992,
         "artist_a": "Michael McDonald",
@@ -17688,7 +17864,7 @@
         "notes": null
     },
     {
-        "id": 403,
+        "id": 407,
         "title": "Runaway Train",
         "year": 1992,
         "artist_a": "Elton John",
@@ -17732,7 +17908,7 @@
         "notes": null
     },
     {
-        "id": 404,
+        "id": 408,
         "title": "The Best Things In Life Are Free",
         "year": 1992,
         "artist_a": "Luther Vandross",
@@ -17776,7 +17952,7 @@
         "notes": null
     },
     {
-        "id": 405,
+        "id": 409,
         "title": "A Whole New World (Aladdin's Theme)",
         "year": 1992,
         "artist_a": "Peabo Bryson",
@@ -17820,7 +17996,7 @@
         "notes": null
     },
     {
-        "id": 406,
+        "id": 410,
         "title": "Little Baby Nothing",
         "year": 1992,
         "artist_a": "James Dean Bradfield",
@@ -17864,7 +18040,7 @@
         "notes": null
     },
     {
-        "id": 407,
+        "id": 411,
         "title": "Something In Common",
         "year": 1992,
         "artist_a": "Bobby Brown",
@@ -17908,7 +18084,7 @@
         "notes": null
     },
     {
-        "id": 408,
+        "id": 412,
         "title": "Roll On Down",
         "year": 1992,
         "artist_a": "Bonnie Bramlett",
@@ -17952,7 +18128,7 @@
         "notes": null
     },
     {
-        "id": 409,
+        "id": 413,
         "title": "The Power",
         "year": 1993,
         "artist_a": "Elton John",
@@ -17996,7 +18172,7 @@
         "notes": null
     },
     {
-        "id": 410,
+        "id": 414,
         "title": "With Your Hand Upon My Heart",
         "year": 1993,
         "artist_a": "Michael Crawford",
@@ -18040,7 +18216,7 @@
         "notes": null
     },
     {
-        "id": 411,
+        "id": 415,
         "title": "Wir Zwei Allein",
         "year": 1993,
         "artist_a": "David Hasselhoff",
@@ -18084,7 +18260,7 @@
         "notes": "German Disney kid, Father Daughter missing Mother. French version with their Disney kid. More duets in 97 and 05"
     },
     {
-        "id": 412,
+        "id": 416,
         "title": "That's The Way Of The World",
         "year": 1993,
         "artist_a": "Johnny Bristol",
@@ -18128,7 +18304,7 @@
         "notes": null
     },
     {
-        "id": 413,
+        "id": 417,
         "title": "Stuck In The Middle With You",
         "year": 1993,
         "artist_a": "Adam Faith",
@@ -18172,7 +18348,7 @@
         "notes": null
     },
     {
-        "id": 414,
+        "id": 418,
         "title": "Nothing Compares 2 U",
         "year": 1993,
         "artist_a": "Prince",
@@ -18216,7 +18392,7 @@
         "notes": null
     },
     {
-        "id": 415,
+        "id": 419,
         "title": "Crying In The Rain",
         "year": 1993,
         "artist_a": "Art Garfunkel",
@@ -18260,7 +18436,7 @@
         "notes": "Everly Bros."
     },
     {
-        "id": 416,
+        "id": 420,
         "title": "True Love",
         "year": 1993,
         "artist_a": "Elton John",
@@ -18304,7 +18480,7 @@
         "notes": null
     },
     {
-        "id": 417,
+        "id": 421,
         "title": "I´m Back For More",
         "year": 1993,
         "artist_a": "Lulu",
@@ -18348,7 +18524,7 @@
         "notes": null
     },
     {
-        "id": 418,
+        "id": 422,
         "title": "A Bad Goodbye",
         "year": 1993,
         "artist_a": "Clint Black",
@@ -18392,7 +18568,7 @@
         "notes": null
     },
     {
-        "id": 419,
+        "id": 423,
         "title": "More Than Likely",
         "year": 1993,
         "artist_a": "Prince Be",
@@ -18436,7 +18612,7 @@
         "notes": null
     },
     {
-        "id": 420,
+        "id": 424,
         "title": "If You Were Me",
         "year": 1993,
         "artist_a": "Elton John",
@@ -18480,7 +18656,7 @@
         "notes": null
     },
     {
-        "id": 421,
+        "id": 425,
         "title": "You've Lost That Lovin' Feeling",
         "year": 1993,
         "artist_a": "Neil Diamond",
@@ -18524,7 +18700,7 @@
         "notes": null
     },
     {
-        "id": 422,
+        "id": 426,
         "title": "When I Think About Love",
         "year": 1993,
         "artist_a": "Prince Be",
@@ -18568,7 +18744,7 @@
         "notes": null
     },
     {
-        "id": 423,
+        "id": 427,
         "title": "My Love Is Bad",
         "year": 1993,
         "artist_a": "Catherine Ringer",
@@ -18612,7 +18788,7 @@
         "notes": null
     },
     {
-        "id": 424,
+        "id": 428,
         "title": "The Day I Fall In Love",
         "year": 1993,
         "artist_a": "Dolly Parton",
@@ -18656,7 +18832,7 @@
         "notes": null
     },
     {
-        "id": 425,
+        "id": 429,
         "title": "Standing In My Way",
         "year": 1993,
         "artist_a": "Deborah Harry",
@@ -18700,7 +18876,7 @@
         "notes": null
     },
     {
-        "id": 426,
+        "id": 430,
         "title": "Between The Sheets",
         "year": 1993,
         "artist_a": "Chaka Khan",
@@ -18744,7 +18920,7 @@
         "notes": null
     },
     {
-        "id": 427,
+        "id": 431,
         "title": "People And Places",
         "year": 1993,
         "artist_a": "Dee Dee Bridgewater",
@@ -18788,7 +18964,7 @@
         "notes": null
     },
     {
-        "id": 428,
+        "id": 432,
         "title": "Now And Forever",
         "year": 1993,
         "artist_a": "Barry Manilow",
@@ -18832,7 +19008,7 @@
         "notes": null
     },
     {
-        "id": 429,
+        "id": 433,
         "title": "Endless Love",
         "year": 1994,
         "artist_a": "Luther Vandross",
@@ -18876,7 +19052,7 @@
         "notes": null
     },
     {
-        "id": 430,
+        "id": 434,
         "title": "Tell Me All About It",
         "year": 1994,
         "artist_a": "Laura Fygi",
@@ -18920,7 +19096,7 @@
         "notes": null
     },
     {
-        "id": 431,
+        "id": 435,
         "title": "Rainy Night In Georgia",
         "year": 1994,
         "artist_a": "Conway Twitty",
@@ -18964,7 +19140,7 @@
         "notes": null
     },
     {
-        "id": 432,
+        "id": 436,
         "title": "I Second That Emotion",
         "year": 1994,
         "artist_a": "Tammy Wynette",
@@ -19008,7 +19184,7 @@
         "notes": null
     },
     {
-        "id": 433,
+        "id": 437,
         "title": "Funny How Time Slips Away",
         "year": 1994,
         "artist_a": "Al Green",
@@ -19052,7 +19228,7 @@
         "notes": null
     },
     {
-        "id": 434,
+        "id": 438,
         "title": "Girl Thang",
         "year": 1994,
         "artist_a": "Tammy Wynette",
@@ -19096,7 +19272,7 @@
         "notes": null
     },
     {
-        "id": 435,
+        "id": 439,
         "title": "Love Sign",
         "year": 1994,
         "artist_a": "Nona Gaye",
@@ -19140,7 +19316,7 @@
         "notes": null
     },
     {
-        "id": 436,
+        "id": 440,
         "title": "Wild NIght",
         "year": 1994,
         "artist_a": "John Mellencamp",
@@ -19184,7 +19360,7 @@
         "notes": null
     },
     {
-        "id": 437,
+        "id": 441,
         "title": "Bright Red",
         "year": 1994,
         "artist_a": "Laurie Anderson",
@@ -19228,7 +19404,7 @@
         "notes": "Contains Isiah 13:21"
     },
     {
-        "id": 438,
+        "id": 442,
         "title": "Come Together",
         "year": 1994,
         "artist_a": "Bruce Springsteen",
@@ -19272,7 +19448,7 @@
         "notes": null
     },
     {
-        "id": 439,
+        "id": 443,
         "title": "All I Am To You",
         "year": 1994,
         "artist_a": "Tammy Wynette",
@@ -19316,7 +19492,7 @@
         "notes": null
     },
     {
-        "id": 440,
+        "id": 444,
         "title": "We Will Find A Way",
         "year": 1994,
         "artist_a": "Oleta Adams",
@@ -19360,7 +19536,7 @@
         "notes": null
     },
     {
-        "id": 441,
+        "id": 445,
         "title": "This Love",
         "year": 1994,
         "artist_a": "Tammy Wynette",
@@ -19404,7 +19580,7 @@
         "notes": null
     },
     {
-        "id": 442,
+        "id": 446,
         "title": "A Woman's Needs",
         "year": 1994,
         "artist_a": "Tammy Wynette",
@@ -19448,7 +19624,7 @@
         "notes": null
     },
     {
-        "id": 443,
+        "id": 447,
         "title": "For Once In My Life",
         "year": 1994,
         "artist_a": "Frank Sinatra",
@@ -19492,7 +19668,7 @@
         "notes": null
     },
     {
-        "id": 444,
+        "id": 448,
         "title": "Glass Houses",
         "year": 1994,
         "artist_a": "Tammy Wynette",
@@ -19536,7 +19712,7 @@
         "notes": null
     },
     {
-        "id": 445,
+        "id": 449,
         "title": "In Our Sleep",
         "year": 1994,
         "artist_a": "Laurie Anderson",
@@ -19580,7 +19756,7 @@
         "notes": null
     },
     {
-        "id": 446,
+        "id": 450,
         "title": "If You Were To Wake Up",
         "year": 1994,
         "artist_a": "Tammy Wynette",
@@ -19624,7 +19800,7 @@
         "notes": null
     },
     {
-        "id": 447,
+        "id": 451,
         "title": "7 Seconds Away",
         "year": 1994,
         "artist_a": "Youssou N'Dour",
@@ -19668,7 +19844,7 @@
         "notes": null
     },
     {
-        "id": 448,
+        "id": 452,
         "title": "So In Need of a Change",
         "year": 1994,
         "artist_a": "Ronnie Spector",
@@ -19712,7 +19888,7 @@
         "notes": null
     },
     {
-        "id": 449,
+        "id": 453,
         "title": "Every Breath You Take",
         "year": 1994,
         "artist_a": "Tammy Wynette",
@@ -19756,7 +19932,7 @@
         "notes": null
     },
     {
-        "id": 450,
+        "id": 454,
         "title": "I Fall To Pieces",
         "year": 1994,
         "artist_a": "Aaron Neville",
@@ -19800,7 +19976,7 @@
         "notes": null
     },
     {
-        "id": 451,
+        "id": 455,
         "title": "Strawberry Fields Forever",
         "year": 1995,
         "artist_a": "Vicentico",
@@ -19844,7 +20020,7 @@
         "notes": null
     },
     {
-        "id": 452,
+        "id": 456,
         "title": "Where The Wild Roses Grow",
         "year": 1995,
         "artist_a": "Nick Cave",
@@ -19888,7 +20064,7 @@
         "notes": null
     },
     {
-        "id": 453,
+        "id": 457,
         "title": "Had To Be",
         "year": 1995,
         "artist_a": "Cliff Richard",
@@ -19932,7 +20108,7 @@
         "notes": null
     },
     {
-        "id": 454,
+        "id": 458,
         "title": "I Made A Promise",
         "year": 1995,
         "artist_a": "Eddie Rabbitt",
@@ -19976,7 +20152,7 @@
         "notes": null
     },
     {
-        "id": 455,
+        "id": 459,
         "title": "Scream",
         "year": 1995,
         "artist_a": "Michael Jackson",
@@ -20020,7 +20196,7 @@
         "notes": null
     },
     {
-        "id": 456,
+        "id": 460,
         "title": "Rock Steady",
         "year": 1995,
         "artist_a": "Bonnie Raitt",
@@ -20064,7 +20240,7 @@
         "notes": "TOTP"
     },
     {
-        "id": 457,
+        "id": 461,
         "title": "The Tracks Of My Tears",
         "year": 1995,
         "artist_a": "Smokey Robinson",
@@ -20108,7 +20284,7 @@
         "notes": null
     },
     {
-        "id": 458,
+        "id": 462,
         "title": "I Wanna Take Forever Tonight",
         "year": 1995,
         "artist_a": "Peter Cetera",
@@ -20152,7 +20328,7 @@
         "notes": null
     },
     {
-        "id": 459,
+        "id": 463,
         "title": "To The End (La Comedie)",
         "year": 1995,
         "artist_a": "Damon Albarn",
@@ -20196,7 +20372,7 @@
         "notes": null
     },
     {
-        "id": 460,
+        "id": 464,
         "title": "When You Love Someone",
         "year": 1995,
         "artist_a": "Anita Baker",
@@ -20240,7 +20416,7 @@
         "notes": null
     },
     {
-        "id": 461,
+        "id": 465,
         "title": "If I Never Knew You",
         "year": 1995,
         "artist_a": "Shanice",
@@ -20284,7 +20460,7 @@
         "notes": null
     },
     {
-        "id": 462,
+        "id": 466,
         "title": "Healing",
         "year": 1995,
         "artist_a": "Wynonna Judd",
@@ -20328,7 +20504,7 @@
         "notes": null
     },
     {
-        "id": 463,
+        "id": 467,
         "title": "I Got Rhythm",
         "year": 1995,
         "artist_a": "Tony Bennett",
@@ -20372,7 +20548,7 @@
         "notes": null
     },
     {
-        "id": 464,
+        "id": 468,
         "title": "You're The One",
         "year": 1995,
         "artist_a": "Máire Brennan",
@@ -20416,7 +20592,7 @@
         "notes": null
     },
     {
-        "id": 465,
+        "id": 469,
         "title": "One Good Love",
         "year": 1995,
         "artist_a": "Neil Diamond",
@@ -20460,7 +20636,7 @@
         "notes": "4 more duets from Tennessee Moon LP. Neil makes Country sound like Neil."
     },
     {
-        "id": 466,
+        "id": 470,
         "title": "The Future's So Bright I Gotta Wear Shades",
         "year": 1996,
         "artist_a": "Rick Parfitt",
@@ -20504,7 +20680,7 @@
         "notes": null
     },
     {
-        "id": 467,
+        "id": 471,
         "title": "The Safety Dance",
         "year": 1996,
         "artist_a": "Francis Rossi",
@@ -20548,7 +20724,7 @@
         "notes": null
     },
     {
-        "id": 468,
+        "id": 472,
         "title": "This Is The Time",
         "year": 1996,
         "artist_a": "Michael Bolton",
@@ -20592,7 +20768,7 @@
         "notes": null
     },
     {
-        "id": 469,
+        "id": 473,
         "title": "Live Like Horses",
         "year": 1996,
         "artist_a": "Elton John",
@@ -20636,7 +20812,7 @@
         "notes": null
     },
     {
-        "id": 470,
+        "id": 474,
         "title": "Vivo per Lei",
         "year": 1996,
         "artist_a": "Andrea Bocelli",
@@ -20680,7 +20856,7 @@
         "notes": null
     },
     {
-        "id": 471,
+        "id": 475,
         "title": "Firefly",
         "year": 1996,
         "artist_a": "Tony Bennett",
@@ -20724,7 +20900,7 @@
         "notes": null
     },
     {
-        "id": 472,
+        "id": 476,
         "title": "In Your Wildest Dreams",
         "year": 1996,
         "artist_a": "Tina Turner",
@@ -20768,7 +20944,7 @@
         "notes": null
     },
     {
-        "id": 473,
+        "id": 477,
         "title": "Does He Love You",
         "year": 1996,
         "artist_a": "Liza Minnelli",
@@ -20812,7 +20988,7 @@
         "notes": null
     },
     {
-        "id": 474,
+        "id": 478,
         "title": "How Come, How Long",
         "year": 1996,
         "artist_a": "Babyface",
@@ -20856,7 +21032,7 @@
         "notes": null
     },
     {
-        "id": 475,
+        "id": 479,
         "title": "I Finally Found Someone",
         "year": 1996,
         "artist_a": "Barbra Streisand",
@@ -20900,7 +21076,7 @@
         "notes": null
     },
     {
-        "id": 476,
+        "id": 480,
         "title": "Beyond The Sea",
         "year": 1996,
         "artist_a": "Ewan Mcgregor",
@@ -20944,10 +21120,10 @@
         "notes": null
     },
     {
-        "id": 477,
+        "id": 481,
         "title": "Everything Must Change",
         "year": 1996,
-        "artist_a": "Mick Hucknell",
+        "artist_a": "Mick Hucknall",
         "artist_b": "Chaka Khan",
         "gender": "MF",
         "relationship": "",
@@ -20988,7 +21164,7 @@
         "notes": null
     },
     {
-        "id": 478,
+        "id": 482,
         "title": "Shirley, Do You Own A Ferrari?",
         "year": 1996,
         "artist_a": "Shirley Bassey",
@@ -21032,7 +21208,7 @@
         "notes": null
     },
     {
-        "id": 479,
+        "id": 483,
         "title": "Ain't No Stopping Us Now",
         "year": 1996,
         "artist_a": "Kate Pierson",
@@ -21076,7 +21252,7 @@
         "notes": null
     },
     {
-        "id": 480,
+        "id": 484,
         "title": "Whenever There Is Love",
         "year": 1996,
         "artist_a": "Bruce Roberts",
@@ -21120,7 +21296,7 @@
         "notes": null
     },
     {
-        "id": 481,
+        "id": 485,
         "title": "Crazy Love",
         "year": 1996,
         "artist_a": "Adam Sandler",
@@ -21164,7 +21340,7 @@
         "notes": null
     },
     {
-        "id": 482,
+        "id": 486,
         "title": "Ciao!",
         "year": 1996,
         "artist_a": "Miki Berenyi",
@@ -21208,7 +21384,7 @@
         "notes": null
     },
     {
-        "id": 483,
+        "id": 487,
         "title": "More Than Words Can Say",
         "year": 1997,
         "artist_a": "David Hasselhoff",
@@ -21252,7 +21428,7 @@
         "notes": "Solo release in Germany, and seperate Czech release and video with Helena Vondráčková"
     },
     {
-        "id": 484,
+        "id": 488,
         "title": "Scary Monsters (And Super Creeps)",
         "year": 1997,
         "artist_a": "David Bowie",
@@ -21296,7 +21472,7 @@
         "notes": null
     },
     {
-        "id": 485,
+        "id": 489,
         "title": "Quicksand",
         "year": 1997,
         "artist_a": "David Bowie",
@@ -21340,7 +21516,7 @@
         "notes": null
     },
     {
-        "id": 486,
+        "id": 490,
         "title": "Cose Della Vita",
         "year": 1997,
         "artist_a": "Eros Ramazzotti",
@@ -21384,7 +21560,7 @@
         "notes": null
     },
     {
-        "id": 487,
+        "id": 491,
         "title": "Tell Him",
         "year": 1997,
         "artist_a": "Barbra Streisand",
@@ -21428,7 +21604,7 @@
         "notes": null
     },
     {
-        "id": 488,
+        "id": 492,
         "title": "Still Holding On",
         "year": 1997,
         "artist_a": "Martina McBride",
@@ -21472,7 +21648,7 @@
         "notes": null
     },
     {
-        "id": 489,
+        "id": 493,
         "title": "I'll Be Seeing You",
         "year": 1997,
         "artist_a": "Iggy Pop",
@@ -21516,7 +21692,7 @@
         "notes": null
     },
     {
-        "id": 490,
+        "id": 494,
         "title": "Living For The City",
         "year": 1997,
         "artist_a": "Stevie Wonder",
@@ -21560,7 +21736,7 @@
         "notes": null
     },
     {
-        "id": 491,
+        "id": 495,
         "title": "No.1. Song In Heaven",
         "year": 1997,
         "artist_a": "Russell Mael",
@@ -21604,7 +21780,7 @@
         "notes": null
     },
     {
-        "id": 492,
+        "id": 496,
         "title": "We Can't Unmake Love",
         "year": 1997,
         "artist_a": "Wynonna Judd",
@@ -21648,7 +21824,7 @@
         "notes": null
     },
     {
-        "id": 493,
+        "id": 497,
         "title": "Two Sleepy People",
         "year": 1997,
         "artist_a": "Carly Simon",
@@ -21692,7 +21868,7 @@
         "notes": null
     },
     {
-        "id": 494,
+        "id": 498,
         "title": "I Live For Love",
         "year": 1997,
         "artist_a": "David Hasselhoff",
@@ -21736,7 +21912,7 @@
         "notes": null
     },
     {
-        "id": 495,
+        "id": 499,
         "title": "This Town Ain't Big Enough For The Both Of Us",
         "year": 1997,
         "artist_a": "Russell Mael",
@@ -21780,7 +21956,7 @@
         "notes": null
     },
     {
-        "id": 496,
+        "id": 500,
         "title": "Wherever You Are",
         "year": 1997,
         "artist_a": "Barry Coffing",
@@ -21824,7 +22000,7 @@
         "notes": null
     },
     {
-        "id": 497,
+        "id": 501,
         "title": "What Are We Waiting For",
         "year": 1997,
         "artist_a": "Alannah Myles",
@@ -21868,7 +22044,51 @@
         "notes": null
     },
     {
-        "id": 498,
+        "id": 502,
+        "title": "The Ballad Of Tom Jones",
+        "year": 1998,
+        "artist_a": "Tommy Scott",
+        "artist_b": "Cerys Matthews",
+        "gender": "MF",
+        "relationship": "",
+        "genre": "Pop",
+        "sub_genre": "",
+        "sentimental_ballad": "",
+        "song_form": "Call And Response",
+        "tag_1": "Humour",
+        "subject": "Rocky Relationship",
+        "dynamic": "Counter",
+        "originally_a_duet": "Originally A Duet",
+        "cover_version": "",
+        "writer_a": "Tommy Scott",
+        "writer_b": "",
+        "writer_c": "",
+        "writer_d": "",
+        "writer_e": "",
+        "writer_f": "",
+        "release": "Single",
+        "duo_lp": "",
+        "various_partners_lp": "",
+        "legacy": "",
+        "soundtrack": "",
+        "various_artists_lp": "",
+        "promotional_video": "Promo",
+        "behind_the_scenes": "",
+        "presentation": "Televised Performance",
+        "format": "Music Show",
+        "programme_title": "Top Of The Pops",
+        "concert_footage": "",
+        "special": "",
+        "charity_or_cause": "",
+        "tribute": "",
+        "christmas": "",
+        "virtual": "",
+        "episode": "",
+        "yt_link": "https://www.youtube.com/watch?v=OaydE0zV2Hg",
+        "notes": null
+    },
+    {
+        "id": 503,
         "title": "Got To Be Real",
         "year": 1998,
         "artist_a": "Patti LaBelle",
@@ -21912,7 +22132,7 @@
         "notes": null
     },
     {
-        "id": 499,
+        "id": 504,
         "title": "Sweetheart",
         "year": 1998,
         "artist_a": "Jermaine Dupri",
@@ -21956,7 +22176,7 @@
         "notes": null
     },
     {
-        "id": 500,
+        "id": 505,
         "title": "I Hate You Then I Love You",
         "year": 1998,
         "artist_a": "Celine Dion",
@@ -22000,7 +22220,7 @@
         "notes": null
     },
     {
-        "id": 501,
+        "id": 506,
         "title": "Al Kinds Of Everything",
         "year": 1998,
         "artist_a": "Terry Hall",
@@ -22044,7 +22264,7 @@
         "notes": null
     },
     {
-        "id": 502,
+        "id": 507,
         "title": "When You Believe",
         "year": 1998,
         "artist_a": "Whitney Houston",
@@ -22088,7 +22308,7 @@
         "notes": null
     },
     {
-        "id": 503,
+        "id": 508,
         "title": "When You´re Gone",
         "year": 1998,
         "artist_a": "Bryan Adams",
@@ -22132,7 +22352,7 @@
         "notes": null
     },
     {
-        "id": 504,
+        "id": 509,
         "title": "The Boy Is Mine",
         "year": 1998,
         "artist_a": "Brandy",
@@ -22176,7 +22396,7 @@
         "notes": null
     },
     {
-        "id": 505,
+        "id": 510,
         "title": "Strong Enough",
         "year": 1998,
         "artist_a": "Sheryl Crow",
@@ -22220,7 +22440,7 @@
         "notes": null
     },
     {
-        "id": 506,
+        "id": 511,
         "title": "Kisses Sweeter Than Wine",
         "year": 1998,
         "artist_a": "Jackson Browne",
@@ -22264,7 +22484,7 @@
         "notes": null
     },
     {
-        "id": 507,
+        "id": 512,
         "title": "Whenever You Call",
         "year": 1998,
         "artist_a": "Mariah Carey",
@@ -22308,7 +22528,7 @@
         "notes": null
     },
     {
-        "id": 508,
+        "id": 513,
         "title": "Love Will Find A Way",
         "year": 1998,
         "artist_a": "Kenny Lattimore",
@@ -22352,7 +22572,7 @@
         "notes": null
     },
     {
-        "id": 509,
+        "id": 514,
         "title": "So Verlief",
         "year": 1998,
         "artist_a": "Patricia Lewis",
@@ -22396,7 +22616,7 @@
         "notes": null
     },
     {
-        "id": 510,
+        "id": 515,
         "title": "Rebel Rebel",
         "year": 1998,
         "artist_a": "Iggy Pop",
@@ -22440,7 +22660,7 @@
         "notes": null
     },
     {
-        "id": 511,
+        "id": 516,
         "title": "Chances Are",
         "year": 1998,
         "artist_a": "Bob Seger",
@@ -22484,7 +22704,7 @@
         "notes": null
     },
     {
-        "id": 512,
+        "id": 517,
         "title": "Mistral Gagnant",
         "year": 1998,
         "artist_a": "Vanessa Paradis",
@@ -22528,7 +22748,7 @@
         "notes": null
     },
     {
-        "id": 513,
+        "id": 518,
         "title": "As Long As There's Christmas",
         "year": 1998,
         "artist_a": "Roberta Flack",
@@ -22572,7 +22792,7 @@
         "notes": null
     },
     {
-        "id": 514,
+        "id": 519,
         "title": "Hang on In There Baby",
         "year": 1998,
         "artist_a": "Gary Barlow",
@@ -22616,7 +22836,7 @@
         "notes": null
     },
     {
-        "id": 515,
+        "id": 520,
         "title": "True To Your Heart",
         "year": 1998,
         "artist_a": "Nick Lachey",
@@ -22660,7 +22880,51 @@
         "notes": null
     },
     {
-        "id": 516,
+        "id": 521,
+        "title": "Baby, It´s Cold Outside",
+        "year": 1999,
+        "artist_a": "Tom Jones",
+        "artist_b": "Cerys Matthews",
+        "gender": "MF",
+        "relationship": "",
+        "genre": "Pop",
+        "sub_genre": "",
+        "sentimental_ballad": "",
+        "song_form": "Call And Response",
+        "tag_1": "Humour",
+        "subject": "Attraction",
+        "dynamic": "Counter",
+        "originally_a_duet": "Originally A Duet",
+        "cover_version": "Cover",
+        "writer_a": "Frank Loesser",
+        "writer_b": "",
+        "writer_c": "",
+        "writer_d": "",
+        "writer_e": "",
+        "writer_f": "",
+        "release": "Single",
+        "duo_lp": "",
+        "various_partners_lp": "",
+        "legacy": "",
+        "soundtrack": "",
+        "various_artists_lp": "",
+        "promotional_video": "Promo",
+        "behind_the_scenes": "",
+        "presentation": "Televised Performance",
+        "format": "Music Show",
+        "programme_title": "Later... With Jools Holland",
+        "concert_footage": "",
+        "special": "",
+        "charity_or_cause": "",
+        "tribute": "",
+        "christmas": "",
+        "virtual": "",
+        "episode": "",
+        "yt_link": "https://www.youtube.com/watch?v=Tjw-CKgD8Ro",
+        "notes": null
+    },
+    {
+        "id": 522,
         "title": "Don't Give Up",
         "year": 1999,
         "artist_a": "Máire Brennan",
@@ -22704,7 +22968,7 @@
         "notes": null
     },
     {
-        "id": 517,
+        "id": 523,
         "title": "Hey Man",
         "year": 1999,
         "artist_a": "Zucchero",
@@ -22748,7 +23012,7 @@
         "notes": null
     },
     {
-        "id": 518,
+        "id": 524,
         "title": "Va, Pensiero",
         "year": 1999,
         "artist_a": "Zucchero",
@@ -22792,7 +23056,7 @@
         "notes": null
     },
     {
-        "id": 519,
+        "id": 525,
         "title": "If You Ever Leave Me",
         "year": 1999,
         "artist_a": "Barbra Streisand",
@@ -22836,7 +23100,7 @@
         "notes": null
     },
     {
-        "id": 520,
+        "id": 526,
         "title": "The Magic Of Love",
         "year": 1999,
         "artist_a": "Lionel Richie",
@@ -22880,7 +23144,7 @@
         "notes": null
     },
     {
-        "id": 521,
+        "id": 527,
         "title": "The Longer We Make Love",
         "year": 1999,
         "artist_a": "Barry White",
@@ -22924,7 +23188,7 @@
         "notes": "The single features two versions with two different partners, Lisa Stansfield being the other."
     },
     {
-        "id": 522,
+        "id": 528,
         "title": "I´m Yours",
         "year": 1999,
         "artist_a": "Siedah Garrett",
@@ -22968,7 +23232,7 @@
         "notes": null
     },
     {
-        "id": 523,
+        "id": 529,
         "title": "Let It Be",
         "year": 1999,
         "artist_a": "Thelma Houston",
@@ -23012,7 +23276,7 @@
         "notes": "David Fishoff Presents..."
     },
     {
-        "id": 524,
+        "id": 530,
         "title": "Slide Away",
         "year": 1999,
         "artist_a": "Michael Hutchence",
@@ -23056,7 +23320,7 @@
         "notes": null
     },
     {
-        "id": 525,
+        "id": 531,
         "title": "Upside Down",
         "year": 1999,
         "artist_a": "Diana Ross",
@@ -23100,7 +23364,7 @@
         "notes": null
     },
     {
-        "id": 526,
+        "id": 532,
         "title": "Sweet Thing",
         "year": 1999,
         "artist_a": "Mary J. Blige",
@@ -23144,7 +23408,7 @@
         "notes": null
     },
     {
-        "id": 527,
+        "id": 533,
         "title": "Without You I´m Nothing",
         "year": 1999,
         "artist_a": "Brian Molko",
@@ -23188,7 +23452,7 @@
         "notes": null
     },
     {
-        "id": 528,
+        "id": 534,
         "title": "愛の火 3つ オレンジ",
         "year": 1999,
         "artist_a": "Chara",
@@ -23232,7 +23496,7 @@
         "notes": null
     },
     {
-        "id": 529,
+        "id": 535,
         "title": "Happy Tomorrow",
         "year": 1999,
         "artist_a": "Kate Pierson",
@@ -23276,7 +23540,7 @@
         "notes": null
     },
     {
-        "id": 530,
+        "id": 536,
         "title": "I'm Left, You're Right, She's Gone",
         "year": 1999,
         "artist_a": "Tom Jones",
@@ -23320,7 +23584,7 @@
         "notes": null
     },
     {
-        "id": 531,
+        "id": 537,
         "title": "Bye Bye Baby",
         "year": 1999,
         "artist_a": "Ronnie Spector",
@@ -23364,7 +23628,7 @@
         "notes": null
     },
     {
-        "id": 532,
+        "id": 538,
         "title": "Almost Diamonds",
         "year": 1999,
         "artist_a": "Marc Almond",
@@ -23408,7 +23672,7 @@
         "notes": null
     },
     {
-        "id": 533,
+        "id": 539,
         "title": "As",
         "year": 1999,
         "artist_a": "George Michael",
@@ -23452,7 +23716,7 @@
         "notes": null
     },
     {
-        "id": 534,
+        "id": 540,
         "title": "Burning Down The House",
         "year": 1999,
         "artist_a": "Tom Jones",
@@ -23496,7 +23760,7 @@
         "notes": null
     },
     {
-        "id": 535,
+        "id": 541,
         "title": "Are You Gonna Go My Way",
         "year": 1999,
         "artist_a": "Tom Jones",
@@ -23540,7 +23804,7 @@
         "notes": null
     },
     {
-        "id": 536,
+        "id": 542,
         "title": "Sometimes We Cry",
         "year": 1999,
         "artist_a": "Tom Jones",
@@ -23584,7 +23848,7 @@
         "notes": null
     },
     {
-        "id": 537,
+        "id": 543,
         "title": "She Drives Me Crazy",
         "year": 1999,
         "artist_a": "Tom Jones",
@@ -23628,7 +23892,51 @@
         "notes": null
     },
     {
-        "id": 538,
+        "id": 544,
+        "title": "Barcelona",
+        "year": 2000,
+        "artist_a": "Russell Watson",
+        "artist_b": "Shaun Ryder",
+        "gender": "MM",
+        "relationship": "",
+        "genre": "Pop",
+        "sub_genre": "Opera",
+        "sentimental_ballad": "",
+        "song_form": "",
+        "tag_1": "",
+        "subject": "Attraction",
+        "dynamic": "Union",
+        "originally_a_duet": "Originally A Duet",
+        "cover_version": "Cover",
+        "writer_a": "Freddie Mercury",
+        "writer_b": "Mike Moran",
+        "writer_c": "",
+        "writer_d": "",
+        "writer_e": "",
+        "writer_f": "",
+        "release": "Single",
+        "duo_lp": "",
+        "various_partners_lp": "",
+        "legacy": "",
+        "soundtrack": "",
+        "various_artists_lp": "",
+        "promotional_video": "Promo",
+        "behind_the_scenes": "",
+        "presentation": "Televised Performance",
+        "format": "Chat Show",
+        "programme_title": "TFI Friday",
+        "concert_footage": "",
+        "special": "Crossover Genre",
+        "charity_or_cause": "",
+        "tribute": "",
+        "christmas": "",
+        "virtual": "",
+        "episode": "",
+        "yt_link": "https://www.youtube.com/watch?v=683TqEKpOr8",
+        "notes": null
+    },
+    {
+        "id": 545,
         "title": "Long Way Round",
         "year": 2000,
         "artist_a": "Eagle Eye Cherry",
@@ -23672,7 +23980,7 @@
         "notes": null
     },
     {
-        "id": 539,
+        "id": 546,
         "title": "Sailing To Philadelphia",
         "year": 2000,
         "artist_a": "Mark Knopfler",
@@ -23716,7 +24024,7 @@
         "notes": "Role playing. 10min documentary. Pynchon inspired"
     },
     {
-        "id": 540,
+        "id": 547,
         "title": "If I Told You That",
         "year": 2000,
         "artist_a": "Whitney Houston",
@@ -23760,7 +24068,7 @@
         "notes": null
     },
     {
-        "id": 541,
+        "id": 548,
         "title": "Kids",
         "year": 2000,
         "artist_a": "Robbie Williams",
@@ -23804,7 +24112,7 @@
         "notes": null
     },
     {
-        "id": 542,
+        "id": 549,
         "title": "The Last Laugh",
         "year": 2000,
         "artist_a": "Mark Knopfler",
@@ -23848,7 +24156,7 @@
         "notes": null
     },
     {
-        "id": 543,
+        "id": 550,
         "title": "Saturday Night's Alright (For Fighting)",
         "year": 2000,
         "artist_a": "Elton John",
@@ -23892,7 +24200,7 @@
         "notes": null
     },
     {
-        "id": 544,
+        "id": 551,
         "title": "When Something Is Wrong With My Baby",
         "year": 2000,
         "artist_a": "Sam Moore",
@@ -23936,7 +24244,7 @@
         "notes": null
     },
     {
-        "id": 545,
+        "id": 552,
         "title": "Everyday",
         "year": 2000,
         "artist_a": "Darwin Hobbs",
@@ -23980,7 +24288,7 @@
         "notes": null
     },
     {
-        "id": 546,
+        "id": 553,
         "title": "Papa's Got A Brand New Bag Pt.1",
         "year": 2000,
         "artist_a": "Lenny Kravitz",
@@ -24024,7 +24332,7 @@
         "notes": "Will Young 2005,"
     },
     {
-        "id": 547,
+        "id": 554,
         "title": "Seperate Tables",
         "year": 2000,
         "artist_a": "Chris de Burgh",
@@ -24068,7 +24376,7 @@
         "notes": null
     },
     {
-        "id": 548,
+        "id": 555,
         "title": "Somethin' Stupid",
         "year": 2001,
         "artist_a": "Robbie Williams",
@@ -24112,7 +24420,7 @@
         "notes": null
     },
     {
-        "id": 549,
+        "id": 556,
         "title": "Things",
         "year": 2001,
         "artist_a": "Robbie Williams",
@@ -24156,7 +24464,7 @@
         "notes": null
     },
     {
-        "id": 550,
+        "id": 557,
         "title": "Piu' Che Puoi",
         "year": 2001,
         "artist_a": "Eros Ramazzotti",
@@ -24200,7 +24508,7 @@
         "notes": null
     },
     {
-        "id": 551,
+        "id": 558,
         "title": "I'm Not In Love Yet",
         "year": 2001,
         "artist_a": "Huey Lewis",
@@ -24244,7 +24552,7 @@
         "notes": null
     },
     {
-        "id": 552,
+        "id": 559,
         "title": "Try To Live Again",
         "year": 2001,
         "artist_a": "Joe Lynn Turner",
@@ -24288,7 +24596,7 @@
         "notes": null
     },
     {
-        "id": 553,
+        "id": 560,
         "title": "Come What May",
         "year": 2001,
         "artist_a": "Ewan Mcgregor",
@@ -24332,7 +24640,7 @@
         "notes": null
     },
     {
-        "id": 554,
+        "id": 561,
         "title": "Two Sides To Every Story",
         "year": 2001,
         "artist_a": "Chris de Burgh",
@@ -24376,7 +24684,7 @@
         "notes": null
     },
     {
-        "id": 555,
+        "id": 562,
         "title": "Eres Mi Religión",
         "year": 2002,
         "artist_a": "Fher Olvera",
@@ -24420,7 +24728,7 @@
         "notes": null
     },
     {
-        "id": 556,
+        "id": 563,
         "title": "Call On Me",
         "year": 2002,
         "artist_a": "Lou Reed",
@@ -24464,7 +24772,7 @@
         "notes": null
     },
     {
-        "id": 557,
+        "id": 564,
         "title": "You Shook Me All Night Long",
         "year": 2002,
         "artist_a": "Celine Dion",
@@ -24508,7 +24816,7 @@
         "notes": null
     },
     {
-        "id": 558,
+        "id": 565,
         "title": "Ain't No Mountain High Enough",
         "year": 2002,
         "artist_a": "Montell Jordan",
@@ -24552,7 +24860,7 @@
         "notes": null
     },
     {
-        "id": 559,
+        "id": 566,
         "title": "To Love a Woman",
         "year": 2003,
         "artist_a": "Lionel Richie",
@@ -24596,7 +24904,7 @@
         "notes": null
     },
     {
-        "id": 560,
+        "id": 567,
         "title": "Cosi Celeste",
         "year": 2003,
         "artist_a": "Zucchero",
@@ -24640,7 +24948,7 @@
         "notes": null
     },
     {
-        "id": 561,
+        "id": 568,
         "title": "All I Have",
         "year": 2003,
         "artist_a": "Jennifer Lopez",
@@ -24684,7 +24992,7 @@
         "notes": null
     },
     {
-        "id": 562,
+        "id": 569,
         "title": "Changes",
         "year": 2003,
         "artist_a": "Ozzy Osbourne",
@@ -24728,7 +25036,7 @@
         "notes": null
     },
     {
-        "id": 563,
+        "id": 570,
         "title": "Gå Inte Förbi",
         "year": 2003,
         "artist_a": "Peter Jöback",
@@ -24772,7 +25080,7 @@
         "notes": null
     },
     {
-        "id": 564,
+        "id": 571,
         "title": "Pure Love",
         "year": 2004,
         "artist_a": "Zucchero",
@@ -24816,7 +25124,7 @@
         "notes": null
     },
     {
-        "id": 565,
+        "id": 572,
         "title": "The Flight",
         "year": 2004,
         "artist_a": "Zucchero",
@@ -24860,7 +25168,7 @@
         "notes": null
     },
     {
-        "id": 566,
+        "id": 573,
         "title": "Like The Sun",
         "year": 2004,
         "artist_a": "Zucchero",
@@ -24904,7 +25212,7 @@
         "notes": null
     },
     {
-        "id": 567,
+        "id": 574,
         "title": "Blue",
         "year": 2004,
         "artist_a": "Zucchero",
@@ -24948,7 +25256,7 @@
         "notes": null
     },
     {
-        "id": 568,
+        "id": 575,
         "title": "Muoio Per Te",
         "year": 2004,
         "artist_a": "Zucchero",
@@ -24992,7 +25300,7 @@
         "notes": null
     },
     {
-        "id": 569,
+        "id": 576,
         "title": "Portland Oregon",
         "year": 2004,
         "artist_a": "Loretta Lynn",
@@ -25036,7 +25344,7 @@
         "notes": null
     },
     {
-        "id": 570,
+        "id": 577,
         "title": "Party For Two",
         "year": 2004,
         "artist_a": "Shania Twain",
@@ -25080,7 +25388,7 @@
         "notes": null
     },
     {
-        "id": 571,
+        "id": 578,
         "title": "Party For Two",
         "year": 2004,
         "artist_a": "Shania Twain",
@@ -25124,7 +25432,7 @@
         "notes": null
     },
     {
-        "id": 572,
+        "id": 579,
         "title": "Diavolo In Me",
         "year": 2004,
         "artist_a": "Zucchero",
@@ -25168,7 +25476,7 @@
         "notes": null
     },
     {
-        "id": 573,
+        "id": 580,
         "title": "Star Spangled Banner",
         "year": 2004,
         "artist_a": "Nona Gaye",
@@ -25212,7 +25520,7 @@
         "notes": null
     },
     {
-        "id": 574,
+        "id": 581,
         "title": "Sorry Seems To Be The Hardest Word",
         "year": 2004,
         "artist_a": "Ray Charles",
@@ -25256,7 +25564,7 @@
         "notes": null
     },
     {
-        "id": 575,
+        "id": 582,
         "title": "Lonely Without You (This Christmas)",
         "year": 2004,
         "artist_a": "Mick Jagger",
@@ -25300,7 +25608,7 @@
         "notes": null
     },
     {
-        "id": 576,
+        "id": 583,
         "title": "Love Hurts",
         "year": 2004,
         "artist_a": "Norah Jones",
@@ -25344,7 +25652,7 @@
         "notes": null
     },
     {
-        "id": 577,
+        "id": 584,
         "title": "Kick It",
         "year": 2004,
         "artist_a": "Iggy Pop",
@@ -25388,7 +25696,7 @@
         "notes": null
     },
     {
-        "id": 578,
+        "id": 585,
         "title": "The Patience Bossa",
         "year": 2004,
         "artist_a": "Deborah Harry",
@@ -25432,7 +25740,7 @@
         "notes": null
     },
     {
-        "id": 579,
+        "id": 586,
         "title": "Baby, It's Cold Outside",
         "year": 2004,
         "artist_a": "Rod Stewart",
@@ -25476,7 +25784,7 @@
         "notes": null
     },
     {
-        "id": 580,
+        "id": 587,
         "title": "Angels",
         "year": 2005,
         "artist_a": "Robbie Williams",
@@ -25520,7 +25828,7 @@
         "notes": null
     },
     {
-        "id": 581,
+        "id": 588,
         "title": "America The Beautiful",
         "year": 2005,
         "artist_a": "Ray Charles",
@@ -25564,7 +25872,7 @@
         "notes": null
     },
     {
-        "id": 582,
+        "id": 589,
         "title": "The Blues Man",
         "year": 2005,
         "artist_a": "George Jones",
@@ -25608,7 +25916,7 @@
         "notes": null
     },
     {
-        "id": 583,
+        "id": 590,
         "title": "I'll Take You There",
         "year": 2005,
         "artist_a": "Joss Stone",
@@ -25652,7 +25960,7 @@
         "notes": null
     },
     {
-        "id": 584,
+        "id": 591,
         "title": "Best Of Friends",
         "year": 2005,
         "artist_a": "Livingston Taylor",
@@ -25696,7 +26004,7 @@
         "notes": null
     },
     {
-        "id": 585,
+        "id": 592,
         "title": "Where Is The Love",
         "year": 2005,
         "artist_a": "Bobby Caldwell",
@@ -25740,7 +26048,7 @@
         "notes": null
     },
     {
-        "id": 586,
+        "id": 593,
         "title": "I've Got A Crush On You",
         "year": 2005,
         "artist_a": "Rod Stewart",
@@ -25784,7 +26092,7 @@
         "notes": null
     },
     {
-        "id": 587,
+        "id": 594,
         "title": "Calling It Christmas",
         "year": 2005,
         "artist_a": "Elton John",
@@ -25828,7 +26136,7 @@
         "notes": null
     },
     {
-        "id": 588,
+        "id": 595,
         "title": "Anyone Who Had A Heart",
         "year": 2005,
         "artist_a": "Elton John",
@@ -25872,7 +26180,7 @@
         "notes": null
     },
     {
-        "id": 589,
+        "id": 596,
         "title": "So Amazing",
         "year": 2005,
         "artist_a": "Beyoncé",
@@ -25916,7 +26224,7 @@
         "notes": null
     },
     {
-        "id": 590,
+        "id": 597,
         "title": "Stop, Look, Listen",
         "year": 2005,
         "artist_a": "Michael McDonald",
@@ -25960,7 +26268,7 @@
         "notes": null
     },
     {
-        "id": 591,
+        "id": 598,
         "title": "Hot Legs",
         "year": 2005,
         "artist_a": "Joss Stone",
@@ -26004,7 +26312,7 @@
         "notes": null
     },
     {
-        "id": 592,
+        "id": 599,
         "title": "I Belong To You (il ritmo delle passione)",
         "year": 2006,
         "artist_a": "Eros Ramazzotti",
@@ -26048,7 +26356,7 @@
         "notes": null
     },
     {
-        "id": 593,
+        "id": 600,
         "title": "Better To Have An Not Need",
         "year": 2006,
         "artist_a": "Sam Moore",
@@ -26092,7 +26400,7 @@
         "notes": null
     },
     {
-        "id": 594,
+        "id": 601,
         "title": "I Can't Stand The Rain",
         "year": 2006,
         "artist_a": "Sam Moore",
@@ -26136,7 +26444,7 @@
         "notes": null
     },
     {
-        "id": 595,
+        "id": 602,
         "title": "Street Of Dreams",
         "year": 2006,
         "artist_a": "Joe Lynn Turner",
@@ -26180,7 +26488,7 @@
         "notes": null
     },
     {
-        "id": 596,
+        "id": 603,
         "title": "Heal The Pain",
         "year": 2006,
         "artist_a": "George Michael",
@@ -26224,7 +26532,7 @@
         "notes": null
     },
     {
-        "id": 597,
+        "id": 604,
         "title": "Ce N'Etait Qu'Un Reve",
         "year": 2006,
         "artist_a": "Bryan Adams",
@@ -26268,7 +26576,7 @@
         "notes": null
     },
     {
-        "id": 598,
+        "id": 605,
         "title": "Fields Of Gold",
         "year": 2006,
         "artist_a": "Cliff Richard",
@@ -26312,7 +26620,7 @@
         "notes": null
     },
     {
-        "id": 599,
+        "id": 606,
         "title": "Teach Me Again",
         "year": 2006,
         "artist_a": "Tina Turner",
@@ -26356,7 +26664,7 @@
         "notes": null
     },
     {
-        "id": 600,
+        "id": 607,
         "title": "Work Out Fine",
         "year": 2006,
         "artist_a": "Ronnie Spector",
@@ -26400,7 +26708,7 @@
         "notes": null
     },
     {
-        "id": 601,
+        "id": 608,
         "title": "Lookin' For A Love",
         "year": 2006,
         "artist_a": "Jon Bon Jovi",
@@ -26444,7 +26752,7 @@
         "notes": null
     },
     {
-        "id": 602,
+        "id": 609,
         "title": "Non siamo soli",
         "year": 2007,
         "artist_a": "Eros Ramazzotti",
@@ -26488,7 +26796,7 @@
         "notes": null
     },
     {
-        "id": 603,
+        "id": 610,
         "title": "Blowin' In The Wind",
         "year": 2007,
         "artist_a": "Suzanne Vega",
@@ -26532,7 +26840,7 @@
         "notes": null
     },
     {
-        "id": 604,
+        "id": 611,
         "title": "In The Ghetto",
         "year": 2007,
         "artist_a": "Elvis Presley",
@@ -26576,7 +26884,7 @@
         "notes": null
     },
     {
-        "id": 605,
+        "id": 612,
         "title": "You're Love Alone Is Not Enough",
         "year": 2007,
         "artist_a": "James Dean Bradfield",
@@ -26620,7 +26928,7 @@
         "notes": null
     },
     {
-        "id": 606,
+        "id": 613,
         "title": "If I Can Dream",
         "year": 2007,
         "artist_a": "Celine Dion",
@@ -26664,7 +26972,7 @@
         "notes": null
     },
     {
-        "id": 607,
+        "id": 614,
         "title": "Charm Alarm",
         "year": 2007,
         "artist_a": "Deborah Harry",
@@ -26708,7 +27016,7 @@
         "notes": null
     },
     {
-        "id": 608,
+        "id": 615,
         "title": "Wild Thing",
         "year": 2007,
         "artist_a": "Peaches",
@@ -26752,7 +27060,7 @@
         "notes": null
     },
     {
-        "id": 609,
+        "id": 616,
         "title": "We Gotta Get Out Of This Place",
         "year": 2007,
         "artist_a": "Ann Wilson",
@@ -26796,7 +27104,7 @@
         "notes": null
     },
     {
-        "id": 610,
+        "id": 617,
         "title": "Another Way To Die",
         "year": 2008,
         "artist_a": "Jack White",
@@ -26840,7 +27148,7 @@
         "notes": null
     },
     {
-        "id": 611,
+        "id": 618,
         "title": "Learnin' The Blues",
         "year": 2008,
         "artist_a": "Frank Sinatra",
@@ -26850,7 +27158,7 @@
         "genre": "Pop",
         "sub_genre": "",
         "sentimental_ballad": "",
-        "song_form": "Saloon",
+        "song_form": "Saloon Song",
         "tag_1": "",
         "subject": "The 'Blues'",
         "dynamic": "Union",
@@ -26884,7 +27192,7 @@
         "notes": null
     },
     {
-        "id": 612,
+        "id": 619,
         "title": "Blue Christmas",
         "year": 2008,
         "artist_a": "Elvis Presley",
@@ -26896,12 +27204,12 @@
         "sentimental_ballad": "",
         "song_form": "",
         "tag_1": "",
-        "subject": "Romance",
-        "dynamic": "",
+        "subject": "Unrequited Love",
+        "dynamic": "Union",
         "originally_a_duet": "",
-        "cover_version": "",
-        "writer_a": "",
-        "writer_b": "",
+        "cover_version": "Cover",
+        "writer_a": "Billy Hayes",
+        "writer_b": "Jay W. Johnson",
         "writer_c": "",
         "writer_d": "",
         "writer_e": "",
@@ -26928,7 +27236,271 @@
         "notes": null
     },
     {
-        "id": 613,
+        "id": 620,
+        "title": "I'll Be Home For Christmas",
+        "year": 2008,
+        "artist_a": "Elvis Presley",
+        "artist_b": "Carrie Underwood",
+        "gender": "MF",
+        "relationship": "",
+        "genre": "Pop",
+        "sub_genre": "",
+        "sentimental_ballad": "",
+        "song_form": "",
+        "tag_1": "",
+        "subject": "Home",
+        "dynamic": "Union",
+        "originally_a_duet": "",
+        "cover_version": "Cover",
+        "writer_a": "Walter Kent",
+        "writer_b": "Kim Gannon",
+        "writer_c": "Buck Ram",
+        "writer_d": "",
+        "writer_e": "",
+        "writer_f": "",
+        "release": "Album Track",
+        "duo_lp": "",
+        "various_partners_lp": "Various Partners LP",
+        "legacy": "Legacy",
+        "soundtrack": "",
+        "various_artists_lp": "",
+        "promotional_video": "",
+        "behind_the_scenes": "",
+        "presentation": "",
+        "format": "",
+        "programme_title": "",
+        "concert_footage": "",
+        "special": "",
+        "charity_or_cause": "",
+        "tribute": "",
+        "christmas": "Christmas",
+        "virtual": "Virtual",
+        "episode": "",
+        "yt_link": "https://www.youtube.com/watch?v=JGxujkmYHfM&list=OLAK5uy_myileUCPo0ZHkaaTs-RrzdmwxrmwcMzLw&index=2",
+        "notes": null
+    },
+    {
+        "id": 621,
+        "title": "Here Comes Santa Claus (Right Down Santa Claus Lane)",
+        "year": 2008,
+        "artist_a": "Elvis Presley",
+        "artist_b": "LeAnn Rimes",
+        "gender": "MF",
+        "relationship": "",
+        "genre": "Pop",
+        "sub_genre": "",
+        "sentimental_ballad": "",
+        "song_form": "",
+        "tag_1": "",
+        "subject": "Santa Claus",
+        "dynamic": "Union",
+        "originally_a_duet": "",
+        "cover_version": "Cover",
+        "writer_a": "Gene Autry",
+        "writer_b": "Oakley Haldeman",
+        "writer_c": "",
+        "writer_d": "",
+        "writer_e": "",
+        "writer_f": "",
+        "release": "Album Track",
+        "duo_lp": "",
+        "various_partners_lp": "Various Partners LP",
+        "legacy": "Legacy",
+        "soundtrack": "",
+        "various_artists_lp": "",
+        "promotional_video": "",
+        "behind_the_scenes": "",
+        "presentation": "",
+        "format": "",
+        "programme_title": "",
+        "concert_footage": "",
+        "special": "",
+        "charity_or_cause": "",
+        "tribute": "",
+        "christmas": "Christmas",
+        "virtual": "Virtual",
+        "episode": "",
+        "yt_link": "https://www.youtube.com/watch?v=dMq-FZLNjz8&list=OLAK5uy_myileUCPo0ZHkaaTs-RrzdmwxrmwcMzLw&index=3",
+        "notes": null
+    },
+    {
+        "id": 622,
+        "title": "Santa Claus Is Back In Town",
+        "year": 2008,
+        "artist_a": "Elvis Presley",
+        "artist_b": "Wynonna Judd",
+        "gender": "MF",
+        "relationship": "",
+        "genre": "Blues",
+        "sub_genre": "",
+        "sentimental_ballad": "",
+        "song_form": "",
+        "tag_1": "",
+        "subject": "Santa Claus",
+        "dynamic": "Union",
+        "originally_a_duet": "",
+        "cover_version": "Cover",
+        "writer_a": "Jerry Lieber",
+        "writer_b": "Mike Stoller",
+        "writer_c": "",
+        "writer_d": "",
+        "writer_e": "",
+        "writer_f": "",
+        "release": "Album Track",
+        "duo_lp": "",
+        "various_partners_lp": "Various Partners LP",
+        "legacy": "Legacy",
+        "soundtrack": "",
+        "various_artists_lp": "",
+        "promotional_video": "",
+        "behind_the_scenes": "",
+        "presentation": "",
+        "format": "",
+        "programme_title": "",
+        "concert_footage": "",
+        "special": "",
+        "charity_or_cause": "",
+        "tribute": "",
+        "christmas": "Christmas",
+        "virtual": "Virtual",
+        "episode": "",
+        "yt_link": "https://www.youtube.com/watch?v=8NdwSfyAbA0&list=OLAK5uy_myileUCPo0ZHkaaTs-RrzdmwxrmwcMzLw&index=4",
+        "notes": null
+    },
+    {
+        "id": 623,
+        "title": "Silent Night",
+        "year": 2008,
+        "artist_a": "Elvis Presley",
+        "artist_b": "Sara Evans",
+        "gender": "MF",
+        "relationship": "",
+        "genre": "Gospel",
+        "sub_genre": "Carol",
+        "sentimental_ballad": "",
+        "song_form": "Hymn",
+        "tag_1": "Spiritual",
+        "subject": "BIrth Of Christ",
+        "dynamic": "Union",
+        "originally_a_duet": "",
+        "cover_version": "Cover",
+        "writer_a": "Franz Xaver Gruber",
+        "writer_b": "Joseph Mohr",
+        "writer_c": "",
+        "writer_d": "",
+        "writer_e": "",
+        "writer_f": "",
+        "release": "Album Track",
+        "duo_lp": "",
+        "various_partners_lp": "Various Partners LP",
+        "legacy": "Legacy",
+        "soundtrack": "",
+        "various_artists_lp": "",
+        "promotional_video": "",
+        "behind_the_scenes": "",
+        "presentation": "",
+        "format": "Interview",
+        "programme_title": "",
+        "concert_footage": "",
+        "special": "",
+        "charity_or_cause": "",
+        "tribute": "",
+        "christmas": "Christmas",
+        "virtual": "Virtual",
+        "episode": "",
+        "yt_link": "https://www.youtube.com/watch?v=eRZQiZY2ft4&list=OLAK5uy_myileUCPo0ZHkaaTs-RrzdmwxrmwcMzLw&index=5",
+        "notes": null
+    },
+    {
+        "id": 624,
+        "title": "Silver Bells",
+        "year": 2008,
+        "artist_a": "Elvis Presley",
+        "artist_b": "Anne Murray",
+        "gender": "MF",
+        "relationship": "",
+        "genre": "Pop",
+        "sub_genre": "",
+        "sentimental_ballad": "",
+        "song_form": "",
+        "tag_1": "",
+        "subject": "Christmas",
+        "dynamic": "Union",
+        "originally_a_duet": "Originally A Duet",
+        "cover_version": "Cover",
+        "writer_a": "Jay Livingston",
+        "writer_b": "Ray Evans",
+        "writer_c": "",
+        "writer_d": "",
+        "writer_e": "",
+        "writer_f": "",
+        "release": "Album Track",
+        "duo_lp": "",
+        "various_partners_lp": "Various Partners LP",
+        "legacy": "Legacy",
+        "soundtrack": "",
+        "various_artists_lp": "",
+        "promotional_video": "",
+        "behind_the_scenes": "",
+        "presentation": "",
+        "format": "",
+        "programme_title": "",
+        "concert_footage": "",
+        "special": "",
+        "charity_or_cause": "",
+        "tribute": "",
+        "christmas": "Christmas",
+        "virtual": "Virtual",
+        "episode": "",
+        "yt_link": "https://www.youtube.com/watch?v=YhOHwSOxdd8&list=OLAK5uy_myileUCPo0ZHkaaTs-RrzdmwxrmwcMzLw&index=9",
+        "notes": null
+    },
+    {
+        "id": 625,
+        "title": "O Come, All Ye Faithful",
+        "year": 2008,
+        "artist_a": "Elvis Presley",
+        "artist_b": "Olivia Newton John",
+        "gender": "MF",
+        "relationship": "",
+        "genre": "Gospel",
+        "sub_genre": "Carol",
+        "sentimental_ballad": "",
+        "song_form": "Hymn",
+        "tag_1": "Spiritual",
+        "subject": "BIrth Of Christ",
+        "dynamic": "Union",
+        "originally_a_duet": "",
+        "cover_version": "Cover",
+        "writer_a": "John Francis Wade",
+        "writer_b": "John Reading",
+        "writer_c": "Saint Bonaventure",
+        "writer_d": "King John IV of Portugal",
+        "writer_e": "",
+        "writer_f": "",
+        "release": "Album Track",
+        "duo_lp": "",
+        "various_partners_lp": "Various Partners LP",
+        "legacy": "Legacy",
+        "soundtrack": "",
+        "various_artists_lp": "",
+        "promotional_video": "",
+        "behind_the_scenes": "",
+        "presentation": "",
+        "format": "",
+        "programme_title": "",
+        "concert_footage": "",
+        "special": "",
+        "charity_or_cause": "",
+        "tribute": "",
+        "christmas": "",
+        "virtual": "",
+        "episode": "",
+        "yt_link": "https://www.youtube.com/watch?v=ydusRgFHyac&list=OLAK5uy_myileUCPo0ZHkaaTs-RrzdmwxrmwcMzLw&index=10",
+        "notes": null
+    },
+    {
+        "id": 626,
         "title": "Adrienne",
         "year": 2008,
         "artist_a": "Albin de la Simone",
@@ -26972,7 +27544,183 @@
         "notes": null
     },
     {
-        "id": 614,
+        "id": 627,
+        "title": "Bring Me Sunshine",
+        "year": 2009,
+        "artist_a": "Ken Bruce",
+        "artist_b": "Lynn Bowles",
+        "gender": "MF",
+        "relationship": "",
+        "genre": "Novelty",
+        "sub_genre": "",
+        "sentimental_ballad": "",
+        "song_form": "",
+        "tag_1": "",
+        "subject": "",
+        "dynamic": "",
+        "originally_a_duet": "",
+        "cover_version": "",
+        "writer_a": "",
+        "writer_b": "",
+        "writer_c": "",
+        "writer_d": "",
+        "writer_e": "",
+        "writer_f": "",
+        "release": "",
+        "duo_lp": "",
+        "various_partners_lp": "",
+        "legacy": "",
+        "soundtrack": "",
+        "various_artists_lp": "Various Artists LP",
+        "promotional_video": "",
+        "behind_the_scenes": "",
+        "presentation": "",
+        "format": "",
+        "programme_title": "",
+        "concert_footage": "",
+        "special": "",
+        "charity_or_cause": "Charity/Cause",
+        "tribute": "",
+        "christmas": "",
+        "virtual": "",
+        "episode": "",
+        "yt_link": "https://www.youtube.com/watch?v=MSp8or1YsYk",
+        "notes": null
+    },
+    {
+        "id": 628,
+        "title": "Hole in my Bucket",
+        "year": 2009,
+        "artist_a": "Sarah Kennedy",
+        "artist_b": "Matthew Kelly",
+        "gender": "MF",
+        "relationship": "",
+        "genre": "Novelty",
+        "sub_genre": "",
+        "sentimental_ballad": "",
+        "song_form": "",
+        "tag_1": "",
+        "subject": "",
+        "dynamic": "",
+        "originally_a_duet": "",
+        "cover_version": "",
+        "writer_a": "",
+        "writer_b": "",
+        "writer_c": "",
+        "writer_d": "",
+        "writer_e": "",
+        "writer_f": "",
+        "release": "",
+        "duo_lp": "",
+        "various_partners_lp": "",
+        "legacy": "",
+        "soundtrack": "",
+        "various_artists_lp": "Various Artists LP",
+        "promotional_video": "",
+        "behind_the_scenes": "",
+        "presentation": "",
+        "format": "",
+        "programme_title": "",
+        "concert_footage": "",
+        "special": "",
+        "charity_or_cause": "Charity/Cause",
+        "tribute": "",
+        "christmas": "",
+        "virtual": "",
+        "episode": "",
+        "yt_link": "https://www.youtube.com/watch?v=TYCFSEaegIQ",
+        "notes": null
+    },
+    {
+        "id": 629,
+        "title": "Silver Bells",
+        "year": 2009,
+        "artist_a": "Terry Wogan",
+        "artist_b": "Aled Jones",
+        "gender": "MM",
+        "relationship": "",
+        "genre": "Pop",
+        "sub_genre": "",
+        "sentimental_ballad": "",
+        "song_form": "",
+        "tag_1": "Spoken",
+        "subject": "Christmas",
+        "dynamic": "Union",
+        "originally_a_duet": "Originally A Duet",
+        "cover_version": "Cover",
+        "writer_a": "Jay Livingston",
+        "writer_b": "Ray Evans",
+        "writer_c": "",
+        "writer_d": "",
+        "writer_e": "",
+        "writer_f": "",
+        "release": "Single",
+        "duo_lp": "",
+        "various_partners_lp": "",
+        "legacy": "",
+        "soundtrack": "",
+        "various_artists_lp": "",
+        "promotional_video": "Promo",
+        "behind_the_scenes": "",
+        "presentation": "",
+        "format": "",
+        "programme_title": "",
+        "concert_footage": "",
+        "special": "",
+        "charity_or_cause": "Charity/Cause",
+        "tribute": "",
+        "christmas": "Christmas",
+        "virtual": "",
+        "episode": "",
+        "yt_link": "https://www.youtube.com/watch?v=Psuc1B2cPfc",
+        "notes": null
+    },
+    {
+        "id": 630,
+        "title": "Que Sera Sera",
+        "year": 2009,
+        "artist_a": "Terry Wogan",
+        "artist_b": "Cerys Matthews",
+        "gender": "MF",
+        "relationship": "",
+        "genre": "Pop",
+        "sub_genre": "",
+        "sentimental_ballad": "",
+        "song_form": "",
+        "tag_1": "",
+        "subject": "Fatalism",
+        "dynamic": "Union",
+        "originally_a_duet": "",
+        "cover_version": "Cover",
+        "writer_a": "Jay Livingston",
+        "writer_b": "Ray Evans",
+        "writer_c": "",
+        "writer_d": "",
+        "writer_e": "",
+        "writer_f": "",
+        "release": "Album Track",
+        "duo_lp": "",
+        "various_partners_lp": "",
+        "legacy": "",
+        "soundtrack": "",
+        "various_artists_lp": "",
+        "promotional_video": "",
+        "behind_the_scenes": "",
+        "presentation": "",
+        "format": "",
+        "programme_title": "",
+        "concert_footage": "",
+        "special": "",
+        "charity_or_cause": "Charity/Cause",
+        "tribute": "",
+        "christmas": "",
+        "virtual": "",
+        "episode": "",
+        "yt_link": "https://www.youtube.com/watch?v=5AZyp0Cmj1A",
+        "notes": null
+    },
+    {
+        "id": 631,
         "title": "As I Am",
         "year": 2009,
         "artist_a": "David Hasselhoff",
@@ -27016,7 +27764,7 @@
         "notes": null
     },
     {
-        "id": 615,
+        "id": 632,
         "title": "Empire State Of Mind",
         "year": 2009,
         "artist_a": "Jay Z",
@@ -27060,7 +27808,7 @@
         "notes": null
     },
     {
-        "id": 616,
+        "id": 633,
         "title": "Realtor",
         "year": 2009,
         "artist_a": "Pete Yorn",
@@ -27104,7 +27852,7 @@
         "notes": null
     },
     {
-        "id": 617,
+        "id": 634,
         "title": "NIghtclubbing",
         "year": 2009,
         "artist_a": "Iggy Pop",
@@ -27148,7 +27896,7 @@
         "notes": null
     },
     {
-        "id": 618,
+        "id": 635,
         "title": "Shame",
         "year": 2010,
         "artist_a": "Robbie Williams",
@@ -27192,7 +27940,7 @@
         "notes": null
     },
     {
-        "id": 619,
+        "id": 636,
         "title": "Soul Survivor",
         "year": 2010,
         "artist_a": "Beverly Knight",
@@ -27236,7 +27984,7 @@
         "notes": "Acoustic version live(?) on QVC. And Wogan. AND GMTV at 07:46"
     },
     {
-        "id": 620,
+        "id": 637,
         "title": "The Highwayman",
         "year": 2010,
         "artist_a": "Jimmy Webb",
@@ -27280,7 +28028,7 @@
         "notes": null
     },
     {
-        "id": 621,
+        "id": 638,
         "title": "Baby Can't Drive",
         "year": 2010,
         "artist_a": "Alice Cooper",
@@ -27324,7 +28072,7 @@
         "notes": null
     },
     {
-        "id": 622,
+        "id": 639,
         "title": "Cheaper Than Free",
         "year": 2011,
         "artist_a": "Stevie Nicks",
@@ -27368,7 +28116,7 @@
         "notes": null
     },
     {
-        "id": 623,
+        "id": 640,
         "title": "Snowed In At Wheeler Street",
         "year": 2011,
         "artist_a": "Kate Bush",
@@ -27412,7 +28160,7 @@
         "notes": null
     },
     {
-        "id": 624,
+        "id": 641,
         "title": "Inevitabile",
         "year": 2011,
         "artist_a": "Giorgia Todrani",
@@ -27456,7 +28204,7 @@
         "notes": null
     },
     {
-        "id": 625,
+        "id": 642,
         "title": "Lady",
         "year": 2011,
         "artist_a": "Kenny Rogers",
@@ -27500,7 +28248,7 @@
         "notes": null
     },
     {
-        "id": 626,
+        "id": 643,
         "title": "All In Your Name",
         "year": 2011,
         "artist_a": "Barry Gibb",
@@ -27544,7 +28292,7 @@
         "notes": null
     },
     {
-        "id": 627,
+        "id": 644,
         "title": "La Seine",
         "year": 2011,
         "artist_a": "Vanessa Paradis",
@@ -27588,7 +28336,7 @@
         "notes": null
     },
     {
-        "id": 628,
+        "id": 645,
         "title": "Endless Love",
         "year": 2012,
         "artist_a": "Lionel Richie",
@@ -27632,7 +28380,7 @@
         "notes": null
     },
     {
-        "id": 629,
+        "id": 646,
         "title": "Fire We Make",
         "year": 2012,
         "artist_a": "Alicia Keys",
@@ -27676,7 +28424,7 @@
         "notes": null
     },
     {
-        "id": 630,
+        "id": 647,
         "title": "Picnic For Two",
         "year": 2012,
         "artist_a": "Dave Stewart",
@@ -27720,7 +28468,7 @@
         "notes": null
     },
     {
-        "id": 631,
+        "id": 648,
         "title": "Fino all'estasi",
         "year": 2013,
         "artist_a": "Eros Ramazzotti",
@@ -27764,7 +28512,7 @@
         "notes": null
     },
     {
-        "id": 632,
+        "id": 649,
         "title": "U Should Know Better",
         "year": 2013,
         "artist_a": "Robyn",
@@ -27808,7 +28556,7 @@
         "notes": null
     },
     {
-        "id": 633,
+        "id": 650,
         "title": "Overjoyed",
         "year": 2013,
         "artist_a": "Celine Dion",
@@ -27852,7 +28600,7 @@
         "notes": null
     },
     {
-        "id": 634,
+        "id": 651,
         "title": "I Should Of Followed You Home",
         "year": 2013,
         "artist_a": "Agnetha Faltskog",
@@ -27896,7 +28644,7 @@
         "notes": "Children in need"
     },
     {
-        "id": 635,
+        "id": 652,
         "title": "Vertigo",
         "year": 2013,
         "artist_a": "Steve Nieve",
@@ -27940,7 +28688,7 @@
         "notes": null
     },
     {
-        "id": 636,
+        "id": 653,
         "title": "#Beautiful",
         "year": 2013,
         "artist_a": "Mariah Carey",
@@ -27984,7 +28732,7 @@
         "notes": null
     },
     {
-        "id": 637,
+        "id": 654,
         "title": "Conversation",
         "year": 2013,
         "artist_a": "Steve Nieve",
@@ -28028,7 +28776,7 @@
         "notes": null
     },
     {
-        "id": 638,
+        "id": 655,
         "title": "You Are So Beautiful",
         "year": 2014,
         "artist_a": "Zucchero",
@@ -28072,7 +28820,7 @@
         "notes": null
     },
     {
-        "id": 639,
+        "id": 656,
         "title": "Jesus And Jones",
         "year": 2014,
         "artist_a": "Carolyn Routh",
@@ -28116,7 +28864,7 @@
         "notes": null
     },
     {
-        "id": 640,
+        "id": 657,
         "title": "Shine",
         "year": 2014,
         "artist_a": "Gary Barlow",
@@ -28160,7 +28908,7 @@
         "notes": null
     },
     {
-        "id": 641,
+        "id": 658,
         "title": "Face To Face",
         "year": 2014,
         "artist_a": "Gary Barlow",
@@ -28204,7 +28952,7 @@
         "notes": null
     },
     {
-        "id": 642,
+        "id": 659,
         "title": "Out Of The Black",
         "year": 2014,
         "artist_a": "Neneh Cherry",
@@ -28248,7 +28996,7 @@
         "notes": null
     },
     {
-        "id": 643,
+        "id": 660,
         "title": "People",
         "year": 2014,
         "artist_a": "Barbra Streisand",
@@ -28292,7 +29040,7 @@
         "notes": null
     },
     {
-        "id": 644,
+        "id": 661,
         "title": "Release Me",
         "year": 2014,
         "artist_a": "Englebert Humperdink",
@@ -28336,7 +29084,7 @@
         "notes": null
     },
     {
-        "id": 645,
+        "id": 662,
         "title": "Guess You Had To Be There",
         "year": 2015,
         "artist_a": "Brian Wilson",
@@ -28380,7 +29128,7 @@
         "notes": null
     },
     {
-        "id": 646,
+        "id": 663,
         "title": "Say Hello Wave Goodbye",
         "year": 2015,
         "artist_a": "Marc Almond",
@@ -28424,7 +29172,7 @@
         "notes": null
     },
     {
-        "id": 647,
+        "id": 664,
         "title": "Purple Rain",
         "year": 2016,
         "artist_a": "Madonna",
@@ -28468,7 +29216,7 @@
         "notes": null
     },
     {
-        "id": 648,
+        "id": 665,
         "title": "Faith",
         "year": 2016,
         "artist_a": "Stevie Wonder",
@@ -28512,7 +29260,7 @@
         "notes": null
     },
     {
-        "id": 649,
+        "id": 666,
         "title": "Prove That By Me",
         "year": 2016,
         "artist_a": "Amy Holland",
@@ -28556,7 +29304,7 @@
         "notes": null
     },
     {
-        "id": 650,
+        "id": 667,
         "title": "Take Me With U",
         "year": 2016,
         "artist_a": "Stevie Wonder",
@@ -28600,7 +29348,7 @@
         "notes": null
     },
     {
-        "id": 651,
+        "id": 668,
         "title": "Did You Really Say No",
         "year": 2017,
         "artist_a": "Oren Lavie",
@@ -28644,7 +29392,7 @@
         "notes": null
     },
     {
-        "id": 652,
+        "id": 669,
         "title": "Tomorrow Never Came",
         "year": 2017,
         "artist_a": "Lana Del Ray",
@@ -28688,7 +29436,51 @@
         "notes": null
     },
     {
-        "id": 653,
+        "id": 670,
+        "title": "Where Have All The Flowers Gone/Here's To The Heroes",
+        "year": 2018,
+        "artist_a": "Russell Watson",
+        "artist_b": "Aled Jones",
+        "gender": "MM",
+        "relationship": "",
+        "genre": "Opera",
+        "sub_genre": "",
+        "sentimental_ballad": "",
+        "song_form": "",
+        "tag_1": "Medley",
+        "subject": "Remembrance",
+        "dynamic": "Union",
+        "originally_a_duet": "",
+        "cover_version": "Cover",
+        "writer_a": "Pete Seeger",
+        "writer_b": "Joe Hickerson",
+        "writer_c": "John Barry",
+        "writer_d": "",
+        "writer_e": "",
+        "writer_f": "",
+        "release": "Album Track",
+        "duo_lp": "Duo LP",
+        "various_partners_lp": "",
+        "legacy": "",
+        "soundtrack": "",
+        "various_artists_lp": "",
+        "promotional_video": "Promo",
+        "behind_the_scenes": "",
+        "presentation": "",
+        "format": "",
+        "programme_title": "",
+        "concert_footage": "",
+        "special": "",
+        "charity_or_cause": "",
+        "tribute": "",
+        "christmas": "",
+        "virtual": "",
+        "episode": "",
+        "yt_link": "https://www.youtube.com/watch?v=-lJw0Y2BJfI&list=PLZlga_dUTZIzePZ5Vfj_IXJA16pPFPUbN&index=16",
+        "notes": null
+    },
+    {
+        "id": 671,
         "title": "I'm Outta Love",
         "year": 2020,
         "artist_a": "Gary Barlow",
@@ -28732,7 +29524,7 @@
         "notes": null
     },
     {
-        "id": 654,
+        "id": 672,
         "title": "The Only Thing",
         "year": 2020,
         "artist_a": "Fran Healy",
@@ -28776,7 +29568,7 @@
         "notes": null
     },
     {
-        "id": 655,
+        "id": 673,
         "title": "Manic Monday",
         "year": 2020,
         "artist_a": "Susanna Hoffs",
@@ -28820,7 +29612,7 @@
         "notes": null
     },
     {
-        "id": 656,
+        "id": 674,
         "title": "You Know I Know",
         "year": 2020,
         "artist_a": "Olly Murs",
@@ -28864,7 +29656,7 @@
         "notes": null
     },
     {
-        "id": 657,
+        "id": 675,
         "title": "You're The Best Thing",
         "year": 2021,
         "artist_a": "Paul Weller",
@@ -28908,7 +29700,7 @@
         "notes": null
     },
     {
-        "id": 658,
+        "id": 676,
         "title": "You Can't Hide The Light",
         "year": 2021,
         "artist_a": "Johnny Schaefer",
@@ -28952,7 +29744,7 @@
         "notes": null
     },
     {
-        "id": 659,
+        "id": 677,
         "title": "Shine",
         "year": 2021,
         "artist_a": "Kim Wilde",
@@ -28996,7 +29788,7 @@
         "notes": null
     },
     {
-        "id": 660,
+        "id": 678,
         "title": "Finish Line",
         "year": 2021,
         "artist_a": "Elton John",
@@ -29040,7 +29832,7 @@
         "notes": null
     },
     {
-        "id": 661,
+        "id": 679,
         "title": "The Name Of The Game",
         "year": 2021,
         "artist_a": "Susanna Hoffs",
@@ -29084,7 +29876,7 @@
         "notes": null
     },
     {
-        "id": 662,
+        "id": 680,
         "title": "Patience",
         "year": 2021,
         "artist_a": "Gary Barlow",
@@ -29128,7 +29920,7 @@
         "notes": null
     },
     {
-        "id": 663,
+        "id": 681,
         "title": "The Secret He Had Missed",
         "year": 2021,
         "artist_a": "James Dean Bradfield",
@@ -29172,7 +29964,7 @@
         "notes": null
     },
     {
-        "id": 664,
+        "id": 682,
         "title": "There Must Be An Angel",
         "year": 2021,
         "artist_a": "Annie Lennox",
@@ -29216,7 +30008,7 @@
         "notes": null
     },
     {
-        "id": 665,
+        "id": 683,
         "title": "Rhythm Of My Heart",
         "year": 2021,
         "artist_a": "Gary Barlow",
@@ -29260,7 +30052,7 @@
         "notes": null
     },
     {
-        "id": 666,
+        "id": 684,
         "title": "Une Tahitienne à Paris",
         "year": 2023,
         "artist_a": "Mareva Galanter",
@@ -29304,7 +30096,7 @@
         "notes": null
     },
     {
-        "id": 667,
+        "id": 685,
         "title": "Peace Like A River",
         "year": 2023,
         "artist_a": "Dolly Parton",

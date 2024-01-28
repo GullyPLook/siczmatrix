@@ -56,6 +56,10 @@
         "label": "Albin de la Simone"
     },
     {
+        "id": 623,
+        "label": "Aled Jones"
+    },
+    {
         "id": 590,
         "label": "Alex Kapranos"
     },
@@ -416,8 +420,16 @@
         "label": "Carly Simon"
     },
     {
+        "id": 622,
+        "label": "Carol Richards"
+    },
+    {
         "id": 81,
         "label": "Carolyn Routh"
+    },
+    {
+        "id": 621,
+        "label": "Carrie Underwood"
     },
     {
         "id": 82,
@@ -438,6 +450,10 @@
     {
         "id": 84,
         "label": "Celine Dion"
+    },
+    {
+        "id": 618,
+        "label": "Cerys Matthews"
     },
     {
         "id": 85,
@@ -1320,6 +1336,10 @@
         "label": "Kelly Osbourne"
     },
     {
+        "id": 625,
+        "label": "Ken Bruce"
+    },
+    {
         "id": 582,
         "label": "Ken Takakura"
     },
@@ -1398,6 +1418,10 @@
     {
         "id": 256,
         "label": "Laurie Anderson"
+    },
+    {
+        "id": 620,
+        "label": "LeAnn Rimes"
     },
     {
         "id": 257,
@@ -1524,6 +1548,10 @@
         "label": "Lyle Lovett"
     },
     {
+        "id": 626,
+        "label": "Lynn Bowles"
+    },
+    {
         "id": 497,
         "label": "Macy Gray"
     },
@@ -1598,6 +1626,10 @@
     {
         "id": 466,
         "label": "Mary Wells"
+    },
+    {
+        "id": 628,
+        "label": "Matthew Kelly"
     },
     {
         "id": 294,
@@ -1782,6 +1814,10 @@
     {
         "id": 331,
         "label": "Neil Sedaka"
+    },
+    {
+        "id": 629,
+        "label": "Neil Tennant"
     },
     {
         "id": 332,
@@ -2148,12 +2184,24 @@
         "label": "Russell Stone"
     },
     {
+        "id": 624,
+        "label": "Russell Watson"
+    },
+    {
         "id": 398,
         "label": "Sam Moore"
     },
     {
+        "id": 619,
+        "label": "Sara Evans"
+    },
+    {
         "id": 399,
         "label": "Sarah Brightman"
+    },
+    {
+        "id": 627,
+        "label": "Sarah Kennedy"
     },
     {
         "id": 400,
@@ -2186,6 +2234,10 @@
     {
         "id": 476,
         "label": "Shanna J. Bristol"
+    },
+    {
+        "id": 631,
+        "label": "Shaun Ryder"
     },
     {
         "id": 406,
@@ -2320,6 +2372,10 @@
         "label": "Terry Hall"
     },
     {
+        "id": 617,
+        "label": "Terry Wogan"
+    },
+    {
         "id": 431,
         "label": "Tessa Niles"
     },
@@ -2350,6 +2406,10 @@
     {
         "id": 437,
         "label": "Tomas Ledin"
+    },
+    {
+        "id": 630,
+        "label": "Tommy Scott"
     },
     {
         "id": 545,

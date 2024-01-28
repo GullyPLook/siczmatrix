@@ -4,7 +4,6 @@ import Select from "react-dropdown-select";
 import data from './nodes.json'
 import edges from './edges.json'
 import records from './records.json'
-import { text } from "stream/consumers";
 
 
 
@@ -1739,7 +1738,7 @@ export default function Home() {
   }) }<span className="entryCount">{entryCount(recordMCount)}</span>
   </li>
       </ul>
-      </div>
+  </div>
     </div>
   );
 };

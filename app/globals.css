@@ -18,11 +18,11 @@
 
 @media only screen and (max-width: 52em) {
   
-  body { 
-    background-position: 20% 10%;
-  } 
+  body {
+    height: 1350px !important;
+  }
   
-  .drop-titles {
+  .dropdowns {
     padding-top: 5 !important;
     display: flex;
     flex-wrap: wrap;
@@ -30,33 +30,40 @@
     gap: 15px !important;
   }
 
-  .playlist {
-       font-size: smaller; 
-  }
-
   .congrats {
     font-size: 40px !important;
   }
+  
   .list {
+    grid-column-start: 1;
+    grid-column-end: 3 !important;
     padding-top: 5em !important;
     font-size: small !important;
     line-height: 2em;
   }
+
  } 
 
 
 body {
-  background-image: url(cropped.png);
-  background-repeat: cover;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#021c50, #010c20, #000108);
+  
 }
 
 .app {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: max-content;
   margin: 2%;
   font-weight: bold;
   color: rgb(39, 179, 58);
 }
 
-.drop-titles {
+.dropdowns {
+  grid-column-start: 1;
+  grid-column-end: 3;
   padding-top: 2em;
   display: flex;
   flex: 200px;
@@ -66,31 +73,25 @@ body {
   padding-bottom: 3em;
 }
 
-.playlist {
-  justify-content: start;
-  padding-top: 6em;
-}
-
-.blurb {
-  font-weight: normal;
-}
-
 .congrats {
   font-size: 50px;
   color: rgb(255, 255, 255);
-  display: flex;
+  display: flex; 
   justify-content: center;
+  padding-bottom: 0.5em;
 }
 
 .congratMessage {
   display: flex;
   justify-content: center;
-  text-align: center;
+  padding-bottom: 6em;
 }
 
 
 .list {
-  padding-top: 8em;  
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding-top: 6em;  
 }
 
 
@@ -111,4 +112,8 @@ body {
   color: rgb(197, 196, 196);
 }
 
-
+.starMap {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+}

@@ -18,102 +18,276 @@
 
 @media only screen and (max-width: 52em) {
   
-  body {
-    height: 1350px !important;
-  }
-  
-  .dropdowns {
-    padding-top: 5 !important;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around !important;
-    gap: 15px !important;
+  .app {
+    display: grid;
+    grid-template-columns: 100% !important;
+    grid-auto-rows: minmax(0, min-height);
+    grid-template-areas: 
+        "s1"
+        "s2"
+        "s3"
+        "s4"
+        "ma"; 
+    margin: 1%;
+    color: rgb(39, 179, 58);
+    font-weight: normal;
   }
 
-  .congrats {
-    font-size: 40px !important;
-  }
-  
-  .list {
+  .sigmaContainer {
+    grid-area: ma;
+    width: 50em !important;
+    height: max-content;
     grid-column-start: 1;
-    grid-column-end: 3 !important;
-    padding-top: 5em !important;
-    font-size: small !important;
-    line-height: 2em;
+    grid-column-end: 2; 
   }
-
+  
  } 
 
 
 body {
-  width: 100%;
-  height: 100%;
+  min-height: 1000px;
   background: linear-gradient(#021c50, #010c20, #000108);
   
 }
 
 .app {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: max-content;
-  margin: 2%;
-  font-weight: bold;
+    grid-gap: 3px;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: 
+        "s1 ma"
+        "s2 ma"
+        "s3 ma"
+        "s4 ma"; 
+  grid-auto-rows: minmax(0, min-height);
+  margin: 1%;
   color: rgb(39, 179, 58);
+  font-weight: normal;
 }
 
-.dropdowns {
+.search {
+  grid-area: s1;
   grid-column-start: 1;
-  grid-column-end: 3;
-  padding-top: 2em;
-  display: flex;
-  flex: 200px;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 50px;
-  padding-bottom: 3em;
+  grid-column-end: 2;
+  text-align: start;
+  margin-top: 8px;
+}
+
+.searchField {
+  width: 100%;
+  background:  rgb(6, 14, 58);
+  color: white;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid rgb(41, 48, 88);
+  border-radius: 6px;
+  margin: 5px 0px;
+  padding: 10px;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border-bottom: 2px solid rgb(39, 179, 58);
+}
+
+.searchResults {
+  grid-area: s2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  text-align: start;
+  margin-top: 8px;
+  max-height: 700px;
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-color: rgb(41, 48, 88)  transparent;
+  scrollbar-width: thick;
+  scrollbar-gutter: auto;
+}
+
+.buttonSearch {
+  width: 100%;
+  padding: 8px;
+  transition-duration: 0.2s;
+  text-align: start;
+}
+
+.buttonSearch:hover, .buttonOption:hover {
+  background-color: rgb(41, 48, 88);
+  border-radius: 6px;
+}
+
+.selectedContainer:hover {
+  background-color: rgb(67, 32, 133);
+}
+
+.select {
+  grid-area: s3
+}
+
+.selectedContainerA {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 6px;
+  background-color: rgba(67, 32, 133, 0.623);
+  margin: 5px 0px;
+  text-align: start;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 8% 46% 46%;
+    grid-template-rows: 35% 35% auto;
+    grid-template-areas: 
+        "bs a s"
+        "bs b s";
+} 
+
+.artista {
+  grid-area: a
+}
+
+.artistb {
+  grid-area: b
+}
+
+.buttonSwap {
+  transition-duration: 0.2s;
+  width: 100%;
+  grid-area: bs
+}
+
+.song {
+  grid-area: s;
+  color: rgba(255, 255, 255, 0.897);
+  text-align: end
+}
+
+/* .year {
+  grid-area: y;
+  color: rgb(39, 179, 58);
+  text-align: end
+} */
+
+.selectedContainer {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 6px;
+  background-color: rgba(67, 32, 133, 0.623);
+  margin: 5px 0px;
+  text-align: start;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 35% 35% auto;
+    grid-template-areas: 
+        "ba sd"
+        "dl dr";
+} 
+
+.buttonRevertToOptions {
+  width: 100%;
+  grid-area: ba;
+  text-align: start;
+}
+
+.buttonDetails {
+  width: 100%;
+  grid-area: sd;
+
+}
+
+.songDetailsLeft {
+  padding-top: 10px;
+  grid-area: dl;
+  text-align: start;
+  color: rgba(226, 226, 226, 0.897);
+  font-size: small;
+}
+
+.songDetailsRight {
+  padding-top: 10px;
+  grid-area: dr;
+  text-align: end;
+  color: rgba(226, 226, 226, 0.897);;
+  font-size: small;
+}
+
+.optionsContainer {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  margin: 5px 0px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  max-height: 250px;
+  overflow: auto;
+  scrollbar-color: rgb(41, 48, 88)  transparent;
+  scrollbar-width: thick;
+  scrollbar-gutter: auto;
+}
+
+.buttonOption {
+  width: 100%;
+  padding: 6px;
+  transition-duration: 0.2s;
+  text-align: start;
+}
+
+.noMatches {
+  width: 100%;
+  text-align: start;
+}
+
+.welcome {
+  font-size: 40px;
+  padding: 0px 30px;
+  text-align: center;
+}
+
+.blurb {
+  text-align: center;
+  padding: 0px 30px;
+  color: rgb(255, 255, 255);
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.see {
+  padding: 0px 30px;
+  text-align: center;
 }
 
 .congrats {
-  font-size: 50px;
+  font-size: 3em;
   color: rgb(255, 255, 255);
-  display: flex; 
-  justify-content: center;
-  padding-bottom: 0.5em;
+  padding: 0px 30px;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 
 .congratMessage {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 6em;
+  text-align: center;
+  padding: 0px 30px;
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 
 
 .list {
+  grid-area: s4;
   grid-column-start: 1;
-  grid-column-end: 3;
-  padding-top: 6em;  
+  grid-column-end: 2;
+  padding-top: 4em;  
 }
 
-
-.playlistSongs {
-  font-weight: normal;
-  color: rgb(201, 200, 199);;
+.sigmaContainer {
+  grid-area: ma;
+  width: 1080px;
+  height: 750px;
+  grid-column-start: 2;
+  grid-column-end: 3; 
 }
 
-.year {
-  font-weight: normal;
-  font-style: italic;
-}
-
-.entryCount {
-  font-weight: normal;
-  font-style: italic;
-  font-size: small;
-  color: rgb(197, 196, 196);
-}
-
-.starMap {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  display: flex;
-}

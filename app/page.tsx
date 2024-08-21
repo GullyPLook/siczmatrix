@@ -1,222 +1,384 @@
 'use client'
 import React, { useEffect, useState } from "react";
-import dropObjects from "./dropObjects.json";
-import nodesData from './nodes.json';
-import linksData from './links.json';
+import selectorObjects from "./selectorObjects.json";
+import Fuse from "fuse.js";
 import records from './records.json';
-import Dropdown from './dropdown';
-import playlistObjects from "./playlistObjects.json";
-import Playlist from "./playlist";
+import Search from "./search";
+import Selector from "./selector";
 import Information from "./information";
-import StarMap from "./starMap"
+import data from "./data.json";
+import { DisplayGraph } from "./SigStarChart2";
+
 
 export default function Home() {
 
+  const [starChartData, setStarChartData] = useState<{}>({nodes:[], edges:[]});
+  const [query, setQuery] = useState("");
+  const [selections, setSelections] = useState(selectorObjects);
+  const [swap, setSwap] = useState<boolean>();
+  const [artistAOptions, setArtistAOptions] = useState<any>();
+  const [artistBOptions, setArtistBOptions] = useState<any>();
+  const [seeIntroduction, setSeeIntroduction] = useState(true);
+  const [seeCongratulations, setSeeCongratulations] = useState(false);
+  const [seeNiceTry, setSeeNiceTry] = useState(false);
 
-  const [nodes, setNodes] = useState([])
-  const [links, setLinks] = useState([])
-  const [dropState, setDropState] = useState(dropObjects)
-  const [playlistState, setPlaylistState] = useState(playlistObjects)
-  const [seeIntroduction, setSeeIntroduction] = useState(true)
-  const [seeCongratulations, setSeeCongratulations] = useState(false)
-  const [seeNiceTry, setSeeNiceTry] = useState(false)
-
-  // set first dropdown
-  useEffect(() => {
-    const newDropState = dropState.map((drop, i) => {
-      if (i === 0) {
-        return {...drop, isShown: true, options: nodesData};
-      }
-      return drop 
-    });
-    setDropState(newDropState);
-  },[])
-
-  function optionGenerator(artist: any) {
-      
-      const artistLinks = linksData.filter(link => link.source === artist[0].id || link.target === artist[0].id);
-      const sourceIds = artistLinks.filter(link => link.source !== artist[0].id).map(link => link.source);
-      const targetIds = artistLinks.filter(link => link.target !== artist[0].id).map(link => link.target);
-      const neighbourIds = sourceIds.concat(targetIds);
-      const neighbourNodes = neighbourIds.map(id => ({ id, ...nodesData.find(node => node.id == id)}));
-      return neighbourNodes
-  } 
+  const fuse = new Fuse( records, {
+    keys: [
+      "title",
+      "artist_a",
+      "artist_b"
+    ]
+  });
   
+  const results = fuse.search(query);
+  const searchResults = results.map(result => result.item);
+
+  function mapSelection(id: number) {
+
+  }
+
+  function handleOnSearch({ currentTarget = {}}) {
+    const {value} = currentTarget;
+    setQuery(value);
+  };
   
-  function handleChange(event: any, id: number) {
-  
-    // get artist name
-    const artist: string = event[0].label;
-    
-    // check for artist match
-    const artistMatch: any = dropState.filter(drop => drop.id != id+1).find(drop => drop.selected === artist);
-    
-    // set congratulations/nice try message on match
-    setSeeCongratulations(() => {
-      if (artistMatch != null) {
-          if (id < (artistMatch.id +6)) {
-            return true;
-          }
-          return false;
-      } 
-      return false;
-    });
-    
-    setSeeNiceTry(() => {
-      if (artistMatch != null) {
-          if (id >= (artistMatch.id + 6)) {
-            return true;
-          }
-          return false;
-      } 
-      return false;
-    });
-
-    // next dropdown options
-    const select = dropState.filter(drop => drop.id === id);
-    const generated = optionGenerator(event);
-    const finalOptions = generated.filter(ops => ops.label !== select[0].selected);
-    
-    // set dropdowns state
-    setDropState(prevDropState => {
-      return prevDropState.map(drop => {
-        if (artistMatch == null) {
-          if (drop.id === id) {
-            return {...drop, isBold: true};
-          } else if (drop.id > id+1) {
-              return {...drop, isShown: false, selected: null, options: null};
-          } else if (drop.id === id+1) {
-              return {...drop, isShown: true, isBold: true, selected: artist, options: finalOptions};
-              }
-              return {...drop, isBold: true};
-        } else {
-          if (drop.id > id || drop.id < artistMatch.id) {
-            return {...drop, isBold: false};
-          }
-          return {...drop, isBold: true};
-        } 
-      })
-    });
-
-    // playlist entry
-    const artistALabel = select[0].selected;
-    const artistBLabel = event[0].label;
-    const entryFilter = records.filter(record => record.artist_a === artistALabel && record.artist_b === artistBLabel || record.artist_a === artistBLabel && record.artist_b === artistALabel);
-    const recordEntry = entryFilter.slice(0, 1);
-    
-     // entry count
-    const entryCount = entryFilter.length;
-    function count(e: number) {
-      let result;
-      if (e > 1) {
-        result = (' ...+'+(e-1)+' more');
-      } else {
-        result = null;
-      }
-      return result;
-    };
-
-    // set playlist 
-    setPlaylistState(prevPlaylistState => {
-      return prevPlaylistState.map(entry => {
-        if (artistMatch == null) {
-          if (entry.id > id) {
-              return {...entry, isShown: false};
-              }  else if (entry.id === id) {
-              return {...entry, isShown: true, isBold: true, entry: recordEntry, count: count(entryCount)};
-              }
-              return {...entry, isBold: true};
-        } else {
-          if (entry.id < artistMatch.id) {
-              return {...entry, isBold: false};
-          } else if (entry.id === id) {
-            return {...entry, isShown: true, isBold: true, entry: recordEntry, count: count(entryCount)};
-          }
-          return {...entry, isBold: true};
-        }    
-      })
-    });
-    
-    // clear introduction
-    id === 2 ? setSeeIntroduction(false) : null;
-    
-    // set first node
-    id === 1 ? setNodes([event[0]]) : null;
+  function selectionGenerator(id: number) {
+      const selection: any = records.find(record => record.id === id);
+      return selection
   };
 
-  useEffect(() => {
-    // set nodes
-    const optionLists = dropState.map(drop => {
-      return drop.options;
-    });
-    const nodeList = optionLists[1].concat(optionLists[2], optionLists[3], optionLists[4], optionLists[5], optionLists[6], optionLists[7], optionLists[8], optionLists[9], optionLists[10], optionLists[11], optionLists[12], optionLists[13]);
-    const uniqueNodes = [...new Set(nodeList)];
-    const firstNode = [nodes[0]];
-    
-    const primaryNodes = firstNode.concat(uniqueNodes).slice(0, -1);
-    setNodes(primaryNodes);
+  function optionGeneratorArtistA(id: number) {
+      const selection: any = selectionGenerator(id);
+      const artistAMatches = records.filter(record => record.artist_a === selection.artist_a || record.artist_b ===  selection.artist_a);
+      const artistAMatchesMinusSelection = artistAMatches.filter(match => match.id !== id);
+      const preSelected = selections.map(select => select.selected);
+      const preDuo = records.filter(record => record.artist_a  === selection.artist_a && record.artist_b === selection.artist_b || record.artist_a  === selection.artist_b && record.artist_b === selection.artist_a);
+      const avoid = preSelected.concat(preDuo);
+      const finalMatches = artistAMatchesMinusSelection.filter(match => {
+          return !avoid.includes(match);
+         });
+      return finalMatches
+  };
 
-    // set links 
-    
-    const nodeIds = primaryNodes.map(node => {
+  function optionGeneratorArtistB(id: number) {
+    const selection: any = selectionGenerator(id);
+    const artistBMatches = records.filter(record => record.artist_a === selection.artist_b || record.artist_b ===  selection.artist_b);
+    const artistBMatchesMinusSelection = artistBMatches.filter(match => match.id !== id);
+    const preSelected = selections.map(select => select.selected);
+    const preDuo = records.filter(record => record.artist_a  === selection.artist_a && record.artist_b === selection.artist_b || record.artist_a  === selection.artist_b && record.artist_b === selection.artist_a);
+    const avoid = preSelected.concat(preDuo);
+    const finalMatches = artistBMatchesMinusSelection.filter(match => {
+        return !avoid.includes(match);
+       });
+    return finalMatches
+  };
+
+  function optionGenerator(id: number, boxId: number) {
+     
+     const artist = whichArtistOptions(id, boxId);
+     const artistBMatches = records.filter(record => record.artist_a === artist || record.artist_b === artist);
+     const artistBMatchesMinusSelection = artistBMatches.filter(match => match.id !== id);
+     const preSelected = selections.map(select => select.selected);
+     const selection = selectionGenerator(id);
+     const preDuo = records.filter(record => record.artist_a  === selection.artist_a && record.artist_b === selection.artist_b || record.artist_a  === selection.artist_b && record.artist_b === selection.artist_a);
+      const avoid = preSelected.concat(preDuo);
+      const finalMatches = artistBMatchesMinusSelection.filter(match => {
+          return !avoid.includes(match);
+         });
+      return finalMatches    
+  };
+  
+  function whichArtistOptions(id: number, boxId: number) {
+      const selection: any = selectionGenerator(id); 
+      let artist = "";
+      if (boxId === 2) 
+        if (selection.artist_a === selections[0].artistB) {
+          return artist = selection.artist_b;
+        } else {
+        return artist = selection.artist_a;
+      } else if (selection.artist_a === selections[boxId - 2].artistB) {
+        return artist = selection.artist_b;
+      } else {
+      return artist = selection.artist_a;
+      }
+  };
+  
+  function whichArtistA(id: number, boxId: number) {
+    const selection: any = selectionGenerator(id);
+      if (selections[boxId - 2].artistB === selection.artist_a) {
+          return selection.artist_a;
+        } else {
+          return selection.artist_b;
+  }};
+
+  function whichArtistB(id: number, boxId: number) {
+    const selection: any = selectionGenerator(id);
+      if (selections[boxId - 2].artistB === selection.artist_a) {
+          return selection.artist_b;
+        } else {
+          return selection.artist_a;
+  }};
+  
+  function chartDataGenerator() {
+  
+    const optionLists = selections.map(selection => {
+    return selection.options;
+  });
+  const allOptions: any = optionLists[1].concat(optionLists[2], optionLists[3], optionLists[4], optionLists[5], optionLists[6], optionLists[7], optionLists[8], optionLists[9], optionLists[10], optionLists[11], optionLists[12], optionLists[13]);
+  const artistAList = allOptions.map((option: { artist_a: any; }) => {
+    return option.artist_a
+  });
+  const artistBList = allOptions.map((option: { artist_b: any; }) => {
+    return option.artist_b
+  });
+  const allArtists = [selections[0].artistA].concat([selections[0].artistB], artistAList, artistBList);
+  const uniqueArtists = Array.from(new Set(allArtists));  
+ 
+  const nodes = data.nodes.filter(node => {
+    return uniqueArtists.includes(node.label);
+  });
+
+    // set edges
+    const nodeIds = nodes.map(node => {
       return node.id;
     });
     
-    // PROBLEM: linkList doesn't include node ids of the selected values in the filter after the second dropdown is selected
-    // even though these node ids are present in the 'nodeIds' variable above.
-    // I suspect updating of DropState is causing the problem
-    const linkList = linksData.filter(link => {
-      return nodeIds.includes(link.source || link.target);
+    const linkList = data.edges.filter(edge => {
+      return nodeIds.includes(edge.source) || nodeIds.includes(edge.target);
     });
      
-    // my aim is to ONLY set the links that coincide with the nodes selected AND the nodes within the options of the dropdowns.
-    // but my method used below is only returning the links of the last selected node. 
     const unwantedLinks = linkList.filter(link => {
-      return !nodeIds.includes(link.target);
+      return !nodeIds.includes(link.source) || !nodeIds.includes(link.target);
      });
   
-    const finalLinks = linkList.filter(link => {
+    const edges = linkList.filter(link => {
       return !unwantedLinks.includes(link);
     });
-    
-    setLinks(finalLinks);
+  
+    return {nodes, edges}
+  };
+  
+  function handleOptionChange(event: any, id: number, boxId: number) {
 
-  }, [dropState])
- 
-  // PROBLEM: i want to restore the dropdowns colour(isBold) after a loop is found and the user starts again. 
-  // but this method is changing dropState, therefore triggering the set nodes useEffect and rerendering the map everytime a dropdown is opened. 
-  function handleOpen(id: number) {
-    setDropState(prevDropState => {
-      return prevDropState.map(drop => {
-        if (drop.id === id) {
-        return {...drop, isBold: true}
+    const selection: any = selectionGenerator(id); 
+    const artistA: string = selection.artist_a;
+    const artistB: string = selection.artist_b;
+    const matches: any = selections.filter(selector => selector.boxId != boxId-1).filter(selector => selector.artistA === artistA || selector.artistB === artistB || selector.artistA === artistB || selector.artistB === artistA);
+    const artistMatch: any = matches.length > 1 ? matches[1] : matches[0]
+    
+    
+
+    const newSelections: any = selections.map(selector => {
+      if (artistMatch == null)
+         if (selector.boxId === boxId) {
+            return {...selector, isBold: true, isSelected: true, selected: selectionGenerator(id), isOptions: false, artistA: whichArtistA(id, boxId), artistB: whichArtistB(id, boxId)}
+         } else if (selector.boxId === boxId + 1) {
+            return {...selector, isBold: true, isSelected: false, selected: {}, isOptions: true, options: optionGenerator(id, boxId), artistA: "", artistB: ""};
+         } else if (selector.boxId > boxId + 1) {
+            return {...selector, isBold: true, isSelected: false, selected: {}, isOptions: false, options: [], artistA: "", artistB: ""};
+         } else {
+         return selector;   
+           
+      } else {
+         if (selector.boxId === boxId) {
+          return {...selector, isBold: true, isSelected: true, selected: selectionGenerator(id), isOptions: false, artistA: whichArtistA(id, boxId), artistB: whichArtistB(id, boxId)};
+         } else if (selector.boxId > boxId || selector.boxId < artistMatch.boxId) {
+          return {...selector, isBold: false, options: [], artistA: "", artistB: ""};
+        } else {
+        return {...selector, isBold: true};
+        }    
+  }});
+    setSelections(newSelections);
+    
+
+    if (artistMatch != null) {
+      if (boxId > artistMatch.boxId + 5) {
+        return setSeeNiceTry(true);
+      } else if (boxId < artistMatch.boxId + 6) {
+        return setSeeCongratulations(true);
+      }
+    };
+  };
+
+  function handleRevertToOptions(event: any, boxId: number) {
+  
+   const newSelections = selections.map(selector => {
+      
+    if (selector.boxId === boxId && selector.boxId !== 1) {
+      return {...selector, isBold: true, isSelected: false, selected: {}, isOptions: true, artistA: "", artistB: "", seeDetails: false};
+    } else if (selector.boxId > boxId && selector.boxId !==2) {
+      return {...selector, isBold: true, isSelected: false, selected: {}, isOptions: false, options: [], artistA: "", artistB: "", seeDetails: false};
+    }
+    return {...selector, isBold: true};
+   }   
+   );
+  setSelections(newSelections);
+  setSeeCongratulations(false);
+  setSeeNiceTry(false);
+  };
+
+  function handleSongDetails(event: any, boxId: number) {
+
+    const newSelections: any = selections.map(selector => {
+      if (selector.boxId === boxId) {
+        return {...selector, isSelected: false, isOptions: false, seeDetails: true}
+      }
+      return selector;
+    });
+    setSelections(newSelections);
+  };
+
+  function handleRevertToSelected(event: any, boxId: number) {
+
+    const newSelections: any = selections.map(selector => {
+      if (selector.boxId === boxId) {
+        return {...selector, isSelected: true, isOptions: false, seeDetails: false}
+      }
+      return selector;
+    });
+    setSelections(newSelections);
+
+  };
+
+  function handleSearchChange(event: any, id: number) {
+  
+    const newSelections: any = selections.map((selector, i) => {
+      if (i === 0) {
+        return {...selector, isBold: true, isSelected: true, selected: selectionGenerator(id), artistA: selectionGenerator(id).artist_a, artistB: selectionGenerator(id).artist_b};
+      } else if (i === 1) {
+        return {...selector, isBold: true, isSelected: false, selected: {}, isOptions: true, options: optionGeneratorArtistB(id), artistA: "", artistB: ""};
+      }
+      return {...selector, isBold: true, isOptions: false, isSelected: false, options: [], selected: {}, artistA: "", artistB: ""} 
+    });
+    setSelections(newSelections);
+
+    setArtistAOptions(optionGeneratorArtistA(id));
+    setArtistBOptions(optionGeneratorArtistB(id));
+    setQuery("")
+    setSeeCongratulations(false);
+    setSeeNiceTry(false);
+    setSeeIntroduction(false);
+     
+  };
+  
+  function handleSwapArtist(event: any, boxId: number) {
+      
+    const newSelections = selections.map(selector => {
+      if (boxId === 1) {
+        return {...selector, isBold: true, artistA: selections[0].artistB, artistB: selections[0].artistA};
+      } else if (boxId === 2) {
+        return {...selector, isBold: true, isSelected: false, selected: {}, isOptions: true, artistA: "", artistB: "", seeDetails: false};
+      } 
+      return {...selector, isBold: true, isSelected: false, selected: {}, isOptions: false, options: [], artistA: "", artistB: "", seeDetails: false};
+    });
+    setSelections(newSelections)
+    setSwap(prevSwap => {
+      if (prevSwap === true) {
+        return false;
+      } 
+      return true;
+    });
+    setStarChartData(chartDataGenerator())
+  };
+
+  useEffect(() => {
+    
+    swap === true && setSelections(prevSelections => {
+      return prevSelections.map(selection => {
+        if (selection.boxId === 2) {
+          return {...selection, isSelected: false, selected: {}, isOptions: true, options: artistAOptions, artistA: "", artistB: "", seeDetails: false};
+        } else if (selection.boxId > 2) {
+          return {...selection, isSelected: false, selected: {}, isOptions: false, options: [], artistA: "", artistB: "", seeDetails: false};
+        } else {
+        return selection  
         }
-        return drop;
-      })
-  })};
+      }
+      )}
+      );
+      
+    swap === false && setSelections(prevSelections => {
+        return prevSelections.map(selection => {
+          if (selection.boxId === 2) {
+            return {...selection, isSelected: false, selected: {}, isOptions: true, options: artistBOptions, artistA: "", artistB: "", seeDetails: false};
+          } else if (selection.boxId > 2) {
+            return {...selection, isSelected: false, selected: {}, isOptions: false, options: [], artistA: "", artistB: "", seeDetails: false};
+          } else {
+          return selection  
+          }
+        }
+        )}
+        );
+    setSeeCongratulations(false);
+    setSeeNiceTry(false);
+  }, [swap]);
+
+  
+  useEffect(() => {
+   
+    seeNiceTry && setSelections(prevSelections => {
+      return prevSelections.map(selection => {
+        return {...selection, isOptions: false};
+        }
+      )}
+      );
+
+  }, [seeNiceTry]);
+
+
+  useEffect(() => {
+
+    seeCongratulations && setSelections(prevSelections => {
+      return prevSelections.map(selection => {
+        return {...selection, isOptions: false};
+        }
+      )}
+      );
+
+  }, [seeCongratulations]);
+
+  useEffect(() => {
+    setStarChartData(chartDataGenerator());
+  }, [selections]);
+ 
     
   return (
+  
   <div className="app">
-    <div className="dropdowns">
-      <Dropdown 
-      dropState={dropState}
-      handleChange={handleChange}
-      handleOpen={handleOpen}
+    <div className="search">
+      <form id="search" >
+        <label>
+          <strong>Search artist or song</strong>
+          <input className="searchField" type="text" value={query} onChange={handleOnSearch}></input>
+        </label>
+        <br />
+      </form>
+    </div>
+    <div className="searchResults">
+      <Search 
+      searchResults={searchResults}
+      handleSearchChange={handleSearchChange}
+      />
+    </div>
+    <div className="select">
+      <Selector 
+      selections={selections}
+      handleSwapArtist={handleSwapArtist}
+      handleOptionChange={handleOptionChange}
+      handleRevertToOptions={handleRevertToOptions}
+      handleSongDetails={handleSongDetails}
+      handleRevertToSelected={handleRevertToSelected}
       />
     </div>
     <ul className="list">
       <Information
       seeIntroduction={seeIntroduction}
       seeCongratulations={seeCongratulations}
-      seeNiceTry={seeNiceTry}/>
-      <Playlist 
-      recordState={playlistState}/>
+      seeNiceTry={seeNiceTry}
+      />
     </ul>
-    <div className="starMap">
-      {!seeIntroduction && <StarMap
-      nodes={nodes}
-      links={links} />}
-    </div>
+    {!seeIntroduction && <div className="sigmaContainer">
+      <DisplayGraph starChartData={starChartData}/>
+    </div>}
   </div>
   )
 }

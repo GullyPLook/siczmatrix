@@ -6,7 +6,7 @@ export default function Search(props: any) {
     return (
        <>
         <ul>
-          {props.searchResults.map((result: { id: number; title: any; year: any; artist_a: any; artist_b: any; }) => {
+          {props.searchResults.map((result: { id: any; title: any; year: any; artist_a: any; artist_b: any; }) => {
             return (
               <button 
                 key={result.id} 

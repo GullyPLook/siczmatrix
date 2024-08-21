@@ -334,7 +334,7 @@ export default function Home() {
 
   useEffect(() => {
     setStarChartData(chartDataGenerator());
-  }, [selections, chartDataGenerator]);
+  }, [selections]);
  
     
   return (

@@ -33,12 +33,8 @@ export default function Home() {
   const results = fuse.search(query);
   const searchResults = results.map(result => result.item);
 
-  function mapSelection(id: number) {
-
-  }
-
-  function handleOnSearch({ currentTarget = {}}) {
-    const {value} = currentTarget;
+  const handleOnSearch = (event: any) => {
+    const {value} = event.target;
     setQuery(value);
   };
   
@@ -310,7 +306,7 @@ export default function Home() {
         );
     setSeeCongratulations(false);
     setSeeNiceTry(false);
-  }, [swap]);
+  }, [swap, artistAOptions, artistBOptions]);
 
   
   useEffect(() => {
@@ -338,7 +334,7 @@ export default function Home() {
 
   useEffect(() => {
     setStarChartData(chartDataGenerator());
-  }, [selections]);
+  }, [selections, chartDataGenerator]);
  
     
   return (

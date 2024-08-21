@@ -372,9 +372,9 @@ export default function Home() {
       seeNiceTry={seeNiceTry}
       />
     </ul>
-    {!seeIntroduction && <div className="sigmaContainer">
+    {/* {!seeIntroduction && <div className="sigmaContainer">
       <DisplayGraph starChartData={starChartData}/>
-    </div>}
+    </div>} */}
   </div>
   )
 }

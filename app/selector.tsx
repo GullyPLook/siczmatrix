@@ -4,7 +4,7 @@ import React from "react";
 export default function Selector(props: any) {
 
    
-    const selectors = props.selections.map((selector: { boxId: React.Key | null | undefined; isSelected: any; isBold: any; artistA: any; artistB: any; selected: { title: any; year: any; relationship: any; duo_lp: any; presentation: any; programme_title: any; writer_a: any; writer_b: any; writer_c: any; release: any; soundtrack: any; promotional_video: any; }; isOptions: any; options: any[]; seeDetails: any; }) => 
+    const selectors = props.selections.map((selector: { boxId: any; isSelected: any; isBold: any; artistA: any; artistB: any; selected: { title: any; year: any; relationship: any; duo_lp: any; presentation: any; programme_title: any; writer_a: any; writer_b: any; writer_c: any; release: any; soundtrack: any; promotional_video: any; }; isOptions: any; options: any[]; seeDetails: any; }) => 
         selector.boxId === 1 && selector.isSelected && (
         <div 
           className="selectedContainerA"

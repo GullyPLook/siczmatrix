@@ -1,42 +1,119 @@
 'use client'
-import React from "react";
+import React from "react"
 
 export default function Selector(props: any) {
 
-   
-    const selectors = props.selections.map((selector: { boxId: any; isSelected: any; isBold: any; artistA: any; artistB: any; selected: { title: any; year: any; relationship: any; duo_lp: any; presentation: any; programme_title: any; writer_a: any; writer_b: any; writer_c: any; release: any; soundtrack: any; promotional_video: any; }; isOptions: any; options: any[]; seeDetails: any; }) => 
+  function composerSplit(name: string) {
+
+    const regex = /\s*(?:,|$)\s*/;
+    const seperates = name.split(regex);
+
+    const composers = seperates.map(composer => {
+      if (composer === seperates[seperates.length - 1]) {
+        return (
+        <button 
+          className="composerTag"
+          onClick={(event) => props.handleComposers(event, composer)}>{composer}</button>
+      )} else {
+        return (
+        <button 
+          className="composerTag"
+          onClick={(event) => props.handleComposers(event, composer)}>{composer},&nbsp;</button>
+        )
+      };  
+    });
+    return composers
+  };
+
+    const selectors = props.selections.map((selector: { boxId: React.Key | null | undefined; isSelected: any; isBold: any; artistA: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.PromiseLikeOfReactNode | null | undefined; artistB: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.PromiseLikeOfReactNode | null | undefined; selected: any; seeDetails: any; isOptions: any; options: any[]; }) => 
         selector.boxId === 1 && selector.isSelected && (
         <div 
           className="selectedContainerA"
           key={selector.boxId} 
           id={selector.boxId}
           style={selector.isBold ? { opacity: 1} : {opacity: 0.3}}>
-          <div>
-            <strong className="artista">{`${selector.artistA}`}</strong>
-            <br />
-            <strong className="artistb">{`${selector.artistB}`}</strong>
-          </div>
-          <button 
-            className="buttonSwap"
-            onClick={(event) => props.handleSwapArtist(event, selector.boxId)}>
-          <svg width="16" height="30" viewBox="0 0 16 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fillRule="evenodd" clipRule="evenodd" d="M15.7942 13.5L8 0L0.205765 13.5H15.7942ZM0.20578 23.5L8 37L15.7942 23.5H0.20578Z" fill="#27B33A"/>
-          </svg>
-          </button>
-          <div 
-            className="song">
-            <span>{`${selector.selected.title}`}</span>
-            <br/>
-            <span style={{color: "#27B33A"}}><i>{` (${selector.selected.year})`}</i></span>
-          </div>
+            <button 
+             className="buttonSwap"
+             onClick={(event) => props.handleSwapArtist(event, selector.boxId)}><strong>↕</strong>
+            </button>
+            <div className="artists">
+              <button onClick={(event) => props.handleTableLink(event, selector.artistA)}><strong>{selector.artistA}</strong></button>
+              <br />
+              <button onClick={(event) => props.handleTableLink(event, selector.artistB)}><strong>{selector.artistB}</strong></button>
+            </div>
+            <div className="containerButtons">
+              <br />
+              <button 
+                onClick={(event) => props.handleSongDetails(event, selector.boxId)}><strong>...</strong>
+              </button>
+            </div>
+            <div className="song">
+              <button 
+                className="song"
+                onClick={(event) => props.handleSongCard(event, selector.selected.id)}>{selector.selected.title}</button>
+              <br />
+              <button 
+                style={{color: "#27B33A"}}
+                onClick={(event) => props.handleTableLink(event, selector.selected.year)}><i>{selector.selected.year}</i></button>
+          </div> 
         </div>
         ) || 
-       selector.isOptions && (
+        selector.boxId === 1 && selector.seeDetails && (
+        <div 
+          className="selectedContainerA"
+          key={selector.boxId} 
+          id={selector.boxId}
+          style={selector.isBold ? { opacity: 1} : {opacity: 0.3}}>
+          <button 
+            className="buttonSwap"
+            onClick={(event) => props.handleSwapArtist(event, selector.boxId)}><strong>↕</strong>
+          </button>
+          <div className="artists">
+            <button onClick={(event) => props.handleTableLink(event, selector.artistA)}><strong>{selector.artistA}</strong></button>
+            <br />
+            <button onClick={(event) => props.handleTableLink(event, selector.artistB)}><strong>{selector.artistB}</strong></button>
+          </div>
+          <div className="containerButtons">
+            <br />
+            <button
+                 onClick={(event) => props.handleRevertToSelected(event, selector.boxId)}><strong>...</strong>
+            </button>
+          </div>
+          <div className="song">
+            <button 
+              className="song"
+              onClick={(event) => props.handleSongCard(event, selector.selected.id)}>{selector.selected.title}</button>
+            <br />
+            <button 
+              style={{color: "#27B33A"}}
+              onClick={(event) => props.handleTableLink(event, selector.selected.year)}><i>{selector.selected.year}</i></button>
+          </div> 
+          <div className="selectedABlocker"></div>
+          <div>
+            {Object.entries(selector.selected).slice(6, 21).map(tag => {
+            if (tag[1] !== "") {
+             return (
+              <button 
+                 className="buttonTags" 
+                 id={tag[0]} 
+                 key={tag[0]}
+                 onClick={(event) => props.handleTag(event, tag)}>
+                <strong><i>{props.seeSongTags && tag[1]}</i></strong>
+              </button>
+             )} else { return null }
+            })}
+          </div>
+          <div className="songDetailsRight">
+              <span>({composerSplit(selector.selected.composer)})</span>
+          </div>
+        </div>
+        ) ||
+        selector.isOptions && (
         <div 
           className="optionsContainer" 
           key={selector.boxId} 
           id={selector.boxId}>
-          {selector.options.length > 0 ? selector.options.map(option => 
+          {selector.options.length > 0 ? selector.options.map((option: { id: React.Key | null | undefined; title: any; year: any; artist_a: any; artist_b: any; }) => 
           (
            <button 
              className="buttonOption"
@@ -58,71 +135,80 @@ export default function Selector(props: any) {
           key={selector.boxId} 
           id={selector.boxId}
           style={selector.isBold ? { opacity: 1} : {opacity: 0.3}}>
-          <button 
-            className="buttonRevertToOptions"
-            onClick={(event) => props.handleRevertToOptions(event, selector.boxId)}>
-            <div>
-              <strong>{`${selector.artistA}`}</strong>
+            <div className="artists">
+            <button onClick={(event) => props.handleTableLink(event, selector.artistA)}><strong>{selector.artistA}</strong></button>
+            <br />
+            <button onClick={(event) => props.handleTableLink(event, selector.artistB)}><strong>{selector.artistB}</strong></button>
+          </div>
+          <div className="containerButtons">
+            <button 
+              onClick={(event) => props.handleRevertToOptions(event, selector.boxId)}><strong>↖</strong>
+            </button>
+            <br />
+            <button 
+              onClick={(event) => props.handleSongDetails(event, selector.boxId)}><strong>...</strong>
+            </button>
+          </div>
+          <div className="song">
+              <button 
+                className="song"
+                onClick={(event) => props.handleSongCard(event, selector.selected.id)}>{selector.selected.title}</button>
               <br />
-              <strong>{`${selector.artistB}`}</strong>
-            </div>
-          </button>
-          <button 
-            className="buttonDetails"
-            onClick={(event) => props.handleSongDetails(event, selector.boxId)}>
-            <div className="song">
-              <span>{`${selector.selected.title}`}</span>
-              <br />
-              <span style={{color: "#27B33A"}}><i>{` (${selector.selected.year})`}</i></span>
-            </div> 
-          </button>
+              <button 
+                style={{color: "#27B33A"}}
+                onClick={(event) => props.handleTableLink(event, selector.selected.year)}><i>{selector.selected.year}</i></button>
+          </div>
         </div> 
        )
-      //  || 
-      //   selector.seeDetails && (
-      //   <div 
-      //     className="selectedContainer"
-      //     key={selector.boxId} 
-      //     id={selector.boxId}
-      //     style={selector.isBold ? { opacity: 1} : {opacity: 0.3}}>
-      //     <button 
-      //       className="buttonRevertToOptions"
-      //       onClick={(event) => props.handleRevertToOptions(event, selector.boxId)}>
-      //       <div>
-      //         <strong>{`${selector.artistA}`}</strong>
-      //         <br />
-      //         <strong>{`${selector.artistB}`}</strong>
-      //       </div>
-      //       <div className="songDetailsLeft">
-      //         <span>{`${selector.selected.relationship} ${selector.selected.duo_lp}`}</span>
-      //         <br />
-      //         <span style={{color: "#27B33A"}}>{`${selector.selected.presentation}`}</span>
-      //         <br />
-      //         <span>{`${selector.selected.programme_title}`}</span>
-      //         <br />
-      //       </div>
-      //     </button>
-      //     <button 
-      //       className="buttonDetails"
-      //       onClick={(event) => props.handleRevertToSelected(event, selector.boxId)}>
-      //       <div className="song">
-      //         <span>{`${selector.selected.title}`}</span>
-      //         <br />
-      //         <span style={{color: "#27B33A"}}><i>{` (${selector.selected.year})`}</i></span>
-      //         <div className="songDetailsRight">
-      //           <span>{`(${selector.selected.writer_a}, ${selector.selected.writer_b}, ${selector.selected.writer_c})`}</span>
-      //           <br />
-      //           <span>{`${selector.selected.release}`}</span>
-      //           <br />
-      //           <span>{`${selector.selected.soundtrack}`}</span>
-      //           <br />
-      //           <span>{`${selector.selected.promotional_video}`}</span>
-      //           <br />
-      //         </div>
-      //       </div> 
-      //     </button>
-      //   </div>
-      //  )
+       || 
+        selector.seeDetails && (
+        <div 
+          className="selectedContainer"
+          key={selector.boxId} 
+          id={selector.boxId}
+          style={selector.isBold ? { opacity: 1} : {opacity: 0.3}}>
+          <div className="artists">
+            <button onClick={(event) => props.handleTableLink(event, selector.artistA)}><strong>{selector.artistA}</strong></button>
+            <br />
+            <button onClick={(event) => props.handleTableLink(event, selector.artistB)}><strong>{selector.artistB}</strong></button>
+          </div>
+          <div className="containerButtons">
+            <button 
+              onClick={(event) => props.handleRevertToOptions(event, selector.boxId)}><strong>↖</strong>
+            </button>
+            <br />
+            <button 
+              onClick={(event) => props.handleRevertToSelected(event, selector.boxId)}><strong>...</strong>
+            </button>
+          </div>
+          <div className="song">
+              <button 
+                className="song"
+                onClick={(event) => props.handleSongCard(event, selector.selected.id)}>{selector.selected.title}</button>
+              <br />
+              <button 
+                style={{color: "#27B33A"}}
+                onClick={(event) => props.handleTableLink(event, selector.selected.year)}><i>{selector.selected.year}</i></button>
+          </div> 
+          <div>
+           {Object.entries(selector.selected).slice(6, 21).map(tag => {
+           if (tag[1] !== "") {
+            return (
+             <button 
+                className="buttonTags" 
+                id={tag[0]} 
+                key={tag[0]}
+                onClick={(event) => props.handleTag(event, tag)}>
+               <strong><i>{props.seeSongTags && tag[1]}</i></strong>
+             </button>
+            )} else { return null }
+          })}
+          </div>
+          <div className="songDetailsRight">
+              <span>({composerSplit(selector.selected.composer)})</span>
+          </div>
+        </div>
+       )
       );   
 
     return (

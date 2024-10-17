@@ -118,7 +118,7 @@ export default function Selector(props: any) {
            <button 
              className="buttonOption"
              key={option.id} 
-             id={option.id}
+             id={option.id.toString()}
              onClick={(event) => props.handleOptionChange(event, option.id, selector.boxId)}>
              <span className="song"><i>{`${option.title}`}</i></span><i>{` (${option.year})`}</i>
              <br />

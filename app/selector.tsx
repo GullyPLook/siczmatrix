@@ -25,7 +25,7 @@ export default function Selector(props: any) {
     return composers
   };
 
-    const selectors = props.selections.map((selector: { boxId: React.Key | null | undefined; isSelected: any; isBold: any; artistA: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.PromiseLikeOfReactNode | null | undefined; artistB: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.PromiseLikeOfReactNode | null | undefined; selected: any; seeDetails: any; isOptions: any; options: any[]; }) => 
+    const selectors = props.selections.map((selector: { boxId: React.Key | null | number; isSelected: any; isBold: any; artistA: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.PromiseLikeOfReactNode | null | undefined; artistB: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.PromiseLikeOfReactNode | null | undefined; selected: any; seeDetails: any; isOptions: any; options: any[]; }) => 
         selector.boxId === 1 && selector.isSelected && (
         <div 
           className="selectedContainerA"

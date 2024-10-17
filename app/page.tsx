@@ -454,7 +454,7 @@ export default function Home() {
         
         />
       </div>
-      <div>
+      <div className="select">
         <Information
         seeIntroduction={seeIntroduction}
         seeCongratulations={seeCongratulations}

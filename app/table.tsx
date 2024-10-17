@@ -15,7 +15,7 @@ export default function Table(props: any) {
             <thead>
               <tr>
                 <th scope="col">Year</th>
-                <th scope="col">Song Title</th> 
+                <th scope="col">Song</th> 
                 <th scope="col">Artists</th>  
               </tr>
             </thead>
@@ -47,7 +47,7 @@ export default function Table(props: any) {
             <thead>
               <tr>
                 <th scope="col">Year</th>
-                <th scope="col">Song Title</th> 
+                <th scope="col">Song</th> 
                 <th scope="col">Artists</th> 
                 <th scope="col">
                   {props.tableData.title === "Cause" && `${"Cause"}`}

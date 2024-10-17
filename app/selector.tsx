@@ -90,18 +90,27 @@ export default function Selector(props: any) {
           </div> 
           <div className="selectedABlocker"></div>
           <div>
-            {Object.entries(selector.selected).slice(6, 21).map(tag => {
-            if (tag[1] !== "") {
-             return (
-              <button 
-                 className="buttonTags" 
-                 id={tag[0]} 
-                 key={tag[0]}
-                 onClick={(event) => props.handleTag(event, tag)}>
-                <strong><i>{props.seeSongTags && tag[1]}</i></strong>
-              </button>
-             )} else { return null }
-            })}
+          {Object.entries(props.songCard[0]).slice(12, 18).map(tag  => {
+                     if (tag[1] !== "" && tag[0] !== "Cause") {
+                     return (
+                       <button 
+                         className="songTags" 
+                         id={tag[0]} 
+                         key={tag[0]}
+                         onClick={(event) => props.handleTag(event, tag)}>
+                       <strong><i>{props.seeSongTags && tag[1]}</i></strong>
+                       </button>
+                     )} else if (tag[1] !== "" && tag[0] === "Cause") {
+                     return (
+                       <button 
+                         className="songTags" 
+                         id={tag[0]} 
+                         key={tag[0]}
+                         onClick={(event) => props.handleTag(event, tag)}>
+                         <strong><i>{props.seeSongTags && tag[0]}</i></strong>
+                       </button>    
+                      )} else { return null }
+                   })}
           </div>
           <div className="songDetailsRight">
               <span>({composerSplit(selector.selected.composer)})</span>
@@ -191,18 +200,27 @@ export default function Selector(props: any) {
                 onClick={(event) => props.handleTableLink(event, selector.selected.year)}><i>{selector.selected.year}</i></button>
           </div> 
           <div>
-           {Object.entries(selector.selected).slice(6, 21).map(tag => {
-           if (tag[1] !== "") {
-            return (
-             <button 
-                className="buttonTags" 
-                id={tag[0]} 
-                key={tag[0]}
-                onClick={(event) => props.handleTag(event, tag)}>
-               <strong><i>{props.seeSongTags && tag[1]}</i></strong>
-             </button>
-            )} else { return null }
-          })}
+          {Object.entries(props.songCard[0]).slice(12, 18).map(tag  => {
+                     if (tag[1] !== "" && tag[0] !== "Cause") {
+                     return (
+                       <button 
+                         className="songTags" 
+                         id={tag[0]} 
+                         key={tag[0]}
+                         onClick={(event) => props.handleTag(event, tag)}>
+                       <strong><i>{props.seeSongTags && tag[1]}</i></strong>
+                       </button>
+                     )} else if (tag[1] !== "" && tag[0] === "Cause") {
+                     return (
+                       <button 
+                         className="songTags" 
+                         id={tag[0]} 
+                         key={tag[0]}
+                         onClick={(event) => props.handleTag(event, tag)}>
+                         <strong><i>{props.seeSongTags && tag[0]}</i></strong>
+                       </button>    
+                      )} else { return null }
+                   })}
           </div>
           <div className="songDetailsRight">
               <span>({composerSplit(selector.selected.composer)})</span>

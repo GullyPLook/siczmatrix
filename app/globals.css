@@ -168,11 +168,12 @@ input[type=text]:focus {
 }
 
 .artists {
-  grid-area: a
+  grid-area: a;
+  text-align: start;
 }
 
 .buttonSwap {
-  padding-top: 9px;
+  padding-top: 5px;
   transition-duration: 0.2s;
   width: 50%;
   grid-area: bs
@@ -448,19 +449,19 @@ thead {
 }
 
 thead th:nth-child(1) {
-  width: 12%;
+  width: 20%;
 }
 
 thead th:nth-child(2) {
-  width: 45%;
+  width: 40%;
 }
 
 thead th:nth-child(3) {
-  width: 45%;
+  width: 40%;
 }
 
 thead th:nth-child(4) {
-  width: 45%;
+  width: 40%;
 }
 
 caption, thead {

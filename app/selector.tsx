@@ -34,7 +34,7 @@ export default function Selector(props: any) {
           style={selector.isBold ? { opacity: 1} : {opacity: 0.3}}>
             <button 
              className="buttonSwap"
-             onClick={(event) => props.handleSwapArtist(event, selector.boxId)}><strong>↕</strong>
+             onClick={(event) => props.handleSwapArtist(event, selector.boxId)}><strong style={{fontSize: "x-large"}}>↕</strong>
             </button>
             <div className="artists">
               <button onClick={(event) => props.handleTableLink(event, selector.artistA)}><strong>{selector.artistA}</strong></button>

@@ -10,7 +10,7 @@ export default function Search(props: any) {
             return (
               <button 
                 key={result.id} 
-                id={result.id}
+                id={result.id.toString()}
                 onClick={(event) => props.handleSearchChange(event, result.id)} 
                 className="buttonSearch"
                 >

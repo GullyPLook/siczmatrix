@@ -8,15 +8,15 @@ export default function Selector(props: any) {
     const regex = /\s*(?:,|$)\s*/;
     const seperates = name.split(regex);
 
-    const composers = seperates.map(composer => {
+    const composers = seperates.map((composer, index) => {
       if (composer === seperates[seperates.length - 1]) {
         return (
-        <button 
+        <button key={index}
           className="composerTag"
           onClick={(event) => props.handleComposers(event, composer)}>{composer}</button>
       )} else {
         return (
-        <button 
+        <button key={index}
           className="composerTag"
           onClick={(event) => props.handleComposers(event, composer)}>{composer},&nbsp;</button>
         )

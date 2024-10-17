@@ -415,9 +415,9 @@ export default function Home() {
 
   }, [seeCongratulations]);
 
-  useEffect(() => {
-    setStarChartData(chartDataGenerator());
-  }, [selections]);
+  // useEffect(() => {
+  //   setStarChartData(chartDataGenerator());
+  // }, [selections]);
 
   return (
   

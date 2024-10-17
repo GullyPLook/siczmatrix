@@ -11,8 +11,7 @@ export default function SongCard(props: any) {
             key={vids[0]}
             id={vids[0]}
             className="liveSwitch"
-            onClick={(event) => props.handleMediaSelect(event, vids[1])}
-            >
+            onClick={(event) => props.handleMediaSelect(event, vids[1])}>
               <strong><i>{vids[0]}</i></strong>
           </button>
         )
@@ -34,15 +33,17 @@ export default function SongCard(props: any) {
     const regex = /\s*(?:,|$)\s*/;
     const seperates = x.split(regex);
 
-    const composers = seperates.map((composer: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.PromiseLikeOfReactNode | null | undefined) => {
+    const composers = seperates.map((composer, index) => {
       if (composer === seperates[seperates.length - 1]) {
         return (
         <button 
+          key={index}
           className="composerTag"
           onClick={(event) => props.handleComposers(event, composer)}>{composer}</button>
       )} else {
         return (
         <button 
+          key={index}
           className="composerTag"
           onClick={(event) => props.handleComposers(event, composer)}>{composer},&nbsp;</button>
         )

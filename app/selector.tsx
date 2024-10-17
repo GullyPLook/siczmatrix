@@ -30,7 +30,7 @@ export default function Selector(props: any) {
         <div 
           className="selectedContainerA"
           key={selector.boxId} 
-          id={selector.boxId}
+          id={selector.boxId.toString()}
           style={selector.isBold ? { opacity: 1} : {opacity: 0.3}}>
             <button 
              className="buttonSwap"
@@ -62,7 +62,7 @@ export default function Selector(props: any) {
         <div 
           className="selectedContainerA"
           key={selector.boxId} 
-          id={selector.boxId}
+          id={selector.boxId.toString()}
           style={selector.isBold ? { opacity: 1} : {opacity: 0.3}}>
           <button 
             className="buttonSwap"

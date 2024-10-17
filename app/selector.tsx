@@ -36,10 +36,10 @@ export default function Selector(props: any) {
              className="buttonSwap"
              onClick={(event) => props.handleSwapArtist(event, selector.boxId)}><strong style={{fontSize: "x-large"}}>↕</strong>
             </button>
-            <div className="artists">
-              <button onClick={(event) => props.handleTableLink(event, selector.artistA)}><strong>{selector.artistA}</strong></button>
+            <div>
+              <button className="artists" onClick={(event) => props.handleTableLink(event, selector.artistA)}><strong>{selector.artistA}</strong></button>
               <br />
-              <button onClick={(event) => props.handleTableLink(event, selector.artistB)}><strong>{selector.artistB}</strong></button>
+              <button className="artists" onClick={(event) => props.handleTableLink(event, selector.artistB)}><strong>{selector.artistB}</strong></button>
             </div>
             <div className="containerButtons">
               <br />
@@ -66,16 +66,17 @@ export default function Selector(props: any) {
           style={selector.isBold ? { opacity: 1} : {opacity: 0.3}}>
           <button 
             className="buttonSwap"
-            onClick={(event) => props.handleSwapArtist(event, selector.boxId)}><strong>↕</strong>
+            onClick={(event) => props.handleSwapArtist(event, selector.boxId)}><strong style={{fontSize: "x-large"}}>↕</strong>
           </button>
-          <div className="artists">
-            <button onClick={(event) => props.handleTableLink(event, selector.artistA)}><strong>{selector.artistA}</strong></button>
+          <div>
+            <button className="artists" onClick={(event) => props.handleTableLink(event, selector.artistA)}><strong>{selector.artistA}</strong></button>
             <br />
-            <button onClick={(event) => props.handleTableLink(event, selector.artistB)}><strong>{selector.artistB}</strong></button>
+            <button className="artists" onClick={(event) => props.handleTableLink(event, selector.artistB)}><strong>{selector.artistB}</strong></button>
           </div>
           <div className="containerButtons">
             <br />
             <button
+                className="containerButtons"
                  onClick={(event) => props.handleRevertToSelected(event, selector.boxId)}><strong>...</strong>
             </button>
           </div>
@@ -90,11 +91,11 @@ export default function Selector(props: any) {
           </div> 
           <div className="selectedABlocker"></div>
           <div>
-          {Object.entries(props.songCard[0]).slice(12, 18).map(tag  => {
+          {Object.entries(selector.selected).slice(12, 18).map(tag  => {
                      if (tag[1] !== "" && tag[0] !== "Cause") {
                      return (
                        <button 
-                         className="songTags" 
+                         className="buttonTags" 
                          id={tag[0]} 
                          key={tag[0]}
                          onClick={(event) => props.handleTag(event, tag)}>
@@ -103,7 +104,7 @@ export default function Selector(props: any) {
                      )} else if (tag[1] !== "" && tag[0] === "Cause") {
                      return (
                        <button 
-                         className="songTags" 
+                         className="buttonTags" 
                          id={tag[0]} 
                          key={tag[0]}
                          onClick={(event) => props.handleTag(event, tag)}>
@@ -144,17 +145,17 @@ export default function Selector(props: any) {
           key={selector.boxId} 
           id={selector.boxId.toString()}
           style={selector.isBold ? { opacity: 1} : {opacity: 0.3}}>
-            <div className="artists">
-            <button onClick={(event) => props.handleTableLink(event, selector.artistA)}><strong>{selector.artistA}</strong></button>
+            <div>
+            <button className="artists" onClick={(event) => props.handleTableLink(event, selector.artistA)}><strong>{selector.artistA}</strong></button>
             <br />
-            <button onClick={(event) => props.handleTableLink(event, selector.artistB)}><strong>{selector.artistB}</strong></button>
+            <button className="artists" onClick={(event) => props.handleTableLink(event, selector.artistB)}><strong>{selector.artistB}</strong></button>
           </div>
           <div className="containerButtons">
-            <button 
+            <button className="containerButtons"
               onClick={(event) => props.handleRevertToOptions(event, selector.boxId)}><strong>↖</strong>
             </button>
             <br />
-            <button 
+            <button className="containerButtons"
               onClick={(event) => props.handleSongDetails(event, selector.boxId)}><strong>...</strong>
             </button>
           </div>
@@ -176,10 +177,10 @@ export default function Selector(props: any) {
           key={selector.boxId} 
           id={selector.boxId.toString()}
           style={selector.isBold ? { opacity: 1} : {opacity: 0.3}}>
-          <div className="artists">
-            <button onClick={(event) => props.handleTableLink(event, selector.artistA)}><strong>{selector.artistA}</strong></button>
+          <div>
+            <button className="artists" onClick={(event) => props.handleTableLink(event, selector.artistA)}><strong>{selector.artistA}</strong></button>
             <br />
-            <button onClick={(event) => props.handleTableLink(event, selector.artistB)}><strong>{selector.artistB}</strong></button>
+            <button className="artists" onClick={(event) => props.handleTableLink(event, selector.artistB)}><strong>{selector.artistB}</strong></button>
           </div>
           <div className="containerButtons">
             <button 
@@ -200,11 +201,11 @@ export default function Selector(props: any) {
                 onClick={(event) => props.handleTableLink(event, selector.selected.year)}><i>{selector.selected.year}</i></button>
           </div> 
           <div>
-          {Object.entries(props.songCard[0]).slice(12, 18).map(tag  => {
+          {Object.entries(selector.selected).slice(12, 18).map(tag  => {
                      if (tag[1] !== "" && tag[0] !== "Cause") {
                      return (
                        <button 
-                         className="songTags" 
+                         className="buttonTags" 
                          id={tag[0]} 
                          key={tag[0]}
                          onClick={(event) => props.handleTag(event, tag)}>
@@ -213,7 +214,7 @@ export default function Selector(props: any) {
                      )} else if (tag[1] !== "" && tag[0] === "Cause") {
                      return (
                        <button 
-                         className="songTags" 
+                         className="buttonTags" 
                          id={tag[0]} 
                          key={tag[0]}
                          onClick={(event) => props.handleTag(event, tag)}>

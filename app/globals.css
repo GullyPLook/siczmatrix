@@ -153,8 +153,6 @@ input[type=text]:focus {
   border-radius: 6px;
   background-color: rgba(67, 32, 133, 0.623);
   margin: 5px 0px;
-  text-align: start;
-  justify-content: left;
   display: grid;
     grid-gap: 3px;
     grid-template-columns: auto 40% auto 45%;
@@ -171,7 +169,7 @@ input[type=text]:focus {
 .artists {
   grid-area: a;
   text-align: start;
-  justify-content: left;
+  padding-bottom: 4px;
 }
 
 .buttonSwap {
@@ -211,6 +209,7 @@ input[type=text]:focus {
 
 .containerButtons {
   width: 100%;
+  padding-bottom: 5px;
   grid-area: cb;
 }
 

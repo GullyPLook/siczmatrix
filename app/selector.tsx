@@ -25,7 +25,7 @@ export default function Selector(props: any) {
     return composers
   };
 
-    const selectors = props.selections.map((selector: { boxId: React.Key | null | number; isSelected: any; isBold: any; artistA: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.PromiseLikeOfReactNode | null | undefined; artistB: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.PromiseLikeOfReactNode | null | undefined; selected: any; seeDetails: any; isOptions: any; options: any[]; }) => 
+    const selectors = props.selections.map((selector: { boxId: React.Key | number | number; isSelected: any; isBold: any; artistA: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.PromiseLikeOfReactNode | null | undefined; artistB: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.PromiseLikeOfReactNode | null | undefined; selected: any; seeDetails: any; isOptions: any; options: any[]; }) => 
         selector.boxId === 1 && selector.isSelected && (
         <div 
           className="selectedContainerA"
@@ -112,8 +112,8 @@ export default function Selector(props: any) {
         <div 
           className="optionsContainer" 
           key={selector.boxId} 
-          id={selector.boxId}>
-          {selector.options.length > 0 ? selector.options.map((option: { id: React.Key | null | undefined; title: any; year: any; artist_a: any; artist_b: any; }) => 
+          id={selector.boxId.toString()}>
+          {selector.options.length > 0 ? selector.options.map((option: { id: React.Key | null | number; title: any; year: any; artist_a: any; artist_b: any; }) => 
           (
            <button 
              className="buttonOption"
@@ -133,7 +133,7 @@ export default function Selector(props: any) {
         <div 
           className="selectedContainer"
           key={selector.boxId} 
-          id={selector.boxId}
+          id={selector.boxId.toString()}
           style={selector.isBold ? { opacity: 1} : {opacity: 0.3}}>
             <div className="artists">
             <button onClick={(event) => props.handleTableLink(event, selector.artistA)}><strong>{selector.artistA}</strong></button>
@@ -165,7 +165,7 @@ export default function Selector(props: any) {
         <div 
           className="selectedContainer"
           key={selector.boxId} 
-          id={selector.boxId}
+          id={selector.boxId.toString()}
           style={selector.isBold ? { opacity: 1} : {opacity: 0.3}}>
           <div className="artists">
             <button onClick={(event) => props.handleTableLink(event, selector.artistA)}><strong>{selector.artistA}</strong></button>

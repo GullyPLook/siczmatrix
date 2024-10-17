@@ -113,7 +113,7 @@ export default function Selector(props: any) {
           className="optionsContainer" 
           key={selector.boxId} 
           id={selector.boxId.toString()}>
-          {selector.options.length > 0 ? selector.options.map((option: { id: React.Key | null | number; title: any; year: any; artist_a: any; artist_b: any; }) => 
+          {selector.options.length > 0 ? selector.options.map((option: { id: React.Key | number | number; title: any; year: any; artist_a: any; artist_b: any; }) => 
           (
            <button 
              className="buttonOption"

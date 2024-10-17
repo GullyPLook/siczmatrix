@@ -61,7 +61,7 @@ export default function Table(props: any) {
             <tbody>
               {props.tableData.list.map((row: { id: React.Key | string ; year: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined; title: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined; artist_a: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined; artist_b: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined; Cause: any; album_or_film_title: any; programme_title: any; composer: any; }) =>
               <tr key={row.id} 
-                  id={row.id}>
+                  id={row.id.toString()}>
                   <td>{row.year}</td>
                   <td onClick={(event) => props.handleSongCard(event, row.id)}>{row.title}</td>
                   <td>{row.artist_a} & {row.artist_b}</td>

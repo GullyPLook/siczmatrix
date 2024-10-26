@@ -27,6 +27,10 @@
         "main"; 
     margin: 1%;
   }
+
+  .logo {
+    top: 40% !important
+  }
   
   .sidebar {
     grid-row: 1;
@@ -70,12 +74,26 @@
   
 } 
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  min-height: 1000px;
+  min-height: 100vh;
   background: linear-gradient(#021c50, #010c20, #000108);
   color: rgb(39, 179, 58);
   font-weight: normal;
+}
+
+h1 {
+    font-size: 200%;
+    padding: 30px 30px 0px;
+    font-weight: bolder;
+}
+
+h3 {
+  padding: 0px 30px 30px;
 }
 
 .app {
@@ -84,8 +102,92 @@ body {
     grid-template-columns: 30% 70%;
     grid-template-areas: 
         "sidebar main"; 
-  margin: 1%;
-  
+  margin: 1%;  
+}
+
+.logo {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  display: inline-flex;
+  justify-content: space-around;
+} 
+
+#lines {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 0;
+  -webkit-animation: dash 3s linear forwards infinite;
+  -moz-animation: dash 3s linear forwards infinite;
+  animation: dash 3s linear;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 300;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#dot1 {
+  animation: dot1 200ms linear;
+}
+
+@keyframes dot1 {
+  from  { opacity: 0; }
+  90%   { opacity: 0; }
+  to    { opacity: 1; }
+}
+
+#dot2 {
+  animation: dot2 500ms linear;
+}
+
+@keyframes dot2 {
+  from  { opacity: 0; }
+  90%   { opacity: 0; }
+  to    { opacity: 1; }
+}
+
+#dot3 {
+  animation: dot3 1ms linear;
+}
+
+@keyframes dot3 {
+  from  { opacity: 0; }
+  90%   { opacity: 0; }
+  to    { opacity: 1; }
+}
+
+#dot4 {
+  animation: dot4 800ms linear;
+}
+
+@keyframes dot4 {
+  from  { opacity: 0; }
+  90%   { opacity: 0; }
+  to    { opacity: 1; }
+}
+
+#dot5 {
+  animation: dot5 1s linear;
+}
+
+@keyframes dot5 {
+  from  { opacity: 0; }
+  90%   { opacity: 0; }
+  to    { opacity: 1; }
+}
+
+#dot6 {
+  animation: dot6 1.5s linear;
+}
+
+@keyframes dot6 {
+  from  { opacity: 0; }
+  90%   { opacity: 0; }
+  to    { opacity: 1; }
 }
 
 .sidebar {
@@ -97,7 +199,6 @@ body {
 .search {
   width: 100%;
   text-align: start;
-  margin-top: 8px;
 }
 
 .searchField {
@@ -117,6 +218,14 @@ body {
 input[type=text]:focus {
   border-bottom: 2px solid rgb(39, 179, 58);
 }
+
+input::placeholder {
+  font-style: italic;
+}
+
+/* input[type=text]:focus::placeholder {
+  color: rgb(129, 129, 129);
+} */
 
 .searchResults {
   text-align: start;
@@ -144,6 +253,19 @@ input[type=text]:focus {
 
 .selectedContainer:hover, .selectedContainerA:hover {
   background-color: rgb(67, 32, 133);
+}
+
+.instructions {
+  align-items: flex-start;
+  width: 100%;
+  padding: 10px 20px;
+  border: 2px solid #9f38d6;
+  color: #acacac;
+  border-radius: 6px;
+  margin: 5px 0px;
+  font-size: small;
+  font-style: italic;
+
 }
 
 .selectedContainerA {
@@ -218,10 +340,6 @@ input[type=text]:focus {
   grid-area: ba;
 }
 
-/* .tags {
-
-} */
-
 .buttonTags {
   grid-area: bt;
   margin-right: 3px;
@@ -231,14 +349,6 @@ input[type=text]:focus {
   color: rgb(41, 48, 88);
   font-size: small;
 }
-
-/* .songDetailsLeft {
-  grid-area: dl; 
-  padding-top: 10px;
-  text-align: start;
-  color: rgba(226, 226, 226, 0.897);
-  font-size: small;
-} */
 
 .songDetailsRight {
   grid-area: dr;
@@ -271,19 +381,6 @@ input[type=text]:focus {
   text-align: start;
 }
 
-
-.welcome {
-  font-size: 200%;;
-  padding: 0px 30px;
-  text-align: center;
-}
-
-.blurb {
-  text-align: center;
-  padding: 0px 30px;
-  color: rgb(255, 255, 255);
-}
-
 .see {
   padding: 0px 30px;
   text-align: center;
@@ -307,6 +404,17 @@ input[type=text]:focus {
   gap: 10%;
   align-items: flex-start;
 }
+
+/* .navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px
+}
+
+.navbarTags {
+
+} */
 
 .songCard {
   background-color: rgb(41, 48, 88);
@@ -337,7 +445,6 @@ iframe {
   border-radius: 16px;
   margin-top: 15px;
   margin-bottom: 5px;
-
 }
 
 .liveSwitch {
@@ -370,6 +477,12 @@ iframe {
 
 .scSongInfo {
   grid-area: info;
+}
+
+.blurb {
+  text-align: start;
+  color: #acacac;
+  font-size: small;
 }
 
 .scPerformance {
@@ -430,13 +543,13 @@ iframe {
   border: 2px, solid, rgb(39, 179, 58);
 }
 
-/* .sigmaContainer {
+.sigmaContainer {
   grid-area: ma;
   width: 1080px;
   height: 750px;
   grid-column-start: 2;
   grid-column-end: 3; 
-} */
+}
 
 table {
   table-layout: fixed;

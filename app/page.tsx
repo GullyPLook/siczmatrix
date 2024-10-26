@@ -1,16 +1,20 @@
 'use client'
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import selectorObjects from "./selectorObjects.json";
 import Fuse from "fuse.js";
 import records from './records.json';
+import Logo from './logo'
+import Welcome from "./welcome";
 import Search from "./search";
+// import Navbar from "./navbar";
 import Selector from "./selector";
 import Information from "./information";
 import data from "./data.json";
 import Table from "./table";
 import SongCard from "./songCard";
 import Podcast from "./podcast";
-import { DisplayGraph } from "./SigStarChart2";
+import episodes from "./episodes.json";
+// import { DisplayGraph } from "./sigStarChart2";
 
 
 export default function Home() {
@@ -22,16 +26,22 @@ export default function Home() {
   const [swap, setSwap] = useState<boolean>();
   const [artistAOptions, setArtistAOptions] = useState<any>();
   const [artistBOptions, setArtistBOptions] = useState<any>();
+  // const [seeMenu, setSeeMenu] = useState(true)
   const [seeSearch, setSeeSearch] = useState(true);
+  const [seePodcastDetails, setSeePodcastDetails] = useState(false)
   const [seeIntroduction, setSeeIntroduction] = useState(true);
+  const [seeInstructions, setSeeInstructions] = useState(false);
   const [seeCongratulations, setSeeCongratulations] = useState(false);
   const [seeNiceTry, setSeeNiceTry] = useState(false);
   const [seeSongCard, setSeeSongCard] = useState(false);
   const [songCard, setSongCard] = useState<{}>();
   const [mediaSelect, setMediaSelect] = useState<string>();
+  const [episode, setEpisode] = useState<{}>();
   const [seeTable, setSeeTable] = useState(false);
   const [seePodcast, setSeePodcast] = useState(true);
   const [seeSongTags, setSeeSongTags] = useState(false);
+  const [seeApp, setSeeApp] = useState(false);
+  const [seeLogo, setSeeLogo] = useState(true);
 
   const fuse = new Fuse( records, {
     keys: [
@@ -43,6 +53,9 @@ export default function Home() {
   
   const results = fuse.search(query);
   const searchResults = results.map(result => result.item);
+
+  const tableRef = useRef<HTMLDivElement>(null);
+  const songCardRef = useRef<HTMLDivElement>(null);
 
   const handleOnSearch = (event: any) => {
     const {value} = event.target;
@@ -248,7 +261,9 @@ export default function Home() {
     
     setTableData({title: tagTitle, list: tagList, column: column});
     setSeeTable(true);
-    console.log(tableData)
+    if (tableRef.current != null) {
+      tableRef.current.scrollIntoView({ behavior: "smooth" });
+    }; 
   };
   
   function handleTableLink(event: any, name: any) {
@@ -264,6 +279,9 @@ export default function Home() {
     
     setTableData({title: name, list: tagList});
     setSeeTable(true);
+    if (tableRef.current != null) {
+      tableRef.current.scrollIntoView({ behavior: "smooth" });
+    }; 
   };
 
   function handleComposers(event: any, composers: string) {
@@ -296,15 +314,23 @@ export default function Home() {
     setSeePodcast(false);
     setSeeSongCard(true);
     setSeeSongTags(true);
-    setMediaSelect(newMediaSelect)
+    setMediaSelect(newMediaSelect);
+    if (songCardRef.current != null) {
+      songCardRef.current.scrollIntoView({ behavior: "smooth" });
+    }; 
   };
 
-  function handleMediaSelect(event: any, link: string) {
+  function handleMediaSelect(event: any, link: string, id: number) {
+
+    const ep = episodes.filter(ep => ep.id === id)
     
-    const newMediaSelect = link.replace(/(?:http:\/\/)?(?:www\.)?(?:youtube\.com|youtu\.be)\/(?:watch\?)?(?:.+)v=(.+)/g, 'https://www.youtube.com/embed/$1').slice(8)
-    setMediaSelect(newMediaSelect)
+    if (link.includes("embed")) {
+      return (setMediaSelect(link), setEpisode(ep[0]))
+    } else {
+      return setMediaSelect(link.replace(/(?:http:\/\/)?(?:www\.)?(?:youtube\.com|youtu\.be)\/(?:watch\?)?(?:.+)v=(.+)/g, 'https://www.youtube.com/embed/$1').slice(8));
+    };
   };
-  
+
   function handleRevertToSelected(event: any, boxId: number) {
 
     const newSelections: any = selections.map(selector => {
@@ -328,7 +354,7 @@ export default function Home() {
       return {...selector, isBold: true, isOptions: false, isSelected: false, options: [], selected: {}, artistA: "", artistB: ""} 
     });
     setSelections(newSelections);
-
+    setSeeInstructions(true);
     setArtistAOptions(optionGeneratorArtistA(id));
     setArtistBOptions(optionGeneratorArtistB(id));
     setQuery("")
@@ -336,6 +362,7 @@ export default function Home() {
     setSeeNiceTry(false);
     setSeeIntroduction(false);
     setSeeSearch(false);
+    setSwap(false);
      
   };
   
@@ -357,6 +384,16 @@ export default function Home() {
       return true;
     });
     setStarChartData(chartDataGenerator())
+  };
+
+  function handlePodcastDetails(event: any) {
+    
+    setSeePodcastDetails(prevDetails => {
+      if (prevDetails === true) {
+        return false;
+      } 
+      return true;
+    });
   };
 
   
@@ -415,84 +452,112 @@ export default function Home() {
 
   }, [seeCongratulations]);
 
-  // useEffect(() => {
-  //   setStarChartData(chartDataGenerator());
-  // }, [selections]);
+  useEffect(() => {
+    setStarChartData(chartDataGenerator());
+  }, [selections]);
+
+  useEffect(() => {
+    
+    setTimeout(() => setSeeApp(true), 1500);
+    setTimeout(() => setSeeLogo(false), 1500)
+  }, []);
+
+  useEffect(() => {
+    handleMediaSelect(event, "https://www.youtube.com/embed/videoseries?si=_I2cjXADs8VOSRtO&amp;list=PL3fAq4OrBzWC4kDgqGk8ryS0EPELwFb0e", 4)
+  }, [])
 
   return (
   
-  <div className="app">
-    <div className="sidebar">
-      <div className="search">
-        <form id="search" >
-          <label>
-            <strong>Search artist or song</strong>
-            <input className="searchField" type="text" value={query} onChange={handleOnSearch}></input>
-          </label>
-          <br />
-        </form>
-      </div>
-      {seeSearch && <div className="searchResults">
-        <Search 
-        searchResults={searchResults}
-        handleSearchChange={handleSearchChange}
-        />
-      </div>}
-      <div className="select">
-        <Selector 
-        selections={selections}
-        handleSwapArtist={handleSwapArtist}
-        handleOptionChange={handleOptionChange}
-        handleRevertToOptions={handleRevertToOptions}
-        handleSongDetails={handleSongDetails}
-        handleRevertToSelected={handleRevertToSelected}
-        handleTag={handleTag}
-        handleTableLink={handleTableLink}
-        handleComposers={handleComposers}
-        handleSongCard={handleSongCard}
-        seeSongTags={seeSongTags}
+  <div>
+    <Logo 
+    seeLogo={seeLogo}/>
+  {seeApp && 
+    <div className="app">
+      <div className="sidebar"> 
         
-        />
+        <div className="search">
+          <form id="search" >
+            <label>
+              <input className="searchField" type="text" placeholder="Search artist or song" value={query} onChange={handleOnSearch}></input>
+            </label>
+            <br />
+          </form>
+        </div>
+        {seeSearch && <div className="searchResults">
+          <Search 
+          searchResults={searchResults}
+          handleSearchChange={handleSearchChange}
+          handleSongCard={handleSongCard}
+          />
+        </div>}
+        {seeIntroduction &&
+        <Welcome 
+        seePodcastDetails={seePodcastDetails}
+        handlePodcastDetails={handlePodcastDetails}/>
+        }
+        {seeInstructions &&
+        <div className="instructions">
+          <span>Below you can build a playlist from the songs in the matrix following the rules of the SICZ podcast. See if you can get back to one of your original artists within 6 duets.</span>
+        </div>}
+        <div>
+          <Selector 
+          selections={selections}
+          handleSwapArtist={handleSwapArtist}
+          handleOptionChange={handleOptionChange}
+          handleRevertToOptions={handleRevertToOptions}
+          handleSongDetails={handleSongDetails}
+          handleRevertToSelected={handleRevertToSelected}
+          handleTag={handleTag}
+          handleTableLink={handleTableLink}
+          handleComposers={handleComposers}
+          handleSongCard={handleSongCard}
+          seeSongTags={seeSongTags}
+          />
+        </div>
+        <div>
+          <Information
+          seeIntroduction={seeIntroduction}
+          seeCongratulations={seeCongratulations}
+          seeNiceTry={seeNiceTry}
+          />
+        </div>
       </div>
-      <div className="select">
-        <Information
-        seeIntroduction={seeIntroduction}
-        seeCongratulations={seeCongratulations}
-        seeNiceTry={seeNiceTry}
-        />
+      <div 
+        className="main" 
+        ref={songCardRef}>
+        {/* <Navbar /> */}
+        {seePodcast && 
+        <div>
+          <Podcast 
+          episode={episode}
+          handleMediaSelect={handleMediaSelect}
+          mediaSelect={mediaSelect}/>
+        </div>}
+        {seeSongCard && 
+        <div>
+          <SongCard
+          selections={selections}
+          songCard={songCard}
+          mediaSelect={mediaSelect}
+          handleMediaSelect={handleMediaSelect}
+          handleTag={handleTag}
+          seeSongTags={seeSongTags}
+          handleTableLink={handleTableLink}
+          handleComposers={handleComposers}
+          />
+        </div>}
+        {/* {!seeIntroduction && <div className="sigmaContainer">
+          <DisplayGraph starChartData={starChartData}/>
+        </div>} */}
+         <div ref={tableRef}>
+         {seeTable && <Table 
+          tableData={tableData}
+          handleSongCard={handleSongCard}
+          handleTableLink={handleTableLink}
+         />}
+        </div>
       </div>
-    </div>
-      
-    <div className="main">
-      {seePodcast && 
-      <div>
-        <Podcast />
-      </div>}
-      {/* {!seeIntroduction && <div className="sigmaContainer">
-        <DisplayGraph starChartData={starChartData}/>
-      </div>} */}
-      {seeSongCard && 
-      <div>
-        <SongCard 
-        selections={selections}
-        songCard={songCard}
-        mediaSelect={mediaSelect}
-        handleMediaSelect={handleMediaSelect}
-        handleTag={handleTag}
-        seeSongTags={seeSongTags}
-        handleTableLink={handleTableLink}
-        handleComposers={handleComposers}
-        />
-      </div>}
-      {seeTable && 
-      <div>
-        <Table 
-        tableData={tableData}
-        handleSongCard={handleSongCard}
-        handleTableLink={handleTableLink}
-        />
-      </div>}
-    </div>
+    </div>}
   </div>
   )
 }

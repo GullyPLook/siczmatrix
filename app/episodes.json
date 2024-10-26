@@ -1,0 +1,34 @@
+[
+{
+    "id": 1,
+    "tag": "SICZ1",
+    "name": "The Girl is Mine",
+    "date": "2022", 
+    "blurb": "Tom and Ross introduce, discuss and perhaps confuse the concept before navigating our first star studded voyage.",
+    "link": "https://www.youtube.com/embed/videoseries?si=U5BdihSMTOA8MghO&amp;list=PL3fAq4OrBzWDXxEfGyu1BCMd-MGGYfNny"
+},
+{
+    "id": 2,
+    "tag": "SICZ2",
+    "name": "Don't Give Up",
+    "date": "2023",
+    "blurb": "Only episode two and our format already causes us problems… But we will not give up!",
+    "link": "https://www.youtube.com/embed/videoseries?si=3jYfU0mYOl-WIvy8&amp;list=PL3fAq4OrBzWB8SrhcmY4elrfAT-As_1DZ"
+},
+{
+    "id": 3,
+    "tag": "SICZ3",
+    "name": "Another Way to Die",
+    "date": "2023",
+    "blurb": "We start a new round inspired by the question Ross asked last time.. Are there any Bond duets?? Bond geekery threatened to ensue, and was difficult to contain. Luckily we created a safe word.. ‘Spectre’.",
+    "link": "https://www.youtube.com/embed/videoseries?si=_fLLjbEfhFnE5BPP&amp;list=PL3fAq4OrBzWDO_zuJSdas1NGHoHG7fVOZ"
+},
+{
+    "id": 4,
+    "tag": "SICZ4",
+    "name": "Nothing Compares 2 U",
+    "date": "2024",
+    "blurb": "Tom and Ross have been away. And they’ve missed each other. Eating dinner in fancy restaurants, seeing whomever they choose, yeah sure, great, but 2 is always better than 1. And U, well it’s better than just me. A man who knows this all too well is The Purple One. And he knows there’s much to be Gained from a team up, yup there’s a whole lotta Rosie right here too. Which is a good job because he is thoroughly bereft.",
+    "link": "https://www.youtube.com/embed/videoseries?si=_I2cjXADs8VOSRtO&amp;list=PL3fAq4OrBzWC4kDgqGk8ryS0EPELwFb0e"
+}
+]

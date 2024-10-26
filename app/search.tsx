@@ -11,7 +11,7 @@ export default function Search(props: any) {
               <button 
                 key={result.id} 
                 id={result.id.toString()}
-                onClick={(event) => props.handleSearchChange(event, result.id)} 
+                onClick={(event) => (props.handleSearchChange(event, result.id), props.handleSongCard(event, result.id))} 
                 className="buttonSearch"
                 >
                 <span className="song">{`${result.title}`}</span><i>{` (${result.year})`}</i>

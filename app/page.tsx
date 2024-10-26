@@ -292,6 +292,9 @@ export default function Home() {
     
     setTableData({title: "Written by " + composers, list: tagList, column: "composer"});
     setSeeTable(true);
+    if (tableRef.current != null) {
+      tableRef.current.scrollIntoView({ behavior: "smooth" });
+    }; 
   }
 
   function handleSongCard(event: any, id: number) {
@@ -363,6 +366,26 @@ export default function Home() {
     setSeeIntroduction(false);
     setSeeSearch(false);
     setSwap(false);
+
+    const newSongCard = records.filter(record => record.id === id);
+
+    const otherVersions = records.filter(record => record.title === newSongCard[0].title)
+    otherVersions.length > 1 ? (setTableData({title: newSongCard[0].title, list: otherVersions}), setSeeTable(true))
+    : null;
+    
+    const newMediaSelect = (
+    newSongCard[0].Performance ? 
+    newSongCard[0].Performance.replace(/(?:http:\/\/)?(?:www\.)?(?:youtube\.com|youtu\.be)\/(?:watch\?)?(?:.+)v=(.+)/g, 'https://www.youtube.com/embed/$1').slice(8)
+    : newSongCard[0].Promo ? 
+      newSongCard[0].Promo.replace(/(?:http:\/\/)?(?:www\.)?(?:youtube\.com|youtu\.be)\/(?:watch\?)?(?:.+)v=(.+)/g, 'https://www.youtube.com/embed/$1').slice(8)
+      : newSongCard[0].Audio.replace(/(?:http:\/\/)?(?:www\.)?(?:youtube\.com|youtu\.be)\/(?:watch\?)?(?:.+)v=(.+)/g, 'https://www.youtube.com/embed/$1').slice(8)
+    );
+
+    setSongCard(newSongCard);
+    setSeePodcast(false);
+    setSeeSongCard(true);
+    setSeeSongTags(true);
+    setMediaSelect(newMediaSelect);
      
   };
   
@@ -497,7 +520,11 @@ export default function Home() {
         }
         {seeInstructions &&
         <div className="instructions">
-          <span>Below you can build a playlist from the songs in the matrix following the rules of the SICZ podcast. See if you can get back to one of your original artists within 6 duets.</span>
+          <span>
+            Below you can build a playlist from the songs in the matrix 
+            following the rules of the SICZ podcast. 
+            See if you can get back to one of your original artists within six duets.
+          </span>
         </div>}
         <div>
           <Selector 

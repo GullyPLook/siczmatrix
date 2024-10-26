@@ -10,7 +10,7 @@ export default function Podcast(props: any) {
         return (
           <button 
             key={eps.id}
-            id={eps.id}
+            id={eps.id.toString()}
             className="liveSwitch"
             onClick={(event) => props.handleMediaSelect(event, eps.link, eps.id)}>
               <strong><i>{eps.tag}</i></strong>

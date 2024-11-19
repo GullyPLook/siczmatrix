@@ -265,6 +265,8 @@ export default function Home() {
       tableRef.current.scrollIntoView({ behavior: "smooth" });
     }; 
   };
+
+  console.log(tableData)
   
   function handleTableLink(event: any, name: any) {
     
@@ -274,7 +276,8 @@ export default function Home() {
       || record.year ===  name
       || record.Cause ===  name
       || record.programme_title ===  name
-      || record.programme_title ===  name
+      || record.soundtrack_title ===  name
+      || record.album_title ===  name
     );
     
     setTableData({title: name, list: tagList});
@@ -287,8 +290,12 @@ export default function Home() {
   function handleComposers(event: any, composers: string) {
     
     const tagList = records.filter(record => 
-      record.composer.includes(composers) 
+      record.composer.includes(composers)
     );
+
+    // const tagList = composerMatch.filter(match =>
+    //   match.composer.length === composers.length
+    // );
     
     setTableData({title: "Written by " + composers, list: tagList, column: "composer"});
     setSeeTable(true);

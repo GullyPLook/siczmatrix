@@ -55,11 +55,15 @@ export default function Table(props: any) {
                   {props.tableData.title === "Televised performance" && `${"TV Show"}`}
                   {props.tableData.title === "Film performance" && `${"Film"}`}
                   {props.tableData.column === "programme_genre" && `${props.tableData.title}`}
-                  {props.tableData.column === "composer" && `${"Songwriters"}`}</th> 
+                  {props.tableData.column === "composer" && `${"Songwriters"}`}
+                  {props.tableData.title === "Various partners album" && `${"Album"}`}
+                  {props.tableData.title === "Various artists album" && `${"Album"}`}
+                  {props.tableData.title === "Duo album" && `${"Album"}`}
+                  {props.tableData.title === "Legacy" && `${"Album"}`}</th> 
               </tr>
             </thead>
             <tbody>
-              {props.tableData.list.map((row: { id: React.Key | string ; year: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined; title: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined; artist_a: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined; artist_b: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined; Cause: any; album_or_film_title: any; programme_title: any; composer: any; }) =>
+              {props.tableData.list.map((row: { id: React.Key | string ; year: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined; title: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined; artist_a: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined; artist_b: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined; Cause: any; album_title: any; soundtrack_title: any; programme_title: any; composer: any; }) =>
               <tr key={row.id} 
                   id={row.id.toString()}>
                   <td>{row.year}</td>
@@ -69,8 +73,20 @@ export default function Table(props: any) {
                   <td onClick={(event) => props.handleTableLink(event, row.Cause)}>
                      {`${row.Cause}`}</td>}
                   {props.tableData.title === "Soundtrack" &&
-                  <td onClick={(event) => props.handleTableLink(event, row.album_or_film_title)}>
-                     {`${row.album_or_film_title}`}</td>}
+                  <td onClick={(event) => props.handleTableLink(event, row.soundtrack_title)}>
+                     {`${row.soundtrack_title}`}</td>}
+                     {props.tableData.title === "Various partners album" &&
+                  <td onClick={(event) => props.handleTableLink(event, row.album_title)}>
+                     {`${row.album_title}`}</td>}
+                     {props.tableData.title === "Various artists album" &&
+                  <td onClick={(event) => props.handleTableLink(event, row.album_title)}>
+                     {`${row.album_title}`}</td>}
+                     {props.tableData.title === "Duo album" &&
+                  <td onClick={(event) => props.handleTableLink(event, row.album_title)}>
+                     {`${row.album_title}`}</td>}
+                     {props.tableData.title === "Legacy" &&
+                  <td onClick={(event) => props.handleTableLink(event, row.album_title)}>
+                     {`${row.album_title}`}</td>}
                   {props.tableData.title === "Televised performance" &&
                   <td onClick={(event) => props.handleTableLink(event, row.programme_title)}>
                      {`${row.programme_title}`}</td>}
@@ -82,6 +98,7 @@ export default function Table(props: any) {
                      {`${row.programme_title}`}</td>}
                   {props.tableData.column === "composer" &&
                   <td>{`${row.composer}`}</td>}
+                  
               </tr>
               )} 
             </tbody>
@@ -104,11 +121,19 @@ export default function Table(props: any) {
           && props.tableData.title !== "Televised performance"
           && props.tableData.title !== "Film performance" 
           && props.tableData.column !== "programme_genre" 
-          && props.tableData.column !== "composer" && threeColumnTable}
+          && props.tableData.column !== "composer" 
+          && props.tableData.title !== "Various partners album"
+          && props.tableData.title !== "Various artists album"
+          && props.tableData.title !== "Legacy" 
+          && props.tableData.title !== "Duo album" && threeColumnTable}
         {props.tableData.title === "Cause" && fourColumnTable} 
         {props.tableData.title === "Soundtrack" && fourColumnTable}
         {props.tableData.title === "Televised performance" && fourColumnTable}
         {props.tableData.title === "Film performance" && fourColumnTable}
+        {props.tableData.title === "Various partners album" && fourColumnTable}
+        {props.tableData.title === "Various artists album" && fourColumnTable}
+        {props.tableData.title === "Duo album" && fourColumnTable}
+        {props.tableData.title === "Legacy" && fourColumnTable}
         {props.tableData.column === "programme_genre" && fourColumnTable}
         {props.tableData.column === "composer" && fourColumnTable}
         </>

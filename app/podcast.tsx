@@ -38,7 +38,10 @@ export default function Podcast(props: any) {
               </div>
             </div>
             <div className="songInfoContainer">
+              
               <div className="scTitle">
+                { props.episode.id === episodes.length? <div><strong style={{ color: "#EC9717", fontSize: "large"}}>Latest Episode</strong></div>
+                : null }
                 <i style={{ color: "white", fontSize: "x-large" }}>{props.episode.tag} - {props.episode.name}</i><br></br>
                 <i>({props.episode.date})</i>
               </div>

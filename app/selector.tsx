@@ -91,7 +91,7 @@ export default function Selector(props: any) {
           </div> 
           <div className="selectedABlocker"></div>
           <div>
-          {Object.entries(selector.selected).slice(12, 18).map(tag  => {
+          {Object.entries(selector.selected).slice(13, 19).map(tag  => {
                      if (tag[1] !== "" && tag[0] !== "Cause") {
                      return (
                        <button 
@@ -201,7 +201,7 @@ export default function Selector(props: any) {
                 onClick={(event) => props.handleTableLink(event, selector.selected.year)}><i>{selector.selected.year}</i></button>
           </div> 
           <div>
-          {Object.entries(selector.selected).slice(12, 18).map(tag  => {
+          {Object.entries(selector.selected).slice(13, 19).map(tag  => {
                      if (tag[1] !== "" && tag[0] !== "Cause") {
                      return (
                        <button 

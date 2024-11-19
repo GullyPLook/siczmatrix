@@ -4,7 +4,7 @@ import React from "react";
 export default function SongCard(props: any) {
     
   function mediaSwitches() {
-    const switches = Object.entries(props.songCard[0]).slice(24, 27).map(vids => {
+    const switches = Object.entries(props.songCard[0]).slice(25, 28).map(vids => {
       if (vids[1] !== "") {
         return (
           <button 
@@ -93,7 +93,7 @@ export default function SongCard(props: any) {
                 </div>
                 <br />
                 <div className="scRelease">
-                   {Object.entries(props.songCard[0]).slice(6, 12).map(tag  => {
+                   {Object.entries(props.songCard[0]).slice(6, 13).map(tag  => {
                      if (tag[1] !== "") {
                      return (
                    <button 
@@ -107,7 +107,7 @@ export default function SongCard(props: any) {
                    })}
                 </div>
                 <div className="scSong">
-                   {Object.entries(props.songCard[0]).slice(12, 18).map(tag  => {
+                   {Object.entries(props.songCard[0]).slice(13, 19).map(tag  => {
                      if (tag[1] !== "" && tag[0] !== "Cause") {
                      return (
                        <button 
@@ -130,7 +130,7 @@ export default function SongCard(props: any) {
                    })}
                 </div>
                 <div className="scSpecial">
-                   {Object.entries(props.songCard[0]).slice(18, 21).map(tag  => {
+                   {Object.entries(props.songCard[0]).slice(19, 22).map(tag  => {
                      if (tag[1] !== "") {
                      return (
                    <button 
@@ -145,7 +145,7 @@ export default function SongCard(props: any) {
                 </div>
               </div>
               <div className="scPerformance">
-                 {Object.entries(props.songCard[0]).slice(21, 24).map(tag  => {
+                 {Object.entries(props.songCard[0]).slice(22, 25).map(tag  => {
                    if (tag[1] !== "") {
                    return (
                  <button 

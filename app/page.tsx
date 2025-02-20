@@ -266,7 +266,6 @@ export default function Home() {
     }; 
   };
 
-  console.log(tableData)
   
   function handleTableLink(event: any, name: any) {
     

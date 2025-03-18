@@ -43,6 +43,7 @@ export default function Home() {
   const [seeApp, setSeeApp] = useState(false);
   const [seeLogo, setSeeLogo] = useState(true);
 
+
   const fuse = new Fuse( records, {
     keys: [
       "title",

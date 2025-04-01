@@ -319,7 +319,7 @@ export default function Home() {
       newSongCard[0].Promo.replace(/(?:http:\/\/)?(?:www\.)?(?:youtube\.com|youtu\.be)\/(?:watch\?)?(?:.+)v=(.+)/g, 'https://www.youtube.com/embed/$1').slice(8)
       : newSongCard[0].Audio.replace(/(?:http:\/\/)?(?:www\.)?(?:youtube\.com|youtu\.be)\/(?:watch\?)?(?:.+)v=(.+)/g, 'https://www.youtube.com/embed/$1').slice(8)
     );
-
+    
     setSongCard(newSongCard);
     setSeePodcast(false);
     setSeeSongCard(true);
@@ -329,7 +329,7 @@ export default function Home() {
       songCardRef.current.scrollIntoView({ behavior: "smooth" });
     }; 
   };
-
+  
   function handleMediaSelect(event: any, link: string, id: number) {
 
     const ep = episodes.filter(ep => ep.id === id)

@@ -9,6 +9,7 @@ export default function Selector(props: any) {
     const seperates = name.split(regex);
 
     const composers = seperates.map((composer, index) => {
+      
       if (composer === seperates[seperates.length - 1]) {
         return (
         <button key={index}

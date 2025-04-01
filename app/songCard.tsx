@@ -1,5 +1,6 @@
 'use client'
 import React from "react";
+import medleys from "./medley.json"
 
 export default function SongCard(props: any) {
     
@@ -26,6 +27,19 @@ export default function SongCard(props: any) {
       }
     })
     return switches 
+  };
+
+  function medley(x: string) {
+    
+    const list = medleys.filter(med => med.medley_title === x);
+    const songs = list.map(song => {
+      return (
+        <ul
+        key={song.title}
+        className="composerTag">{song.title}</ul>
+        )
+    });
+    return songs
   };
 
   function composerSplit(x: string) {
@@ -88,8 +102,10 @@ export default function SongCard(props: any) {
                     onClick={(event) => props.handleTableLink(event, props.songCard[0].artist_b)}>
                     <strong>{props.songCard[0].artist_b}</strong>
                   </button>
-                  <br />
-                  <span style={{ color: "white", fontSize: "smaller" }}>({composerSplit(props.songCard[0].composer)})</span>
+                  <br /> 
+                  { props.songCard[0].composer === "Various"
+                  ? <span style={{ color: "white", fontSize: "smaller" }}><i><br />{medley(props.songCard[0].title)}</i></span>
+                  : <span style={{ color: "white", fontSize: "smaller" }}>({composerSplit(props.songCard[0].composer)})</span>}
                 </div>
                 <br />
                 <div className="scRelease">

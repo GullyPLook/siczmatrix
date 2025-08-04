@@ -493,7 +493,7 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    handleMediaSelect(event, "https://www.youtube.com/embed/videoseries?si=_I2cjXADs8VOSRtO&amp;list=PL3fAq4OrBzWC4kDgqGk8ryS0EPELwFb0e", 4)
+    handleMediaSelect(event, "https://www.youtube.com/embed/videoseries?si=JF7tEqEDOGLlWPk8&amp;list=PL3fAq4OrBzWB3F3fbxSZrywuUgHwBqsbl", 5)
   }, [])
 
   return (

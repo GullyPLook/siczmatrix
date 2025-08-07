@@ -490,9 +490,9 @@ export default function Home() {
 
   }, [seeCongratulations]);
 
-  useEffect(() => {
+/*   useEffect(() => {
     setStarChartData(chartDataGenerator());
-  }, [selections]);
+  }, [selections]); */
 
   useEffect(() => {
     

@@ -433,8 +433,6 @@ export default function Home() {
   
   }, [])
 
-  console.log(fetched)
-
   useEffect(() => {
     
     swap === true && setSelections(prevSelections => {

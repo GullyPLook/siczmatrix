@@ -4,7 +4,7 @@ import { use } from "react";
 
 export default function Welcome(props: any) {
 
- const allPosts: any = use(props.fetched)
+ /* const allPosts: any = use(props.fetched) */
 
     return (
         <div>
@@ -25,11 +25,11 @@ export default function Welcome(props: any) {
                Using individual artists as links we plot a course through the matrix taking as few steps as possible to create a loop. <br></br>
                We take subscribers song suggestions to start each episode, so explore the matrix, play with the builder and get in touch.
                </i>
-               <ul>
+               {/* <ul>
       {allPosts.map((post: any) => (
         <li key={post.id}>{post.title}</li>
       ))}
-    </ul>
+    </ul> */}
               </div>
               }
               In addition to 

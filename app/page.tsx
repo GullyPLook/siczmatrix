@@ -14,7 +14,7 @@ import Table from "./table";
 import SongCard from "./songCard";
 import Podcast from "./podcast";
 import episodes from "./episodes.json";
-import { fetchSongs } from "./actions";
+/* import { fetchSongs } from "./actions"; */
 // import { DisplayGraph } from "./sigStarChart2";
 
 
@@ -43,7 +43,7 @@ export default function Home() {
   const [seeSongTags, setSeeSongTags] = useState(false);
   const [seeApp, setSeeApp] = useState(false);
   const [seeLogo, setSeeLogo] = useState(true);
-  const [fetched, setFetched] = useState<any>([]);
+  /* const [fetched, setFetched] = useState<any>([]); */
 
   const fuse = new Fuse( records, {
     keys: [
@@ -427,11 +427,11 @@ export default function Home() {
     });
   };
 
-  useEffect(() => {
+/*   useEffect(() => {
 
   setFetched(fetchSongs())
   
-  }, [])
+  }, []) */
 
   useEffect(() => {
     
@@ -528,7 +528,7 @@ export default function Home() {
         </div>}
         {seeIntroduction &&
         <Welcome 
-        fetched={fetched}
+        /* fetched={fetched} */
         seePodcastDetails={seePodcastDetails}
         handlePodcastDetails={handlePodcastDetails}/>
         }

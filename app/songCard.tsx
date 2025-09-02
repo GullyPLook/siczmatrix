@@ -1,71 +1,92 @@
 'use client'
-import React from "react";
-import medleys from "./medley.json"
+import { use, useEffect } from "react";
 
 export default function SongCard(props: any) {
-    
+
+  const composers: any = use(props.composerPromise);
+  const adaptations: any = use(props.adaptationPromise);
+  const performances: any= use(props.performancePromise);
+  const personalTags: any = use(props.personalTagPromise);
+  const releaseTags: any = use(props.releaseTagPromise);
+  const styleTags: any = use(props.styleTagPromise);
+  const specialTags: any = use(props.specialTagPromise);
+  const performanceTags: any = use(props.performanceTagPromise);
+
   function mediaSwitches() {
-    const switches = Object.entries(props.songCard[0]).slice(26, 29).map(vids => {
-      if (vids[1] !== "") {
+
+    const switches = performances.map((vid: {id: number; tag: any[]; link: string}) => {
+      
+      if (vid.tag.length === 0) {
         return (
           <button 
-            key={vids[0]}
-            id={vids[0]}
-            className="liveSwitch"
-            onClick={(event) => props.handleMediaSelect(event, vids[1])}>
-              <strong><i>{vids[0]}</i></strong>
+            key={vid.id}
+            className="crossoverTags"
+            style={props.mediaSwitch === vid.id ? { opacity: 1} : {opacity: 0.3}}
+            onClick={(event) => props.handleMediaSelect(event, vid.link, vid.id)}><strong><i>Audio</i></strong>
+          </button>
+        )
+      } else if (vid.tag.some(id => id.id === 1214)) {
+        return (
+          <button 
+            key={vid.id}
+            className="crossoverTags"
+            style={props.mediaSwitch === vid.id ? { opacity: 1} : {opacity: 0.3}}
+            onClick={(event) => props.handleMediaSelect(event, vid.link, vid.id)}><strong><i>Promo</i></strong>
           </button>
         )
       } else {
-        return (
-          <span 
-            key={vids[0]}
-            className="deadSwitch">
-              <strong><i>{vids[0]}</i></strong>
-          </span>
-        )
-      }
-    })
+      return (
+        <span key={vid.id}>
+          {performanceTags.map((tag: { id: number; type_id: number; tag_id: number; type: string; tag: string }) => {
+            if ((tag.id === vid.id) && (tag.type_id === 67)) {
+              return (
+                  <span key={tag.tag_id} className="splitTagWrapper"
+                        style={props.mediaSwitch === vid.id ? { opacity: 1} : {opacity: 0.3}}>
+                     <button className="crossoverLeft"
+                          onClick={(event) => props.handlePerfFourTag(event, tag.type_id)}><strong><i>{tag.type}</i></strong></button>
+                     <button className="crossoverRight"
+                          onClick={(event) => [props.handleMediaSelect(event, vid.link, vid.id), props.handlePerfThreeTag(event, tag.tag_id)]}><strong><i>{tag.tag}</i></strong>
+                     </button>
+                  </span>
+                  )
+                  } else if ((tag.id === vid.id) && (tag.type_id !== 2) && (tag.type_id !== 21)) {
+              return (
+                  <span key={tag.tag_id} className="splitTagWrapper"
+                        style={props.mediaSwitch === vid.id ? { opacity: 1} : {opacity: 0.3}}>
+                     <button className="crossoverLeft"
+                          onClick={(event) => props.handlePerfFourTag(event, tag.type_id)}><strong><i>{tag.type}</i></strong></button>
+                     <button className="crossoverRight"
+                          onClick={(event) => [props.handleMediaSelect(event, vid.link, vid.id), props.handlePerfThreeTag(event, tag.tag_id)]}><strong><i>{tag.tag}</i></strong>
+                     </button>
+                  </span>
+                  )
+                  } else if ((tag.id === vid.id) && (tag.type_id === 21)) {
+              return (
+                      <button 
+                        key={tag.tag_id}
+                        className="crossoverTags"
+                        style={props.mediaSwitch === vid.id ? { opacity: 1} : {opacity: 0.3}}
+                        onClick={(event) => props.handleYear(event, tag.tag)}><strong><i>{tag.tag}</i></strong>
+                      </button>
+                      )
+                  } else if ((tag.id === vid.id) && (tag.type_id === 2) && (tag.tag_id !== 1216) && (tag.tag_id !== 1214)) {
+              return (
+                      <button 
+                        key={tag.tag_id}
+                        className="crossoverTags"
+                        style={props.mediaSwitch === vid.id ? { opacity: 1} : {opacity: 0.3}}
+                        onClick={(event) => props.handleReleaseFourTag(event, tag.tag_id)}><strong><i>{tag.tag}</i></strong>
+                      </button>
+                      )
+            } else {
+
+            }
+          })}
+        </span>
+      )
+    }})
     return switches 
   };
-
-  function medley(x: string) {
-    
-    const list = medleys.filter(med => med.medley_title === x);
-    const songs = list.map(song => {
-      return (
-        <ul
-        key={song.title}
-        className="composerTag">{song.title}</ul>
-        )
-    });
-    return songs
-  };
-
-  function composerSplit(x: string) {
-
-    const regex = /\s*(?:,|$)\s*/;
-    const seperates = x.split(regex);
-
-    const composers = seperates.map((composer, index) => {
-      if (composer === seperates[seperates.length - 1]) {
-        return (
-        <button 
-          key={index}
-          className="composerTag"
-          onClick={(event) => props.handleComposers(event, composer)}>{composer}</button>
-      )} else {
-        return (
-        <button 
-          key={index}
-          className="composerTag"
-          onClick={(event) => props.handleComposers(event, composer)}>{composer},&nbsp;</button>
-        )
-      };  
-    });
-    return composers
-  };
-  
 
    const card = (
         <div className="songCard">
@@ -86,97 +107,215 @@ export default function SongCard(props: any) {
             </div>
             <div className="songInfoContainer">
               <div className="scSongInfo">
-                <div className="scTitle">
-                  <i style={{ color: "white", fontSize: "x-large" }}>{props.songCard[0].title}</i>
+                <div>
                   <button 
-                    onClick={(event) => props.handleTableLink(event, props.songCard[0].year)}>
-                    <i>&nbsp;&nbsp;({props.songCard[0].year})</i>
-                  </button>
-                  <br />
-                  <button 
-                    onClick={(event) => props.handleTableLink(event, props.songCard[0].artist_a)}>
-                    <strong>{props.songCard[0].artist_a}</strong>
+                    onClick={(event) => props.handleArtist(event, props.version.artist_a_id)}>
+                    <strong>{props.version.artist_a}</strong>
                   </button>
                   <strong> & </strong> 
                   <button 
-                    onClick={(event) => props.handleTableLink(event, props.songCard[0].artist_b)}>
-                    <strong>{props.songCard[0].artist_b}</strong>
+                    onClick={(event) => props.handleArtist(event, props.version.artist_b_id)}>
+                    <strong>{props.version.artist_b}</strong>
                   </button>
-                  <br /> 
-                  { props.songCard[0].composer === "Various"
-                  ? <span style={{ color: "white", fontSize: "smaller" }}><i><br />{medley(props.songCard[0].title)}</i></span>
-                  : <span style={{ color: "white", fontSize: "smaller" }}>({composerSplit(props.songCard[0].composer)})</span>}
+                  <span>&nbsp;&nbsp;
+                  {personalTags.map((tag: any) => {
+                    if (tag.type_id === 12) {
+                      return (
+                        <span key={tag.tag_id} className="splitTagWrapper">
+                          <button className="crossoverLeft"
+                              onClick={(event) => props.handleFourTag(event, tag.type_id)}><strong><i>Crossover</i></strong></button>
+                          <button className="crossoverRight"
+                              onClick={(event) => props.handleTag(event, tag.tag_id)}><strong><i>{tag.tag}</i></strong>
+                          </button>
+                        </span>
+                    )} else { 
+                      return (
+                        <button 
+                          key={tag.tag_id}
+                          className="crossoverTags"
+                          onClick={(event) => props.handleTag(event, tag.tag_id)}><strong><i>{tag.tag}</i></strong>
+                        </button>
+                    )}    
+                  })}
+                  </span>
+                  <br />
+                  <button
+                    onClick={(event) => props.handleSong(event, props.version.song_id)}>
+                    <i style={{ color: "white", fontSize: "x-large"}}>{props.version.title}&nbsp;&nbsp;</i>
+                  </button>
+                  {adaptations.length > 0 ?
+                  
+                  <span style={{ fontSize: "smaller"}}><br />incl. {adaptations.map((ad: { song_id: number; title: string; }) => {
+                    if (ad === adaptations[adaptations.length -1]) {
+                      return (
+                      <span style={{ color: "#acacac", display: "inline-block"}}
+                      key={ad.song_id}
+                      >{ad.title}</span>
+                    )} else {
+                      return (
+                      <span style={{ color: "#acacac", display: "inline-block"}}
+                      key={ad.song_id}
+                      >{ad.title},&nbsp;</span>
+                    )}
+                  })}</span>
+                  : <span style={{ color: "white", fontSize: "smaller", display: "inline-block"}}>(
+                  {composers.map((composer: { a_id: number; id: number; artist: string; }) => {
+                    if (composer === composers[composers.length - 1]) {
+                    return (
+                    <button 
+                      key={composer.a_id}
+                      className="composerTag"
+                      onClick={(event) => props.handleComposers(event, composer.a_id)}>{composer.artist}</button>
+                  )} else {
+                    return (
+                    <button 
+                      key={composer.a_id}
+                      className="composerTag"
+                      onClick={(event) => props.handleComposers(event, composer.a_id)}>{composer.artist},&nbsp;</button>
+                    )
+                  };
+                  })})</span>}
+                  <br />
+                  <button
+                  style={{ color: "white" }} 
+                    onClick={(event) => props.handleYear(event, props.version.year)}>
+                    <i>{props.version.year}</i>
+                  </button>
+                  <br />
                 </div>
                 <br />
                 <div className="scRelease">
-                   {Object.entries(props.songCard[0]).slice(6, 13).map(tag  => {
-                     if (tag[1] !== "") {
-                     return (
-                   <button 
-                     className="releaseTags" 
-                     id={tag[0]} 
-                     key={tag[0]}
-                     onClick={(event) => props.handleTag(event, tag)}>
-                     <strong><i>{props.seeSongTags && tag[1]}</i></strong>
-                     </button>
-                     )} else { return null }
-                   })}
+                  {releaseTags.map((tag: any) => {
+                    if (tag.type_id === 32) {
+                      return (
+                        <span key={tag.tag_id} className="splitTagWrapper">
+                          <button className="releaseLeft"
+                              onClick={(event) => props.handleFourTag(event, tag.type_id)}><strong><i>Duo LP</i></strong></button>
+                          <button className="releaseRight"
+                              onClick={(event) => props.handleTag(event, tag.tag_id)}><strong><i>{tag.tag}</i></strong>
+                          </button>
+                        </span>
+                    )} else if (tag.type_id === 54) { 
+                      return (
+                        <span key={tag.tag_id} className="splitTagWrapper">
+                          <button className="releaseLeft"
+                              onClick={(event) => props.handleFourTag(event, tag.type_id)}><strong><i>Soundtrack</i></strong></button>
+                          <button className="releaseRight"
+                              onClick={(event) => props.handleTag(event, tag.tag_id)}><strong><i>{tag.tag}</i></strong>
+                          </button>
+                        </span>
+                    )} else if (tag.type_id === 62) { 
+                      return (
+                        <span key={tag.tag_id} className="splitTagWrapper">
+                          <button className="releaseLeft"
+                              onClick={(event) => props.handleFourTag(event, tag.type_id)}><strong><i>Various artists LP</i></strong></button>
+                          <button className="releaseRight"
+                              onClick={(event) => props.handleTag(event, tag.tag_id)}><strong><i>{tag.tag}</i></strong>
+                          </button>
+                        </span>
+                    )} else if (tag.type_id === 63) { 
+                      return (
+                        <span key={tag.tag_id} className="splitTagWrapper">
+                          <button className="releaseLeft"
+                              onClick={(event) => props.handleFourTag(event, tag.type_id)}><strong><i>Duets LP</i></strong></button>
+                          <button className="releaseRight"
+                              onClick={(event) => props.handleTag(event, tag.tag_id)}><strong><i>{tag.tag}</i></strong>
+                          </button>
+                        </span>
+                    )} else if (tag.type_id === 26) { 
+                      return (
+                        <span key={tag.tag_id} className="splitTagWrapper">
+                          <button className="releaseLeft"
+                              onClick={(event) => props.handleFourTag(event, tag.type_id)}><strong><i>Compilation</i></strong></button>
+                          <button className="releaseRight"
+                              onClick={(event) => props.handleTag(event, tag.tag_id)}><strong><i>{tag.tag}</i></strong>
+                          </button>
+                        </span>
+                    )} else { 
+                      return (
+                        <button 
+                          key={tag.tag_id}
+                          className="releaseTags"
+                          onClick={(event) => props.handleTag(event, tag.tag_id)}><strong><i>{tag.tag}</i></strong>
+                        </button>
+                    )}    
+                  })}
                 </div>
                 <div className="scSong">
-                   {Object.entries(props.songCard[0]).slice(13, 20).map(tag  => {
-                     if (tag[1] !== "" && tag[0] !== "Cause") {
-                     return (
-                       <button 
-                         className="songTags" 
-                         id={tag[0]} 
-                         key={tag[0]}
-                         onClick={(event) => props.handleTag(event, tag)}>
-                       <strong><i>{props.seeSongTags && tag[1]}</i></strong>
-                       </button>
-                     )} else if (tag[1] !== "" && tag[0] === "Cause") {
-                     return (
-                       <button 
-                         className="songTags" 
-                         id={tag[0]} 
-                         key={tag[0]}
-                         onClick={(event) => props.handleTag(event, tag)}>
-                         <strong><i>{props.seeSongTags && tag[0]}</i></strong>
-                       </button>    
-                      )} else { return null }
-                   })}
+                  {styleTags.map((tag: any) => {
+                    if (tag.type_id === 3) {
+                      return (
+                      <button 
+                          key={tag.tag_id}
+                          className="genreTags"
+                          onClick={(event) => props.handleTag(event, tag.tag_id)}><strong><i>{tag.tag}</i></strong>
+                        </button>
+                    )} else if (tag.type_id === 7) {
+                      return (
+                      <button 
+                          key={tag.tag_id}
+                          className="songFormTags"
+                          onClick={(event) => props.handleTag(event, tag.tag_id)}><strong><i>{tag.tag}</i></strong>
+                        </button>
+                    )
+                    } else if (tag.type_id === 8) {
+                      return (
+                      <button 
+                          key={tag.tag_id}
+                          className="subjectTags"
+                          onClick={(event) => props.handleTag(event, tag.tag_id)}><strong><i>{tag.tag}</i></strong>
+                        </button>
+                    )
+                    } else if (tag.type_id === 9) {
+                      return (
+                      <button 
+                          key={tag.tag_id}
+                          className="approachTags"
+                          onClick={(event) => props.handleTag(event, tag.tag_id)}><strong><i>{tag.tag}</i></strong>
+                        </button>
+                    )
+                    } else if ((tag.type_id === 10) || (tag.tag_id === 7)) {
+                      return (
+                      <button 
+                          key={tag.tag_id}
+                          className="dynamicTags"
+                          onClick={(event) => props.handleTag(event, tag.tag_id)}><strong><i>{tag.tag}</i></strong>
+                        </button>
+                    )
+                    }                    
+                  })}
                 </div>
                 <div className="scSpecial">
-                   {Object.entries(props.songCard[0]).slice(20, 23).map(tag  => {
-                     if (tag[1] !== "") {
-                     return (
-                   <button 
-                     className="specialTags" 
-                     id={tag[0]} 
-                     key={tag[0]}
-                     onClick={(event) => props.handleTag(event, tag)}>
-                     <strong><i>{props.seeSongTags && tag[1]}</i></strong>
-                     </button>
-                     )} else { return null }
-                   })}
+                  {specialTags.map((tag: any) => {
+                    if (tag.type_id === 67) {
+                      return (
+                        <span key={tag.tag_id} className="splitTagWrapper">
+                          <button className="specialLeft"
+                              onClick={(event) => props.handleFourTag(event, tag.type_id)}><strong><i>Cause</i></strong></button>
+                          <button className="specialRight"
+                              onClick={(event) => props.handleTag(event, tag.tag_id)}><strong><i>{tag.tag}</i></strong>
+                          </button>
+                        </span>
+                    )} else { 
+                      return (
+                        <button 
+                          key={tag.tag_id}
+                          className="specialTags"
+                          onClick={(event) => props.handleTag(event, tag.tag_id)}><strong><i>{tag.tag}</i></strong>
+                        </button>
+                    )}    
+                  })}
                 </div>
-              </div>
-              <div className="scPerformance">
-                 {Object.entries(props.songCard[0]).slice(23, 26).map(tag  => {
-                   if (tag[1] !== "") {
-                   return (
-                 <button 
-                   className="performanceTags"
-                   id={tag[0]} 
-                   key={tag[0]}
-                   onClick={(event) => props.handleTag(event, tag)}>
-                   <strong><i>{props.seeSongTags && tag[1]}</i></strong>
-                   </button>
-                   )} else { return null }
-                 })}
               </div>
             </div>
         </div>
     );
+
+    console.log(styleTags)
+
+  useEffect(() => {
+    props.handleMediaSelect(event, performances[performances.length - 1].link, performances[performances.length - 1].id)
+  }, [performances])
     
     return (
         <>

@@ -1,218 +1,138 @@
 'use client'
 import React, { useEffect, useState, useRef } from "react";
+import versionObject from "./versionObject.json";
 import selectorObjects from "./selectorObjects.json";
-import Fuse from "fuse.js";
-import records from './records.json';
 import Logo from './logo'
 import Welcome from "./welcome";
 import Search from "./search";
-// import Navbar from "./navbar";
 import Selector from "./selector";
 import Information from "./information";
-import data from "./data.json";
-import Table from "./table";
 import SongCard from "./songCard";
 import Podcast from "./podcast";
 import episodes from "./episodes.json";
-/* import { fetchSongs } from "./actions"; */
-// import { DisplayGraph } from "./sigStarChart2";
-
+import { versions, composers, adaptations, personalTags, releaseTags, releaseFourColTags, releaseFourColTagsYear, threeColTags, fourColTags, perfThreeColTags, perfFourColTags, songCredits, styleTags, specialTags, performances, performanceTags, composerCredits, artistCreditsA, artistCreditsB, getArtist, yearCredits } from "./actions";
+import ArtistTable from "./artistTable";
+import ComposerTable from "./composerTable";
+import YearTable from "./yearTable";
+import SongTable from "./songTable";
+import ThreeColumnTable from "./threeColumnTable";
+import FourColumnTable from "./fourColumnTable";
+import PerfThreeColumnTable from "./perfThreeTable";
+import PerfFourColumnTable from "./perfFourTable";
+import ReleaseFourColumnTable from "./releaseFourColumnTable";
 
 export default function Home() {
 
-  const [starChartData, setStarChartData] = useState<{}>({nodes:[], edges:[]});
-  const [query, setQuery] = useState("");
-  const [selections, setSelections] = useState(selectorObjects);
-  const [tableData, setTableData] = useState<{}>({title: "", list: [], column: ""});
+  const [selections, setSelections] = useState<any>(selectorObjects);
   const [swap, setSwap] = useState<boolean>();
-  const [artistAOptions, setArtistAOptions] = useState<any>();
-  const [artistBOptions, setArtistBOptions] = useState<any>();
-  // const [seeMenu, setSeeMenu] = useState(true)
-  const [seeSearch, setSeeSearch] = useState(true);
   const [seePodcastDetails, setSeePodcastDetails] = useState(false)
   const [seeIntroduction, setSeeIntroduction] = useState(true);
   const [seeInstructions, setSeeInstructions] = useState(false);
   const [seeCongratulations, setSeeCongratulations] = useState(false);
   const [seeNiceTry, setSeeNiceTry] = useState(false);
   const [seeSongCard, setSeeSongCard] = useState(false);
-  const [songCard, setSongCard] = useState<{}>();
   const [mediaSelect, setMediaSelect] = useState<string>();
   const [episode, setEpisode] = useState<{}>();
-  const [seeTable, setSeeTable] = useState(false);
   const [seePodcast, setSeePodcast] = useState(true);
-  const [seeSongTags, setSeeSongTags] = useState(false);
   const [seeApp, setSeeApp] = useState(false);
   const [seeLogo, setSeeLogo] = useState(true);
-  /* const [fetched, setFetched] = useState<any>([]); */
-
-  const fuse = new Fuse( records, {
-    keys: [
-      "title",
-      "artist_a",
-      "artist_b"
-    ]
-  });
+  const [seeSearch, setSeeSearch] = useState(true);
+  const [query, setQuery] = useState("");
+  const [version, setVersion] = useState<any>([versionObject]);
+  const [versionPromise, setVersionPromise] = useState<any>([]);
+  const [composerPromise, setComposerPromise] = useState<any>([]);
+  const [personalTagPromise, setPersonalTagPromise] = useState<any>([]);
+  const [releaseTagPromise, setReleaseTagPromise] = useState<any>([]);
+  const [styleTagPromise, setStyleTagPromise] = useState<any>([]);
+  const [specialTagPromise, setSpecialTagPromise] = useState<any>([]);
+  const [performanceTagPromise, setPerformanceTagPromise] = useState<any>([]);
+  const [performancePromise, setPerformancePromise] = useState<any>([]);
+  const [mediaSwitch, setMediaSwitch] = useState(0);
+  const [seeSelector, setSeeSelector] = useState(false);
+  const [seeArtistTable, setSeeArtistTable] = useState(false);
+  const [artistCreditPromiseA, setArtistCreditPromiseA] = useState<any>([]);
+  const [artistCreditPromiseB, setArtistCreditPromiseB] = useState<any>([]); 
+  const [tableArtistPromise, setTableArtistPromise] = useState<any>([]);
+  const [seeComposerTable, setSeeComposerTable] = useState(false);
+  const [composerCreditPromise, setComposerCreditPromise] = useState<any>([]);
+  const [adaptationPromise, setAdaptationPromise] = useState<any>([]);
+  const [seeYearTable, setSeeYearTable] = useState(false);
+  const [yearCreditPromise, setYearCreditPromise] = useState<any>([]);
+  const [seeSongTable, setSeeSongTable] = useState(false);
+  const [songCreditPromise, setSongCreditPromise] = useState<any>([]);
+  const [seeThreeColTable, setSeeThreeColTable] = useState(false);
+  const [threeColTagPromise, setThreeColTagPromise] = useState<any>([]);
+  const [seeFourColTable, setSeeFourColTable] = useState(false);
+  const [fourColTagPromise, setFourColTagPromise] = useState<any>([]);
+  const [seePerfThreeColTable, setSeePerfThreeColTable] = useState(false);
+  const [perfThreeColTagPromise, setPerfThreeColTagPromise] = useState<any>([]);
+  const [seePerfFourColTable, setSeePerfFourColTable] = useState(false);
+  const [perfFourColTagPromise, setPerfFourColTagPromise] = useState<any>([]);
+  const [seeReleaseFourColTable, setSeeReleaseFourColTable] = useState(false);
+  const [releaseFourColTagPromise, setReleaseFourColTagPromise] = useState<any>([]);
+  const [releaseYearFourTagPromise, setReleaseYearFourTagPromise] = useState<any>([]);
   
-  const results = fuse.search(query);
-  const searchResults = results.map(result => result.item);
 
   const tableRef = useRef<HTMLDivElement>(null);
   const songCardRef = useRef<HTMLDivElement>(null);
 
+  
   const handleOnSearch = (event: any) => {
     const {value} = event.target;
     setQuery(value);
     setSeeSearch(true);
   };
-  
-  function selectionGenerator(id: number) {
-      const selection: any = records.find(record => record.id === id);
-      return selection
-  };
 
-  function optionGeneratorArtistA(id: number) {
-      const selection: any = selectionGenerator(id);
-      const artistAMatches = records.filter(record => record.artist_a === selection.artist_a || record.artist_b ===  selection.artist_a);
-      const artistAMatchesMinusSelection = artistAMatches.filter(match => match.id !== id);
-      const preSelected = selections.map(select => select.selected);
-      const preDuo = records.filter(record => record.artist_a  === selection.artist_a && record.artist_b === selection.artist_b || record.artist_a  === selection.artist_b && record.artist_b === selection.artist_a);
-      const avoid = preSelected.concat(preDuo);
-      const finalMatches = artistAMatchesMinusSelection.filter(match => {
-          return !avoid.includes(match);
-         });
-      return finalMatches
-  };
+  function optionGenerator(id: number) {
 
-  function optionGeneratorArtistB(id: number) {
-    const selection: any = selectionGenerator(id);
-    const artistBMatches = records.filter(record => record.artist_a === selection.artist_b || record.artist_b ===  selection.artist_b);
-    const artistBMatchesMinusSelection = artistBMatches.filter(match => match.id !== id);
-    const preSelected = selections.map(select => select.selected);
-    const preDuo = records.filter(record => record.artist_a  === selection.artist_a && record.artist_b === selection.artist_b || record.artist_a  === selection.artist_b && record.artist_b === selection.artist_a);
-    const avoid = preSelected.concat(preDuo);
-    const finalMatches = artistBMatchesMinusSelection.filter(match => {
-        return !avoid.includes(match);
-       });
-    return finalMatches
-  };
-
-  function optionGenerator(id: number, boxId: number) {
-     
-     const artist = whichArtistOptions(id, boxId);
-     const artistBMatches = records.filter(record => record.artist_a === artist || record.artist_b === artist);
-     const artistBMatchesMinusSelection = artistBMatches.filter(match => match.id !== id);
-     const preSelected = selections.map(select => select.selected);
-     const selection = selectionGenerator(id);
-     const preDuo = records.filter(record => record.artist_a  === selection.artist_a && record.artist_b === selection.artist_b || record.artist_a  === selection.artist_b && record.artist_b === selection.artist_a);
-      const avoid = preSelected.concat(preDuo);
-      const finalMatches = artistBMatchesMinusSelection.filter(match => {
-          return !avoid.includes(match);
-         });
-      return finalMatches    
-  };
-  
-  function whichArtistOptions(id: number, boxId: number) {
-      const selection: any = selectionGenerator(id); 
-      let artist = "";
-      if (boxId === 2) 
-        if (selection.artist_a === selections[0].artistB) {
-          return artist = selection.artist_b;
-        } else {
-        return artist = selection.artist_a;
-      } else if (selection.artist_a === selections[boxId - 2].artistB) {
-        return artist = selection.artist_b;
-      } else {
-      return artist = selection.artist_a;
-      }
-  };
-  
-  function whichArtistA(id: number, boxId: number) {
-    const selection: any = selectionGenerator(id);
-      if (selections[boxId - 2].artistB === selection.artist_a) {
-          return selection.artist_a;
-        } else {
-          return selection.artist_b;
-  }};
-
-  function whichArtistB(id: number, boxId: number) {
-    const selection: any = selectionGenerator(id);
-      if (selections[boxId - 2].artistB === selection.artist_a) {
-          return selection.artist_b;
-        } else {
-          return selection.artist_a;
-  }};
-  
-  function chartDataGenerator() {
-  
-    const optionLists = selections.map(selection => {
-    return selection.options;
-  });
-  const allOptions: any = optionLists[1].concat(optionLists[2], optionLists[3], optionLists[4], optionLists[5], optionLists[6], optionLists[7], optionLists[8], optionLists[9], optionLists[10], optionLists[11], optionLists[12], optionLists[13]);
-  const artistAList = allOptions.map((option: { artist_a: any; }) => {
-    return option.artist_a
-  });
-  const artistBList = allOptions.map((option: { artist_b: any; }) => {
-    return option.artist_b
-  });
-  const allArtists = [selections[0].artistA].concat([selections[0].artistB], artistAList, artistBList);
-  const uniqueArtists = Array.from(new Set(allArtists));  
- 
-  const nodes = data.nodes.filter(node => {
-    return uniqueArtists.includes(node.label);
-  });
-
-    // set edges
-    const nodeIds = nodes.map(node => {
-      return node.id;
-    });
+    const creditPromiseA = (artistCreditsA(id));
+    const creditPromiseB = (artistCreditsB(id));
     
-    const linkList = data.edges.filter(edge => {
-      return nodeIds.includes(edge.source) || nodeIds.includes(edge.target);
-    });
-     
-    const unwantedLinks = linkList.filter(link => {
-      return !nodeIds.includes(link.source) || !nodeIds.includes(link.target);
-     });
-  
-    const edges = linkList.filter(link => {
-      return !unwantedLinks.includes(link);
-    });
-  
-    return {nodes, edges}
+    return [creditPromiseA, creditPromiseB]
   };
   
-  function handleOptionChange(event: any, id: number, boxId: number) {
+  function whichArtistA(boxId: number, option: any) {
+    
+      if (selections[boxId - 2].artistB.id === option.artist_a_id) {
+          return { "id": option.artist_a_id, "artist": option.artist_a }
+        } else {
+          return { "id": option.artist_b_id, "artist": option.artist_b };
+  }};
 
-    const selection: any = selectionGenerator(id); 
-    const artistA: string = selection.artist_a;
-    const artistB: string = selection.artist_b;
-    const matches: any = selections.filter(selector => selector.boxId != boxId-1).filter(selector => selector.artistA === artistA || selector.artistB === artistB || selector.artistA === artistB || selector.artistB === artistA);
+  function whichArtistB(boxId: number, option: any) {
+    
+      if (selections[boxId - 2].artistB.id === option.artist_a_id) {
+          return { "id": option.artist_b_id, "artist": option.artist_b }
+        } else {
+          return { "id": option.artist_a_id, "artist": option.artist_a };
+  }};
+
+  function handleOptionChange(event: any, option: any, boxId: number) {
+
+    const matches: any = selections.filter((selector: { boxId: number; }) => selector.boxId !== boxId -1).filter((selector: { artistA: { id: any; }; artistB: { id: any; }; }) => selector.artistA.id === option.artist_a_id || selector.artistB.id === option.artist_b_id || selector.artistA.id === option.artist_b_id || selector.artistB.id === option.artist_a_id);
     const artistMatch: any = matches.length > 1 ? matches[1] : matches[0]
     
-    
-
-    const newSelections: any = selections.map(selector => {
+    const newSelections: any = selections.map((selector: { boxId: number; }) => {
       if (artistMatch == null)
          if (selector.boxId === boxId) {
-            return {...selector, isBold: true, isSelected: true, selected: selectionGenerator(id), isOptions: false, artistA: whichArtistA(id, boxId), artistB: whichArtistB(id, boxId)}
+            return {...selector, isBold: true, isSelected: true, selected: option, isOptions: false, artistA: whichArtistA(boxId, option), artistB: whichArtistB(boxId, option)}
          } else if (selector.boxId === boxId + 1) {
-            return {...selector, isBold: true, isSelected: false, selected: {}, isOptions: true, options: optionGenerator(id, boxId), artistA: "", artistB: ""};
+            return {...selector, isBold: true, isSelected: false, selected: {}, isOptions: true, options: optionGenerator(whichArtistB(boxId, option).id), artistA: {}, artistB: {}};
          } else if (selector.boxId > boxId + 1) {
-            return {...selector, isBold: true, isSelected: false, selected: {}, isOptions: false, options: [], artistA: "", artistB: ""};
+            return {...selector, isBold: true, isSelected: false, selected: {}, isOptions: false, options: {}, artistA: {}, artistB: {}};
          } else {
          return selector;   
            
       } else {
          if (selector.boxId === boxId) {
-          return {...selector, isBold: true, isSelected: true, selected: selectionGenerator(id), isOptions: false, artistA: whichArtistA(id, boxId), artistB: whichArtistB(id, boxId)};
+          return {...selector, isBold: true, isSelected: true, selected: option, isOptions: false, artistA: whichArtistA(boxId, option), artistB: whichArtistB(boxId, option)};
          } else if (selector.boxId > boxId || selector.boxId < artistMatch.boxId) {
-          return {...selector, isBold: false, options: [], artistA: "", artistB: ""};
+          return {...selector, isBold: false, options: {}};
         } else {
         return {...selector, isBold: true};
         }    
   }});
     setSelections(newSelections);
-    
 
     if (artistMatch != null) {
       if (boxId > artistMatch.boxId + 5) {
@@ -225,12 +145,12 @@ export default function Home() {
 
   function handleRevertToOptions(event: any, boxId: number) {
   
-   const newSelections = selections.map(selector => {
+   const newSelections = selections.map((selector: { boxId: number; }) => {
       
     if (selector.boxId === boxId && selector.boxId !== 1) {
-      return {...selector, isBold: true, isSelected: false, selected: {}, isOptions: true, artistA: "", artistB: "", seeDetails: false};
+      return {...selector, isBold: true, isSelected: false, selected: {}, isOptions: true, options: optionGenerator(selections[boxId - 2].artistB.id), artistA: {}, artistB: {}};
     } else if (selector.boxId > boxId && selector.boxId !==2) {
-      return {...selector, isBold: true, isSelected: false, selected: {}, isOptions: false, options: [], artistA: "", artistB: "", seeDetails: false};
+      return {...selector, isBold: true, isSelected: false, selected: {}, isOptions: false, options: {}, artistA: {}, artistB: {}};
     }
     return {...selector, isBold: true};
    }   
@@ -240,101 +160,190 @@ export default function Home() {
   setSeeNiceTry(false);
   };
 
-  function handleSongDetails(event: any, boxId: number) {
-
-    const newSelections: any = selections.map(selector => {
-      if (selector.boxId === boxId) {
-        return {...selector, isSelected: false, isOptions: false, seeDetails: true}
-      }
-      return selector;
-    });
-    setSelections(newSelections);
-    setSeeSongTags(true);
-  };
-
-  function handleTag(event: any, tag: any) {
+  function handlePerfThreeTag(event: any, id: number) {
     
-    const column: string = tag[0]
-    let tagList = [];
-    let tagTitle = "";
-    tag[0] === "Cause" ? 
-      (tagList = records.filter(record => record.Cause !== ""), tagTitle = tag[0])
-    : (tagList = records.filter(record => record[column as keyof typeof record] === tag[1]), tagTitle = tag[1]);
-    
-    setTableData({title: tagTitle, list: tagList, column: column});
-    setSeeTable(true);
-    if (tableRef.current != null) {
-      tableRef.current.scrollIntoView({ behavior: "smooth" });
-    }; 
-  };
-
+    setPerfThreeColTagPromise(perfThreeColTags(id))
   
-  function handleTableLink(event: any, name: any) {
-    
-    const tagList = records.filter(record => 
-      record.artist_a === name 
-      || record.artist_b ===  name 
-      || record.year ===  name
-      || record.Cause ===  name
-      || record.programme_title ===  name
-      || record.soundtrack_title ===  name
-      || record.album_title ===  name
-    );
-    
-    setTableData({title: name, list: tagList});
-    setSeeTable(true);
+    setSeePerfThreeColTable(true);
+    setSeeThreeColTable(false);
+    setSeeSongTable(false);
+    setSeeArtistTable(false);
+    setSeeYearTable(false);
+    setSeeComposerTable(false);
+    setSeePerfFourColTable(false);
+    setSeeFourColTable(false);
+    setSeeReleaseFourColTable(false);
+
     if (tableRef.current != null) {
       tableRef.current.scrollIntoView({ behavior: "smooth" });
     }; 
   };
 
-  function handleComposers(event: any, composers: string) {
-    
-    const tagList = records.filter(record => 
-      record.composer.includes(composers)
-    );
+  function handlePerfFourTag(event: any, id: number) {
 
-    // const tagList = composerMatch.filter(match =>
-    //   match.composer.length === composers.length
-    // );
+    setPerfFourColTagPromise(perfFourColTags(id))
     
-    setTableData({title: "Written by " + composers, list: tagList, column: "composer"});
-    setSeeTable(true);
+    setSeePerfFourColTable(true)
+    setSeeThreeColTable(false);
+    setSeeSongTable(false);
+    setSeeArtistTable(false);
+    setSeeYearTable(false);
+    setSeeComposerTable(false);
+    setSeePerfThreeColTable(false);
+    setSeeFourColTable(false);
+    setSeeReleaseFourColTable(false);
+
     if (tableRef.current != null) {
       tableRef.current.scrollIntoView({ behavior: "smooth" });
     }; 
-  }
+  };
 
-  function handleSongCard(event: any, id: number) {
-    
-    const newSongCard = records.filter(record => record.id === id);
+  function handleReleaseFourTag(event: any, id: number) {
 
-    const otherVersions = records.filter(record => record.title === newSongCard[0].title)
-    otherVersions.length > 1 ? (setTableData({title: newSongCard[0].title, list: otherVersions}), setSeeTable(true))
-    : null;
+    setReleaseFourColTagPromise(releaseFourColTags(id));
+    setReleaseYearFourTagPromise(releaseFourColTagsYear(id))
     
-    const newMediaSelect = (
-    newSongCard[0].Performance ? 
-    newSongCard[0].Performance.replace(/(?:http:\/\/)?(?:www\.)?(?:youtube\.com|youtu\.be)\/(?:watch\?)?(?:.+)v=(.+)/g, 'https://www.youtube.com/embed/$1').slice(8)
-    : newSongCard[0].Promo ? 
-      newSongCard[0].Promo.replace(/(?:http:\/\/)?(?:www\.)?(?:youtube\.com|youtu\.be)\/(?:watch\?)?(?:.+)v=(.+)/g, 'https://www.youtube.com/embed/$1').slice(8)
-      : newSongCard[0].Audio.replace(/(?:http:\/\/)?(?:www\.)?(?:youtube\.com|youtu\.be)\/(?:watch\?)?(?:.+)v=(.+)/g, 'https://www.youtube.com/embed/$1').slice(8)
-    );
+    setSeeReleaseFourColTable(true);
+    setSeePerfFourColTable(false);
+    setSeeThreeColTable(false);
+    setSeeSongTable(false);
+    setSeeArtistTable(false);
+    setSeeYearTable(false);
+    setSeeComposerTable(false);
+    setSeePerfThreeColTable(false);
+    setSeeFourColTable(false);
+
+    if (tableRef.current != null) {
+      tableRef.current.scrollIntoView({ behavior: "smooth" });
+    }; 
+  }; 
+
+  function handleFourTag(event: any, id: number) {
     
-    setSongCard(newSongCard);
-    setSeePodcast(false);
-    setSeeSongCard(true);
-    setSeeSongTags(true);
-    setMediaSelect(newMediaSelect);
-    if (songCardRef.current != null) {
-      songCardRef.current.scrollIntoView({ behavior: "smooth" });
+    setFourColTagPromise(fourColTags(id))
+
+    setSeeFourColTable(true);
+    setSeePerfFourColTable(false);
+    setSeeThreeColTable(false);
+    setSeeSongTable(false);
+    setSeeArtistTable(false);
+    setSeeYearTable(false);
+    setSeeComposerTable(false);
+    setSeePerfThreeColTable(false);
+    setSeeReleaseFourColTable(false);
+
+    if (tableRef.current != null) {
+      tableRef.current.scrollIntoView({ behavior: "smooth" });
+    }; 
+  };
+
+  function handleTag(event: any, id: number) {
+    
+    setThreeColTagPromise(threeColTags(id))
+    
+    setSeeThreeColTable(true);
+    setSeeSongTable(false);
+    setSeeArtistTable(false);
+    setSeeYearTable(false);
+    setSeeComposerTable(false);
+    setSeePerfThreeColTable(false);
+    setSeePerfFourColTable(false);
+    setSeeFourColTable(false);
+    setSeeReleaseFourColTable(false);
+
+    if (tableRef.current != null) {
+      tableRef.current.scrollIntoView({ behavior: "smooth" });
+    }; 
+  };
+
+  function handleSong(event: any, id: number) {
+    
+    setSongCreditPromise(songCredits(id))
+
+    setSeeSongTable(true);
+    setSeeArtistTable(false);
+    setSeeYearTable(false);
+    setSeeComposerTable(false);
+    setSeeThreeColTable(false);
+    setSeePerfThreeColTable(false);
+    setSeePerfFourColTable(false);
+     setSeeFourColTable(false);
+     setSeeReleaseFourColTable(false);
+
+     if (tableRef.current != null) {
+      tableRef.current.scrollIntoView({ behavior: "smooth" });
+    }; 
+  };
+
+  function handleArtist(event: any, id: number) {
+    
+    setArtistCreditPromiseA(artistCreditsA(id));
+    setArtistCreditPromiseB(artistCreditsB(id));
+    setTableArtistPromise(getArtist(id));
+
+    setSeeArtistTable(true);
+    setSeeYearTable(false);
+    setSeeComposerTable(false);
+    setSeeSongTable(false);
+    setSeeThreeColTable(false);
+    setSeePerfThreeColTable(false);
+    setSeePerfFourColTable(false);
+     setSeeFourColTable(false);
+     setSeeReleaseFourColTable(false);
+
+    if (tableRef.current != null) {
+      tableRef.current.scrollIntoView({ behavior: "smooth" });
+    }; 
+  };
+
+  function handleComposers(event: any, id: number) {
+    
+    setComposerCreditPromise(composerCredits(id));
+
+    setSeeComposerTable(true);
+    setSeeArtistTable(false);
+    setSeeYearTable(false);
+    setSeeSongTable(false);
+    setSeeThreeColTable(false);
+    setSeePerfThreeColTable(false);
+    setSeePerfFourColTable(false);
+     setSeeFourColTable(false);
+     setSeeReleaseFourColTable(false);
+
+    if (tableRef.current != null) {
+      tableRef.current.scrollIntoView({ behavior: "smooth" });
+    }; 
+  };
+
+  function handleYear(event: any, year: any) {
+
+    setYearCreditPromise(yearCredits(year));
+    
+    setSeeYearTable(true);
+    setSeeArtistTable(false);
+    setSeeComposerTable(false);
+    setSeeSongTable(false);
+    setSeeThreeColTable(false);
+    setSeePerfThreeColTable(false);
+    setSeePerfFourColTable(false);
+     setSeeFourColTable(false);
+     setSeeReleaseFourColTable(false);
+
+    if (tableRef.current != null) {
+      tableRef.current.scrollIntoView({ behavior: "smooth" });
     }; 
   };
   
   function handleMediaSelect(event: any, link: string, id: number) {
 
+    setMediaSwitch(id)
+  
     const ep = episodes.filter(ep => ep.id === id)
     
+   /*  link.indexOf("embed") ?
+      (setMediaSelect(link), setEpisode(ep[0]))
+    : setMediaSelect(link.replace(/(?:http:\/\/)?(?:www\.)?(?:youtube\.com|youtu\.be)\/(?:watch\?)?(?:.+)v=(.+)/g, 'https://www.youtube.com/embed/$1').slice(8));
+ */
     if (link.includes("embed")) {
       return (setMediaSelect(link), setEpisode(ep[0]))
     } else {
@@ -342,70 +351,94 @@ export default function Home() {
     };
   };
 
-  function handleRevertToSelected(event: any, boxId: number) {
-
-    const newSelections: any = selections.map(selector => {
-      if (selector.boxId === boxId) {
-        return {...selector, isSelected: true, isOptions: false, seeDetails: false}
-      }
-      return selector;
-    });
-    setSelections(newSelections);
-
+  function handleSongChange(event: any, id: number, song_id: number, title: any, year: any, artist_a: any, artist_a_id: number, artist_b: any, artist_b_id: number ) {
+   
+     setVersion({... version,  "id": id,
+     "song_id": song_id,
+     "title": title,
+     "year": year,
+     "artist_a": artist_a,
+     "artist_a_id": artist_a_id,
+     "artist_b": artist_b,
+     "artist_b_id": artist_b_id
+     });
+  
+     setComposerPromise(composers(id));
+     setAdaptationPromise(adaptations(song_id));
+     setPersonalTagPromise(personalTags(id));
+     setReleaseTagPromise(releaseTags(id));
+     setStyleTagPromise(styleTags(id));
+     setSpecialTagPromise(specialTags(id));
+     setPerformancePromise(performances(id));
+     setPerformanceTagPromise(performanceTags(id));
   };
 
-  function handleSearchChange(event: any, id: number) {
+  function handleSearchChange(event: any, id: number, song_id: number, title: any, year: any, artist_a: any, artist_a_id: number, artist_b: any, artist_b_id: number ) {
   
-    const newSelections: any = selections.map((selector, i) => {
-      if (i === 0) {
-        return {...selector, isBold: true, isSelected: true, selected: selectionGenerator(id), artistA: selectionGenerator(id).artist_a, artistB: selectionGenerator(id).artist_b};
-      } else if (i === 1) {
-        return {...selector, isBold: true, isSelected: false, selected: {}, isOptions: true, options: optionGeneratorArtistB(id), artistA: "", artistB: ""};
-      }
-      return {...selector, isBold: true, isOptions: false, isSelected: false, options: [], selected: {}, artistA: "", artistB: ""} 
+    setVersion({... version,  "id": id,
+    "song_id": song_id,
+    "title": title,
+    "year": year,
+    "artist_a": artist_a,
+    "artist_a_id": artist_a_id,
+    "artist_b": artist_b,
+    "artist_b_id": artist_b_id
     });
+    
+    setAdaptationPromise(adaptations(song_id));
+    setComposerPromise(composers(id));
+    setPersonalTagPromise(personalTags(id));
+    setReleaseTagPromise(releaseTags(id));
+    setStyleTagPromise(styleTags(id));
+    setSpecialTagPromise(specialTags(id));
+    setPerformancePromise(performances(id));
+    setPerformanceTagPromise(performanceTags(id));
+    
+    
+    const newSelections: any = selections.map((selector: any, i: number) => {
+      if (i === 0) {
+        return {...selector, isBold: true, isSelected: true, selected: { 
+    "id": id,
+    "song_id": song_id,
+    "title": title,
+    "year": year,
+    "artist_a": artist_a,
+    "artist_a_id": artist_a_id,
+    "artist_b": artist_b,
+    "artist_b_id": artist_b_id
+    }, artistA: { "id": artist_a_id, "artist": artist_a }, artistB: { "id": artist_b_id, "artist": artist_b }};
+      } else if (i === 1) {
+        return {...selector, isBold: true, isSelected: false, selected: {}, isOptions: true, options: optionGenerator(artist_b_id), artistA: {}, artistB: {}};
+      }
+      return {...selector, isBold: true, isOptions: false, isSelected: false, options: {}, selected: {}, artistA: {}, artistB: {}} 
+    });
+
     setSelections(newSelections);
     setSeeInstructions(true);
-    setArtistAOptions(optionGeneratorArtistA(id));
-    setArtistBOptions(optionGeneratorArtistB(id));
     setQuery("")
+    setSeeSelector(true);
     setSeeCongratulations(false);
     setSeeNiceTry(false);
     setSeeIntroduction(false);
     setSeeSearch(false);
     setSwap(false);
-
-    const newSongCard = records.filter(record => record.id === id);
-
-    const otherVersions = records.filter(record => record.title === newSongCard[0].title)
-    otherVersions.length > 1 ? (setTableData({title: newSongCard[0].title, list: otherVersions}), setSeeTable(true))
-    : null;
-    
-    const newMediaSelect = (
-    newSongCard[0].Performance ? 
-    newSongCard[0].Performance.replace(/(?:http:\/\/)?(?:www\.)?(?:youtube\.com|youtu\.be)\/(?:watch\?)?(?:.+)v=(.+)/g, 'https://www.youtube.com/embed/$1').slice(8)
-    : newSongCard[0].Promo ? 
-      newSongCard[0].Promo.replace(/(?:http:\/\/)?(?:www\.)?(?:youtube\.com|youtu\.be)\/(?:watch\?)?(?:.+)v=(.+)/g, 'https://www.youtube.com/embed/$1').slice(8)
-      : newSongCard[0].Audio.replace(/(?:http:\/\/)?(?:www\.)?(?:youtube\.com|youtu\.be)\/(?:watch\?)?(?:.+)v=(.+)/g, 'https://www.youtube.com/embed/$1').slice(8)
-    );
-
-    setSongCard(newSongCard);
     setSeePodcast(false);
-    setSeeSongCard(true);
-    setSeeSongTags(true);
-    setMediaSelect(newMediaSelect);
-     
+    setSeeSongCard(true);     
   };
   
   function handleSwapArtist(event: any, boxId: number) {
-      
-    const newSelections = selections.map(selector => {
-      if (boxId === 1) {
+
+    if (seeCongratulations || seeNiceTry) {
+      setSeeCongratulations(false);
+      setSeeNiceTry(false);
+
+      const newSelections = selections.map((selector: { boxId: number; }) => {
+      if (selector.boxId === 1) {
         return {...selector, isBold: true, artistA: selections[0].artistB, artistB: selections[0].artistA};
-      } else if (boxId === 2) {
-        return {...selector, isBold: true, isSelected: false, selected: {}, isOptions: true, artistA: "", artistB: "", seeDetails: false};
+      } else if (selector.boxId === 2) {
+        return {...selector, isBold: true, isSelected: false, selected: {}, isOptions: true, options: optionGenerator(selections[0].artistA.id), artistA: {}, artistB: {}};
       } 
-      return {...selector, isBold: true, isSelected: false, selected: {}, isOptions: false, options: [], artistA: "", artistB: "", seeDetails: false};
+      return {...selector, isBold: true, isSelected: false, selected: {}, isOptions: false, options: {}, artistA: {}, artistB: {}};
     });
     setSelections(newSelections)
     setSwap(prevSwap => {
@@ -414,7 +447,23 @@ export default function Home() {
       } 
       return true;
     });
-    setStarChartData(chartDataGenerator())
+    } else {
+      
+    const newSelections = selections.map((selector: { boxId: number; }) => {
+      if (selector.boxId === 1) {
+        return {...selector, isBold: true, artistA: selections[0].artistB, artistB: selections[0].artistA};
+      } else if (selector.boxId === 2) {
+        return {...selector, isBold: true, isSelected: false, selected: {}, isOptions: true, options: optionGenerator(selections[0].artistA.id), artistA: {}, artistB: {}};
+      } 
+      return {...selector, isBold: true, isSelected: false, selected: {}, isOptions: false, options: {}, artistA: {}, artistB: {}};
+    });
+    setSelections(newSelections)
+    setSwap(prevSwap => {
+      if (prevSwap === true) {
+        return false;
+      } 
+      return true;
+    });}
   };
 
   function handlePodcastDetails(event: any) {
@@ -426,72 +475,7 @@ export default function Home() {
       return true;
     });
   };
-
-/*   useEffect(() => {
-
-  setFetched(fetchSongs())
   
-  }, []) */
-
-  useEffect(() => {
-    
-    swap === true && setSelections(prevSelections => {
-      return prevSelections.map(selection => {
-        if (selection.boxId === 2) {
-          return {...selection, isSelected: false, selected: {}, isOptions: true, options: artistAOptions, artistA: "", artistB: "", seeDetails: false};
-        } else if (selection.boxId > 2) {
-          return {...selection, isSelected: false, selected: {}, isOptions: false, options: [], artistA: "", artistB: "", seeDetails: false};
-        } else {
-        return selection  
-        }
-      }
-      )}
-      );
-      
-    swap === false && setSelections(prevSelections => {
-        return prevSelections.map(selection => {
-          if (selection.boxId === 2) {
-            return {...selection, isSelected: false, selected: {}, isOptions: true, options: artistBOptions, artistA: "", artistB: "", seeDetails: false};
-          } else if (selection.boxId > 2) {
-            return {...selection, isSelected: false, selected: {}, isOptions: false, options: [], artistA: "", artistB: "", seeDetails: false};
-          } else {
-          return selection  
-          }
-        }
-        )}
-        );
-    setSeeCongratulations(false);
-    setSeeNiceTry(false);
-  }, [swap, artistAOptions, artistBOptions]);
-
-  
-  useEffect(() => {
-   
-    seeNiceTry && setSelections(prevSelections => {
-      return prevSelections.map(selection => {
-        return {...selection, isOptions: false};
-        }
-      )}
-      );
-
-  }, [seeNiceTry]);
-
-
-  useEffect(() => {
-
-    seeCongratulations && setSelections(prevSelections => {
-      return prevSelections.map(selection => {
-        return {...selection, isOptions: false};
-        }
-      )}
-      );
-
-  }, [seeCongratulations]);
-
-/*   useEffect(() => {
-    setStarChartData(chartDataGenerator());
-  }, [selections]); */
-
   useEffect(() => {
     
     setTimeout(() => setSeeApp(true), 1500);
@@ -502,6 +486,33 @@ export default function Home() {
     handleMediaSelect(event, "https://www.youtube.com/embed/videoseries?si=JF7tEqEDOGLlWPk8&amp;list=PL3fAq4OrBzWB3F3fbxSZrywuUgHwBqsbl", 5)
   }, [])
 
+  useEffect(() => {
+  setVersionPromise(versions());
+  }, [])
+
+  useEffect(() => {
+   
+    seeNiceTry && setSelections((prevSelections: any[]) => {
+      return prevSelections.map(selection => {
+        return {...selection, isOptions: false};
+        }
+      )}
+      );
+
+  }, [seeNiceTry]);
+
+  useEffect(() => {
+
+    seeCongratulations && setSelections((prevSelections: any[]) => {
+      return prevSelections.map(selection => {
+        return {...selection, isOptions: false};
+        }
+      )}
+      );
+
+  }, [seeCongratulations]);
+
+
   return (
   
   <div>
@@ -510,25 +521,26 @@ export default function Home() {
   {seeApp && 
     <div className="app">
       <div className="sidebar"> 
-        
         <div className="search">
           <form id="search" >
             <label>
-              <input className="searchField" type="text" placeholder="Search artist or song" value={query} onChange={handleOnSearch}></input>
+              <input className="searchField" type="text" placeholder="Search artist or song" 
+                value={query} 
+                onChange={handleOnSearch}>
+              </input>
             </label>
             <br />
           </form>
         </div>
         {seeSearch && <div className="searchResults">
           <Search 
-          searchResults={searchResults}
+          versionPromise={versionPromise}
+          query={query}
           handleSearchChange={handleSearchChange}
-          handleSongCard={handleSongCard}
           />
         </div>}
         {seeIntroduction &&
         <Welcome 
-        /* fetched={fetched} */
         seePodcastDetails={seePodcastDetails}
         handlePodcastDetails={handlePodcastDetails}/>
         }
@@ -540,62 +552,114 @@ export default function Home() {
             See if you can get back to one of your original artists within six duets.
           </span>
         </div>}
+        {seeSelector && 
         <div>
           <Selector 
           selections={selections}
           handleSwapArtist={handleSwapArtist}
           handleOptionChange={handleOptionChange}
           handleRevertToOptions={handleRevertToOptions}
-          handleSongDetails={handleSongDetails}
-          handleRevertToSelected={handleRevertToSelected}
-          handleTag={handleTag}
-          handleTableLink={handleTableLink}
-          handleComposers={handleComposers}
-          handleSongCard={handleSongCard}
-          seeSongTags={seeSongTags}
+          handleSong={handleSong}
+          handleYear={handleYear}
+          handleSongChange={handleSongChange}
+          handleArtist={handleArtist}
           />
-        </div>
-        <div>
           <Information
           seeIntroduction={seeIntroduction}
           seeCongratulations={seeCongratulations}
           seeNiceTry={seeNiceTry}
-          
           />
-        </div>
+        </div>}
       </div>
       <div 
         className="main" 
         ref={songCardRef}>
-        {/* <Navbar /> */}
         {seePodcast && 
         <div>
           <Podcast 
           episode={episode}
           handleMediaSelect={handleMediaSelect}
-          mediaSelect={mediaSelect}/>
+          mediaSelect={mediaSelect}
+          mediaSwitch={mediaSwitch}/>
         </div>}
         {seeSongCard && 
         <div>
           <SongCard
-          selections={selections}
-          songCard={songCard}
+          version={version}
+          composerPromise={composerPromise}
+          adaptationPromise={adaptationPromise}
+          personalTagPromise={personalTagPromise}
+          releaseTagPromise={releaseTagPromise}
+          styleTagPromise={styleTagPromise}
+          specialTagPromise={specialTagPromise}
+          performanceTagPromise={performanceTagPromise}
+          performancePromise={performancePromise}
+          mediaSwitch={mediaSwitch}
           mediaSelect={mediaSelect}
-          handleMediaSelect={handleMediaSelect}
-          handleTag={handleTag}
-          seeSongTags={seeSongTags}
-          handleTableLink={handleTableLink}
+          handleArtist={handleArtist}
           handleComposers={handleComposers}
+          handleYear={handleYear}
+          handleSongChange={handleSongChange}
+          handleSong={handleSong}
+          handleTag={handleTag}
+          handleMediaSelect={handleMediaSelect}
+          handlePerfThreeTag={handlePerfThreeTag}
+          handlePerfFourTag={handlePerfFourTag}
+          handleFourTag={handleFourTag}
+          handleReleaseFourTag={handleReleaseFourTag}
           />
         </div>}
-        {/* {!seeIntroduction && <div className="sigmaContainer">
-          <DisplayGraph starChartData={starChartData}/>
-        </div>} */}
          <div ref={tableRef}>
-         {seeTable && <Table 
-          tableData={tableData}
-          handleSongCard={handleSongCard}
-          handleTableLink={handleTableLink}
+         {seeArtistTable && <ArtistTable 
+         artistCreditPromiseA={artistCreditPromiseA}
+         artistCreditPromiseB={artistCreditPromiseB}
+         tableArtistPromise={tableArtistPromise}
+         handleSongChange={handleSongChange}
+         handleYear={handleYear}
+         handleArtist={handleArtist}
+         />}
+         {seeComposerTable && <ComposerTable 
+         composerCreditPromise={composerCreditPromise}
+         handleSongChange={handleSongChange}
+         handleYear={handleYear}
+         />}
+         {seeYearTable && <YearTable 
+         yearCreditPromise={yearCreditPromise}
+         handleSongChange={handleSongChange}
+         />}
+         {seeSongTable && <SongTable
+         songCreditPromise={songCreditPromise}
+         handleSongChange={handleSongChange}
+         handleYear={handleYear}
+         />}
+         {seeThreeColTable && <ThreeColumnTable 
+         threeColTagPromise={threeColTagPromise}
+         handleSongChange={handleSongChange}
+         handleYear={handleYear}
+         />}
+         {seeFourColTable && <FourColumnTable 
+         fourColTagPromise={fourColTagPromise}
+         handleSongChange={handleSongChange}
+         handleYear={handleYear}
+         handleTag={handleTag}
+         />}
+         {seePerfThreeColTable && <PerfThreeColumnTable
+         perfThreeColTagPromise={perfThreeColTagPromise}
+         handleSongChange={handleSongChange}
+         handleYear={handleYear}
+         />}
+         {seePerfFourColTable && <PerfFourColumnTable 
+         perfFourColTagPromise={perfFourColTagPromise}
+         handleSongChange={handleSongChange}
+         handleYear={handleYear}
+         handlePerfThreeTag={handlePerfThreeTag}
+         />}
+         {seeReleaseFourColTable && <ReleaseFourColumnTable
+         releaseFourColTagPromise={releaseFourColTagPromise}
+         releaseYearFourTagPromise={releaseYearFourTagPromise}
+         handleSongChange={handleSongChange}
+         handleYear={handleYear}
+         handlePerfThreeTag={handlePerfThreeTag}
          />}
         </div>
       </div>

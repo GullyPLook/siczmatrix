@@ -96,6 +96,10 @@ h3 {
   padding: 0px 30px 30px;
 }
 
+button {
+  text-align: start;
+}
+
 .app {
   display: grid;
     grid-gap: 10px;
@@ -439,11 +443,12 @@ iframe {
 
 .mediaSwitches {
   grid-area: video;
-  display: flex;
+  display: flexbox;
+  padding: 5px;
   justify-content: space-between;
-  background-color: rgb(6, 14, 58);
-  border-radius: 16px;
-  margin-top: 15px;
+  background-color: rgb(26, 32, 66);
+  border-radius: 0px 0px 6px 6px;
+  /* margin-top: 15px; */
   margin-bottom: 5px;
 }
 
@@ -501,7 +506,12 @@ iframe {
   font-size: small;
 }
 
-.releaseTags {
+.splitTagWrapper {
+  display: inline-block;
+  float: none!important;
+}
+
+.mediaTags {
   margin-right: 3px;
   padding: 0px 8px;
   border-radius: 16px;
@@ -510,11 +520,119 @@ iframe {
   font-size: small;
 }
 
-.songTags {
+.mediaLeft {
+  padding: 0px 8px;
+  /* border: 0.2em solid rgb(236, 151, 23); */
+  border-radius: 16px 0px 0px 16px;
+  background-color: rgb(26, 32, 66);
+  color: rgb(236, 151, 23);
+  font-size: small;
+}
+
+.mediaRight {
+  margin-right: 3px;
+  padding: 0px 8px 0px 4px;
+  border-radius: 0px 16px 16px 0px;
+  background-color: rgb(236, 151, 23);
+  color: rgb(41, 48, 88);
+  font-size: small;
+}
+
+.crossoverTags {
   margin-right: 3px;
   padding: 0px 8px;
   border-radius: 16px;
-  background-color: rgb(170, 78, 231);
+  background-color: rgb(39, 179, 58);
+  color: rgb(41, 48, 88);
+  font-size: small;
+}
+
+.crossoverLeft {
+  padding: 0px 8px;
+  /* border: 0.2em solid rgb(236, 151, 23); */
+  border-radius: 16px 0px 0px 16px;
+  background-color: rgb(26, 32, 66);
+  color: rgb(39, 179, 58);
+  font-size: small;
+}
+
+.crossoverRight {
+  margin-right: 3px;
+  padding: 0px 8px 0px 4px;
+  border-radius: 0px 16px 16px 0px;
+  background-color: rgb(39, 179, 58);
+  color: rgb(41, 48, 88);
+  font-size: small;
+}
+
+.releaseTags {
+  margin-right: 3px;
+  padding: 0px 8px;
+  border-radius: 16px;
+  background-color: rgb(1, 214, 214);
+  color: rgb(41, 48, 88);
+  font-size: small;
+}
+
+.releaseLeft {
+  padding: 0px 8px;
+  /* border: 0.2em solid rgb(236, 151, 23); */
+  border-radius: 16px 0px 0px 16px;
+  background-color: rgb(26, 32, 66);
+  color: rgb(1, 214, 214);
+  font-size: small;
+}
+
+.releaseRight {
+  margin-right: 3px;
+  padding: 0px 8px 0px 4px;
+  border-radius: 0px 16px 16px 0px;
+  background-color: rgb(1, 214, 214);
+  color: rgb(41, 48, 88);
+  font-size: small;
+}
+
+.genreTags {
+  margin-right: 3px;
+  padding: 0px 8px;
+  border-radius: 16px;
+  background-color: rgb(255, 0, 255);
+  color: rgb(41, 48, 88);
+  font-size: small;
+}
+
+.songFormTags {
+  margin-right: 3px;
+  padding: 0px 8px;
+  border-radius: 16px;
+  background-color: rgb(255, 128, 191);
+  color: rgb(41, 48, 88);
+  font-size: small;
+}
+
+.subjectTags {
+  margin-right: 3px;
+  padding: 0px 8px;
+  border-radius: 16px;
+  background-color: rgb(255, 128, 128);
+  color: rgb(41, 48, 88);
+  font-size: small;
+}
+
+.approachTags {
+  margin-right: 3px;
+  padding: 0px 8px;
+  border-radius: 16px;
+  background-color: rgb(255, 128, 64);
+  color: rgb(41, 48, 88);
+  font-size: small;
+}
+
+.dynamicTags {
+  margin-right: 3px;
+  padding: 0px 8px;
+  border-radius: 16px;
+  background-color: rgb(255, 128, 0);
   color: rgb(41, 48, 88);
   font-size: small;
 }
@@ -523,7 +641,25 @@ iframe {
   margin-right: 3px;
   padding: 0px 8px;
   border-radius: 16px;
-  background-color: rgb(231, 61, 160);
+  background-color: rgb(255, 255, 0);
+  color: rgb(41, 48, 88);
+  font-size: small;
+}
+
+.specialLeft {
+  padding: 0px 8px;
+  /* border: 0.2em solid rgb(236, 151, 23); */
+  border-radius: 16px 0px 0px 16px;
+  background-color: rgb(26, 32, 66);
+  color: rgb(255, 255, 0);
+  font-size: small;
+}
+
+.specialRight {
+  margin-right: 3px;
+  padding: 0px 8px 0px 4px;
+  border-radius: 0px 16px 16px 0px;
+  background-color: rgb(255, 255, 0);
   color: rgb(41, 48, 88);
   font-size: small;
 }
@@ -578,13 +714,21 @@ thead th:nth-child(4) {
   width: 40%;
 }
 
+thead.two th:nth-child(1) {
+  width: 50%;
+}
+
+thead.two th:nth-child(2) {
+  width: 50%;
+}
+
 caption, thead {
   background-color: rgb(6, 14, 58);
   position: sticky;
   top: 0;
 }
 
-td:nth-child(2), td:nth-child(4) {
+td {
   cursor: pointer;
 }
 

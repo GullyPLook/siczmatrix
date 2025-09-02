@@ -6,16 +6,31 @@ export default function Podcast(props: any) {
 
   function mediaSwitches() {
     const switches = episodes.map(eps => {
+
+      if (eps.id === 5) {
+        return (
+          <button 
+            key={eps.id}
+            id={eps.id.toString()}
+            style={props.mediaSwitch === eps.id ? { opacity: 1} : {opacity: 0.3}}
+            className="liveSwitch"
+            onClick={(event) => props.handleMediaSelect(event, eps.link, eps.id)}>
+              <strong><i>{eps.id}</i></strong>
+          </button>
+        )
+      } else {
       
         return (
           <button 
             key={eps.id}
             id={eps.id.toString()}
+            style={props.mediaSwitch === eps.id ? { opacity: 1} : {opacity: 0.3}}
             className="liveSwitch"
             onClick={(event) => props.handleMediaSelect(event, eps.link, eps.id)}>
-              <strong><i>{eps.tag}</i></strong>
+              <strong><i>{eps.id}</i></strong>
           </button>
         )
+        }
     })
     return switches 
   };
@@ -34,13 +49,14 @@ export default function Podcast(props: any) {
                 allowFullScreen>
               </iframe>
               <div className="mediaSwitches">
-                {mediaSwitches()}
+                <i>{mediaSwitches()}</i>
               </div>
             </div>
             <div className="songInfoContainer">
               
               <div className="scTitle">
-                { props.episode.id === episodes.length? <div><strong style={{ color: "#EC9717", fontSize: "large"}}>Latest Episode</strong></div>
+                
+                { props.episode.id === episodes.length? <div><strong style={{ fontSize: "large"}}>So I Called Zucchero - Latest episode</strong></div>
                 : null }
                 <i style={{ color: "white", fontSize: "x-large" }}>{props.episode.tag} - {props.episode.name}</i><br></br>
                 <i>({props.episode.date})</i>

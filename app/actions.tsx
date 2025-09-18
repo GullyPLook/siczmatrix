@@ -61,7 +61,7 @@ export async function styleTags(d: number) {
     const { data, error } = await supabase
     .from('tags')
     .select('*')
-    .or('type_id.in.(3,7,8,9,10), tag_id.in.(7)')
+    .or('type_id.in.(3,7,8,9,10)')
     .eq('id', d)
     if (error) console.error('Error fetching items:', error)
     else return data

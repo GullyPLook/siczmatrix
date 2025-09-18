@@ -9,7 +9,7 @@ export default function Welcome(props: any) {
           <br />
           <h3>
               This duet data matrix is being developed alongside the
-              So I Called Zucchero podcast...
+              <b>&nbsp;So I Called Zucchero</b> podcast...
               <button 
               style={{ color: "#9f38d6" }}
               onClick={(event) => props.handlePodcastDetails(event)}><strong>↘</strong>
@@ -22,7 +22,7 @@ export default function Welcome(props: any) {
                We take subscribers song suggestions to start each episode, so explore the matrix, play with the builder and get in touch.
                </i>
               </div>
-              }
+              }<br />
               In addition to 
               <span style={{ color: "#999", fontStyle: "italic"}}> search </span> 
                 and <span className="performanceTags"><strong><i>tags</i></strong></span>, 

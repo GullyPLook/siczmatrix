@@ -11,6 +11,9 @@ export default function SongCard(props: any) {
   const styleTags: any = use(props.styleTagPromise);
   const specialTags: any = use(props.specialTagPromise);
   const performanceTags: any = use(props.performanceTagPromise);
+  
+  const allVersions: any =
+  adaptations.length > 0 ? use(props.versionPromise): null;
 
   function mediaSwitches() {
 
@@ -145,16 +148,30 @@ export default function SongCard(props: any) {
                   </button>
                   {adaptations.length > 0 ?
                   
-                  <span style={{ fontSize: "smaller"}}><br />incl. {adaptations.map((ad: { song_id: number; title: string; }) => {
-                    if (ad === adaptations[adaptations.length -1]) {
+                  <span style={{ fontSize: "smaller"}}><br />incl.&nbsp;
+                  {adaptations.map((ad: { song_id: number; title: string; }) => {
+                    if ((ad === adaptations[adaptations.length -1]) && (allVersions.some((version: { song_id: number; }) => version.song_id === ad.song_id))) {
+                      return (
+                      <button style={{ color: "#ffffffff", display: "inline-block"}}
+                      key={ad.song_id}
+                       onClick={(event) => props.handleSong(event, ad.song_id)} 
+                      >{ad.title}</button>
+                    )} else if (allVersions.some((version: { song_id: number; }) => version.song_id === ad.song_id)) {
+                      return (
+                      <button style={{ color: "#ffffffff", display: "inline-block"}}
+                      key={ad.song_id}
+                       onClick={(event) => props.handleSong(event, ad.song_id)} 
+                      >{ad.title},&nbsp;</button>
+                    )} else if (ad === adaptations[adaptations.length -1]) {
                       return (
                       <span style={{ color: "#acacac", display: "inline-block"}}
                       key={ad.song_id}
                       >{ad.title}</span>
-                    )} else {
+                    )} else{
                       return (
                       <span style={{ color: "#acacac", display: "inline-block"}}
                       key={ad.song_id}
+                      
                       >{ad.title},&nbsp;</span>
                     )}
                   })}</span>
@@ -310,8 +327,6 @@ export default function SongCard(props: any) {
             </div>
         </div>
     );
-
-    console.log(styleTags)
 
   useEffect(() => {
     props.handleMediaSelect(event, performances[performances.length - 1].link, performances[performances.length - 1].id)

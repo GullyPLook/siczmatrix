@@ -586,6 +586,7 @@ export default function Home() {
         <div>
           <SongCard
           version={version}
+          versionPromise={versionPromise}
           composerPromise={composerPromise}
           adaptationPromise={adaptationPromise}
           personalTagPromise={personalTagPromise}

@@ -267,40 +267,53 @@ export default function SongCard(props: any) {
                           className="genreTags"
                           onClick={(event) => props.handleTag(event, tag.tag_id)}><strong><i>{tag.tag}</i></strong>
                         </button>
-                    )} else if (tag.type_id === 7) {
+                    )} else
+                      return 
+                    })}
+                    {styleTags.map((tag: any) => {
+                    if (tag.type_id === 7) {
                       return (
                       <button 
                           key={tag.tag_id}
                           className="songFormTags"
                           onClick={(event) => props.handleTag(event, tag.tag_id)}><strong><i>{tag.tag}</i></strong>
                         </button>
-                    )
-                    } else if (tag.type_id === 8) {
+                    )} else
+                      return 
+                    })}
+                    {styleTags.map((tag: any) => {
+                    if (tag.type_id === 8) {
                       return (
                       <button 
                           key={tag.tag_id}
                           className="subjectTags"
                           onClick={(event) => props.handleTag(event, tag.tag_id)}><strong><i>{tag.tag}</i></strong>
                         </button>
-                    )
-                    } else if (tag.type_id === 9) {
+                    )} else
+                      return 
+                    })}
+                    {styleTags.map((tag: any) => {
+                    if (tag.type_id === 9) {
                       return (
                       <button 
                           key={tag.tag_id}
                           className="approachTags"
                           onClick={(event) => props.handleTag(event, tag.tag_id)}><strong><i>{tag.tag}</i></strong>
                         </button>
-                    )
-                    } else if ((tag.type_id === 10) || (tag.tag_id === 7)) {
+                    )} else
+                      return 
+                    })}
+                    {styleTags.map((tag: any) => {
+                    if (tag.type_id === 10) {
                       return (
                       <button 
                           key={tag.tag_id}
                           className="dynamicTags"
                           onClick={(event) => props.handleTag(event, tag.tag_id)}><strong><i>{tag.tag}</i></strong>
                         </button>
-                    )
-                    }                    
-                  })}
+                    )} else
+                      return 
+                    })}
                 </div>
                 <div className="scSpecial">
                   {specialTags.map((tag: any) => {

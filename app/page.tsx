@@ -611,7 +611,7 @@ export default function Home() {
           handleReleaseFourTag={handleReleaseFourTag}
           />
         </div>}
-        <NetworkGraph />
+        {/* <NetworkGraph /> */}
          <div ref={tableRef}>
          {seeArtistTable && <ArtistTable 
          artistCreditPromiseA={artistCreditPromiseA}

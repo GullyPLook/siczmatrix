@@ -20,6 +20,7 @@ import FourColumnTable from "./fourColumnTable";
 import PerfThreeColumnTable from "./perfThreeTable";
 import PerfFourColumnTable from "./perfFourTable";
 import ReleaseFourColumnTable from "./releaseFourColumnTable";
+import NetworkGraph from "./network";
 
 export default function Home() {
 
@@ -610,6 +611,7 @@ export default function Home() {
           handleReleaseFourTag={handleReleaseFourTag}
           />
         </div>}
+        <NetworkGraph />
          <div ref={tableRef}>
          {seeArtistTable && <ArtistTable 
          artistCreditPromiseA={artistCreditPromiseA}

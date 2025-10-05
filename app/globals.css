@@ -409,21 +409,10 @@ input::placeholder {
   align-items: flex-start;
 }
 
-
 .network {
+  margin: 10px;
   min-height: 600px;
 }
-
-/* .navbar {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 10px
-}
-
-.navbarTags {
-
-} */
 
 .songCard {
   background-color: rgb(41, 48, 88);

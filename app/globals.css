@@ -409,6 +409,11 @@ input::placeholder {
   align-items: flex-start;
 }
 
+
+.network {
+  min-height: 600px;
+}
+
 /* .navbar {
   display: flex;
   justify-content: space-between;

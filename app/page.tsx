@@ -72,7 +72,7 @@ export default function Home() {
   const [seeReleaseFourColTable, setSeeReleaseFourColTable] = useState(false);
   const [releaseFourColTagPromise, setReleaseFourColTagPromise] = useState<any>([]);
   const [releaseYearFourTagPromise, setReleaseYearFourTagPromise] = useState<any>([]);
-  
+  const [seeNetwork, setSeeNetwork] = useState(false);
 
   const tableRef = useRef<HTMLDivElement>(null);
   const songCardRef = useRef<HTMLDivElement>(null);
@@ -95,17 +95,17 @@ export default function Home() {
   function whichArtistA(boxId: number, option: any) {
     
       if (selections[boxId - 2].artistB.id === option.artist_a_id) {
-          return { "id": option.artist_a_id, "artist": option.artist_a }
+          return { "id": option.artist_a_id, "artist": option.artist_a, "matches": optionGenerator(option.artist_a_id) }
         } else {
-          return { "id": option.artist_b_id, "artist": option.artist_b };
+          return { "id": option.artist_b_id, "artist": option.artist_b, "matches": optionGenerator(option.artist_b_id) };
   }};
 
   function whichArtistB(boxId: number, option: any) {
     
       if (selections[boxId - 2].artistB.id === option.artist_a_id) {
-          return { "id": option.artist_b_id, "artist": option.artist_b }
+          return { "id": option.artist_b_id, "artist": option.artist_b, "matches": optionGenerator(option.artist_b_id) }
         } else {
-          return { "id": option.artist_a_id, "artist": option.artist_a };
+          return { "id": option.artist_a_id, "artist": option.artist_a, "matches": optionGenerator(option.artist_a_id) };
   }};
 
   function handleOptionChange(event: any, option: any, boxId: number) {
@@ -407,7 +407,7 @@ export default function Home() {
     "artist_a_id": artist_a_id,
     "artist_b": artist_b,
     "artist_b_id": artist_b_id
-    }, artistA: { "id": artist_a_id, "artist": artist_a }, artistB: { "id": artist_b_id, "artist": artist_b }};
+    }, artistA: { "id": artist_a_id, "artist": artist_a, "matches": optionGenerator(artist_a_id)}, artistB: { "id": artist_b_id, "artist": artist_b, "matches": optionGenerator(artist_b_id) }};
       } else if (i === 1) {
         return {...selector, isBold: true, isSelected: false, selected: {}, isOptions: true, options: optionGenerator(artist_b_id), artistA: {}, artistB: {}};
       }
@@ -424,7 +424,8 @@ export default function Home() {
     setSeeSearch(false);
     setSwap(false);
     setSeePodcast(false);
-    setSeeSongCard(true);     
+    setSeeSongCard(true);   
+    setSeeNetwork(true);
   };
   
   function handleSwapArtist(event: any, boxId: number) {
@@ -570,11 +571,17 @@ export default function Home() {
           seeCongratulations={seeCongratulations}
           seeNiceTry={seeNiceTry}
           />
-        </div>}
+        </div>}       
       </div>
       <div 
         className="main" 
         ref={songCardRef}>
+          {seeNetwork &&
+        <div className="network">
+          <NetworkGraph 
+          selections={selections}
+          />
+        </div>}
         {seePodcast && 
         <div>
           <Podcast 
@@ -611,7 +618,6 @@ export default function Home() {
           handleReleaseFourTag={handleReleaseFourTag}
           />
         </div>}
-        {/* <NetworkGraph /> */}
          <div ref={tableRef}>
          {seeArtistTable && <ArtistTable 
          artistCreditPromiseA={artistCreditPromiseA}

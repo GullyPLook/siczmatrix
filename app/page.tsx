@@ -372,6 +372,10 @@ export default function Home() {
      setSpecialTagPromise(specialTags(id));
      setPerformancePromise(performances(id));
      setPerformanceTagPromise(performanceTags(id));
+
+     if (songCardRef.current != null) {
+      songCardRef.current.scrollIntoView({ behavior: "smooth" });
+    }; 
   };
 
   function handleSearchChange(event: any, id: number, song_id: number, title: any, year: any, artist_a: any, artist_a_id: number, artist_b: any, artist_b_id: number ) {

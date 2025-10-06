@@ -385,8 +385,8 @@ input::placeholder {
 }
 
 .network {
-  
-  min-height: 600px;
+  margin: 0px 20px;
+  min-height: 400px;
 }
 
 .songCard {

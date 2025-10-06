@@ -2,19 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
 
 @media only screen and (max-width: 58em) {
   
@@ -25,7 +12,7 @@
     grid-template-areas: 
         "sidebar" 
         "main"; 
-    margin: 1%;
+    margin: 3% !important;
   }
 
   .logo {
@@ -63,14 +50,6 @@
   .scPerformance {
     position: inherit !important;
   }
-
-  /* .sigmaContainer {
-    grid-area: ma;
-    width: 50em !important;
-    height: max-content;
-    grid-column-start: 1;
-    grid-column-end: 2; 
-  } */
   
 } 
 
@@ -226,10 +205,6 @@ input[type=text]:focus {
 input::placeholder {
   font-style: italic;
 }
-
-/* input[type=text]:focus::placeholder {
-  color: rgb(129, 129, 129);
-} */
 
 .searchResults {
   text-align: start;
@@ -410,7 +385,7 @@ input::placeholder {
 }
 
 .network {
-  margin: 10px;
+  
   min-height: 600px;
 }
 

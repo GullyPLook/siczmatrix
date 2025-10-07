@@ -578,8 +578,7 @@ export default function Home() {
         </div>}       
       </div>
       <div 
-        className="main" 
-        ref={songCardRef}>
+        className="main">
           {seeNetwork &&
         <div className="network">
           <NetworkGraph 
@@ -595,7 +594,7 @@ export default function Home() {
           mediaSwitch={mediaSwitch}/>
         </div>}
         {seeSongCard && 
-        <div>
+        <div ref={songCardRef}>
           <SongCard
           version={version}
           versionPromise={versionPromise}

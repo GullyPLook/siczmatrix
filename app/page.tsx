@@ -77,6 +77,7 @@ export default function Home() {
   const tableRef = useRef<HTMLDivElement>(null);
   const songCardRef = useRef<HTMLDivElement>(null);
 
+  console.log(mediaSelect)
   
   const handleOnSearch = (event: any) => {
     const {value} = event.target;
@@ -334,7 +335,7 @@ export default function Home() {
       tableRef.current.scrollIntoView({ behavior: "smooth" });
     }; 
   };
-  
+
   function handleMediaSelect(event: any, link: string, id: number) {
 
     setMediaSwitch(id)
@@ -345,7 +346,7 @@ export default function Home() {
       (setMediaSelect(link), setEpisode(ep[0]))
     : setMediaSelect(link.replace(/(?:http:\/\/)?(?:www\.)?(?:youtube\.com|youtu\.be)\/(?:watch\?)?(?:.+)v=(.+)/g, 'https://www.youtube.com/embed/$1').slice(8));
  */
-    if (link.includes("embed")) {
+    if (link.includes("videoseries")) {
       return (setMediaSelect(link), setEpisode(ep[0]))
     } else {
       return setMediaSelect(link.replace(/(?:http:\/\/)?(?:www\.)?(?:youtube\.com|youtu\.be)\/(?:watch\?)?(?:.+)v=(.+)/g, 'https://www.youtube.com/embed/$1').slice(8));
@@ -519,6 +520,8 @@ export default function Home() {
   }, [seeCongratulations]);
 
 
+
+
   return (
   
   <div>
@@ -579,6 +582,13 @@ export default function Home() {
       </div>
       <div 
         className="main">
+        {/* {seeNetwork &&
+        <div className="network">
+         <TotalNetworkGraph
+         versionPromise={versionPromise}
+         />
+        </div> } */}
+
           {seeNetwork &&
         <div className="network">
           <NetworkGraph 

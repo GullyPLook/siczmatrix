@@ -73,7 +73,7 @@ export default function Selector(props: any) {
           className="optionsContainer" 
           key={selector.boxId} 
           id={selector.boxId.toString()}>
-            {optionResolve(selector)}
+            {(optionResolve(selector))}
          </div>
        ) 
          || 

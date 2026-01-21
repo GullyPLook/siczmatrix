@@ -4,7 +4,7 @@ import { Network } from "vis-network";
 
 export default function NetworkGraph(props: any) {
 
-	const selected = props.selections.filter((selection: { isSelected: boolean; }) => selection.isSelected);
+	const selected = props.selections.filter((selection: { isSelected: boolean; isBold: boolean}) => selection.isSelected && selection.isBold);
 	
 	const resolvedAA = selected.map((selection: { artistA: { matches: [Promise<{}>, Promise<{}>]; }; }) => {
 		return (
@@ -53,6 +53,9 @@ export default function NetworkGraph(props: any) {
 			{from: match.artist_a_id, to: match.artist_b_id }
 		)
 	});
+
+/* 	console.log(nodes)
+    console.log(edges) */
 
 	const options = {
 		autoResize: true,

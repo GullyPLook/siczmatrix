@@ -91,6 +91,7 @@ export default function SongCard(props: any) {
     return switches 
   };
 
+  
    const card = (
         <div className="songCard">
             <div className="videoContainer">
@@ -341,8 +342,11 @@ export default function SongCard(props: any) {
         </div>
     );
 
+  console.log(props.mediaSelect)
+  console.log(performances)
+
   useEffect(() => {
-    props.handleMediaSelect(event, performances[performances.length - 1].link, performances[performances.length - 1].id)
+    setTimeout(() => props.handleMediaSelect(event, performances[performances.length - 1].link, performances[performances.length - 1].id), 1)
   }, [performances])
     
     return (

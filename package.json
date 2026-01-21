@@ -16,7 +16,7 @@
     "fuse.js": "^7.0.0",
     "graphology": "^0.25.4",
     "graphology-types": "^0.24.7",
-    "next": "^15.5.4",
+    "next": "^16.1.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.27.0",

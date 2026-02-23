@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import versionObject from "./versionObject.json";
 import selectorObjects from "./selectorObjects.json";
 import Logo from './logo'
@@ -10,7 +10,7 @@ import Information from "./information";
 import SongCard from "./songCard";
 import Podcast from "./podcast";
 import episodes from "./episodes.json";
-import { versions, composers, adaptations, personalTags, releaseTags, releaseFourColTags, releaseFourColTagsYear, threeColTags, fourColTags, perfThreeColTags, perfFourColTags, songCredits, styleTags, specialTags, performances, performanceTags, composerCredits, artistCreditsA, artistCreditsB, getArtist, yearCredits } from "./actions";
+import { latest, versions, composers, adaptations, personalTags, releaseTags, releaseFourColTags, releaseFourColTagsYear, threeColTags, fourColTags, perfThreeColTags, perfFourColTags, songCredits, styleTags, specialTags, performances, performanceTags, composerCredits, artistCreditsA, artistCreditsB, getArtist, yearCredits } from "./actions";
 import ArtistTable from "./artistTable";
 import ComposerTable from "./composerTable";
 import YearTable from "./yearTable";
@@ -20,7 +20,8 @@ import FourColumnTable from "./fourColumnTable";
 import PerfThreeColumnTable from "./perfThreeTable";
 import PerfFourColumnTable from "./perfFourTable";
 import ReleaseFourColumnTable from "./releaseFourColumnTable";
-import NetworkGraph from "./network";
+import NetworkGraph from "./network"
+import Latest from "./latest";
 
 export default function Home() {
 
@@ -31,6 +32,8 @@ export default function Home() {
   const [seeInstructions, setSeeInstructions] = useState(false);
   const [seeCongratulations, setSeeCongratulations] = useState(false);
   const [seeNiceTry, setSeeNiceTry] = useState(false);
+  const [latestSwitch, setLatestSwitch] = useState(0);
+  const [latestSelect, setLatestSelect] = useState<string>();
   const [seeSongCard, setSeeSongCard] = useState(false);
   const [mediaSelect, setMediaSelect] = useState<string>();
   const [episode, setEpisode] = useState<{}>();
@@ -40,6 +43,7 @@ export default function Home() {
   const [seeSearch, setSeeSearch] = useState(true);
   const [query, setQuery] = useState("");
   const [version, setVersion] = useState<any>([versionObject]);
+  const [latestPromise, setLatestPromise] = useState<any>([]);
   const [versionPromise, setVersionPromise] = useState<any>([]);
   const [composerPromise, setComposerPromise] = useState<any>([]);
   const [personalTagPromise, setPersonalTagPromise] = useState<any>([]);
@@ -76,8 +80,6 @@ export default function Home() {
 
   const tableRef = useRef<HTMLDivElement>(null);
   const songCardRef = useRef<HTMLDivElement>(null);
-
-  console.log(mediaSelect)
   
   const handleOnSearch = (event: any) => {
     const {value} = event.target;
@@ -353,6 +355,13 @@ export default function Home() {
     };
   };
 
+  function handleLatestSelect(event: any, link: string, id: number) {
+
+    setLatestSwitch(id)
+    setLatestSelect(link.replace(/(?:http:\/\/)?(?:www\.)?(?:youtube\.com|youtu\.be)\/(?:watch\?)?(?:.+)v=(.+)/g, 'https://www.youtube.com/embed/$1').slice(8));
+    
+  };
+
   function handleSongChange(event: any, id: number, song_id: number, title: any, year: any, artist_a: any, artist_a_id: number, artist_b: any, artist_b_id: number ) {
    
      setVersion({... version,  "id": id,
@@ -495,6 +504,7 @@ export default function Home() {
 
   useEffect(() => {
   setVersionPromise(versions());
+  setLatestPromise(latest());
   }, [])
 
   useEffect(() => {
@@ -683,6 +693,14 @@ export default function Home() {
          handleYear={handleYear}
          handlePerfThreeTag={handlePerfThreeTag}
          />}
+         <div>
+          <Latest 
+          latestPromise={latestPromise}
+          latestSwitch={latestSwitch}
+          latestSelect={latestSelect}
+          handleLatestSelect={handleLatestSelect}
+         />
+        </div>
         </div>
       </div>
     </div>}

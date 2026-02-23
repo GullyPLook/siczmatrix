@@ -646,6 +646,8 @@ iframe {
   scrollbar-width: thick;
   scrollbar-gutter: auto; 
   border: 2px, solid, rgb(39, 179, 58);
+  margin-bottom: 10px;
+  border-radius: 0 0 6px 6px;
 }
 
 .sigmaContainer {

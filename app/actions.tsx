@@ -13,6 +13,16 @@ export async function versions() {
 
 };
 
+export async function latest() {
+
+    const { data, error } = await supabase
+    .from('latest_entries')
+    .select('*')
+    if (error) console.error('Error fetching items:', error)
+    else return data
+
+};
+
 export async function composers(d: number) {
 
     const { data, error } = await supabase

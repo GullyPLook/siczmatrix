@@ -342,9 +342,6 @@ export default function SongCard(props: any) {
         </div>
     );
 
-  console.log(props.mediaSelect)
-  console.log(performances)
-
   useEffect(() => {
     setTimeout(() => props.handleMediaSelect(event, performances[performances.length - 1].link, performances[performances.length - 1].id), 100)
   }, [performances])

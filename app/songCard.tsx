@@ -1,5 +1,6 @@
 'use client'
 import { use, useEffect } from "react";
+import LogoSmall from "./logoSmall";
 
 export default function SongCard(props: any) {
 

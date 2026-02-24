@@ -50,6 +50,22 @@
   .scPerformance {
     position: inherit !important;
   }
+
+  thead.latest th:nth-child(1) {
+  width: 10%;
+}
+
+thead.latest th:nth-child(2) {
+  width: 40%;
+}
+
+thead.latest th:nth-child(3) {
+  width: 40%;
+}
+
+thead.latest th:nth-child(4) {
+  width: 10% !important; 
+}
   
 } 
 
@@ -716,4 +732,20 @@ tbody tr:nth-child(odd) {
 
 tbody tr:nth-child(even) {
   background-color:  rgb(41, 48, 88);
+}
+
+thead.latest th:nth-child(1) {
+  width: 10%;
+}
+
+thead.latest th:nth-child(2) {
+  width: 42%;
+}
+
+thead.latest th:nth-child(3) {
+  width: 43%;
+}
+
+thead.latest th:nth-child(4) {
+  width: 5%;
 }

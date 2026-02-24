@@ -78,8 +78,10 @@ export default function Home() {
   const [releaseYearFourTagPromise, setReleaseYearFourTagPromise] = useState<any>([]);
   const [seeNetwork, setSeeNetwork] = useState(false);
 
+  const searchRef = useRef<HTMLDivElement>(null);
   const tableRef = useRef<HTMLDivElement>(null);
   const songCardRef = useRef<HTMLDivElement>(null);
+  
   
   const handleOnSearch = (event: any) => {
     const {value} = event.target;
@@ -440,6 +442,10 @@ export default function Home() {
     setSeePodcast(false);
     setSeeSongCard(true);   
     setSeeNetwork(true);
+
+    if (searchRef.current != null) {
+      searchRef.current.scrollIntoView({ behavior: "smooth" });
+    }; 
   };
   
   function handleSwapArtist(event: any, boxId: number) {
@@ -540,7 +546,7 @@ export default function Home() {
   {seeApp && 
     <div className="app">
       <div className="sidebar"> 
-        <div className="search">
+        <div className="search" ref={searchRef}>
           <form id="search" >
             <label>
               <input className="searchField" type="text" placeholder="Search artist or song" 
@@ -600,7 +606,8 @@ export default function Home() {
         </div> } */}
 
           {seeNetwork &&
-        <div className="network">
+        <div
+        className="network">
           <NetworkGraph 
           selections={selections}
           />
@@ -699,6 +706,7 @@ export default function Home() {
           latestSwitch={latestSwitch}
           latestSelect={latestSelect}
           handleLatestSelect={handleLatestSelect}
+          handleSearchChange={handleSearchChange}
          />
         </div>
         </div>

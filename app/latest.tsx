@@ -66,7 +66,7 @@ const latest: any = use(props.latestPromise);
           <table className="four">
             <thead className="latest">
               <tr>
-                <th scope="col">Year</th>
+                
                 <th scope="col">Song</th> 
                 <th scope="col">Artists</th>
                 <th scope="col"></th>
@@ -81,7 +81,7 @@ const latest: any = use(props.latestPromise);
                      backgroundColor:  'rgb(39, 179, 58)', 
                      fontWeight: 'bold'} : { opacity: 1}}
                      >
-                  <td>{row.year}</td>
+                  
                   <td onClick={(event) => props.handleLatestSelect(event, row.link, row.id)}>{row.title}</td>
                   <td onClick={(event) => props.handleLatestSelect(event, row.link, row.id)}>{row.artist_a} & {row.artist_b}</td>
                   <td onClick={(event) => props.handleSearchChange(event, row.id, row.song_id, row.title, row.year, row.artist_a, row.artist_a_id, row.artist_b, row.artist_b_id)}>

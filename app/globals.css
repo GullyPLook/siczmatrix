@@ -52,7 +52,7 @@
   }
 
   thead.latest th:nth-child(1) {
-  width: 10%;
+  width: 10% !important;
 }
 
 thead.latest th:nth-child(2) {
@@ -735,15 +735,15 @@ tbody tr:nth-child(even) {
 }
 
 thead.latest th:nth-child(1) {
-  width: 10%;
+  width: 5%;
 }
 
 thead.latest th:nth-child(2) {
-  width: 42%;
+  width: 45%;
 }
 
 thead.latest th:nth-child(3) {
-  width: 43%;
+  width: 45%;
 }
 
 thead.latest th:nth-child(4) {

@@ -338,6 +338,13 @@ export default function SongCard(props: any) {
                     )}    
                   })}
                 </div>
+                <br />
+                <div className="logoSongcard">
+                  <button
+                    onClick={(event) => props.handleSearchChange(event, props.version.id, props.version.song_id, props.version.title, props.version.year, props.version.artist_a, props.version.artist_a_id, props.version.artist_b, props.version.artist_b_id)}>
+                    <LogoSmall size={40} color="#9f38d6" color2="rgb(236, 151, 23)"/>
+                  </button>
+                </div>
               </div>
             </div>
         </div>

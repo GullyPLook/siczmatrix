@@ -639,6 +639,7 @@ export default function Home() {
           handleComposers={handleComposers}
           handleYear={handleYear}
           handleSongChange={handleSongChange}
+          handleSearchChange={handleSearchChange}
           handleSong={handleSong}
           handleTag={handleTag}
           handleMediaSelect={handleMediaSelect}

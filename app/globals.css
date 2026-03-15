@@ -40,6 +40,10 @@
     grid-row: 1;
   }
 
+  .latestInfoContainer {
+    grid-row: 2;  
+  }
+
   .songInfoContainer {
     grid-row: 2;
     padding-top: 15px !important;
@@ -453,6 +457,18 @@ iframe {
   font-size: small;  
 }
 
+.latestInfoContainer {
+  
+  text-align: end;
+  position: relative;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "info"
+    "performance";
+}
+
+
 .songInfoContainer {
   /* grid-area: info; */
   padding: 10px 20px;
@@ -721,7 +737,7 @@ td {
 
 th,
 td {
-  padding: 7px;
+  padding: 5px;
   text-align: left;
   font-size: smaller;
 }
@@ -733,7 +749,6 @@ tbody tr:nth-child(odd) {
 tbody tr:nth-child(even) {
   background-color:  rgb(41, 48, 88);
 }
-
 
 thead.latest th:nth-child(1) {
   width: 48%;

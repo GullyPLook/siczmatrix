@@ -77,6 +77,7 @@ export default function Home() {
   const [releaseFourColTagPromise, setReleaseFourColTagPromise] = useState<any>([]);
   const [releaseYearFourTagPromise, setReleaseYearFourTagPromise] = useState<any>([]);
   const [seeNetwork, setSeeNetwork] = useState(false);
+  const [seeLatest, setSeeLatest] = useState(true);
 
   const searchRef = useRef<HTMLDivElement>(null);
   const tableRef = useRef<HTMLDivElement>(null);
@@ -224,9 +225,12 @@ export default function Home() {
     }; 
   }; 
 
+console.log(releaseFourColTagPromise)
+
   function handleFourTag(event: any, id: number) {
     
     setFourColTagPromise(fourColTags(id))
+    setPerfFourColTagPromise(perfFourColTags(id))
 
     setSeeFourColTable(true);
     setSeePerfFourColTable(false);
@@ -246,6 +250,7 @@ export default function Home() {
   function handleTag(event: any, id: number) {
     
     setThreeColTagPromise(threeColTags(id))
+    setPerfThreeColTagPromise(perfThreeColTags(id))
     
     setSeeThreeColTable(true);
     setSeeSongTable(false);
@@ -442,6 +447,7 @@ export default function Home() {
     setSeePodcast(false);
     setSeeSongCard(true);   
     setSeeNetwork(true);
+    setSeeLatest(false);
 
     if (searchRef.current != null) {
       searchRef.current.scrollIntoView({ behavior: "smooth" });
@@ -674,11 +680,13 @@ export default function Home() {
          />}
          {seeThreeColTable && <ThreeColumnTable 
          threeColTagPromise={threeColTagPromise}
+         perfThreeColTagPromise={perfThreeColTagPromise}
          handleSongChange={handleSongChange}
          handleYear={handleYear}
          />}
          {seeFourColTable && <FourColumnTable 
          fourColTagPromise={fourColTagPromise}
+         perfFourColTagPromise={perfFourColTagPromise}
          handleSongChange={handleSongChange}
          handleYear={handleYear}
          handleTag={handleTag}
@@ -701,7 +709,7 @@ export default function Home() {
          handleYear={handleYear}
          handlePerfThreeTag={handlePerfThreeTag}
          />}
-         <div>
+         {seeLatest && <div>
           <Latest 
           latestPromise={latestPromise}
           latestSwitch={latestSwitch}
@@ -709,7 +717,7 @@ export default function Home() {
           handleLatestSelect={handleLatestSelect}
           handleSearchChange={handleSearchChange}
          />
-        </div>
+        </div>}
         </div>
       </div>
     </div>}

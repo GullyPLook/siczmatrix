@@ -4,24 +4,19 @@ export default function PerfFourColumnTable(props: any) {
     
   const tags: any = use(props.perfFourColTagPromise);
 
-    const tableTitle = (
-      <div className="tableTitle">
-        <strong>&nbsp;&nbsp;{tags[0].type}</strong>
-    </div>
-    );
-
     const fourColumnTable = (
         <div className="tableContainer">
+           
           <table>
-            <thead className="four">
+            {/* <thead className="four">
               <tr>
                 <th scope="col">Year</th>
                 <th scope="col">Song</th> 
                 <th scope="col">Artists</th>
                 <th scope="col">{tags[0].type}</th>  
               </tr>
-            </thead>
-            <tbody>
+            </thead> */}
+            <tbody className="four">
               {tags.map((row: any, index: any) =>
               <tr key={index} 
                   id={row.id.toString()}>
@@ -44,7 +39,7 @@ export default function PerfFourColumnTable(props: any) {
 
     return (
         <>
-        {tableTitle}
+        <strong className="releaseLeftTable">{tags[0].type}</strong>
         {fourColumnTable}
         </>
     );

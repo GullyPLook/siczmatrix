@@ -24,16 +24,25 @@ export default function SongCard(props: any) {
         return (
           <button 
             key={vid.id}
-            className="crossoverTags"
+            className="releaseTags"
             style={props.mediaSwitch === vid.id ? { opacity: 1} : {opacity: 0.3}}
             onClick={(event) => props.handleMediaSelect(event, vid.link, vid.id)}><strong><i>Audio</i></strong>
+          </button>
+        )
+      } else if (vid.tag.length === 1 && vid.tag.some(id => id.type_id === 21)) {
+        return (
+          <button 
+            key={vid.id}
+            className="releaseTags"
+            style={props.mediaSwitch === vid.id ? { opacity: 1} : {opacity: 0.3}}
+            onClick={(event) => props.handleMediaSelect(event, vid.link, vid.id)}><strong><i>Audio {vid.tag[0].tag}</i></strong>
           </button>
         )
       } else if (vid.tag.some(id => id.id === 1214)) {
         return (
           <button 
             key={vid.id}
-            className="crossoverTags"
+            className="releaseTags"
             style={props.mediaSwitch === vid.id ? { opacity: 1} : {opacity: 0.3}}
             onClick={(event) => props.handleMediaSelect(event, vid.link, vid.id)}><strong><i>Promo</i></strong>
           </button>
@@ -46,10 +55,10 @@ export default function SongCard(props: any) {
               return (
                   <span key={tag.tag_id} className="splitTagWrapper"
                         style={props.mediaSwitch === vid.id ? { opacity: 1} : {opacity: 0.3}}>
-                     <button className="crossoverLeft"
-                          onClick={(event) => props.handlePerfFourTag(event, tag.type_id)}><strong><i>{tag.type}</i></strong></button>
-                     <button className="crossoverRight"
-                          onClick={(event) => [props.handleMediaSelect(event, vid.link, vid.id), props.handlePerfThreeTag(event, tag.tag_id)]}><strong><i>{tag.tag}</i></strong>
+                     <button className="specialLeft"
+                          onClick={(event) => props.handleFourTag(event, tag.type_id)}><strong><i>{tag.type}</i></strong></button>
+                     <button className="specialRight"
+                          onClick={(event) => [props.handleMediaSelect(event, vid.link, vid.id), props.handleTag(event, tag.tag_id)]}><strong><i>{tag.tag}</i></strong>
                      </button>
                   </span>
                   )
@@ -57,9 +66,9 @@ export default function SongCard(props: any) {
               return (
                   <span key={tag.tag_id} className="splitTagWrapper"
                         style={props.mediaSwitch === vid.id ? { opacity: 1} : {opacity: 0.3}}>
-                     <button className="crossoverLeft"
+                     <button className="releaseLeft"
                           onClick={(event) => props.handlePerfFourTag(event, tag.type_id)}><strong><i>{tag.type}</i></strong></button>
-                     <button className="crossoverRight"
+                     <button className="releaseRight"
                           onClick={(event) => [props.handleMediaSelect(event, vid.link, vid.id), props.handlePerfThreeTag(event, tag.tag_id)]}><strong><i>{tag.tag}</i></strong>
                      </button>
                   </span>
@@ -68,7 +77,7 @@ export default function SongCard(props: any) {
               return (
                       <button 
                         key={tag.tag_id}
-                        className="crossoverTags"
+                        className="releaseTags"
                         style={props.mediaSwitch === vid.id ? { opacity: 1} : {opacity: 0.3}}
                         onClick={(event) => props.handleYear(event, tag.tag)}><strong><i>{tag.tag}</i></strong>
                       </button>
@@ -77,7 +86,7 @@ export default function SongCard(props: any) {
               return (
                       <button 
                         key={tag.tag_id}
-                        className="crossoverTags"
+                        className="releaseTags"
                         style={props.mediaSwitch === vid.id ? { opacity: 1} : {opacity: 0.3}}
                         onClick={(event) => props.handleReleaseFourTag(event, tag.tag_id)}><strong><i>{tag.tag}</i></strong>
                       </button>

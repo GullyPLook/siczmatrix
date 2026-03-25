@@ -4,25 +4,21 @@ import LogoSmall from "./logoSmall";
 
 export default function Latest(props: any) {
 
-  const tableTitle = <div className="tableTitle">
-        <strong>&nbsp;&nbsp;Latest entries</strong>
-    </div>
-
 const latest: any = use(props.latestPromise);
 
 const threeColumnTable = (
 
         <div className="tableContainer">
           
-          <table className="three">
-            <thead className="latest">
+          <table>
+           {/*  <thead className="latest">
               <tr>
                 <th scope="col">Song</th> 
                 <th scope="col">Artists</th>
                 <th scope="col"></th>
               </tr>
-            </thead>
-            <tbody>
+            </thead> */}
+            <tbody className="latest">
               {latest.map((row: any) =>
               <tr key={row.id} 
                   id={row.id.toString()}
@@ -43,9 +39,12 @@ const threeColumnTable = (
       ); 
 const card = (
 
-     <div className="songCard">
-       
+     <div className="latestCard">
+        
             <div className="videoContainer">
+              <div>
+                
+              </div> 
               <iframe 
                 // width="560" 
                 // height="315" 
@@ -55,7 +54,8 @@ const card = (
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 // referrerpolicy="strict-origin-when-cross-origin" 
                 allowFullScreen>
-              </iframe>             
+              </iframe> 
+                         
             </div>
             <div className="latestInfoContainer">{threeColumnTable}</div>
             
@@ -72,7 +72,7 @@ const card = (
 
     return (
         <>
-       {tableTitle}
+       <strong className="latestTable">Duet Matrix - Latest entries</strong>
         {card}
         
 

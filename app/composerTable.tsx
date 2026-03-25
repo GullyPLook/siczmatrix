@@ -6,24 +6,21 @@ export default function ComposerTable(props: any) {
   
   const composer: any = use(props.composerCreditPromise);
   
-    const tableTitle = (
-      <div className="tableTitle">
-        <strong>&nbsp;&nbsp;Written by {composer[0].composer}</strong>
-    </div>
-    );
 
     const threeColumnTable = 
     
        (
         <div className="tableContainer">
+
+          
           <table>
-            <thead>
+            {/* <thead>
               <tr>
                 <th scope="col">Year</th>
                 <th scope="col">Song</th> 
                 <th scope="col">Artists</th>  
               </tr>
-            </thead>
+            </thead> */}
             <tbody>
               {composer.map((row: any) =>
               <tr key={row.id} 
@@ -44,7 +41,7 @@ export default function ComposerTable(props: any) {
 
     return (
         <>
-        {tableTitle}
+        <span className="songTable"><i>Written by</i><strong>&nbsp;&nbsp;{composer[0].composer}</strong></span>
         {threeColumnTable}
         </>
     );

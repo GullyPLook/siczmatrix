@@ -5,22 +5,18 @@ export default function SongTable(props: any) {
     
   const songs: any = use(props.songCreditPromise);
 
-    const tableTitle = (
-      <div className="tableTitle">
-        <strong>&nbsp;&nbsp;{songs[0].title}</strong>
-    </div>
-    );
 
     const twoColumnTable = (
-        <div className="tableContainer">
+        <div>
+          
           <table>
-            <thead className="two">
+            {/* <thead className="two">
               <tr>
                 <th scope="col">Year</th>
                 <th scope="col">Artists</th>   
               </tr>
-            </thead>
-            <tbody>
+            </thead> */}
+            <tbody className="two">
               {songs.map((row: any) =>
               <tr key={row.id} 
                   id={row.id.toString()}>
@@ -39,7 +35,7 @@ export default function SongTable(props: any) {
 
     return (
         <>
-        {tableTitle}
+        <strong className="songTable">{songs[0].title}</strong>
         {twoColumnTable}
         </>
     );

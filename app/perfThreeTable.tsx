@@ -5,23 +5,17 @@ export default function PerfThreeColumnTable(props: any) {
     
   const tags: any = use(props.perfThreeColTagPromise);
 
-
-    const tableTitle = (
-      <div className="tableTitle">
-        <strong>&nbsp;&nbsp;{tags[0].tag}</strong>
-    </div>
-    );
-
     const threeColumnTable = (
         <div className="tableContainer">
+          
           <table>
-            <thead>
+            {/* <thead>
               <tr>
                 <th scope="col">Year</th>
                 <th scope="col">Song</th> 
                 <th scope="col">Artists</th>  
               </tr>
-            </thead>
+            </thead> */}
             <tbody>
               {tags.map((row: any) =>
               <tr key={row.id} 
@@ -42,7 +36,7 @@ export default function PerfThreeColumnTable(props: any) {
 
     return (
         <>
-        {tableTitle}
+        <strong className="releaseTable">{tags[0].tag}</strong>
         {threeColumnTable}
         </>
     );

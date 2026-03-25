@@ -27,24 +27,18 @@ const tags: any = relTags
   }
   return 0;
 });
-      
-    const tableTitle = (
-      <div className="tableTitle">
-        <strong>&nbsp;&nbsp;{tags[0].release_tag}</strong>
-    </div>
-    );
 
     const fourColumnTable = (
         <div className="tableContainer">
           <table>
-            <thead className="four">
+            {/* <thead className="four">
               <tr>
                 <th scope="col">Year</th>
                 <th scope="col">Song</th> 
                 <th scope="col">Artists</th>
                 <th scope="col">{tags[0].release_tag}</th>  
               </tr>
-            </thead>
+            </thead> */}
             <tbody>
               {tags.map((row: any, index: any) =>
               <tr key={index} 
@@ -67,7 +61,7 @@ const tags: any = relTags
 
     return (
         <>
-        {tableTitle}
+        <strong className="releaseTable">{tags[0].release_tag}</strong>
         {fourColumnTable}
         </>
     );    

@@ -5,22 +5,18 @@ export default function YearTable(props: any) {
     
   const year: any = use(props.yearCreditPromise);
 
-    const tableTitle = (
-      <div className="tableTitle">
-        <strong>&nbsp;&nbsp;{year[0].year}</strong>
-    </div>
-    );
 
     const twoColumnTable = (
         <div className="tableContainer">
+          
           <table>
-            <thead className="two">
+            {/* <thead className="two">
               <tr>
                 <th scope="col">Song</th> 
                 <th scope="col">Artists</th>  
               </tr>
-            </thead>
-            <tbody>
+            </thead> */}
+            <tbody className="two">
               {year.map((row: any) =>
               <tr key={row.id} 
                   id={row.id.toString()}>
@@ -38,7 +34,7 @@ export default function YearTable(props: any) {
 
     return (
         <>
-        {tableTitle}
+        <strong className="songTable">{year[0].year}</strong>
         {twoColumnTable}
         </>
     );

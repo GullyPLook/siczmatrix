@@ -19,22 +19,18 @@ artist.sort((a: { year: number; }, b: { year: number; }) => {
  
  const artistName: any = use(props.tableArtistPromise);
 
-    const tableTitle = (
-      <div className="tableTitle">
-        <strong>&nbsp;&nbsp;{artistName[0].artist}</strong>
-    </div>
-    );
 
     const threeColumnTable = (
         <div className="tableContainer">
-          <table className="three">
-            <thead>
+          
+          <table>
+            {/* <thead>
               <tr>
                 <th scope="col">Year</th>
                 <th scope="col">Song</th> 
                 <th scope="col">With</th>  
               </tr>
-            </thead>
+            </thead> */}
             <tbody>
               {artist.map((row: any) =>
               <tr key={row.id}
@@ -56,7 +52,7 @@ artist.sort((a: { year: number; }, b: { year: number; }) => {
 
     return (
         <>
-        {tableTitle}
+        <strong className="artistTable">{artistName[0].artist}</strong>
         {threeColumnTable}
         </>
     );

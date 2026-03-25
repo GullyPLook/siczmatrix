@@ -1,27 +1,37 @@
 import { use } from "react";
+import clsx from "clsx";
 
 export default function FourColumnTable(props: any) {
     
-  const tags: any = use(props.fourColTagPromise);
-  
-    const tableTitle = (
-      <div className="tableTitle">
-        <strong>&nbsp;&nbsp;{tags[0].type}</strong>
-    </div>
-    );
+  const releasetags: any = use(props.fourColTagPromise);
+  const perftags: any = use(props.perfFourColTagPromise);
+
+  const tags: any = releasetags.concat(perftags)
+
+  tags.sort((a: { year: number; }, b: { year: number; }) => {
+  if (a.year < b.year) {
+    return -1;
+  }
+  if (a.year > b.year) {
+    return 1;
+  }
+  return 0;
+});
 
     const fourColumnTable = (
+        
         <div className="tableContainer">
+          
           <table>
-            <thead className="four">
+            {/* <thead className="four">
               <tr>
                 <th scope="col">Year</th>
                 <th scope="col">Song</th> 
                 <th scope="col">Artists</th>
                 <th scope="col">{tags[0].type}</th>  
               </tr>
-            </thead>
-            <tbody>
+            </thead> */}
+            <tbody className="four">
               {tags.map((row: any, index: any) =>
               <tr key={index} 
                   id={row.id.toString()}>
@@ -44,7 +54,22 @@ export default function FourColumnTable(props: any) {
 
     return (
         <>
-        {tableTitle}
+        <strong className={clsx(
+                    [
+                      tags[0].type_id === 12 && 'crossoverLeftTable',
+                      (tags[0].type_id === 26 
+                        || tags[0].type_id === 32
+                        || tags[0].type_id === 54
+                        || tags[0].type_id === 62
+                        || tags[0].type_id === 63) && 'releaseLeftTable',
+                      (tags[0].type_id === 1
+                      || tags[0].type_id === 4
+                      || tags[0].type_id === 6
+                      || tags[0].type_id === 67)  && 'specialLeftTable'
+          
+          
+                    ]
+                    )}>{tags[0].type}</strong>
         {fourColumnTable}
         </>
     );

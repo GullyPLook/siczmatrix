@@ -54,8 +54,6 @@ export default function NetworkGraph(props: any) {
 		)
 	});
 
-/* 	console.log(nodes)
-    console.log(edges) */
 
 	const options = {
 		autoResize: true,

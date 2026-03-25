@@ -36,6 +36,15 @@
         "info";
   }
 
+  .latestCard {
+    display: grid;
+    grid-template-columns: 100% !important;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "video" 
+        "info";
+  }
+
   .videoContainer {
     grid-row: 1;
   }
@@ -55,21 +64,17 @@
     position: inherit !important;
   }
 
-  thead.latest th:nth-child(1) {
+  tbody.latest td:nth-child(1) {
   width: 45%;
 }
 
-thead.latest th:nth-child(2) {
+tbody.latest td:nth-child(2) {
   width: 45%;
 }
 
-thead.latest th:nth-child(3) {
+tbody.latest td:nth-child(3) {
   width: 10% !important;
 }
-
-/* thead.latest th:nth-child(4) {
-  width: 10% !important; 
-} */
   
 } 
 
@@ -413,6 +418,17 @@ input::placeholder {
   background-color: rgb(41, 48, 88);
   border: 2px, solid, rgb(41, 48, 88);
   border-radius: 6px;
+  margin-bottom: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "video info";
+}
+
+.latestCard {
+  background-color: rgb(41, 48, 88);
+  border: 2px, solid, rgb(41, 48, 88);
+  border-radius: 0 6px 6px 6px;
   margin-bottom: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -512,33 +528,6 @@ iframe {
   float: none!important;
 }
 
-.mediaTags {
-  margin-right: 3px;
-  padding: 0px 8px;
-  border-radius: 16px;
-  background-color: rgb(236, 151, 23);
-  color: rgb(41, 48, 88);
-  font-size: small;
-}
-
-.mediaLeft {
-  padding: 0px 8px;
-  /* border: 0.2em solid rgb(236, 151, 23); */
-  border-radius: 16px 0px 0px 16px;
-  background-color: rgb(26, 32, 66);
-  color: rgb(236, 151, 23);
-  font-size: small;
-}
-
-.mediaRight {
-  margin-right: 3px;
-  padding: 0px 8px 0px 4px;
-  border-radius: 0px 16px 16px 0px;
-  background-color: rgb(236, 151, 23);
-  color: rgb(41, 48, 88);
-  font-size: small;
-}
-
 .crossoverTags {
   margin-right: 3px;
   padding: 0px 8px;
@@ -591,6 +580,104 @@ iframe {
   background-color: rgb(1, 214, 214);
   color: rgb(41, 48, 88);
   font-size: small;
+}
+
+.crossoverTable {
+  padding: 2px 8px 2px 8px;
+  border-radius: 16px 16px 0px 0px;
+  background-color: rgb(39, 179, 58);
+  color: rgb(41, 48, 88);
+}
+
+.crossoverLeftTable {
+  padding: 2px 8px 2px 8px;
+  border-radius: 16px 16px 0px 0px;
+  background-color: rgb(26, 32, 66);
+  color: rgb(39, 179, 58);
+}
+
+.latestTable {
+  padding: 2px 8px 2px 8px;
+  border-radius: 16px 16px 0px 0px;
+  background-color: rgb(41, 48, 88);
+  color: rgb(39, 179, 58);
+}
+
+.releaseTable {
+  padding: 2px 8px 2px 8px;
+  border-radius: 16px 16px 0px 0px;
+  background-color: rgb(1, 214, 214);
+  color: rgb(41, 48, 88);
+}
+
+.releaseLeftTable {
+  padding: 2px 8px 2px 8px;
+  border-radius: 16px 16px 0px 0px;
+  background-color: rgb(26, 32, 66);
+  color: rgb(1, 214, 214);
+}
+
+.genreTable {
+  padding: 2px 8px 2px 8px;
+  border-radius: 16px 16px 0px 0px;
+  background-color: rgb(255, 0, 255);
+  color: rgb(41, 48, 88);
+}
+
+.songFormTable {
+  padding: 2px 8px 2px 8px;
+  border-radius: 16px 16px 0px 0px;
+  background-color: rgb(255, 128, 191);
+  color: rgb(41, 48, 88);
+}
+
+.subjectTable {
+  padding: 2px 8px 2px 8px;
+  border-radius: 16px 16px 0px 0px;
+  background-color: rgb(255, 128, 128);
+  color: rgb(41, 48, 88);
+}
+
+.approachTable {
+  padding: 2px 8px 2px 8px;
+  border-radius: 16px 16px 0px 0px;
+  background-color: rgb(255, 128, 64);
+  color: rgb(41, 48, 88);
+}
+
+.dynamicTable {
+  padding: 2px 8px 2px 8px;
+  border-radius: 16px 16px 0px 0px;
+  background-color: rgb(255, 128, 0);
+  color: rgb(41, 48, 88);
+}
+
+.specialTable {
+  padding: 2px 8px 2px 8px;
+  border-radius: 16px 16px 0px 0px;
+  background-color: rgb(255, 255, 0);
+  color: rgb(41, 48, 88);
+}
+
+.specialLeftTable {
+  padding: 2px 8px 2px 8px;
+  border-radius: 16px 16px 0px 0px;
+  background-color: rgb(26, 32, 66);
+  color: rgb(255, 255, 0);
+}
+
+.songTable {
+  padding: 2px 8px 2px 8px;
+  border-radius: 16px 16px 0px 0px;
+  background-color: rgb(41, 48, 88);
+  color: rgb(255, 255, 255);
+}
+
+.artistTable {
+  padding: 2px 8px 2px 8px;
+  border-radius: 16px 16px 0px 0px;
+  background-color: rgb(41, 48, 88);
+  color: rgb(39, 179, 58);
 }
 
 .genreTags {
@@ -649,7 +736,6 @@ iframe {
 
 .specialLeft {
   padding: 0px 8px;
-  /* border: 0.2em solid rgb(236, 151, 23); */
   border-radius: 16px 0px 0px 16px;
   background-color: rgb(26, 32, 66);
   color: rgb(255, 255, 0);
@@ -665,12 +751,6 @@ iframe {
   font-size: small;
 }
 
-.tableTitle {
-  color: rgb(41, 48, 88);
-  background-color:  rgb(39, 179, 58);
-  border-radius: 6px 6px 0 0;
-}
-
 .tableContainer {
   max-height: 800px;
   overflow: auto;
@@ -679,15 +759,7 @@ iframe {
   scrollbar-gutter: auto; 
   border: 2px, solid, rgb(39, 179, 58);
   margin-bottom: 10px;
-  border-radius: 0 0 6px 6px;
-}
-
-.sigmaContainer {
-  grid-area: ma;
-  width: 1080px;
-  height: 750px;
-  grid-column-start: 2;
-  grid-column-end: 3; 
+  border-radius: 0 6px 6px 6px;
 }
 
 table {
@@ -697,45 +769,34 @@ table {
   color: rgb(39, 179, 58);
 }
 
-thead {
-  color: rgb(255, 255, 255);
-}
-
-thead th:nth-child(1) {
+tbody td:nth-child(1) {
   width: 20%;
 }
 
-thead th:nth-child(2) {
+tbody td:nth-child(2) {
   width: 40%;
 }
 
-thead th:nth-child(3) {
+tbody td:nth-child(3) {
   width: 40%;
 }
 
-thead th:nth-child(4) {
+tbody td:nth-child(4) {
   width: 40%;
 }
 
-thead.two th:nth-child(1) {
+tbody.two td:nth-child(1) {
   width: 50%;
 }
 
-thead.two th:nth-child(2) {
+tbody.two td:nth-child(2) {
   width: 50%;
-}
-
-caption, thead {
-  background-color: rgb(6, 14, 58);
-  position: sticky;
-  top: 0;
 }
 
 td {
   cursor: pointer;
 }
 
-th,
 td {
   padding: 5px;
   text-align: left;
@@ -750,14 +811,14 @@ tbody tr:nth-child(even) {
   background-color:  rgb(41, 48, 88);
 }
 
-thead.latest th:nth-child(1) {
+tbody.latest td:nth-child(1) {
   width: 48%;
 }
 
-thead.latest th:nth-child(2) {
+tbody.latest td:nth-child(2) {
   width: 47%;
 }
 
-thead.latest th:nth-child(3) {
+tbody.latest td:nth-child(3) {
   width: 5%;
 }

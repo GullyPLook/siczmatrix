@@ -8,7 +8,7 @@ const latest: any = use(props.latestPromise);
 
 const threeColumnTable = (
 
-        <div className="tableContainer">
+        <div className="latestTableContainer">
           
           <table>
            {/*  <thead className="latest">
@@ -72,7 +72,7 @@ const card = (
 
     return (
         <>
-       <strong className="latestTable">Duet Matrix - Latest entries</strong>
+       <strong className="latestTable">Latest entries</strong>
         {card}
         
 

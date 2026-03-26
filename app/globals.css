@@ -45,6 +45,10 @@
         "info";
   }
 
+  .latestTableContainer {
+    border-radius: 0 0px 6px 6px !important;
+  }
+
   .videoContainer {
     grid-row: 1;
   }
@@ -426,7 +430,7 @@ input::placeholder {
 }
 
 .latestCard {
-  background-color: rgb(41, 48, 88);
+  background-color: rgb(51, 21, 107);
   border: 2px, solid, rgb(41, 48, 88);
   border-radius: 0 6px 6px 6px;
   margin-bottom: 10px;
@@ -597,9 +601,9 @@ iframe {
 }
 
 .latestTable {
-  padding: 2px 8px 2px 8px;
+  padding: 3px 8px 2px 8px;
   border-radius: 16px 16px 0px 0px;
-  background-color: rgb(41, 48, 88);
+  background-color: rgb(51, 21, 107);
   color: rgb(39, 179, 58);
 }
 
@@ -751,6 +755,17 @@ iframe {
   font-size: small;
 }
 
+.latestTableContainer {
+ max-height: 800px;
+  overflow: auto;
+  scrollbar-color: rgb(41, 48, 88)  transparent;
+  scrollbar-width: thick;
+  scrollbar-gutter: auto; 
+  border: 2px, solid, rgb(39, 179, 58);
+  margin-bottom: 10px;
+  border-radius: 0 6px 6px 6px;
+}
+
 .tableContainer {
   max-height: 800px;
   overflow: auto;
@@ -804,7 +819,7 @@ td {
 }
 
 tbody tr:nth-child(odd) {
-  background-color:  rgb(67, 32, 133);
+  background-color:  rgb(51, 21, 107);
 }
 
 tbody tr:nth-child(even) {

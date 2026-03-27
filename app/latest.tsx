@@ -13,11 +13,12 @@ const rows: any = latest.map((row: any) => {
           <div key={row.id} 
               id={row.id.toString()}
               className="latestOption"
+              style={{ backgroundColor: 'rgb(41, 48, 88)'}}
               >
             <button 
               className="latestButtonOption" 
               onClick={(event) => props.handleLatestSelect(event, row.link, row.id)}
-              style={{ backgroundColor: 'rgb(41, 48, 88)'}}>
+              >
                <strong className="latestSong">{`${row.title}`}</strong>
                <i style={{color: "rgb(39, 179, 58)"}}>{` (${row.year})`}</i>
                <br />

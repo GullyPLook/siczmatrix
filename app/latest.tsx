@@ -8,7 +8,8 @@ const latest: any = use(props.latestPromise);
 
 
 const rows: any = latest.map((row: any) => {
-         return (
+  if (props.latestSwitch === row.id) {
+    return (
           <div key={row.id} 
               id={row.id.toString()}
               className="latestOption"
@@ -16,17 +17,39 @@ const rows: any = latest.map((row: any) => {
             <button 
               className="latestButtonOption" 
               onClick={(event) => props.handleLatestSelect(event, row.link, row.id)}
-              style={props.latestSwitch === row.id ?  
-                    {fontWeight: 'bold', backgroundColor: 'rgb(41, 48, 88)'} : { opacity: 1}}>
-               <span className="latestSong"><i>{`${row.title}`}</i><i style={{color: "rgb(39, 179, 58)"}}>{` (${row.year})`}</i></span>
+              style={{ backgroundColor: 'rgb(41, 48, 88)'}}>
+               <strong className="latestSong">{`${row.title}`}</strong>
+               <i style={{color: "rgb(39, 179, 58)"}}>{` (${row.year})`}</i>
                <br />
-               <i>{`${row.artist_a} & ${row.artist_b}`}</i>
+               <strong>{`${row.artist_a} & ${row.artist_b}`}</strong>
             </button>
-            <button className="logoLatest" onClick={(event) => props.handleSearchChange(event, row.id, row.song_id, row.title, row.year, row.artist_a, row.artist_a_id, row.artist_b, row.artist_b_id)}>
+            <button className="logoLatestCol" onClick={(event) => props.handleSearchChange(event, row.id, row.song_id, row.title, row.year, row.artist_a, row.artist_a_id, row.artist_b, row.artist_b_id)}>
                       <LogoSmall size={40} color="#9f38d6" color2="rgb(236, 151, 23)"/>
             </button>
           </div>
          )
+  } else {
+    return (
+          <div key={row.id} 
+              id={row.id.toString()}
+              className="latestOption"
+              >
+            <button 
+              className="latestButtonOption" 
+              onClick={(event) => props.handleLatestSelect(event, row.link, row.id)}
+              >
+               <i className="latestSong">{`${row.title}`}</i>
+               <i style={{color: "rgb(39, 179, 58)"}}>{` (${row.year})`}</i>
+               <br />
+               <i>{`${row.artist_a} & ${row.artist_b}`}</i>
+            </button>
+            <button className="logoLatestCol" onClick={(event) => props.handleSearchChange(event, row.id, row.song_id, row.title, row.year, row.artist_a, row.artist_a_id, row.artist_b, row.artist_b_id)}>
+                      <LogoSmall size={40} color="#9f38d6" color2="rgb(236, 151, 23)"/>
+            </button>
+          </div>
+         )
+  }
+         
 })
 
 /* style={props.latestSelect.substring(props.latestSelect.length - 5) === row.link.substring(props.latestSelect.length - 5) ? { opacity: 1} : {opacity: 0.3}} */

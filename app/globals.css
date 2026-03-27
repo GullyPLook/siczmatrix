@@ -593,7 +593,7 @@ iframe {
 .latestOption {
   width: 100%;
   display: grid;
-    grid-template-columns: 8fr 1fr;
+    grid-template-columns: 7fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
         "lb l"
@@ -601,6 +601,7 @@ iframe {
 }
 
 .latestButtonOption {
+  font-style: normal;
   grid-area: lb;
   border-radius: 6px;
   padding: 5px;
@@ -612,9 +613,12 @@ iframe {
   color: rgba(255, 255, 255, 0.897);
 }
 
-.logoLatest {
+.logoLatestCol {
   grid-area: l;
-  justify-self: end;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
 }
 
 .crossoverTable {

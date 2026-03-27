@@ -6,45 +6,37 @@ export default function Latest(props: any) {
 
 const latest: any = use(props.latestPromise);
 
-const threeColumnTable = (
 
-        <div className="latestTableContainer">
-          
-          <table>
-           {/*  <thead className="latest">
-              <tr>
-                <th scope="col">Song</th> 
-                <th scope="col">Artists</th>
-                <th scope="col"></th>
-              </tr>
-            </thead> */}
-            <tbody className="latest">
-              {latest.map((row: any) =>
-              <tr key={row.id} 
-                  id={row.id.toString()}
-                  style={props.latestSwitch === row.id ?  
-                    {color: 'rgb(41, 48, 88)',
-                     backgroundColor:  'rgb(39, 179, 58)', 
-                     fontWeight: 'bold'} : { opacity: 1}}
-                     >
-                  <td onClick={(event) => props.handleLatestSelect(event, row.link, row.id)}>{row.title}</td>
-                  <td onClick={(event) => props.handleLatestSelect(event, row.link, row.id)}>{row.artist_a} & {row.artist_b}</td>
-                  <td onClick={(event) => props.handleSearchChange(event, row.id, row.song_id, row.title, row.year, row.artist_a, row.artist_a_id, row.artist_b, row.artist_b_id)}>
-                    <LogoSmall size={30} color="#9f38d6" color2="rgb(236, 151, 23)"/></td>
-              </tr>
-              )} 
-            </tbody>
-          </table>
-        </div>
-      ); 
+const rows: any = latest.map((row: any) => {
+         return (
+          <div key={row.id} 
+              id={row.id.toString()}
+              className="latestOption"
+              >
+            <button 
+              className="latestButtonOption" 
+              onClick={(event) => props.handleLatestSelect(event, row.link, row.id)}
+              style={props.latestSwitch === row.id ?  
+                    {fontWeight: 'bold', backgroundColor: 'rgb(41, 48, 88)'} : { opacity: 1}}>
+               <span className="latestSong"><i>{`${row.title}`}</i><i style={{color: "rgb(39, 179, 58)"}}>{` (${row.year})`}</i></span>
+               <br />
+               <i>{`${row.artist_a} & ${row.artist_b}`}</i>
+            </button>
+            <button className="logoLatest" onClick={(event) => props.handleSearchChange(event, row.id, row.song_id, row.title, row.year, row.artist_a, row.artist_a_id, row.artist_b, row.artist_b_id)}>
+                      <LogoSmall size={40} color="#9f38d6" color2="rgb(236, 151, 23)"/>
+            </button>
+          </div>
+         )
+})
+
+/* style={props.latestSelect.substring(props.latestSelect.length - 5) === row.link.substring(props.latestSelect.length - 5) ? { opacity: 1} : {opacity: 0.3}} */
+
 const card = (
 
      <div className="latestCard">
         
             <div className="videoContainer">
-              <div>
-                
-              </div> 
+              
               <iframe 
                 // width="560" 
                 // height="315" 
@@ -57,9 +49,9 @@ const card = (
               </iframe> 
                          
             </div>
-            <div className="latestInfoContainer">{threeColumnTable}</div>
+            <div className="latestOptionsContainer">{rows}</div>
             
-         </div>
+    </div>
          
 
      
@@ -67,6 +59,7 @@ const card = (
 
       useEffect(() => {
           setTimeout(() => props.handleLatestSelect(event, latest[0].link, latest[0].id), 100)
+
         }, [latest])
     
 

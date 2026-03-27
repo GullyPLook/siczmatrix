@@ -45,16 +45,20 @@
         "info";
   }
 
-  .latestTableContainer {
+  /* .latestTableContainer {
     border-radius: 0 0px 6px 6px !important;
-  }
+  } */
 
   .videoContainer {
     grid-row: 1;
   }
 
-  .latestInfoContainer {
-    grid-row: 2;  
+  .latestOptionsContainer {
+    grid-row: 2; 
+    padding-top: 15px !important;
+    padding-bottom: 20px !important;
+    text-align: start !important;
+     
   }
 
   .songInfoContainer {
@@ -254,7 +258,7 @@ input::placeholder {
   text-align: start;
 }
 
-.buttonSearch:hover, .buttonOption:hover {
+.buttonSearch:hover, .buttonOption:hover, .latestButtonOption:hover {
   background-color: rgb(41, 48, 88);
   border-radius: 6px;
 }
@@ -429,17 +433,6 @@ input::placeholder {
     "video info";
 }
 
-.latestCard {
-  background-color: rgb(51, 21, 107);
-  border: 2px, solid, rgb(41, 48, 88);
-  border-radius: 0 6px 6px 6px;
-  margin-bottom: 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: 
-    "video info";
-}
-
 .videoContainer {
   grid-area: video;
   padding: 5px;
@@ -476,18 +469,6 @@ iframe {
   color: rgb(41, 48, 88);
   font-size: small;  
 }
-
-.latestInfoContainer {
-  
-  text-align: end;
-  position: relative;
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-areas: 
-    "info"
-    "performance";
-}
-
 
 .songInfoContainer {
   /* grid-area: info; */
@@ -584,6 +565,56 @@ iframe {
   background-color: rgb(1, 214, 214);
   color: rgb(41, 48, 88);
   font-size: small;
+}
+
+.latestCard {
+  background-color: rgb(51, 21, 107);
+  border: 2px, solid, rgb(41, 48, 88);
+  border-radius: 0 6px 6px 6px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "video info";
+}
+
+.latestOptionsContainer {
+  width: 100%;
+  border-radius: 6px;
+  padding: 5px;
+  margin: 5px 0px;
+  max-height: 300px;
+  overflow: auto;
+  scrollbar-color: rgb(41, 48, 88)  transparent;
+  scrollbar-width: thick;
+  scrollbar-gutter: auto;
+}
+
+.latestOption {
+  width: 100%;
+  display: grid;
+    grid-template-columns: 8fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "lb l"
+        "lb l"; 
+}
+
+.latestButtonOption {
+  grid-area: lb;
+  border-radius: 6px;
+  padding: 5px;
+  transition-duration: 0.2s;
+  text-align: start;
+}
+
+.latestSong {
+  color: rgba(255, 255, 255, 0.897);
+}
+
+.logoLatest {
+  grid-area: l;
+  justify-self: end;
 }
 
 .crossoverTable {
@@ -753,17 +784,6 @@ iframe {
   background-color: rgb(255, 255, 0);
   color: rgb(41, 48, 88);
   font-size: small;
-}
-
-.latestTableContainer {
- max-height: 800px;
-  overflow: auto;
-  scrollbar-color: rgb(41, 48, 88)  transparent;
-  scrollbar-width: thick;
-  scrollbar-gutter: auto; 
-  border: 2px, solid, rgb(39, 179, 58);
-  margin-bottom: 10px;
-  border-radius: 0 6px 6px 6px;
 }
 
 .tableContainer {

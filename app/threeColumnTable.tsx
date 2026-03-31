@@ -19,7 +19,6 @@ export default function ThreeColumnTable(props: any) {
   return 0;
 });
 
-  console.log(tags)
 
   function title() {
     if ((tags[0].type_id === 7) || (tags[0].type_id === 8) || (tags[0].type_id === 9) || (tags[0].type_id === 10) || (tags[0].type_id === 12)) {
@@ -79,10 +78,9 @@ export default function ThreeColumnTable(props: any) {
             tags[0].type_id === 9 && 'approachTable',
             tags[0].type_id === 10 && 'dynamicTable',
             ( tags[0].type_id === 4
+              || tags[0].type_id === 5
             || tags[0].type_id === 6
             || tags[0].type_id === 67)  && 'specialTable'
-
-
           ]
           )}>{title()}</span>
         {threeColumnTable}

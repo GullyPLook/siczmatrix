@@ -10,7 +10,7 @@ import Information from "./information";
 import SongCard from "./songCard";
 import Podcast from "./podcast";
 import episodes from "./episodes.json";
-import { latest, versions, composers, adaptations, personalTags, releaseTags, releaseFourColTags, releaseFourColTagsYear, threeColTags, fourColTags, perfThreeColTags, perfFourColTags, songCredits, styleTags, specialTags, performances, performanceTags, composerCredits, artistCreditsA, artistCreditsB, getArtist, yearCredits } from "./actions";
+import { latest, versions, composers, adaptations, personalTags, releaseTags, releaseFourColTags, releaseFourColTagsYear, threeColTags, fourColTags, perfThreeColTags, perfFourColTags, songCredits, medleyCredits, styleTags, specialTags, performances, performanceTags, composerCredits, artistCreditsA, artistCreditsB, getArtist, yearCredits } from "./actions";
 import ArtistTable from "./artistTable";
 import ComposerTable from "./composerTable";
 import YearTable from "./yearTable";
@@ -61,6 +61,7 @@ export default function Home() {
   const [seeComposerTable, setSeeComposerTable] = useState(false);
   const [composerCreditPromise, setComposerCreditPromise] = useState<any>([]);
   const [adaptationPromise, setAdaptationPromise] = useState<any>([]);
+  const [medleyCreditPromise, setMedleyCreditPromise] = useState<any>([]);
   const [seeYearTable, setSeeYearTable] = useState(false);
   const [yearCreditPromise, setYearCreditPromise] = useState<any>([]);
   const [seeSongTable, setSeeSongTable] = useState(false);
@@ -225,8 +226,6 @@ export default function Home() {
     }; 
   }; 
 
-console.log(releaseFourColTagPromise)
-
   function handleFourTag(event: any, id: number) {
     
     setFourColTagPromise(fourColTags(id))
@@ -270,6 +269,7 @@ console.log(releaseFourColTagPromise)
   function handleSong(event: any, id: number) {
     
     setSongCreditPromise(songCredits(id))
+    setMedleyCreditPromise(medleyCredits(id))
 
     setSeeSongTable(true);
     setSeeArtistTable(false);
@@ -675,6 +675,7 @@ console.log(releaseFourColTagPromise)
          />}
          {seeSongTable && <SongTable
          songCreditPromise={songCreditPromise}
+         medleyCreditPromise={medleyCreditPromise}
          handleSongChange={handleSongChange}
          handleYear={handleYear}
          />}

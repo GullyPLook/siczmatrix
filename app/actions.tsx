@@ -213,6 +213,17 @@ export async function songCredits(d: number) {
     else return data
 };
 
+export async function medleyCredits(d: number) {
+
+    const { data, error } = await supabase
+    .from('all_songs_medleys')
+    .select('*')
+    .eq('song_id', d)
+    if (error) console.error('Error fetching items:', error)        
+    else return data
+};
+
+
 export async function getArtist(d: number) {
 
      const { data, error } = await supabase

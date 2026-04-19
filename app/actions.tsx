@@ -82,7 +82,7 @@ export async function specialTags(d: number) {
     const { data, error } = await supabase
     .from('tags')
     .select('*')
-    .or('type_id.in.(4,6,67), tag_id.in.(5,9,11,17,1555,1201)')
+    .or('type_id.in.(4,6,67), tag_id.in.(5,9,11,17,1555,1201,1698)')
     .eq('id', d)
     if (error) console.error('Error fetching items:', error)
     else return data

@@ -77,8 +77,7 @@ export default function ThreeColumnTable(props: any) {
             tags[0].type_id === 8 && 'subjectTable',
             tags[0].type_id === 9 && 'approachTable',
             tags[0].type_id === 10 && 'dynamicTable',
-            ( tags[0].type_id === 4
-              || tags[0].type_id === 5
+            ( tags[0].type_id === 4  
             || tags[0].type_id === 6
             || tags[0].type_id === 67)  && 'specialTable'
           ]

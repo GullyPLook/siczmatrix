@@ -183,6 +183,16 @@ export async function composerCredits(d: number) {
     else return data
 };
 
+export async function medleyComposerCredits(d: number) {
+
+    const { data, error } = await supabase
+    .from('medley_credit')
+    .select('*')
+    .eq('composer_id', d)
+    if (error) console.error('Error fetching items:', error)
+    else return data
+};
+
 export async function artistCreditsA(d: number) {
 
     const { data, error } = await supabase

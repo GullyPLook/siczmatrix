@@ -3,11 +3,32 @@ import { use } from "react";
 
 export default function ComposerTable(props: any) {
     
+  const medleyComposer: any = use(props.medleyComposerCreditPromise);
+  const composerCredits: any = use(props.composerCreditPromise);
   
-  const composer: any = use(props.composerCreditPromise);
-  
+  const composerConcat = medleyComposer.concat(composerCredits)
 
-    const threeColumnTable = 
+  let composer = composerConcat.filter((item: { id: any; }, index: number, objects: { id: any; }[]) => {
+            if (index === 0) {
+                return item;
+            } else if (item.id !== objects[index - 1].id) {
+                return item;
+            }
+
+        });
+
+  composer.sort((a: { year: number; }, b: { year: number; }) => {
+  if (a.year < b.year) {
+    return -1;
+  }
+  if (a.year > b.year) {
+    return 1;
+  }
+  return 0;
+});
+
+  
+  const threeColumnTable = 
     
        (
         <div className="tableContainer">

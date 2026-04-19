@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, Suspense } from "react";
 import versionObject from "./versionObject.json";
 import selectorObjects from "./selectorObjects.json";
 import Logo from './logo'
@@ -10,7 +10,7 @@ import Information from "./information";
 import SongCard from "./songCard";
 import Podcast from "./podcast";
 import episodes from "./episodes.json";
-import { latest, versions, composers, adaptations, personalTags, releaseTags, releaseFourColTags, releaseFourColTagsYear, threeColTags, fourColTags, perfThreeColTags, perfFourColTags, songCredits, medleyCredits, styleTags, specialTags, performances, performanceTags, composerCredits, artistCreditsA, artistCreditsB, getArtist, yearCredits } from "./actions";
+import { latest, versions, composers, adaptations, personalTags, releaseTags, releaseFourColTags, releaseFourColTagsYear, threeColTags, fourColTags, perfThreeColTags, perfFourColTags, songCredits, medleyCredits, medleyComposerCredits, styleTags, specialTags, performances, performanceTags, composerCredits, artistCreditsA, artistCreditsB, getArtist, yearCredits } from "./actions";
 import ArtistTable from "./artistTable";
 import ComposerTable from "./composerTable";
 import YearTable from "./yearTable";
@@ -22,6 +22,7 @@ import PerfFourColumnTable from "./perfFourTable";
 import ReleaseFourColumnTable from "./releaseFourColumnTable";
 import NetworkGraph from "./network"
 import Latest from "./latest";
+import LogoSmall from "./logoSmall";
 
 export default function Home() {
 
@@ -62,6 +63,8 @@ export default function Home() {
   const [composerCreditPromise, setComposerCreditPromise] = useState<any>([]);
   const [adaptationPromise, setAdaptationPromise] = useState<any>([]);
   const [medleyCreditPromise, setMedleyCreditPromise] = useState<any>([]);
+  const [medleyComposerCreditPromise, setMedleyComposerCreditPromise] = useState<any>([]);
+  
   const [seeYearTable, setSeeYearTable] = useState(false);
   const [yearCreditPromise, setYearCreditPromise] = useState<any>([]);
   const [seeSongTable, setSeeSongTable] = useState(false);
@@ -310,6 +313,7 @@ export default function Home() {
   function handleComposers(event: any, id: number) {
     
     setComposerCreditPromise(composerCredits(id));
+    setMedleyComposerCreditPromise(medleyComposerCredits(id))
 
     setSeeComposerTable(true);
     setSeeArtistTable(false);
@@ -503,6 +507,10 @@ export default function Home() {
       return true;
     });
   };
+
+  function Loading() {
+  return <div><LogoSmall size={100} color="#9f38d6" color2="rgb(236, 151, 23)"/></div>;
+}
   
   useEffect(() => {
     
@@ -583,6 +591,7 @@ export default function Home() {
             See if you can get back to one of your original artists within six duets.
           </span>
         </div>}
+        <Suspense fallback={<Loading />}>
         {seeSelector && 
         <div>
           <Selector 
@@ -601,6 +610,7 @@ export default function Home() {
           seeNiceTry={seeNiceTry}
           />
         </div>}       
+        </Suspense>
       </div>
       <div 
         className="main">
@@ -666,6 +676,7 @@ export default function Home() {
          />}
          {seeComposerTable && <ComposerTable 
          composerCreditPromise={composerCreditPromise}
+         medleyComposerCreditPromise={medleyComposerCreditPromise}
          handleSongChange={handleSongChange}
          handleYear={handleYear}
          />}

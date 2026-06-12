@@ -64,6 +64,7 @@ export default function ThreeColumnTable(props: any) {
           [
             (tags[0].type_id === 5
               || tags[0].tag_id === 20
+              || tags[0].tag_id === 6
             || tags[0].type_id === 11
             || tags[0].type_id === 12) && 'crossoverTable',
             (tags[0].type_id === 2
@@ -79,6 +80,7 @@ export default function ThreeColumnTable(props: any) {
             tags[0].type_id === 10 && 'dynamicTable',
             ( tags[0].type_id === 4
             || tags[0].tag_id === 1698
+            || tags[0].tag_id === 5
             || tags[0].type_id === 6
             || tags[0].type_id === 67)  && 'specialTable'
           ]

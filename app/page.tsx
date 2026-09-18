@@ -519,7 +519,7 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    handleMediaSelect(event, "https://www.youtube.com/embed/videoseries?si=JF7tEqEDOGLlWPk8&amp;list=PL3fAq4OrBzWB3F3fbxSZrywuUgHwBqsbl", 5)
+    handleMediaSelect(event, "https://www.youtube.com/embed/videoseries?si=c-4sexGFTvDxoOJX&amp;list=PLUvuNUVErMXI", 6)
   }, [])
 
   useEffect(() => {

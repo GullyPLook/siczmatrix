@@ -64,6 +64,7 @@ export default function ThreeColumnTable(props: any) {
           [
             (tags[0].type_id === 5
               || tags[0].tag_id === 20
+              || tags[0].tag_id === 8
               || tags[0].tag_id === 6
             || tags[0].type_id === 11
             || tags[0].type_id === 12) && 'crossoverTable',

@@ -63,9 +63,13 @@ export default function ThreeColumnTable(props: any) {
         <span className={clsx(
           [
             (tags[0].type_id === 5
-              || tags[0].tag_id === 20
-              || tags[0].tag_id === 8
               || tags[0].tag_id === 6
+              || tags[0].tag_id === 8
+              || tags[0].tag_id === 11
+              || tags[0].tag_id === 13
+              || tags[0].tag_id === 14
+              || tags[0].tag_id === 20
+              || tags[0].tag_id === 1476
             || tags[0].type_id === 11
             || tags[0].type_id === 12) && 'crossoverTable',
             (tags[0].type_id === 2
@@ -80,10 +84,14 @@ export default function ThreeColumnTable(props: any) {
             tags[0].type_id === 9 && 'approachTable',
             tags[0].type_id === 10 && 'dynamicTable',
             ( tags[0].type_id === 4
-            || tags[0].tag_id === 1698
-            || tags[0].tag_id === 5
-            || tags[0].type_id === 6
-            || tags[0].type_id === 67)  && 'specialTable'
+              || tags[0].type_id === 6
+              || tags[0].type_id === 67
+              || tags[0].tag_id === 5
+              || tags[0].tag_id === 17
+              || tags[0].tag_id === 1201
+              || tags[0].tag_id === 1698
+              || tags[0].tag_id === 1735
+            )  && 'specialTable'
           ]
           )}>{title()}</span>
         {threeColumnTable}

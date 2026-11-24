@@ -258,11 +258,16 @@ input::placeholder {
   text-align: start;
 }
 
-.buttonSearch:hover, .buttonOption:hover, .latestOption:hover {
+.buttonSearch:hover, .buttonOption:hover {
   background-color: rgb(41, 48, 88);
   border-radius: 6px;
 }
 
+.latestOption:hover {
+  background-color: rgb(110, 76, 13);
+  border-radius: 6px;
+}
+ 
 .selectedContainer:hover, .selectedContainerA:hover {
   background-color: rgb(67, 32, 133);
 }
@@ -568,8 +573,10 @@ iframe {
 }
 
 .latestCard {
-  background-color: rgb(51, 21, 107);
-  border: 2px, solid, rgb(41, 48, 88);
+  /* background-color: rgb(51, 21, 107); */
+  background-color: rgb(119, 0, 0);
+  /* border: 2px, solid, rgb(41, 48, 88); */
+  border: 2px, solid, rgb(119, 0, 0);
   border-radius: 0 6px 6px 6px;
   margin-bottom: 10px;
   display: grid;
@@ -638,7 +645,8 @@ iframe {
 .latestTable {
   padding: 3px 8px 2px 8px;
   border-radius: 16px 16px 0px 0px;
-  background-color: rgb(51, 21, 107);
+  /* background-color: rgb(51, 21, 107); */
+  background-color: rgb(119, 0, 0);
   color: rgb(39, 179, 58);
 }
 

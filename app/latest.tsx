@@ -13,7 +13,7 @@ const rows: any = latest.map((row: any) => {
           <div key={row.id} 
               id={row.id.toString()}
               className="latestOption"
-              style={{ backgroundColor: 'rgb(41, 48, 88)'}}
+              style={{ backgroundColor: 'rgb(8, 73, 24)'}}
               >
             <button 
               className="latestButtonOption" 
@@ -89,7 +89,7 @@ const card = (
 
     return (
         <>
-       <strong className="latestTable">Latest entries</strong>
+       <strong className="latestTable">Latest Christmas entries</strong>
         {card}
         
 
